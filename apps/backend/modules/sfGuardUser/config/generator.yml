@@ -1,0 +1,57 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfGuardUser
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_user
+    with_doctrine_route:   true
+
+    config:
+      fields:
+        first_name:
+          label: Имя
+        last_name:
+          label: Фамилия
+        email_address:
+          label: Email
+        last_name:
+          label: Фамилия
+        password_again:
+          label: Повторить пароль
+        password:
+          label: Пароль
+        is_active:
+          label: Активный
+        username:
+          label: Логин
+        is_super_admin:
+          label: Суперадмин
+        groups_list:
+          label: Группы
+        permissions_list:
+          label: Права группы
+
+      list:
+        title:   Пользователи
+        display: [=username]
+        sort: [username]
+
+      form:
+        class: sfGuardUserAdminForm
+        display:
+          "Пользователь": [first_name, last_name, email_address, username, password, password_again]
+          "Права пользователя и группы": [is_active, is_super_admin, groups_list, permissions_list]
+
+      edit:
+        title: Редактирование пользователя "%%username%%"
+
+      new:
+        title: Создать пользователя
+      filter:
+        class: false
+      actions:
+        title: Опции

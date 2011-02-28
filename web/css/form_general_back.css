@@ -1,0 +1,122 @@
+form  {
+  display: table;
+  margin-bottom: 15px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #353535;
+  background: #fbfbfb;
+}
+
+ form a:hover {
+  color:#ff0000;
+}
+
+form .fieldset {
+    margin-bottom: .5em;
+    padding: 0;
+    border: none;
+  }
+
+form input.button {
+  background: #262626;
+  font-size:1em;
+  color: #fff;
+  padding: 2px 5px;
+  border: 1px solid #262626;
+  cursor: pointer;
+  -moz-border-radius:4px;
+}
+
+form .input
+{
+margin-bottom:15px;
+}
+
+form .input.text input, form .input textarea, form .input.password input, form .input.select select
+{
+width:100%;
+margin-top:1px;
+margin:0;
+padding:3px;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+form  .checkbox
+{
+margin-bottom:15px;
+}
+
+form  .checkbox input
+{
+margin-top:4px;
+margin-left:10px;
+}
+
+form  .checkbox label
+{
+float:left;
+}
+
+form .input label {
+  float: left;
+  margin-top:5px;
+}
+
+form .group label {
+  margin-right:10px;
+  margin-top:5px;
+}
+
+form .group {
+ margin-top:5px;
+}
+
+form .datetime
+{
+margin-top:10px;
+}
+
+.datetime label
+{
+display:block;
+}
+
+
+/* Flash message */
+
+.flash .message {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-align:center;
+  margin: 0 auto 15px;
+
+}
+
+.flash .message p {
+  margin:8px;
+}
+.flash .error {
+  border: 1px solid #fbb;
+  background-color: #fdd;
+}
+.flash .warning {
+  border: 1px solid #fffaaa;
+  background-color: #ffffcc;
+}
+.flash .notice {
+  border: 1px solid #1FDF00;
+  background-color: #BBFFB6;
+}
+
+.error
+{
+ width:94%;
+ text-align:center;
+ background:#fff0f0;
+ padding:.8em;
+ margin:1em 1em 0 0;
+ border:2px solid #ddd;
+ }

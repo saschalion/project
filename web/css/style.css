@@ -1,0 +1,84 @@
+body {
+    font-size: 75%;
+}
+
+.table {
+    border: 1px solid #ccc;
+    font-size: .8em;
+    margin: 20px 0;
+    background: #fbfbfb;
+}
+
+.table-double {
+    width: 40%;
+}
+
+table td, table th {
+    border-bottom: 1px solid #ccc;
+    padding: 10px !important;
+}
+
+.sf_admin_list table tr:hover {
+    background: #fffaaa;
+}
+
+.table td img {
+    width: 50px;
+    height: 50px;
+}
+
+a {
+    color: #000;
+    outline: none;
+}
+
+a:hover {
+    color: #CC0000;
+}
+
+.icons {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: 20%;
+}
+
+.icons li {
+    float: left;
+
+
+}
+
+.link, .delete, .show {
+    text-decoration: none;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+.link {
+    background: url(/images/edit.png);
+}
+
+.delete {
+    background: url(/images/delete.png);
+}
+
+.show {
+    background: url(/images/log.png);
+}
+
+.center-col {
+    text-align: center;
+    width: 100px;
+}
+
+.created {
+    text-align: center !important;
+    font-size: .8em;
+    color: #3f3f3f;
+}
+

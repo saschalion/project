@@ -1,0 +1,11 @@
+# data/fixtures/educations.yml
+Education:
+  top:
+    name: Высшее
+  bottom:
+    name: Среднее полное
+  middle:
+    name: Среднее специльное
+  skot:
+    name: Неполное высшее
+

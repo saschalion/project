@@ -1,0 +1,67 @@
+JobeetCategory:
+  actAs: { Timestampable: ~ }
+  columns:
+    name: { type: string(255), notnull: true, unique: true }
+
+Education:
+  columns:
+    educations_name: { type: string(255), notnull: true, unique: true }
+ 
+JobeetJob:
+  actAs: { Timestampable: ~ }
+  columns:
+    tab_id:         { type: string(255) }
+    category_id:  { type: integer, notnull: true }
+    education_id: { type: string(20), notnull: true }
+    type:         { type: string(255) }
+    company:      { type: string(255), notnull: true }
+    logo:         { type: string(255) }
+    url:          { type: string(255) }
+    passport_number:  { type: string(255) }
+    first_name:  { type: string(255) }
+    last_name:  { type: string(255) }
+    three_name: { type: string(255) }
+    education_id:   { type: integer, notnull: true }
+    phone:  { type: string(255) }
+    data_id:  { type: date, notnull: true }
+    position:     { type: string(255), notnull: true }
+    location:     { type: string(255), notnull: true }
+    description:  { type: string(4000), notnull: true }
+    how_to_apply: { type: string(4000), notnull: true }
+    token:        { type: string(255), notnull: true, unique: true }
+    is_public:    { type: boolean, notnull: true, default: 1 }
+    is_activated: { type: boolean, notnull: true, default: 0 }
+    email:        { type: string(255), notnull: true }
+    expires_at:   { type: timestamp, notnull: true }
+  relations:
+    JobeetCategory: { onDelete: CASCADE, local: category_id, foreign: id, foreignAlias: JobeetJobs }
+    Education: { onDelete: CASCADE, local: education_id, foreign: id, foreignAlias: Educations }
+
+JobeetAffiliate:
+  actAs: { Timestampable: ~ }
+  columns:
+    url:       { type: string(255), notnull: true }
+    email:     { type: string(255), notnull: true, unique: true }
+    token:     { type: string(255), notnull: true }
+    is_active: { type: boolean, notnull: true, default: 0 }
+  relations:
+    JobeetCategories:
+      class: JobeetCategory
+      refClass: JobeetCategoryAffiliate
+      local: affiliate_id
+      foreign: category_id
+      foreignAlias: JobeetAffiliates
+ 
+JobeetCategoryAffiliate:
+  columns:
+    category_id:  { type: integer, primary: true }
+    affiliate_id: { type: integer, primary: true }
+  relations:
+    JobeetCategory:  { onDelete: CASCADE, local: category_id, foreign: id }
+    JobeetAffiliate: { onDelete: CASCADE, local: affiliate_id, foreign: id }
+
+options:
+    collate: utf8_general_ci
+    charset: utf8
+
+
