@@ -80,6 +80,11 @@ class JobeetJobForm extends BaseJobeetJobForm
       'choices'  => Doctrine_Core::getTable('JobeetJob')->getTypesType(),
       'expanded' => true
     ));
+    
+     $this->widgetSchema['nature_work'] = new sfWidgetFormChoice(array(
+      'choices'  => Doctrine_Core::getTable('JobeetJob')->getNatureWork(),
+      'expanded' => true
+    ));
 
     $this->widgetSchema['type_work'] = new sfWidgetFormChoice(array(
       'choices'  => Doctrine_Core::getTable('JobeetJob')->getTypesTypeWork(),

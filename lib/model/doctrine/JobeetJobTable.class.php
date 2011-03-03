@@ -24,7 +24,16 @@ class JobeetJobTable extends Doctrine_Table
      'Владеет свободно'                  => 'Владеет свободно'
         );
 
+     static public $naturework = array(
+    'Постоянная' => 'Постоянная',
+    'Временная'  => 'Временная'
+        );
 
+
+      public function getNatureWork()
+      {
+        return self::$naturework;
+      }
 
      public function getForeignLanguages()
       {
