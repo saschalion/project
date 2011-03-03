@@ -1,0 +1,48 @@
+a {
+    font-size: 12px;
+}
+
+#sf_admin_container {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.main-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.main-ul li {
+    float: left;
+    list-style: none;
+    border-left: 1px solid #000;
+}
+
+.main-ul li a {
+    padding: 0 20px;
+    height: 25px;
+    line-height: 25px;
+    background: #ccc;
+    text-align: center;
+    font-size: .9em;
+    display: block;
+}
+
+.main-ul li a:hover {
+    background: #595858;
+    color: #fff;
+}
+
+.main-ul li:first-child {
+    border: none;
+}
+
+.clear {
+    clear: both;
+}
+
+h1 {
+    color: #353535;
+    font-size: 18px;
+}

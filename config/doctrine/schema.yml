@@ -1,0 +1,242 @@
+JobeetCategory:
+  actAs:
+    Timestampable: ~
+  columns:
+    name:
+      type: string(255)
+      notnull: true
+      unique: true
+
+Education:
+  actAs:
+    Timestampable: ~
+  columns:
+    name:
+      type: string(255)
+      notnull: true
+      unique: true
+
+City:
+  actAs:
+    Timestampable: ~
+  columns:
+    name:
+      type: string(255)
+      notnull: true
+
+Status:
+  actAs:
+    Timestampable: ~
+  columns:
+    name:
+      type: string(255)
+      notnull: true
+      unique: true
+
+JobeetJob:
+  actAs:
+    Timestampable: ~
+  columns:
+    # Начальные сведения
+    date_preparation:
+      type: date
+    tab_id:
+      type: string(30)
+      unique: true
+      notnull: true
+    number_insurace:
+      type: string(12)
+    pension_sertificate:
+      type: string(11)
+    nature_work:
+      type: string(30)
+    type_work:
+      type: string(30)
+    category_id:
+      type: integer
+      notnull: true
+    status_id:
+      type: integer
+      notnull: true
+    sf_guard_user_id:
+      type: integer
+
+    # Общие сведения
+    last_name:
+      type: string(100)
+    first_name:
+      type: string(100)
+    three_name:
+      type: string(100)
+      notnull: true
+    type:
+      type: string(255)
+    data_birth:
+      type: date
+      notnull: true
+    phone:
+      type: string(12)
+      notnull: true
+    education_id:
+      type: integer
+      notnull: true
+    city_id:
+      type: integer
+      notnull: true
+    adress:
+      type: string(150)
+    email:     
+      type: string(255)
+      unique: true
+    logo:
+      type: string(255)
+
+    # Паспорт
+    passport_number:
+      type: string(11)
+      notnull: true
+      unique: true
+    issuance_passports:
+      type: string(50)
+    date_issue_passport:
+     type: date
+    code_division:
+     type: string(7)
+
+    # Знание иностранных языков
+    name_foreign_language:
+     type: string(100)
+    degree_knowledge_foreign_languages:
+     type: string(100)
+
+    # Образование
+    name_educational_institution:
+     type: string(150)
+    diploma:
+     type: string(20)
+    year_graduation:
+      type: year
+    education_id:
+     type: integer
+    diploma_qualification:
+      type: string(100)
+    speciality_diploma:
+     type: string(150)
+
+    # Послевузовое профессиональное образование
+    name_educational_institution_extra:
+      type: string(150)
+    diploma_extra:
+     type: string(20)
+    year_graduation_extra:
+      type: date
+    study_extra:
+     type: string(30)
+    diploma_qualification_extra:
+      type: string(100)
+    speciality_diploma_extra:
+      type: string(150)
+
+    # Профессия
+    main_profession:
+      type: string(40)
+    other_profession:
+      type: string(40)
+    total_length:
+     type: string(2)
+    continuous_service:
+     type: string(2)
+    last_job:
+     type: string(100)
+    termination_date:
+     type: date
+
+    # Семейное положение
+    marriage_status:
+     type: string(40)
+    children:
+     type: string(40)
+    date_birth_children:  
+      type: year
+    
+    # Воинский учет
+    group_accounting:
+      type: string(255)
+    category_accounting:
+      type: string(255)
+    composition:
+      type: string(255)
+    military_rank:
+      type: string(255)
+    military_discount_specialty:
+      type: string(255)
+    number_military_discount_specialty:
+      type: string(255)
+    fitness:
+     type: string(255)
+    name_district_military_office:
+     type: string(255)
+    number_special_accounting:     
+      type: string(255)
+
+    # Отпуск
+    kind_leave:
+      type: string(80)
+    getting_started:
+      type: date
+    end_work:
+      type: date
+    number_vacation_days:
+      type: string(2)
+    commencement:
+     type: date
+    end_leave:
+      type: date
+    base_release:
+      type: string(60)
+
+    # Дополнительные сведения
+    more_information:
+     type: string(255)
+    token:
+      type: string(255)
+      notnull: true
+      unique: true
+
+    
+    #company:      { type: string(255), notnull: false }   
+    #position:     { type: string(255), notnull: true }
+    #how_to_apply: { type: string(4000)}    
+    
+  relations:
+    JobeetCategory: { onDelete: CASCADE, local: category_id, foreign: id, foreignAlias: JobeetJobs }
+
+    Education:
+      onDelete: RESTRICT
+      local: education_id
+      foreign: id
+      foreignAlias: Jobeet
+
+    City:
+      onDelete: CASCADE
+      local: city_id
+      foreign: id
+      foreignAlias: City
+
+    Status:
+      onDelete: CASCADE
+      local: status_id
+      foreign: id
+      foreignAlias: Status
+    User:
+      class: sfGuardUser
+      foreign: id
+      onDelete: cascade
+      local: sf_guard_user_id
+      foreignAlias: Campaigns
+
+options:
+    collate: utf8_general_ci
+    charset: utf8
+
+

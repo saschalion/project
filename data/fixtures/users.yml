@@ -1,0 +1,12 @@
+# data/fixtures/users.yml
+SfGuardUser:
+  Admin:
+    first_name: Alex
+    last_name: 
+    email_address: saschalion@list.ru
+    username: admin
+    password: admin
+    is_active: true
+    is_super_admin: false
+
+

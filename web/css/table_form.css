@@ -1,0 +1,81 @@
+.table-form  {
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 500px;
+    -moz-border-radius: 4px;
+}
+
+.clear {
+    clear: both;
+}
+
+.table-form th, .table-form td {
+    padding-bottom: 10px;
+}
+
+.table-form th {
+    padding-left: 10px;
+}
+
+.table-form td {
+    font-size: .7em;
+    font-style: italic;
+    color: #888383;
+    padding: 10px 30px 10px 10px;
+}
+
+.table-form label {
+    float: left;
+    font-size: .9em;
+    margin-right: 10px;
+    text-align: left;
+    color: #3e3636;
+}
+
+.sf_admin_form textarea, .sf_admin_form input[type=text], .sf_admin_filter input[type=text],
+.sf_admin_form input[type="password"],
+.sf_admin_form select[multiple="multiple"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    color: #686161;
+    -moz-box-sizing: border-box;
+    -moz-box-shadow: 2px 1px 2px 0 #CCCCCC;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+form textarea:focus, input[type=text]:focus {
+    border-color: #686161;
+    color: #000;
+}
+
+.table-form input[type=submit] {
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+label .red {
+    color: #ff0000;
+}
+
+.sf_admin_text table td, .sf_admin_text table th {
+    padding: 0 !important;
+    border-bottom: none !important;
+}
+
+.sf_admin_text table th {
+    width: 11.2em !important;
+    background: none !important;
+}
+
+.sf_admin_form_field_City .content {
+    width: 686px !important;
+}
+
+
+
+

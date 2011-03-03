@@ -1,0 +1,73 @@
+body {
+    background: #DEE8F2;
+}
+
+.login-wrap {
+    width: 550px;
+    margin: 30px auto;
+    background: #eaeaea;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+.login-form {
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.login-wrap h1 {
+    background: #3f3f3f;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.login-wrap input[type="text"], .login-form input[type="password"] {
+    border: 1px solid #595858;
+    padding: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 250px;
+}
+
+.login-wrap input[type="text"]:focus, .login-form input[type="password"]:focus {
+    border-color: #000;
+}
+
+.login-wrap input[type="text"], .login-form input[type="password"], label {
+    display: inline-block;
+}
+
+.login-wrap label {
+    font-size: .8em;
+    margin-right: 10px;
+}
+
+.login-form th, .login-form td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.login-form th {
+    text-align: right;
+    padding-left: 10px;
+}
+
+.login-form tr {
+    margin-top: 10px;
+}
+
+.login-form th {
+    text-align: right;
+    padding-left: 10px;
+}
+
+.login-form tfoot td {
+    padding-left: 10px;
+}

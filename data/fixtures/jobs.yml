@@ -1,0 +1,271 @@
+# data/fixtures/jobs.yml
+JobeetJob:
+  job_sensio_labs:
+    JobeetCategory: design
+    Education: top
+    Status: work
+    City: moscow
+    type:         M
+    tab_id:      344-108
+    logo:         
+    first_name:   Александр
+    last_name:   Федоров
+    three_name:   Сергеевич
+    passport_number:  45022302781
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs
+    email:        job@list.com
+    sf_guard_user_id: 1
+    number_insurace: 55585
+    pension_sertificate: 78954
+    nature_work: Основная
+    type_work: По совместительству
+    name_foreign_language: Английский
+    degree_knowledge_foreign_languages: Владею свободно
+    name_educational_institution: Институт экономики и культуры
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+    marriage_status: Женат
+    children: Дружинина Мария Александровна
+    date_birth_children: '2011-12-31'
+
+  job_sensio_labs_2:
+    JobeetCategory: voip_specialist
+    Education: top
+    Status: work
+    City: vologda
+    type:         M
+    tab_id:      344-120
+    logo:         
+    first_name:   Виктор
+    last_name:   Слепаков
+    three_name:   Викторович
+    passport_number:  45052302780
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs2
+    email:        job2@list.com
+
+  job_sensio_labs_3:
+    JobeetCategory: voip_specialist
+    Education: top
+    Status: leave
+    City: vologda
+    type:         M
+    tab_id:      344-112
+    logo:
+    first_name:  Сергей
+    last_name:   Федорович
+    three_name:  Иванов
+    passport_number:  45022302756
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs3
+    email:        job3@list.com
+
+  job_sensio_labs_4:
+    JobeetCategory: voip_specialist
+    Education: top
+    Status: work
+    City: vologda
+    type:         M
+    tab_id:      344-114
+    logo:         
+    first_name:   Алексей
+    last_name:   Базаров
+    three_name:   Иванюшин
+    passport_number:  45022302780
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs4
+    email:        job4@list.com
+
+  job_sensio_labs5:
+    JobeetCategory: design
+    Education: top
+    Status: leave
+    City: moscow
+    type:         M
+    tab_id:      344-109
+    logo:         
+    first_name:   Александр
+    last_name:   Федоров
+    three_name:   Хлобыстович
+    passport_number:  45022302581
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs5
+    email:        job1@list.com
+
+  job_sensio_labs_22:
+    JobeetCategory: voip_specialist
+    Education: top
+    Status: not
+    City: vologda
+    type:         M
+    tab_id:      344-230
+    logo:         
+    first_name:   Виктор
+    last_name:   Федорович
+    three_name:   Сергеев
+    passport_number:  45232302780
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs6
+    email:        job22@list.com
+
+  job_sensio_labs_23:
+    JobeetCategory: voip_specialist
+    Education: top
+    Status: work
+    City: moscow
+    type:         M
+    tab_id:      344-123
+    logo:         
+    first_name:   Виктор
+    last_name:   Федорович
+    three_name:   Сергеев
+    passport_number:  45023402780
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs7
+    email:        job23@list.com
+
+  job_sensio_labs_25:
+    JobeetCategory: director
+    Education: top
+    Status: not
+    City: vologda
+    type:         M
+    tab_id:      344-110
+    logo:         
+    first_name:   Виктор
+    last_name:   Федорович
+    three_name:   Сергеев
+    passport_number:  45022305734
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs8
+    email:        job25@list.com
+
+  job_sensio_labs26:
+    JobeetCategory: design
+    Education: top
+    Status: work
+    City: moscow
+    type:         v
+    tab_id:      344-126
+    logo:         
+    first_name:   Александр
+    last_name:   Федоров
+    three_name:   Хлобыстович
+    passport_number:  45022302726
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs26
+    email:        job26@list.com
+
+  job_sensio_labs_27:
+    JobeetCategory: voip_specialist
+    Education: top
+    Status: not
+    City: vologda
+    type:         M
+    tab_id:      344-127
+    logo:         
+    first_name:   Виктор
+    last_name:   Федорович
+    three_name:   Сергеев
+    passport_number:  45022302727
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs27
+    email:        job27@list.com
+
+  job_sensio_labs_28:
+    JobeetCategory: voip_specialist
+    Education: top
+    Status: not
+    City: vologda
+    type:         M
+    tab_id:      344-128
+    logo:         
+    first_name:   Виктор
+    last_name:   Федорович
+    three_name:   Сергеев
+    passport_number:  45022302728
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs28
+    email:        job28@list.com
+
+  job_sensio_labs_29:
+    JobeetCategory: voip_specialist
+    Education: top
+    Status: not
+    City: vologda
+    type:         M
+    tab_id:      344-129
+    logo:         
+    first_name:   Виктор
+    last_name:   Федорович
+    three_name:   Сергеев
+    passport_number:  45022302729
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs292
+    email:        job29@list.com
+
+  job_sensio_labs_30:
+    JobeetCategory: design
+    Education: top
+    Status: work
+    City: moscow
+    type:         M
+    tab_id:      344-130
+    logo:         
+    first_name:   Александр
+    last_name:   Федоров
+    three_name:   Хлобыстович
+    passport_number:  45022302730
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs30
+    email:        job30@list.com
+
+  job_sensio_labs_31:
+    JobeetCategory: voip_specialist
+    Education: top
+    Status: not
+    City: vologda
+    type:         M
+    tab_id:      344-131
+    logo:         
+    first_name:   Виктор
+    last_name:   Федорович
+    three_name:   Сергеев
+    passport_number:  45022302731
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs31
+    email:        job31@list.com
+
+  job_sensio_labs_32:
+    JobeetCategory: voip_specialist
+    Education: top
+    Status: not
+    City: vologda
+    type:         M
+    tab_id:      344-132
+    logo:         
+    first_name:   Виктор
+    last_name:   Федорович
+    three_name:   Сергеев
+    passport_number:  45022302732
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio_labs32
+    email:        job32@list.com
