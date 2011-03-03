@@ -6,8 +6,7 @@
     <tr>
       <th>Таб. №</th>
       <th>Специальность</th>
-      <th>Компания</th>
-      <th>Имя</th>
+       <th>Имя</th>
       <th>Фамилия</th>
       <th>Город</th>
       <th>Фотография</th>
@@ -22,8 +21,7 @@
       <td><?php echo $jobeet_job->getTabId() ?></td>
       <td><?php  echo link_to($jobeet_job->getJobeetCategory(), 'job/show?id='.$jobeet_job->getId());?>
 </td>
-       <td><?php echo $jobeet_job->getCompany() ?></td>
-      <td><?php echo $jobeet_job->getFirstName() ?></td>
+         <td><?php echo $jobeet_job->getFirstName() ?></td>
       <td><?php echo $jobeet_job->getLastName() ?></td>
       <td><?php echo $jobeet_job->getCity() ?></td>
       <td><img src="/uploads/jobs/<?php echo $jobeet_job->getLogo() ?>" alt="<?php echo $jobeet_job->getJobeetCategory().' - '.$jobeet_job->getLastName().'  '.$jobeet_job->getFirstName() ?>" /></td>
@@ -34,7 +32,7 @@
               <li>
                   <?php echo link_to(
                       '&nbsp',
-                      'job/edit?id='.$jobeet_job->getId(),
+                      'job/edit',
                       array(
                           'class' => 'link'
                           )

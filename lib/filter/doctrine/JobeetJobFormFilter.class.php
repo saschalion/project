@@ -12,11 +12,13 @@ class JobeetJobFormFilter extends BaseJobeetJobFormFilter
 {
   public function configure()
   {
-      $this->widgetSchema->setLabels(array(
-  'tab_id'    => 'Таб. номер',
-  'last_name'      => 'Фамилия',
-  'first_name'      => 'Имя'
-));
+      $this->widgetSchema->setLabels(
+              array(
+                  'tab_id'     => 'Таб. номер',
+                  'last_name'  => 'Фамилия',
+                  'first_name' => 'Имя'
+              )
+      );
 
   }
 }

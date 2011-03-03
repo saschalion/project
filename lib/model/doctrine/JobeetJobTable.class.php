@@ -8,17 +8,38 @@
 class JobeetJobTable extends Doctrine_Table
 {
 
-    static public $types = array(
-    'male' => 'М',
-    'female' => 'Ж'
+    static public $typestype = array(
+    'M'   => 'М',
+    'Ж' => 'Ж'
+        );
+
+     static public $typestypework = array(
+    'Основная'            => 'Основная',
+    'По совместительству' => 'По совместительству'
+        );
+
+     static public $foreignlanguages = array(
+    'Читает и переводит со словарем'     => 'Читает и переводит со словарем',
+    'Читает и может объясняться'         => 'Читает и может объясняться',
+     'Владеет свободно'                  => 'Владеет свободно'
         );
 
 
 
-   public function getTypes()
-  {
-    return self::$types;
-  }
+     public function getForeignLanguages()
+      {
+        return self::$foreignlanguages;
+      }
+
+     public function getTypesType()
+      {
+        return self::$typestype;
+      }
+
+     public function getTypesTypeWork()
+      {
+        return self::$typestypework;
+      }
 
 
   // ...

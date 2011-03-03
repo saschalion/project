@@ -38,7 +38,6 @@
 {
   background-color: #e7eef6;
   white-space: nowrap;
-  text-align: left;
 }
 
 #sf_admin_container ul.error_list
@@ -113,6 +112,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  white-space: nowrap;
 }
 
 #sf_admin_container ul.sf_admin_td_actions li
@@ -120,7 +120,6 @@
   list-style-type: none;
   display: inline;
   font-size: 90%;
-  margin-right: 10px;
 }
 
 #sf_admin_container ul.sf_admin_actions
@@ -133,7 +132,6 @@
 {
   list-style-type: none;
   display: inline;
-  margin-right: 10px;
 }
 
 #sf_admin_container ul.sf_admin_actions li a,
@@ -141,6 +139,11 @@
 {
   padding-left: 20px;
   background: url(../images/default.png) no-repeat 0 0;
+  text-decoration: none;
+}
+
+li.print a {
+    background-image: url(../images/printer.png) !important;
 }
 
 #sf_admin_container ul li.sf_admin_action_new a

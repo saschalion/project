@@ -33,7 +33,7 @@
  * @property string $degree_knowledge_foreign_languages
  * @property string $name_educational_institution
  * @property string $diploma
- * @property date $year_graduation
+ * @property year $year_graduation
  * @property string $diploma_qualification
  * @property string $speciality_diploma
  * @property string $name_educational_institution_extra
@@ -50,7 +50,7 @@
  * @property date $termination_date
  * @property string $marriage_status
  * @property string $children
- * @property date $date_birth_children
+ * @property year $date_birth_children
  * @property string $group_accounting
  * @property string $category_accounting
  * @property string $composition
@@ -103,7 +103,7 @@
  * @method string         getDegreeKnowledgeForeignLanguages()    Returns the current record's "degree_knowledge_foreign_languages" value
  * @method string         getNameEducationalInstitution()         Returns the current record's "name_educational_institution" value
  * @method string         getDiploma()                            Returns the current record's "diploma" value
- * @method date           getYearGraduation()                     Returns the current record's "year_graduation" value
+ * @method year           getYearGraduation()                     Returns the current record's "year_graduation" value
  * @method string         getDiplomaQualification()               Returns the current record's "diploma_qualification" value
  * @method string         getSpecialityDiploma()                  Returns the current record's "speciality_diploma" value
  * @method string         getNameEducationalInstitutionExtra()    Returns the current record's "name_educational_institution_extra" value
@@ -120,7 +120,7 @@
  * @method date           getTerminationDate()                    Returns the current record's "termination_date" value
  * @method string         getMarriageStatus()                     Returns the current record's "marriage_status" value
  * @method string         getChildren()                           Returns the current record's "children" value
- * @method date           getDateBirthChildren()                  Returns the current record's "date_birth_children" value
+ * @method year           getDateBirthChildren()                  Returns the current record's "date_birth_children" value
  * @method string         getGroupAccounting()                    Returns the current record's "group_accounting" value
  * @method string         getCategoryAccounting()                 Returns the current record's "category_accounting" value
  * @method string         getComposition()                        Returns the current record's "composition" value
@@ -323,13 +323,13 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
              'type' => 'string',
              'length' => 7,
              ));
-        $this->hasColumn('name_foreign_language', 'string', 10, array(
+        $this->hasColumn('name_foreign_language', 'string', 100, array(
              'type' => 'string',
-             'length' => '10',
+             'length' => 100,
              ));
-        $this->hasColumn('degree_knowledge_foreign_languages', 'string', 10, array(
+        $this->hasColumn('degree_knowledge_foreign_languages', 'string', 100, array(
              'type' => 'string',
-             'length' => '10',
+             'length' => 100,
              ));
         $this->hasColumn('name_educational_institution', 'string', 150, array(
              'type' => 'string',
@@ -339,8 +339,8 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
              'type' => 'string',
              'length' => 20,
              ));
-        $this->hasColumn('year_graduation', 'date', null, array(
-             'type' => 'date',
+        $this->hasColumn('year_graduation', 'year', null, array(
+             'type' => 'year',
              ));
         $this->hasColumn('diploma_qualification', 'string', 100, array(
              'type' => 'string',
@@ -404,8 +404,8 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
              'type' => 'string',
              'length' => 40,
              ));
-        $this->hasColumn('date_birth_children', 'date', null, array(
-             'type' => 'date',
+        $this->hasColumn('date_birth_children', 'year', null, array(
+             'type' => 'year',
              ));
         $this->hasColumn('group_accounting', 'string', 255, array(
              'type' => 'string',

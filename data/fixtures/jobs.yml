@@ -5,7 +5,7 @@ JobeetJob:
     Education: top
     Status: work
     City: moscow
-    type:         male
+    type:         M
     tab_id:      344-108
     logo:         
     first_name:   Александр
@@ -17,13 +17,27 @@ JobeetJob:
     token:        job_sensio_labs
     email:        job@list.com
     sf_guard_user_id: 1
+    number_insurace: 55585
+    pension_sertificate: 78954
+    nature_work: Основная
+    type_work: По совместительству
+    name_foreign_language: Английский
+    degree_knowledge_foreign_languages: Владею свободно
+    name_educational_institution: Институт экономики и культуры
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+    marriage_status: Женат
+    children: Дружинина Мария Александровна
+    date_birth_children: '2011-12-31'
 
   job_sensio_labs_2:
     JobeetCategory: voip_specialist
     Education: top
     Status: work
     City: vologda
-    type:         male
+    type:         M
     tab_id:      344-120
     logo:         
     first_name:   Виктор
@@ -34,14 +48,13 @@ JobeetJob:
     phone:  +79033574730
     token:        job_sensio_labs2
     email:        job2@list.com
-    sf_guard_user_id: 1
 
   job_sensio_labs_3:
-    JobeetCategory: technical_specialist
+    JobeetCategory: voip_specialist
     Education: top
     Status: leave
     City: vologda
-    type:         male
+    type:         M
     tab_id:      344-112
     logo:
     first_name:  Сергей
@@ -52,14 +65,13 @@ JobeetJob:
     phone:  +79033574730
     token:        job_sensio_labs3
     email:        job3@list.com
-    sf_guard_user_id: 1
 
   job_sensio_labs_4:
-    JobeetCategory: director
+    JobeetCategory: voip_specialist
     Education: top
     Status: work
     City: vologda
-    type:         male
+    type:         M
     tab_id:      344-114
     logo:         
     first_name:   Алексей
@@ -70,14 +82,13 @@ JobeetJob:
     phone:  +79033574730
     token:        job_sensio_labs4
     email:        job4@list.com
-    sf_guard_user_id: 1
 
   job_sensio_labs5:
-    JobeetCategory: chief_accountant
+    JobeetCategory: design
     Education: top
     Status: leave
     City: moscow
-    type:         male
+    type:         M
     tab_id:      344-109
     logo:         
     first_name:   Александр
@@ -88,14 +99,13 @@ JobeetJob:
     phone:  +79033574730
     token:        job_sensio_labs5
     email:        job1@list.com
-    sf_guard_user_id: 2
 
   job_sensio_labs_22:
-    JobeetCategory: head_economic_department
+    JobeetCategory: voip_specialist
     Education: top
-    Status: work
+    Status: not
     City: vologda
-    type:         male
+    type:         M
     tab_id:      344-230
     logo:         
     first_name:   Виктор
@@ -106,32 +116,30 @@ JobeetJob:
     phone:  +79033574730
     token:        job_sensio_labs6
     email:        job22@list.com
-    sf_guard_user_id: 2
 
   job_sensio_labs_23:
-    JobeetCategory: secretary
+    JobeetCategory: voip_specialist
     Education: top
     Status: work
     City: moscow
-    type:         female
+    type:         M
     tab_id:      344-123
     logo:         
-    first_name:   Татьяна
-    last_name:   Викторовна
-    three_name:   Степанова
+    first_name:   Виктор
+    last_name:   Федорович
+    three_name:   Сергеев
     passport_number:  45023402780
     data_birth: '2008-10-10'
     phone:  +79033574730
     token:        job_sensio_labs7
     email:        job23@list.com
-    sf_guard_user_id: 2
 
   job_sensio_labs_25:
-    JobeetCategory: counsel
+    JobeetCategory: director
     Education: top
-    Status: work
+    Status: not
     City: vologda
-    type:         male
+    type:         M
     tab_id:      344-110
     logo:         
     first_name:   Виктор
@@ -142,14 +150,13 @@ JobeetJob:
     phone:  +79033574730
     token:        job_sensio_labs8
     email:        job25@list.com
-    sf_guard_user_id: 2
 
   job_sensio_labs26:
-    JobeetCategory: programmer
+    JobeetCategory: design
     Education: top
     Status: work
     City: moscow
-    type:         male
+    type:         v
     tab_id:      344-126
     logo:         
     first_name:   Александр
@@ -160,32 +167,30 @@ JobeetJob:
     phone:  +79033574730
     token:        job_sensio_labs26
     email:        job26@list.com
-    sf_guard_user_id: 1
 
   job_sensio_labs_27:
-    JobeetCategory: makeup_man
+    JobeetCategory: voip_specialist
     Education: top
-    Status: work
+    Status: not
     City: vologda
-    type:         male
+    type:         M
     tab_id:      344-127
     logo:         
-    first_name:   Александр
-    last_name:   Дружинин
-    three_name:   Георгиевич
+    first_name:   Виктор
+    last_name:   Федорович
+    three_name:   Сергеев
     passport_number:  45022302727
     data_birth: '2008-10-10'
     phone:  +79033574730
     token:        job_sensio_labs27
     email:        job27@list.com
-    sf_guard_user_id: 1
 
   job_sensio_labs_28:
-    JobeetCategory: copywriter
+    JobeetCategory: voip_specialist
     Education: top
-    Status: work
+    Status: not
     City: vologda
-    type:         male
+    type:         M
     tab_id:      344-128
     logo:         
     first_name:   Виктор
@@ -196,14 +201,13 @@ JobeetJob:
     phone:  +79033574730
     token:        job_sensio_labs28
     email:        job28@list.com
-    sf_guard_user_id: 1
 
   job_sensio_labs_29:
-    JobeetCategory: systems_analyst
+    JobeetCategory: voip_specialist
     Education: top
-    Status: work
+    Status: not
     City: vologda
-    type:         male
+    type:         M
     tab_id:      344-129
     logo:         
     first_name:   Виктор
@@ -214,14 +218,13 @@ JobeetJob:
     phone:  +79033574730
     token:        job_sensio_labs292
     email:        job29@list.com
-    sf_guard_user_id: 1
 
   job_sensio_labs_30:
-    JobeetCategory: security
+    JobeetCategory: design
     Education: top
     Status: work
     City: moscow
-    type:         male
+    type:         M
     tab_id:      344-130
     logo:         
     first_name:   Александр
@@ -232,14 +235,13 @@ JobeetJob:
     phone:  +79033574730
     token:        job_sensio_labs30
     email:        job30@list.com
-    sf_guard_user_id: 2
 
   job_sensio_labs_31:
-    JobeetCategory: head_it_department
+    JobeetCategory: voip_specialist
     Education: top
-    Status: work
+    Status: not
     City: vologda
-    type:         male
+    type:         M
     tab_id:      344-131
     logo:         
     first_name:   Виктор
@@ -250,14 +252,13 @@ JobeetJob:
     phone:  +79033574730
     token:        job_sensio_labs31
     email:        job31@list.com
-    sf_guard_user_id: 1
 
   job_sensio_labs_32:
-    JobeetCategory: programmer
+    JobeetCategory: voip_specialist
     Education: top
-    Status: work
+    Status: not
     City: vologda
-    type:         male
+    type:         M
     tab_id:      344-132
     logo:         
     first_name:   Виктор
@@ -268,4 +269,3 @@ JobeetJob:
     phone:  +79033574730
     token:        job_sensio_labs32
     email:        job32@list.com
-    sf_guard_user_id: 1

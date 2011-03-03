@@ -7,7 +7,7 @@ generator:
     with_show:             false
     singular:              ~
     plural:                ~
-    route_prefix:          SfGuardPermission
+    route_prefix:          sf_guard_permission
     with_doctrine_route:   true
 
     config:

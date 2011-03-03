@@ -13,16 +13,6 @@
       <?php include_partial('status/form_fieldset', array('status' => $status, 'form' => $form, 'fields' => $fields, 'fieldset' => $fieldset)) ?>
     <?php endforeach; ?>
 
-    <?php
-            include_partial(
-              'global/form_actions',
-              array(
-                'jobeet_job' => $jobeet_job,
-                'form' => $form,
-                'configuration' => $configuration,
-                'helper' => $helper
-                          )
-            );
-    ?>
+    <?php include_partial('status/form_actions', array('status' => $status, 'form' => $form, 'configuration' => $configuration, 'helper' => $helper)) ?>
   </form>
 </div>

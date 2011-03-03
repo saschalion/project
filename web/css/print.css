@@ -1,0 +1,55 @@
+body {
+    background: #ccc;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.print {
+    color: #3f3f3f;
+    width: 900px;
+    height: 1200px;
+    margin: 0 auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.print span {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+}
+
+table, td, th {
+    border: 1px solid #ccc !important;
+    border-collapse: collapse;
+    font-size: .9em;
+}
+
+table th {
+    font-weight: normal;
+    padding: 5px;
+}
+
+table td {
+    text-align: center;
+    padding: 5px;
+}
+
+ul {
+    margin-left: 0 !important;
+}
+
+ul li {
+    padding: 0;
+    margin-bottom: 20px;
+    list-style: none;
+}
+

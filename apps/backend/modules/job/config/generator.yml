@@ -17,12 +17,10 @@ generator:
       list:
          display: [tab_id, =jobeet_category, first_name, last_name, data_id, education]
          title: Сотрудники
-         sort: [last_name]
       filter:
           display: [tab_id, last_name, first_name]
       form:
         display:
-    
          Начальные сведения: [ sf_guard_user_id, tab_id, number_insurace, pension_sertificate, nature_work, type_work, category_id, status_id ]
          Общие сведения: [ last_name, first_name, three_name, type, data_birth, phone, city_id, adress, email, logo ]
          Паспорт: [ passport_number, issuance_passports, date_issue_passport, code_division ]
@@ -31,7 +29,7 @@ generator:
          Послевузовое профессиональное образование: [ name_educational_institution_extra, diploma_extra, year_graduation_extra, diploma_qualification_extra, speciality_diploma_extra ]
          Профессия: [ main_profession, other_profession, total_length, continuous_service, last_job, termination_date ]
          Семейное положение: [ marriage_status, children, date_birth_children ]
-         Воинский учет: [ group_accounting, category_accounting, composition, military_rank, military_discount_specialty, number_military_discount_specialty, fitness, name_district_military_office, number_special_accounting ]
+         Воинский учет: [ group_accounting, category_accounting, composition, military_rank, military_discount_specialty, number_military_discount_specialty, name_district_military_office, number_special_accounting ]
          Отпуск: [ kind_leave, getting_started, end_work, number_vacation_days, commencement, end_leave, base_release ]
          Дополнительные сведения: [ more_information ]
 

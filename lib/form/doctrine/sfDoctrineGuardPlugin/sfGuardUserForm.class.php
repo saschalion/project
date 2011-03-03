@@ -13,8 +13,7 @@ class sfGuardUserForm extends PluginsfGuardUserForm
   public function configure()
   {
       $this->widgetSchema->setLabels(array(
-    'first_name'    => 'Имя',
-    'username' => 'Логин'
+    'first_name'    => 'Имя'
     ));
   }
 }

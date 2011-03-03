@@ -8,13 +8,5 @@ SfGuardUser:
     password: admin
     is_active: true
     is_super_admin: false
-  User:
-    first_name: Alexander
-    last_name:
-    email_address: saschalion@mail.ru
-    username: user
-    password: user
-    is_active: true
-    is_super_admin: false
 
 

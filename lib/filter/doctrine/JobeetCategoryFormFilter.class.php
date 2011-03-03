@@ -12,5 +12,10 @@ class JobeetCategoryFormFilter extends BaseJobeetCategoryFormFilter
 {
   public function configure()
   {
+       $this->widgetSchema->setLabels(
+               array(
+                    'name'  => 'Специальность'
+               )
+       );
   }
 }

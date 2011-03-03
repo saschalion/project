@@ -1,17 +1,17 @@
 <td class="sf_admin_text sf_admin_list_td_tab_id">
-  <?= link_to($jobeet_job->getTabId(), 'jobeet_job_edit', $jobeet_job) ?>
+  <?php echo link_to($jobeet_job->getTabId(), 'jobeet_job_edit', $jobeet_job) ?>
 </td>
 <td class="sf_admin_text sf_admin_list_td_jobeet_category">
-  <?= $jobeet_job->getJobeetCategory() ?>
+  <?php echo $jobeet_job->getJobeetCategory() ?>
 </td>
 <td class="sf_admin_text sf_admin_list_td_first_name">
-  <?= $jobeet_job->getFirstName() ?>
+  <?php echo $jobeet_job->getFirstName() ?>
 </td>
 <td class="sf_admin_text sf_admin_list_td_last_name">
-  <?= $jobeet_job->getLastName() ?>
+  <?php echo $jobeet_job->getLastName() ?>
 </td>
 <td class="sf_admin_text sf_admin_list_td_education">
-  <?= $jobeet_job->getCity() ?>
+  <?php echo $jobeet_job->getCity() ?> 
 </td>
 <td class="sf_admin_text sf_admin_list_td_education" align="center">
   <?php if ($jobeet_job->getStatus()== 'Работает'): ?>
@@ -31,14 +31,10 @@
   <?php endif; ?>
 </td>
 <td class="sf_admin_text sf_admin_list_td_education" align="center">
-  <?php if ($jobeet_job->getUser() > '&nbsp;' && $jobeet_job->getUser()->getUsername() > '&nbsp;'): ?>
-    <?= $jobeet_job->getUser()->getFirstName()?>
-  <?php endif; ?>
-  <?php if ($jobeet_job->getUser()->getUsername() > '&nbsp;'
-          && $jobeet_job->getUser()->getFirstName() < '&nbsp;'): ?>
-    <?= $jobeet_job->getUser()->getUsername() ?>
+  <?php if ($jobeet_job->getUser() > '&nbsp;'): ?>
+    <?php echo $jobeet_job->getUser()->getFirstName()?>
   <?php endif; ?>
 </td>
 <td class="sf_admin_text sf_admin_list_td_education created">
-    <?= $jobeet_job->getCreatedAt()?>
+    <?php echo $jobeet_job->getCreatedAt()?>
 </td>

@@ -18,18 +18,16 @@ generator:
           label: Фамилия
         email_address:
           label: Email
-        last_name:
-          label: Фамилия
-        password_again:
-          label: Повторить пароль
-        password:
-          label: Пароль
-        is_active:
-          label: Активный
         username:
           label: Логин
+        password:
+          label: Пароль
+        password_again:
+          label: Повторить пароль
+        is_active:
+          label: Активный
         is_super_admin:
-          label: Суперадмин
+          label: Супер админ
         groups_list:
           label: Группы
         permissions_list:
@@ -38,7 +36,6 @@ generator:
       list:
         title:   Пользователи
         display: [=username]
-        sort: [username]
 
       form:
         class: sfGuardUserAdminForm
@@ -53,5 +50,3 @@ generator:
         title: Создать пользователя
       filter:
         class: false
-      actions:
-        title: Опции

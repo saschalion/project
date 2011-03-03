@@ -105,9 +105,9 @@ JobeetJob:
 
     # Знание иностранных языков
     name_foreign_language:
-     type: string(100
+     type: string(100)
     degree_knowledge_foreign_languages:
-     type: string(100
+     type: string(100)
 
     # Образование
     name_educational_institution:
@@ -115,7 +115,7 @@ JobeetJob:
     diploma:
      type: string(20)
     year_graduation:
-      type: date
+      type: year
     education_id:
      type: integer
     diploma_qualification:
@@ -157,7 +157,7 @@ JobeetJob:
     children:
      type: string(40)
     date_birth_children:  
-      type: date
+      type: year
     
     # Воинский учет
     group_accounting:

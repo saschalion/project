@@ -21,12 +21,12 @@ class JobeetJobForm extends BaseJobeetJobForm
     unset(
       $this['created_at'], $this['updated_at'],
       $this['expires_at'], $this['is_activated'],
-      $this['token']
+      $this['token'], $this['name']
      );
-      unset($this['name']);
+ 
 
 //          $this->embedRelations(array(
-//    'Pass' => array(
+//    'City' => array(
 //      'considerNewFormEmptyFields'    => array('name', 'repo_path', 'repo_username', 'repo_password'),
 //      'noNewForm'                     => false,
 //      'newFormLabel'                  => null,
@@ -58,11 +58,10 @@ class JobeetJobForm extends BaseJobeetJobForm
 //    $this->widgetSchema['sf_guard_user_id'] = new sfWidgetFormInput(array(
 //        'label' => 'Пользователь'
 //    ));
-
-
 //
-//    $this->widgetSchema['sf_guard_user_id']->setDefault($this->getObject()->getUser()->getUsername() &&
-//            $this->getObject()->getUser()->getFirstName()
+//
+//
+//    $this->widgetSchema['sf_guard_user_id']->setDefault($this->getObject()->getUser()
 //);
 
     $this->validatorSchema['email'] = new sfValidatorAnd(array(
@@ -76,15 +75,31 @@ class JobeetJobForm extends BaseJobeetJobForm
       'mime_types' => 'web_images',
     ));
 
+
+     $this->widgetSchema['type'] = new sfWidgetFormChoice(array(
+      'choices'  => Doctrine_Core::getTable('JobeetJob')->getTypesType(),
+      'expanded' => true
+    ));
+
+    $this->widgetSchema['type_work'] = new sfWidgetFormChoice(array(
+      'choices'  => Doctrine_Core::getTable('JobeetJob')->getTypesTypeWork(),
+      'expanded' => true
+    ));
+
+    $this->widgetSchema['degree_knowledge_foreign_languages'] = new sfWidgetFormChoice(array(
+      'choices'  => Doctrine_Core::getTable('JobeetJob')->getForeignLanguages(),
+      'expanded' => false
+    ));
+
    $this->widgetSchema->setLabels(array(
       'City'    => false,
       'date_preparation' => 'Дата составления',
       'tab_id' => 'Табельный номер',
-      'sf_guard_user_id' => 'Пользователь',
       'number_insurace' => 'ИНН',
       'nature_work' => 'Характер работ',
       'pension_sertificate' => 'Номер свидетельства ОПС',
       'type_work' => 'Вид работы',
+      'sf_guard_user_id' => 'Пользователь',
       'category_id' => 'Должность',
       'last_name' => 'Фамилия',
       'first_name' => 'Имя',
@@ -141,6 +156,10 @@ class JobeetJobForm extends BaseJobeetJobForm
       'more_information' => 'Сведения'
 ));
 
+//    $this->widgetSchema['sf_guard_user_id'] = new sfWidgetFormInputHidden();
+//
+//    $this->validatorSchema['sf_guard_user_id'] = new sfValidatorPass();
+
     $this->widgetSchema->setHelp(
      'passport_number', 'Пример: 4502 605593'
          );
@@ -148,11 +167,6 @@ class JobeetJobForm extends BaseJobeetJobForm
     $this->widgetSchema->setHelp(
      'phone', 'Пример: +7(905)156-89-36'
          );
-
-    $this->widgetSchema['type'] = new sfWidgetFormChoice(array(
-      'choices'  => Doctrine_Core::getTable('JobeetJob')->getTypes(),
-      'expanded' => true
-    ));
 
 parent::configure();
 

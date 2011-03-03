@@ -1,12 +1,3 @@
-sf_guard_permission_SfGuardPermission:
-  class: sfDoctrineRouteCollection
-  options:
-    model:                SfGuardPermission
-    module:               SfGuardPermission
-    prefix_path:          /SfGuardPermission
-    column:               id
-    with_wildcard_routes: true
-
 status:
   class: sfDoctrineRouteCollection
   options:
@@ -51,6 +42,16 @@ jobeet_job:
     prefix_path:          /job
     column:               id
     with_wildcard_routes: true
+
+show:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                JobeetJob
+    prefix_path:          /show
+  url: show
+  param:
+    module: job
+    action: show
 
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
