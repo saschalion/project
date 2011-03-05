@@ -3,7 +3,7 @@
 <form action="<?php echo url_for('@sf_guard_signin') ?>" method="post">
   <table>
     <tbody>
-      <ul><?php echo $form ?></ul>
+      <ul class="signin-ul"><?php echo $form ?></ul>
     </tbody>
     <tfoot>
       <tr>

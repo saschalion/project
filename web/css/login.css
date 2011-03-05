@@ -3,7 +3,7 @@ body {
 }
 
 .login-wrap {
-    width: 550px;
+    width: 350px;
     margin: 30px auto;
     background: #eaeaea;
     -moz-border-radius: 0 0 4px 4px;
@@ -18,14 +18,17 @@ body {
 }
 
 .login-wrap h1 {
-    background: #3f3f3f;
-    color: #fff;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid #ccc;
-    -moz-border-radius: 4px 4px 0 0;
-    -webkit-border-radius: 4px 4px 0 0;
-    border-radius: 4px 4px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    background: -moz-linear-gradient(center top , #829AA8, #405A6A) repeat scroll 0 0 transparent;
+    border-color: #677C89 #677C89 #6B808D;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 18px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.698);
 }
 
 .login-wrap input[type="text"], .login-form input[type="password"] {
@@ -47,7 +50,7 @@ body {
 
 .login-wrap label {
     font-size: .8em;
-    margin-right: 10px;
+    display: block;
 }
 
 .login-form th, .login-form td {
@@ -64,33 +67,52 @@ body {
     margin-top: 10px;
 }
 
-.login-form th {
-    text-align: right;
-    padding-left: 10px;
+.login-form .signin-ul > li {
+    margin-bottom: 15px;
 }
 
-.login-form tfoot td {
-    padding-left: 10px;
+.login-form .signin-ul {
+    margin: 0 auto;
+    display: table;
 }
 
-.login-form li label, .login-form input {
+.login-form .signin-ul li:last-child label, .login-form .signin-ul li:last-child input[type="checkbox"] {
+    width: auto;
     display: inline-block;
 }
 
-.login-form li label {
+.login-form input[type="submit"] {
+    -moz-border-radius: 4px 4px 4px 4px;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    background: -moz-linear-gradient(-90deg, #FFFFFF, #E1E1E1) repeat scroll 0 0 transparent;
+    border-color: -moz-use-text-color -moz-use-text-color #EBEBEB;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: helvetica,arial,freesans,clean,sans-serif;
+    font-size: 12px;
     font-weight: bold;
-    width: 200px;
+    height: 34px;
+    margin-left: 1px;
+    overflow: visible;
+    padding: 0 13px;
+    position: relative;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    top: 1px;
+    white-space: nowrap;
 }
 
-.login-form li {
-    margin-bottom: 8px;
+.error_list {
+    font-size: .8em;
+    color: #ff0000;
 }
 
-.login-form ul {
-    margin-left: 10px;
+.login-form table {
+    margin: 0 auto;
 }
 
-.login-form ul li:last-child label {
-    width: auto;
-}
+
+
 
