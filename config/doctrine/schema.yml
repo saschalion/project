@@ -33,6 +33,21 @@ Status:
       notnull: true
       unique: true
 
+Passport:
+  actAs:
+    Timestampable: ~
+  columns:
+    passport_number:
+      type: string(11)
+      notnull: true
+      unique: true
+    issuance_passports:
+      type: string(50)
+    date_issue_passport:
+     type: date
+    code_division:
+     type: string(7)
+
 JobeetJob:
   actAs:
     Timestampable: ~
@@ -59,6 +74,8 @@ JobeetJob:
       type: integer
       notnull: true
     sf_guard_user_id:
+      type: integer
+    passport_id:
       type: integer
 
     # Общие сведения
@@ -91,17 +108,17 @@ JobeetJob:
     logo:
       type: string(255)
 
-    # Паспорт
-    passport_number:
-      type: string(11)
-      notnull: true
-      unique: true
-    issuance_passports:
-      type: string(50)
-    date_issue_passport:
-     type: date
-    code_division:
-     type: string(7)
+#    # Паспорт
+#    passport_number:
+#      type: string(11)
+#      notnull: true
+#      unique: true
+#    issuance_passports:
+#      type: string(50)
+#    date_issue_passport:
+#     type: date
+#    code_division:
+#     type: string(7)
 
     # Знание иностранных языков
     name_foreign_language:
@@ -233,7 +250,12 @@ JobeetJob:
       foreign: id
       onDelete: cascade
       local: sf_guard_user_id
-      foreignAlias: Campaigns
+      foreignAlias: Users
+    Passport:
+      foreign: id
+      onDelete: cascade
+      local: passport_id
+      foreignAlias: Passport
 
 options:
     collate: utf8_general_ci

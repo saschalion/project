@@ -14,6 +14,7 @@
  * @property integer $category_id
  * @property integer $status_id
  * @property integer $sf_guard_user_id
+ * @property integer $passport_id
  * @property string $last_name
  * @property string $first_name
  * @property string $three_name
@@ -25,10 +26,6 @@
  * @property string $adress
  * @property string $email
  * @property string $logo
- * @property string $passport_number
- * @property string $issuance_passports
- * @property date $date_issue_passport
- * @property string $code_division
  * @property string $name_foreign_language
  * @property string $degree_knowledge_foreign_languages
  * @property string $name_educational_institution
@@ -74,6 +71,7 @@
  * @property City $City
  * @property Status $Status
  * @property sfGuardUser $User
+ * @property Passport $Passport
  * 
  * @method date           getDatePreparation()                    Returns the current record's "date_preparation" value
  * @method string         getTabId()                              Returns the current record's "tab_id" value
@@ -84,6 +82,7 @@
  * @method integer        getCategoryId()                         Returns the current record's "category_id" value
  * @method integer        getStatusId()                           Returns the current record's "status_id" value
  * @method integer        getSfGuardUserId()                      Returns the current record's "sf_guard_user_id" value
+ * @method integer        getPassportId()                         Returns the current record's "passport_id" value
  * @method string         getLastName()                           Returns the current record's "last_name" value
  * @method string         getFirstName()                          Returns the current record's "first_name" value
  * @method string         getThreeName()                          Returns the current record's "three_name" value
@@ -95,10 +94,6 @@
  * @method string         getAdress()                             Returns the current record's "adress" value
  * @method string         getEmail()                              Returns the current record's "email" value
  * @method string         getLogo()                               Returns the current record's "logo" value
- * @method string         getPassportNumber()                     Returns the current record's "passport_number" value
- * @method string         getIssuancePassports()                  Returns the current record's "issuance_passports" value
- * @method date           getDateIssuePassport()                  Returns the current record's "date_issue_passport" value
- * @method string         getCodeDivision()                       Returns the current record's "code_division" value
  * @method string         getNameForeignLanguage()                Returns the current record's "name_foreign_language" value
  * @method string         getDegreeKnowledgeForeignLanguages()    Returns the current record's "degree_knowledge_foreign_languages" value
  * @method string         getNameEducationalInstitution()         Returns the current record's "name_educational_institution" value
@@ -144,6 +139,7 @@
  * @method City           getCity()                               Returns the current record's "City" value
  * @method Status         getStatus()                             Returns the current record's "Status" value
  * @method sfGuardUser    getUser()                               Returns the current record's "User" value
+ * @method Passport       getPassport()                           Returns the current record's "Passport" value
  * @method JobeetJob      setDatePreparation()                    Sets the current record's "date_preparation" value
  * @method JobeetJob      setTabId()                              Sets the current record's "tab_id" value
  * @method JobeetJob      setNumberInsurace()                     Sets the current record's "number_insurace" value
@@ -153,6 +149,7 @@
  * @method JobeetJob      setCategoryId()                         Sets the current record's "category_id" value
  * @method JobeetJob      setStatusId()                           Sets the current record's "status_id" value
  * @method JobeetJob      setSfGuardUserId()                      Sets the current record's "sf_guard_user_id" value
+ * @method JobeetJob      setPassportId()                         Sets the current record's "passport_id" value
  * @method JobeetJob      setLastName()                           Sets the current record's "last_name" value
  * @method JobeetJob      setFirstName()                          Sets the current record's "first_name" value
  * @method JobeetJob      setThreeName()                          Sets the current record's "three_name" value
@@ -164,10 +161,6 @@
  * @method JobeetJob      setAdress()                             Sets the current record's "adress" value
  * @method JobeetJob      setEmail()                              Sets the current record's "email" value
  * @method JobeetJob      setLogo()                               Sets the current record's "logo" value
- * @method JobeetJob      setPassportNumber()                     Sets the current record's "passport_number" value
- * @method JobeetJob      setIssuancePassports()                  Sets the current record's "issuance_passports" value
- * @method JobeetJob      setDateIssuePassport()                  Sets the current record's "date_issue_passport" value
- * @method JobeetJob      setCodeDivision()                       Sets the current record's "code_division" value
  * @method JobeetJob      setNameForeignLanguage()                Sets the current record's "name_foreign_language" value
  * @method JobeetJob      setDegreeKnowledgeForeignLanguages()    Sets the current record's "degree_knowledge_foreign_languages" value
  * @method JobeetJob      setNameEducationalInstitution()         Sets the current record's "name_educational_institution" value
@@ -213,6 +206,7 @@
  * @method JobeetJob      setCity()                               Sets the current record's "City" value
  * @method JobeetJob      setStatus()                             Sets the current record's "Status" value
  * @method JobeetJob      setUser()                               Sets the current record's "User" value
+ * @method JobeetJob      setPassport()                           Sets the current record's "Passport" value
  * 
  * @package    jobeet
  * @subpackage model
@@ -260,6 +254,9 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
         $this->hasColumn('sf_guard_user_id', 'integer', null, array(
              'type' => 'integer',
              ));
+        $this->hasColumn('passport_id', 'integer', null, array(
+             'type' => 'integer',
+             ));
         $this->hasColumn('last_name', 'string', 100, array(
              'type' => 'string',
              'length' => 100,
@@ -305,23 +302,6 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
         $this->hasColumn('logo', 'string', 255, array(
              'type' => 'string',
              'length' => 255,
-             ));
-        $this->hasColumn('passport_number', 'string', 11, array(
-             'type' => 'string',
-             'notnull' => true,
-             'unique' => true,
-             'length' => 11,
-             ));
-        $this->hasColumn('issuance_passports', 'string', 50, array(
-             'type' => 'string',
-             'length' => 50,
-             ));
-        $this->hasColumn('date_issue_passport', 'date', null, array(
-             'type' => 'date',
-             ));
-        $this->hasColumn('code_division', 'string', 7, array(
-             'type' => 'string',
-             'length' => 7,
              ));
         $this->hasColumn('name_foreign_language', 'string', 100, array(
              'type' => 'string',
@@ -507,6 +487,11 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
 
         $this->hasOne('sfGuardUser as User', array(
              'local' => 'sf_guard_user_id',
+             'foreign' => 'id',
+             'onDelete' => 'cascade'));
+
+        $this->hasOne('Passport', array(
+             'local' => 'passport_id',
              'foreign' => 'id',
              'onDelete' => 'cascade'));
 

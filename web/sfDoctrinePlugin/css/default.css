@@ -226,7 +226,7 @@ li.print a {
   display: block;
   display: inline-block;
   text-align: left;
-  width: 11em;
+  width: 12em;
   color: #3f3f3f;
   font-weight: bold;
   vertical-align: middle;
@@ -241,8 +241,36 @@ li.print a {
 #sf_admin_container .sf_admin_form_row
 {
   clear: both;
+  border-bottom: 1px solid #ddd;
+}
+
+#sf_admin_container .sf_admin_form_row div
+{
+  padding: 5px;
+}
+
+#sf_admin_container .sf_admin_form_row .content
+{
+  padding: 0 !important;
+}
+
+.sf_admin_form_field_Passport div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.sf_admin_form_field_Passport .content {
+    width: 100% !important;
+}
+
+.content table tr {
   padding: 10px;
   border-bottom: 1px solid #ddd;
+}
+
+.content table th {
+  padding: 5px !important;
+  border-bottom: 1px solid #ddd !important
 }
 
 #sf_admin_container .sf_admin_form_row .content

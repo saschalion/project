@@ -51,6 +51,7 @@ public function executeIndex(sfWebRequest $request)
     $this->getResponse()->addStylesheet('reset.css', 'last');
     $this->getResponse()->addStylesheet('table_form.css', 'last');
     $this->getResponse()->addStylesheet('form_general_back.css', 'last');
+    $this->getResponse()->addStylesheet('form_general.css', 'last');
   }
 
   public function executeCreate(sfWebRequest $request)
@@ -71,6 +72,7 @@ public function executeIndex(sfWebRequest $request)
     $this->getResponse()->addStylesheet('reset.css', 'last');
     $this->getResponse()->addStylesheet('table_form.css', 'last');
     $this->getResponse()->addStylesheet('form_general_back.css', 'last');
+    $this->getResponse()->addStylesheet('form_general.css', 'last');
   }
 
 
@@ -84,6 +86,7 @@ public function executeIndex(sfWebRequest $request)
             $this->getResponse()->addStylesheet('reset.css', 'last');
             $this->getResponse()->addStylesheet('table_form.css', 'last');
             $this->getResponse()->addStylesheet('form_general_back.css', 'last');
+            $this->getResponse()->addStylesheet('form_general.css', 'last');
             $this->setTemplate('edit');
         }
           public function executeShow(sfWebRequest $request)

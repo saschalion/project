@@ -116,3 +116,17 @@ display:block;
  margin:1em 1em 0 0;
  border:2px solid #ddd;
  }
+
+
+ .form-ul label, .form-ul input[type='text'], .form-ul select {
+    display: inline-block !important;
+}
+
+ .form-ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 7px 0 7px 5px;
+}
+
+.form-ul label {
+    width: 12em !important;
+}

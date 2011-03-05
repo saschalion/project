@@ -25,27 +25,27 @@ class JobeetJobForm extends BaseJobeetJobForm
      );
  
 
-//          $this->embedRelations(array(
-//    'City' => array(
-//      'considerNewFormEmptyFields'    => array('name', 'repo_path', 'repo_username', 'repo_password'),
-//      'noNewForm'                     => false,
-//      'newFormLabel'                  => null,
-//      'newFormClass'                  => null,
-//      'newFormClassArgs'              => array(array('sf_user' => $this->getOption('sf_user'))),
-//      'displayEmptyRelations'         => true,
-//      'formClass'                     => null,
-//      'formClassArgs'                 => array(array('ah_add_delete_checkbox' => false)),
-//      'newFormAfterExistingRelations' => true,
-//      'formFormatter'                 => null,
-//      'multipleNewForms'              => true,
-//      'newFormsInitialCount'          => 2,
-//      'newFormsContainerForm'         => 'ahNewRelationsContainerForm', // pass BaseForm object here or we will create ahNewRelationsContainerForm
-//      'newRelationButtonLabel'        => '+',
-//      'newRelationAddByCloning'       => true,
-//      'newRelationUseJSFramework'     => 'jQuery',
-//      'customEmbeddedFormLabelMethod' => 'getLabelTitle'
-//    )
-//  ));
+          $this->embedRelations(array(
+    'Passport' => array(
+      'considerNewFormEmptyFields'    => array('name', 'repo_path', 'repo_username', 'repo_password'),
+      'noNewForm'                     => true,
+      'newFormLabel'                  => null,
+      'newFormClass'                  => null,
+      'newFormClassArgs'              => array(array('sf_user' => $this->getOption('sf_user'))),
+      'displayEmptyRelations'         => true,
+      'formClass'                     => null,
+      'formClassArgs'                 => array(array('ah_add_delete_checkbox' => false)),
+      'newFormAfterExistingRelations' => true,
+      'formFormatter'                 => null,
+      'multipleNewForms'              => true,
+      'newFormsInitialCount'          => 2,
+      'newFormsContainerForm'         => 'ahNewRelationsContainerForm', // pass BaseForm object here or we will create ahNewRelationsContainerForm
+      'newRelationButtonLabel'        => '+',
+      'newRelationAddByCloning'       => true,
+      'newRelationUseJSFramework'     => 'jQuery',
+      'customEmbeddedFormLabelMethod' => 'getLabelTitle'
+    )
+  ));
 
 
 
@@ -98,6 +98,7 @@ class JobeetJobForm extends BaseJobeetJobForm
 
    $this->widgetSchema->setLabels(array(
       'City'    => false,
+      'Passport'    => false,
       'date_preparation' => 'Дата составления',
       'tab_id' => 'Табельный номер',
       'number_insurace' => 'ИНН',

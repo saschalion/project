@@ -35,7 +35,7 @@
 .sf_admin_form textarea, .sf_admin_form input[type=text], .sf_admin_filter input[type=text],
 .sf_admin_form input[type="password"],
 .sf_admin_form select[multiple="multiple"] {
-    width: 100%;
+    width: 584px;
     border: 1px solid #ccc;
     padding: 5px;
     color: #686161;
@@ -62,10 +62,10 @@ label .red {
     color: #ff0000;
 }
 
-.sf_admin_text table td, .sf_admin_text table th {
+/*.sf_admin_text table td, .sf_admin_text table th {
     padding: 0 !important;
     border-bottom: none !important;
-}
+}*/
 
 .sf_admin_text table th {
     width: 11.2em !important;
