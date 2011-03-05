@@ -14,6 +14,7 @@ body {
 .login-form {
     border: 1px solid #ccc;
     border-top: none;
+    padding-top: 30px;
 }
 
 .login-wrap h1 {
@@ -71,3 +72,25 @@ body {
 .login-form tfoot td {
     padding-left: 10px;
 }
+
+.login-form li label, .login-form input {
+    display: inline-block;
+}
+
+.login-form li label {
+    font-weight: bold;
+    width: 200px;
+}
+
+.login-form li {
+    margin-bottom: 8px;
+}
+
+.login-form ul {
+    margin-left: 10px;
+}
+
+.login-form ul li:last-child label {
+    width: auto;
+}
+

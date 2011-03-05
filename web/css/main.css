@@ -34,6 +34,12 @@ ul.main-ul li {
     color: #fff;
 }
 
+.main-ul li.selected a, .main-ul li.selected a:hover {
+    background: #595858;
+    color: #fff;
+    text-decoration: none;
+}
+
 .main-ul li:first-child {
     border: none;
 }

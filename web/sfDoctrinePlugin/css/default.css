@@ -7,7 +7,7 @@
 }
 
 #sf_admin_list_batch_actions {
-    width: 40px;
+    width: 21px;
     text-align: center;
 }
 
@@ -38,6 +38,7 @@
 {
   background-color: #e7eef6;
   white-space: nowrap;
+  text-align: left;
 }
 
 #sf_admin_container ul.error_list

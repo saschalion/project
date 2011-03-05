@@ -17,7 +17,7 @@
             include_partial(
               'global/form_actions',
               array(
-                'jobeet_job' => $jobeet_job,
+                'sf_guard_user' => $sf_guard_user,
                 'form' => $form,
                 'configuration' => $configuration,
                 'helper' => $helper

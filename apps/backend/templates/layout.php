@@ -9,17 +9,19 @@
     <?php include_javascripts() ?>
   </head>
   <body>
+  
   <?php if ($sf_user->isAuthenticated()): ?>
+  <?php $module = sfContext::getInstance()->getModuleName(); ?>
     <div class="post">
                 <ul class="main-ul">
-                  <li>
+                  <li <?php echo ($module == 'job' ? ' "class="selected"' : ''); ?>>
                     <?php echo link_to(
                             'Сотрудники',
                             'job/index'
                             );
                     ?>
                   </li>
-                  <li>
+                  <li <?php echo ($module == 'category' ? ' "class="selected"' : ''); ?>>
                     <?php echo link_to(
                             'Добавить специальность',
                             'category/index'
@@ -27,28 +29,28 @@
                     ?>
                   </li>
 
-                  <li>
+                  <li <?php echo ($module == 'education' ? ' "class="selected"' : ''); ?>>
                     <?php echo link_to(
                             'Образование',
                             'education/index'
                             );
                     ?>
                   </li>
-                   <li>
+                   <li <?php echo ($module == 'city' ? ' "class="selected"' : ''); ?>>
                     <?php echo link_to(
                             'Города',
                             'city/index'
                             );
                     ?>
                   </li>                 
-                  <li>
+                  <li <?php echo ($module == 'sfGuardUser' ? ' "class="selected"' : ''); ?>>
                     <?php echo link_to(
                             'Пользователи',
                             'sf_guard_user'
                             );
                     ?>
                   </li>
-                  <li>
+                  <li <?php echo ($module == 'status' ? ' "class="selected"' : ''); ?>>
                     <?php echo link_to(
                             'Добавить статус',
                             'status'

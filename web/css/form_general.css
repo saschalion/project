@@ -122,6 +122,10 @@ display:block;
     display: inline-block !important;
 }
 
+.form-ul input[type='text'] {
+    width: 550px;
+}
+
  .form-ul li {
     border-bottom: 1px solid #ddd;
     padding: 7px 0 7px 5px;

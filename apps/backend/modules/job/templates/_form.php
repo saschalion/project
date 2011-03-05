@@ -2,12 +2,6 @@
 <?php use_javascripts_for_form($form) ?>
 <div class="sf_admin_form">
   <?php echo form_tag_for($form, '@jobeet_job') ?>
-    <?php echo link_to(
-                            'Печать',
-                            'job/show?id='.$jobeet_job->getId(), array('target' => '_blank')
-
-                            );
-                    ?>
     <?php
             include_partial(
               'global/form_actions',

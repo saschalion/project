@@ -35,7 +35,7 @@
 .sf_admin_form textarea, .sf_admin_form input[type=text], .sf_admin_filter input[type=text],
 .sf_admin_form input[type="password"],
 .sf_admin_form select[multiple="multiple"] {
-    width: 584px;
+    width: 100%;
     border: 1px solid #ccc;
     padding: 5px;
     color: #686161;
