@@ -12,7 +12,7 @@ abstract class BaseSfGuardUserGeneratorConfiguration extends sfModelGeneratorCon
 {
   public function getActionsDefault()
   {
-    return array(  'title' => 'Опции',);
+    return array();
   }
 
   public function getFormActions()
@@ -107,7 +107,7 @@ abstract class BaseSfGuardUserGeneratorConfiguration extends sfModelGeneratorCon
       'salt' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'password' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',  'label' => 'Пароль',),
       'is_active' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',  'label' => 'Активный',),
-      'is_super_admin' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',  'label' => 'Суперадмин',),
+      'is_super_admin' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',  'label' => 'Супер админ',),
       'last_login' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
       'created_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
       'updated_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
@@ -260,7 +260,7 @@ abstract class BaseSfGuardUserGeneratorConfiguration extends sfModelGeneratorCon
 
   public function getDefaultSort()
   {
-    return array('username', 'asc');
+    return array(null, null);
   }
 
   public function getTableMethod()
