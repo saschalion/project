@@ -41,6 +41,7 @@ public function executeIndex(sfWebRequest $request)
     $this->getResponse()->addStylesheet('reset.css', 'last');
     $this->getResponse()->addStylesheet('table_form.css', 'last');
     $this->getResponse()->addStylesheet('form_general_back.css', 'last');
+    $this->getResponse()->addStylesheet('form_general.css', 'last');
   }
 
   public function executeNew(sfWebRequest $request)

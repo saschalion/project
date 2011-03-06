@@ -134,3 +134,9 @@ display:block;
 .form-ul label {
     width: 12em !important;
 }
+
+.filter-form-ul input[type="text"] {
+    margin-bottom: 10px;
+}
+
+

@@ -17,7 +17,8 @@ generator:
       list:
          display: [name]
          title: Образование
-      filter: ~
+      filter:
+        class: false
       form:    ~
       edit:    ~
       new:     ~

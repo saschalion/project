@@ -101,6 +101,7 @@
 #sf_admin_bar
 {
    float: right;
+   width: 215px;
 }
 
 .sf_admin_pagination
@@ -282,7 +283,7 @@ li.print a {
 
 #sf_admin_container .help
 {
-  padding-left: 140px;
+  margin-left: 150px;
   color: #aaa;
   font-size: .9em;
   font-style: italic;

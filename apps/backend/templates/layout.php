@@ -9,70 +9,20 @@
     <?php include_javascripts() ?>
   </head>
   <body>
-  
-  <?php if ($sf_user->isAuthenticated()): ?>
-  <?php $module = sfContext::getInstance()->getModuleName(); ?>
-    <div class="post">
-                <ul class="main-ul">
-                  <li <?php echo ($module == 'job' ? ' "class="selected"' : ''); ?>>
-                    <?php echo link_to(
-                            'Сотрудники',
-                            'job/index'
-                            );
-                    ?>
-                  </li>
-                  <li <?php echo ($module == 'category' ? ' "class="selected"' : ''); ?>>
-                    <?php echo link_to(
-                            'Добавить специальность',
-                            'category/index'
-                            );
-                    ?>
-                  </li>
+  <div class="wrap">
 
-                  <li <?php echo ($module == 'education' ? ' "class="selected"' : ''); ?>>
-                    <?php echo link_to(
-                            'Образование',
-                            'education/index'
-                            );
-                    ?>
-                  </li>
-                   <li <?php echo ($module == 'city' ? ' "class="selected"' : ''); ?>>
-                    <?php echo link_to(
-                            'Города',
-                            'city/index'
-                            );
-                    ?>
-                  </li>                 
-                  <li <?php echo ($module == 'sfGuardUser' ? ' "class="selected"' : ''); ?>>
-                    <?php echo link_to(
-                            'Пользователи',
-                            'sf_guard_user'
-                            );
-                    ?>
-                  </li>
-                  <li <?php echo ($module == 'status' ? ' "class="selected"' : ''); ?>>
-                    <?php echo link_to(
-                            'Добавить статус',
-                            'status'
-                            );
-                    ?>
-                  </li>
-                  <li>
-                    <?php echo link_to(
-                            'Выход',
-                            'sf_guard_signout'
-                            );
-                    ?>
-                  </li>
-                  <li>
-                    <?php echo $sf_user->getGuardUser(); ?>
-                  </li>
-                  
-              </ul>
+        <div class="wrap-l">
+            <div class="wrap-r">
+                <div class="wrapper">                
+                <?php if ($sf_user->isAuthenticated()): ?>
+                    <?php include_partial('global/menu', array()); ?>
+                <?php endif ?>
+                <div class="content">
+                     <?php echo $sf_content ?>
+                </div>
             </div>
-    <?php endif ?>
-      <div class="clear"></div>
-    <?php echo $sf_content ?>
-    
+        </div>
+    </div>
+</div>
   </body>
 </html>

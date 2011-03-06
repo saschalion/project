@@ -9,6 +9,9 @@ body {
     -moz-border-radius: 0 0 4px 4px;
     -webkit-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .login-form {
@@ -49,7 +52,7 @@ body {
 }
 
 .login-wrap label {
-    font-size: .8em;
+    font-size: .9em;
     display: block;
 }
 
@@ -79,6 +82,8 @@ body {
 .login-form .signin-ul li:last-child label, .login-form .signin-ul li:last-child input[type="checkbox"] {
     width: auto;
     display: inline-block;
+    font-size: .8em;
+    vertical-align: middle;
 }
 
 .login-form input[type="submit"] {
