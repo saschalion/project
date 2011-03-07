@@ -1,3 +1,12 @@
+sf_guard_group:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                SfGuardGroup
+    module:               SfGuardGroup
+    prefix_path:          /SfGuardGroup
+    column:               id
+    with_wildcard_routes: true
+
 passport:
   class: sfDoctrineRouteCollection
   options:

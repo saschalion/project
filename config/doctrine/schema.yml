@@ -55,6 +55,8 @@ JobeetJob:
     # Начальные сведения
     date_preparation:
       type: date
+    price:
+      type: string(30)
     tab_id:
       type: string(30)
       unique: true

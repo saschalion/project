@@ -17,6 +17,7 @@ abstract class BaseJobeetJobForm extends BaseFormDoctrine
     $this->setWidgets(array(
       'id'                                 => new sfWidgetFormInputHidden(),
       'date_preparation'                   => new sfWidgetFormDate(),
+      'price'                              => new sfWidgetFormInputText(),
       'tab_id'                             => new sfWidgetFormInputText(),
       'number_insurace'                    => new sfWidgetFormInputText(),
       'pension_sertificate'                => new sfWidgetFormInputText(),
@@ -84,6 +85,7 @@ abstract class BaseJobeetJobForm extends BaseFormDoctrine
     $this->setValidators(array(
       'id'                                 => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'date_preparation'                   => new sfValidatorDate(array('required' => false)),
+      'price'                              => new sfValidatorString(array('max_length' => 30, 'required' => false)),
       'tab_id'                             => new sfValidatorString(array('max_length' => 30)),
       'number_insurace'                    => new sfValidatorString(array('max_length' => 12, 'required' => false)),
       'pension_sertificate'                => new sfValidatorString(array('max_length' => 11, 'required' => false)),

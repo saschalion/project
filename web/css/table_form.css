@@ -117,19 +117,18 @@ label .red {
 }
 
 #sf_admin_container ul.error_list {
-  margin-bottom: 7px;
   color: #d33;
   border: none;
-  background-color: #f33;
+  margin-left: 150px;
 }
 
 #sf_admin_container ul.error_list li
 {
   padding: 4px;
   padding-left: 25px;
-  list-style: none;
-  color: #fff;
-  background: url(../images/error.png) no-repeat 4px 4px;
+  border: none;
+  color: #ff0000;
+  background: url(/images/icons/error.png) no-repeat 4px 4px;
 }
 
 #sf_admin_container input
@@ -314,6 +313,18 @@ li.print a {
   border-bottom: 1px solid #ddd;
 }
 
+.errors .error_list {
+    display: none;
+}
+
+li .error_list {
+    display: block !important;
+}
+
+fieldset#sf_fieldset____________________________ .error_list {
+    display: block !important;
+}
+
 #sf_admin_container .sf_admin_form_row div
 {
   padding: 9px 5px;
@@ -332,7 +343,14 @@ li.print a {
     margin-bottom: 10px;
 }
 
-.sf_admin_form_field_Passport .content {
+.sf_admin_form_field_Passport .content,
+.sf_admin_form_field_Language .content,
+.sf_admin_form_field_EducationalInstitution .content,
+.sf_admin_form_field_EducationalInstitutionOther .content,
+.sf_admin_form_field_Profession .content,
+.sf_admin_form_field_Family .content,
+.sf_admin_form_field_MilitaryRecords .content,
+.sf_admin_form_field_LeavingTable .content {
     width: 100% !important;
 }
 
@@ -372,10 +390,10 @@ li.print a {
   padding-left: 0;
 }
 
-#sf_admin_container .errors input, #sf_admin_container .errors select
+/*#sf_admin_container .errors input, #sf_admin_container .errors select
 {
   border: 1px solid #f22;
-}
+}*/
 
 #sf_admin_container .sf_admin_list .sf_admin_boolean
 {

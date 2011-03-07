@@ -23,5 +23,7 @@ class PassportForm extends BasePassportForm
       'date_issue_passport' => 'Дата выдачи',
       'code_division' => 'Код подразделения'
     ));
+
   }
+
 }

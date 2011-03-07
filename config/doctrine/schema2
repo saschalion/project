@@ -1,0 +1,329 @@
+JobeetCategory:
+  actAs:
+    Timestampable: ~
+  columns:
+    name:
+      type: string(255)
+      notnull: true
+      unique: true
+
+Education:
+  actAs:
+    Timestampable: ~
+  columns:
+    name:
+      type: string(255)
+      notnull: true
+      unique: true
+
+City:
+  actAs:
+    Timestampable: ~
+  columns:
+    name:
+      type: string(255)
+      notnull: true
+
+Status:
+  actAs:
+    Timestampable: ~
+  columns:
+    name:
+      type: string(255)
+      notnull: true
+      unique: true
+
+# Паспорт
+Passport:
+  actAs:
+    Timestampable: ~
+  columns:
+    passport_number:
+      type: string(11)
+      notnull: true
+      unique: true
+    issuance_passports:
+      type: string(50)
+    date_issue_passport:
+     type: date
+    code_division:
+     type: string(7)
+
+# Знание иностранных языков
+Language:
+  columns:
+    name_foreign_language:
+     type: string(100)
+    degree_knowledge_foreign_languages:
+     type: string(100)
+
+# Образование
+EducationalInstitution:
+  columns:
+    education_id:
+      type: integer
+    name_educational_institution:
+     type: string(150)
+    diploma:
+     type: string(20)
+    year_graduation:
+      type: date
+    education_id:
+     type: integer
+    diploma_qualification:
+      type: string(100)
+    speciality_diploma:
+     type: string(150)
+
+  relations:
+    Education:
+      onDelete: RESTRICT
+      local: education_id
+      foreign: id
+      foreignAlias: Education
+
+# Послевузовое профессиональное образование
+EducationalInstitutionOther:
+  columns:
+    name_educational_institution_extra:
+      type: string(150)
+    diploma_extra:
+     type: string(20)
+    year_graduation_extra:
+      type: date
+    study_extra:
+     type: string(30)
+    diploma_qualification_extra:
+      type: string(100)
+    speciality_diploma_extra:
+      type: string(150)
+
+# Профессия
+Profession:
+  columns:
+    main_profession:
+      type: string(40)
+    other_profession:
+      type: string(40)
+    total_length:
+     type: string(2)
+    continuous_service:
+     type: string(2)
+    last_job:
+     type: string(100)
+    termination_date:
+     type: date
+
+# Семейное положение
+Family:
+  columns:
+    marriage_status:
+     type: string(40)
+    relation_degree:
+     type: string(40)
+    children:
+     type: string(40)
+    date_birth_children:
+      type: date
+
+# Воинский учет
+MilitaryRecords:
+  columns:
+    group_accounting:
+      type: string(255)
+    category_accounting:
+      type: string(255)
+    composition:
+      type: string(255)
+    military_rank:
+      type: string(255)
+    military_discount_specialty:
+      type: string(255)
+    number_military_discount_specialty:
+      type: string(255)
+    fitness:
+     type: string(255)
+    name_district_military_office:
+     type: string(255)
+    number_special_accounting:
+      type: string(255)
+
+# Отпуск
+LeavingTable:
+  columns:
+    kind_leave:
+      type: string(80)
+    getting_started:
+      type: date
+    end_work:
+      type: date
+    number_vacation_days:
+      type: string(2)
+    commencement:
+     type: date
+    end_leave:
+      type: date
+    base_release:
+      type: string(60)
+
+JobeetJob:
+  actAs:
+    Timestampable: ~
+  columns:
+    language_id:
+      type: integer
+    educational_institution_id:
+      type: integer
+    educational_institution_other_id:
+      type: integer
+    profession_id:
+      type: integer
+    family_id:
+      type: integer
+    military_records_id:
+      type: integer
+    leave_id:
+      type: integer
+    category_id:
+      type: integer
+      notnull: true
+    status_id:
+      type: integer
+      notnull: true
+    sf_guard_user_id:
+      type: integer
+    passport_id:
+      type: integer
+
+    # Начальные сведения
+    date_preparation:
+      type: date
+    tab_id:
+      type: string(30)
+      unique: true
+      notnull: true
+    number_insurace:
+      type: string(12)
+    pension_sertificate:
+      type: string(11)
+    nature_work:
+      type: string(30)
+    type_work:
+      type: string(30)
+    price:
+      type: string(6)
+
+    # Общие сведения
+    last_name:
+      type: string(100)
+    first_name:
+      type: string(100)
+    three_name:
+      type: string(100)
+      notnull: true
+    type:
+      type: string(255)
+    data_birth:
+      type: date
+      notnull: true
+    phone:
+      type: string(12)
+      notnull: true
+    city_id:
+      type: integer
+      notnull: true
+    adress:
+      type: string(150)
+    email:     
+      type: string(255)
+      unique: true
+    logo:
+      type: string(255)
+
+    # Дополнительные сведения
+    more_information:
+     type: string(255)
+    token:
+      type: string(255)
+      notnull: true
+      unique: true    
+   
+  relations:
+    JobeetCategory:
+      onDelete: CASCADE
+      local: category_id
+      foreign: id
+      foreignAlias: JobeetJobs
+
+    City:
+      onDelete: CASCADE
+      local: city_id
+      foreign: id
+      foreignAlias: City
+
+    Status:
+      onDelete: CASCADE
+      local: status_id
+      foreign: id
+      foreignAlias: Status
+
+    User:
+      class: sfGuardUser
+      foreign: id
+      onDelete: cascade
+      local: sf_guard_user_id
+      foreignAlias: Users
+
+    Passport:
+      foreign: id
+      onDelete: cascade
+      local: passport_id
+      foreignAlias: Passport
+
+    Language:
+      foreign: id
+      onDelete: cascade
+      local: language_id
+      foreignAlias: Language
+
+    EducationalInstitution:
+      foreign: id
+      onDelete: cascade
+      local: educational_institution_id
+      foreignAlias: EducationalInstitution
+
+    EducationalInstitutionOther:
+      foreign: id
+      onDelete: cascade
+      local: educational_institution_other_id
+      foreignAlias: EducationalInstitutionOther
+
+    Profession:
+      foreign: id
+      onDelete: cascade
+      local: profession_id
+      foreignAlias: Profession
+
+    Family:
+      foreign: id
+      onDelete: cascade
+      local: family_id
+      foreignAlias: Family
+
+    MilitaryRecords:
+      foreign: id
+      onDelete: cascade
+      local: military_records_id
+      foreignAlias: MilitaryRecords
+      
+    LeavingTable:
+      foreign: id
+      onDelete: cascade
+      local: leave_id
+      foreignAlias: LeavingTable
+
+options:
+    collate: utf8_general_ci
+    charset: utf8
+
+

@@ -29,6 +29,13 @@ class JobeetJobTable extends Doctrine_Table
     'Временная'  => 'Временная'
         );
 
+     static public $relationdegree = array(
+     '' => '',
+     'дочь' => 'дочь',
+     'сын'  => 'сын',
+     'жена' => 'жена'
+        );
+
 
       public function getNatureWork()
       {
@@ -48,6 +55,11 @@ class JobeetJobTable extends Doctrine_Table
      public function getTypesTypeWork()
       {
         return self::$typestypework;
+      }
+
+     public function getRelationDegree()
+      {
+        return self::$relationdegree;
       }
 
 

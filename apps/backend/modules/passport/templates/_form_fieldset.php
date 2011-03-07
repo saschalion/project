@@ -14,5 +14,5 @@
       'field'      => $field,
       'class'      => 'sf_admin_form_row sf_admin_'.strtolower($field->getType()).' sf_admin_form_field_'.$name,
     )) ?>
-  <?php endforeach; ?>
+  <?php endforeach; ?>    
 </fieldset>

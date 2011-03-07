@@ -46,7 +46,7 @@
                     <?php echo $jobeet_job->getTypeWork() ?>
                 </td>
                 <td>
-                    <?php echo $jobeet_job->getType() ?>
+                    <?php echo $jobeet_job->getPassport()->getPassportNumber() ?>
                 </td>
 
             </tr>

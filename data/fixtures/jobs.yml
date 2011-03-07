@@ -5,6 +5,7 @@ JobeetJob:
     Education: top
     Status: work
     City: moscow
+    price: 15000
     type:         M
     tab_id:      344-108
     logo:         

@@ -27,10 +27,10 @@ class JobeetJobForm extends BaseJobeetJobForm
 
           $this->embedRelations(array(
     'Passport' => array(
-      'considerNewFormEmptyFields'    => array('name', 'repo_path', 'repo_username', 'repo_password'),
+      'considerNewFormEmptyFields'    => array('passport_number'),
       'noNewForm'                     => true,
       'newFormLabel'                  => null,
-      'newFormClass'                  => null,
+      'newFormClass'                  => 'Passport',
       'newFormClassArgs'              => array(array('sf_user' => $this->getOption('sf_user'))),
       'displayEmptyRelations'         => true,
       'formClass'                     => null,
@@ -78,23 +78,42 @@ class JobeetJobForm extends BaseJobeetJobForm
 
      $this->widgetSchema['type'] = new sfWidgetFormChoice(array(
       'choices'  => Doctrine_Core::getTable('JobeetJob')->getTypesType(),
-      'expanded' => true
-    ));
+      'expanded' => true,
+      'default'  => 'M'
+     ));
     
      $this->widgetSchema['nature_work'] = new sfWidgetFormChoice(array(
       'choices'  => Doctrine_Core::getTable('JobeetJob')->getNatureWork(),
-      'expanded' => true
+      'expanded' => true,
+      'default'  => 'Постоянная'
     ));
 
     $this->widgetSchema['type_work'] = new sfWidgetFormChoice(array(
       'choices'  => Doctrine_Core::getTable('JobeetJob')->getTypesTypeWork(),
-      'expanded' => true
+      'expanded' => true,
+      'default'  => 'Основная'
     ));
 
     $this->widgetSchema['degree_knowledge_foreign_languages'] = new sfWidgetFormChoice(array(
       'choices'  => Doctrine_Core::getTable('JobeetJob')->getForeignLanguages(),
       'expanded' => false
     ));
+
+    $this->widgetSchema['relation_degree'] = new sfWidgetFormChoice(array(
+      'choices'  => Doctrine_Core::getTable('JobeetJob')->getRelationDegree(),
+      'expanded' => false
+    ));
+
+    $this->widgetSchema['marriage_status'] = new sfWidgetFormChoice(array(
+      'choices'  => array(
+          'Не замужем / Холост' => 'Не замужем / Холост',
+          'Замужем / Женат' => 'Замужем / Женат'
+          
+      ),
+      'expanded' => false
+    ));
+
+
 
    $this->widgetSchema->setLabels(array(
       'City'    => false,
@@ -159,7 +178,9 @@ class JobeetJobForm extends BaseJobeetJobForm
       'commencement' => 'Дата начала',
       'end_leave' => 'Дата окончания',
       'base_release' => 'Основание',
-      'more_information' => 'Сведения'
+      'more_information' => 'Сведения',
+      'price' => 'Ставка, руб',
+       'relation_degree' => 'Степень родства'
 ));
 
 //    $this->widgetSchema['sf_guard_user_id'] = new sfWidgetFormInputHidden();

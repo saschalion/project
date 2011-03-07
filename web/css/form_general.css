@@ -86,8 +86,12 @@ display:block;
 }
 
 
-.form-ul label, .form-ul input[type='text'], .form-ul select {
+.form-ul label, .form-ul input[type='text'], .form-ul select, .form-ul .radio_list {
     display: inline-block !important;
+}
+
+.form-ul .radio_list li {
+    border-bottom: none;
 }
 
 .form-ul input[type='text'] {

@@ -13,4 +13,17 @@ require_once dirname(__FILE__).'/../lib/passportGeneratorHelper.class.php';
  */
 class passportActions extends autoPassportActions
 {
+    public function preExecute()
+        {
+            parent::preExecute();
+              $this->form = new sfForm();
+  $this->form->setWidgets(array(
+    'name'    => new sfWidgetFormInputText(),
+    'email'   => new sfWidgetFormInputText(array('default' => 'me@example.com')),
+    'subject' => new sfWidgetFormChoice(array('choices' => array('Subject A', 'Subject B', 'Subject C'))),
+    'message' => new sfWidgetFormTextarea(),
+  ));
+
+        }
+
 }

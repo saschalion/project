@@ -1,0 +1,5 @@
+# data/fixtures/passport.yml
+Passport:
+  pass:
+    id: 1
+    passport_number: 5698

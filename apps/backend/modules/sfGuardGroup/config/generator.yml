@@ -9,6 +9,7 @@ generator:
     plural:                ~
     route_prefix:          sf_guard_group
     with_doctrine_route:   true
+    actions_base_class:    sfActions
 
     config:
       list:

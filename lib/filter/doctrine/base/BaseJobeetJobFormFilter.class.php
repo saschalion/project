@@ -14,6 +14,7 @@ abstract class BaseJobeetJobFormFilter extends BaseFormFilterDoctrine
   {
     $this->setWidgets(array(
       'date_preparation'                   => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
+      'price'                              => new sfWidgetFormFilterInput(),
       'tab_id'                             => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'number_insurace'                    => new sfWidgetFormFilterInput(),
       'pension_sertificate'                => new sfWidgetFormFilterInput(),
@@ -80,6 +81,7 @@ abstract class BaseJobeetJobFormFilter extends BaseFormFilterDoctrine
 
     $this->setValidators(array(
       'date_preparation'                   => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
+      'price'                              => new sfValidatorPass(array('required' => false)),
       'tab_id'                             => new sfValidatorPass(array('required' => false)),
       'number_insurace'                    => new sfValidatorPass(array('required' => false)),
       'pension_sertificate'                => new sfValidatorPass(array('required' => false)),
@@ -163,6 +165,7 @@ abstract class BaseJobeetJobFormFilter extends BaseFormFilterDoctrine
     return array(
       'id'                                 => 'Number',
       'date_preparation'                   => 'Date',
+      'price'                              => 'Text',
       'tab_id'                             => 'Text',
       'number_insurace'                    => 'Text',
       'pension_sertificate'                => 'Text',

@@ -16,6 +16,7 @@
                                 );
                                 ?>
                             </li>
+                            <?php if ($sf_user->getGuardUser()->getUsername() == 'admin'): ?>
                             <li class="state-li<?php
                             echo ($module == 'city' ? ' selected' : ''); ?>">
                                 <?php echo link_to(
@@ -39,7 +40,7 @@
                                     'category/index'
                                 );
                                 ?>
-                            </li>
+                            </li>                            
                             <li class="status-li<?php
                             echo ($module == 'status' ? ' selected' : ''); ?>">
                                 <?php echo link_to(
@@ -47,7 +48,7 @@
                                     'status'
                                 );
                                 ?>
-                            </li>
+                            </li>                            
                             <li class="users-li<?php
                             echo ($module == 'sfGuardUser' ? ' selected' : ''); ?>">
                                 <?php echo link_to(
@@ -56,6 +57,7 @@
                                 );
                                 ?>
                             </li>
+                            <?php endif; ?>
                         </ul>
                     </div>
                 </div>
@@ -65,7 +67,7 @@
     </div>
     <ul class="logout-ul">
         <li>
-            <?php echo $sf_user->getGuardUser(); ?>
+            <?php echo $sf_user->getGuardUser()->getUsername(); ?>
         </li>
         <li class="logout-li">
             <?php echo link_to(
