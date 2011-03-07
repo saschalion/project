@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
+    <?php use_stylesheet('reset.css', 'last'); ?>
+    <?php use_stylesheet('style.css', 'last'); ?>
   </head>
   <body>
   <div class="wrap">

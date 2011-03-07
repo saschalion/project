@@ -9,15 +9,9 @@ form  {
   background: #fbfbfb;
 }
 
- form a:hover {
+form a:hover {
   color:#ff0000;
 }
-
-form .fieldset {
-    margin-bottom: .5em;
-    padding: 0;
-    border: none;
-  }
 
 form input.button {
   background: #262626;
@@ -28,62 +22,6 @@ form input.button {
   cursor: pointer;
   -moz-border-radius:4px;
 }
-
-form .input
-{
-margin-bottom:15px;
-}
-
-form .input.text input, form .input textarea, form .input.password input, form .input.select select
-{
-width:100%;
-margin-top:1px;
-margin:0;
-padding:3px;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-}
-
-form  .checkbox
-{
-margin-bottom:15px;
-}
-
-form  .checkbox input
-{
-margin-top:4px;
-margin-left:10px;
-}
-
-form  .checkbox label
-{
-float:left;
-}
-
-form .input label {
-  float: left;
-  margin-top:5px;
-}
-
-form .group label {
-  margin-right:10px;
-  margin-top:5px;
-}
-
-form .group {
- margin-top:5px;
-}
-
-form .datetime
-{
-margin-top:10px;
-}
-
-.datetime label
-{
-display:block;
-}
-
 
 /* Flash message */
 
@@ -111,8 +49,7 @@ display:block;
   background-color: #BBFFB6;
 }
 
-.error
-{
+.error {
  width:94%;
  text-align:center;
  background:#fff0f0;

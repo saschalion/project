@@ -3,9 +3,7 @@
 
 <div id="sf_admin_container">
   <h1><?php echo __('Сотрудники', array(), 'messages') ?></h1>
-
   <?php include_partial('job/flashes') ?>
-
   <div id="sf_admin_header">
     <?php include_partial('job/list_header', array('pager' => $pager)) ?>
   </div>

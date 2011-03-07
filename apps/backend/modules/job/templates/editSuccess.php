@@ -1,6 +1,4 @@
 <?php use_helper('I18N', 'Date') ?>
-<?php include_partial('job/assets') ?>
-
 <div id="sf_admin_container">
   <h1><?php echo __('Личная карточка сотрудника:' .'&nbsp;'. $jobeet_job->getLastName() .'&nbsp;'. $jobeet_job->getFirstName() .'&nbsp;'. $jobeet_job->getThreeName(), array(), 'messages') ?></h1>
   <h1><?php echo __('Добавлено:' .'&nbsp;'. $jobeet_job->getCreatedAt(), array(), 'messages') ?></h1>  

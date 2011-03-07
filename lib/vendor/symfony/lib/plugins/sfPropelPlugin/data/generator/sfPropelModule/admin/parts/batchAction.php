@@ -61,7 +61,7 @@
 
     if ($count >= count($ids))
     {
-      $this->getUser()->setFlash('notice', 'The selected items have been deleted successfully.');
+      $this->getUser()->setFlash('notice', 'Запись успешно удалена.');
     }
     else
     {

@@ -1,0 +1,171 @@
+graph G {
+	edge [ len=2 labeldistance=2 ];
+	overlap=false;
+	splines=true;
+
+	nodesfGuardForgotPassword [
+		label="{<table>sfGuardForgotPassword|<cols>unique_key (string)\lexpires_at (timestamp)\lcreated_at (timestamp)\lupdated_at (timestamp)}",
+		shape=record ];
+	nodesfGuardPermission [
+		label="{<table>sfGuardPermission|<cols>name (string)\ldescription (string)\lcreated_at (timestamp)\lupdated_at (timestamp)}",
+		shape=record ];
+	nodesfGuardUser [
+		label="{<table>sfGuardUser|<cols>first_name (string)\llast_name (string)\lemail_address (string)\lusername (string)\lalgorithm (string)\lsalt (string)\lpassword (string)\lis_active (boolean)\lis_super_admin (boolean)\llast_login (timestamp)\lcreated_at (timestamp)\lupdated_at (timestamp)}",
+		shape=record ];
+	nodesfGuardGroup [
+		label="{<table>sfGuardGroup|<cols>name (string)\ldescription (string)\lcreated_at (timestamp)\lupdated_at (timestamp)}",
+		shape=record ];
+	nodesfGuardGroupPermission [
+		label="{<table>sfGuardGroupPermission|<cols>created_at (timestamp)\lupdated_at (timestamp)}",
+		shape=record ];
+	nodesfGuardRememberKey [
+		label="{<table>sfGuardRememberKey|<cols>remember_key (string)\lip_address (string)\lcreated_at (timestamp)\lupdated_at (timestamp)}",
+		shape=record ];
+	nodesfGuardUserGroup [
+		label="{<table>sfGuardUserGroup|<cols>created_at (timestamp)\lupdated_at (timestamp)}",
+		shape=record ];
+	nodesfGuardUserPermission [
+		label="{<table>sfGuardUserPermission|<cols>created_at (timestamp)\lupdated_at (timestamp)}",
+		shape=record ];
+	nodeStatus [
+		label="{<table>Status|<cols>name (string)\lcreated_at (timestamp)\lupdated_at (timestamp)}",
+		shape=record ];
+	nodeEducation [
+		label="{<table>Education|<cols>name (string)\lcreated_at (timestamp)\lupdated_at (timestamp)}",
+		shape=record ];
+	nodeJobeetJob [
+		label="{<table>JobeetJob|<cols>date_preparation (date)\ltab_id (string)\lnumber_insurace (string)\lpension_sertificate (string)\lnature_work (string)\ltype_work (string)\llast_name (string)\lfirst_name (string)\lthree_name (string)\ltype (string)\ldata_birth (date)\lphone (string)\ladress (string)\lemail (string)\llogo (string)\lname_foreign_language (string)\ldegree_knowledge_foreign_languages (string)\lname_educational_institution (string)\ldiploma (string)\lyear_graduation (year)\ldiploma_qualification (string)\lspeciality_diploma (string)\lname_educational_institution_extra (string)\ldiploma_extra (string)\lyear_graduation_extra (date)\lstudy_extra (string)\ldiploma_qualification_extra (string)\lspeciality_diploma_extra (string)\lmain_profession (string)\lother_profession (string)\ltotal_length (string)\lcontinuous_service (string)\llast_job (string)\ltermination_date (date)\lmarriage_status (string)\lchildren (string)\ldate_birth_children (year)\lgroup_accounting (string)\lcategory_accounting (string)\lcomposition (string)\lmilitary_rank (string)\lmilitary_discount_specialty (string)\lnumber_military_discount_specialty (string)\lfitness (string)\lname_district_military_office (string)\lnumber_special_accounting (string)\lkind_leave (string)\lgetting_started (date)\lend_work (date)\lnumber_vacation_days (string)\lcommencement (date)\lend_leave (date)\lbase_release (string)\lmore_information (string)\ltoken (string)\lcreated_at (timestamp)\lupdated_at (timestamp)}",
+		shape=record ];
+	nodePassport [
+		label="{<table>Passport|<cols>passport_number (string)\lissuance_passports (string)\ldate_issue_passport (date)\lcode_division (string)\lcreated_at (timestamp)\lupdated_at (timestamp)}",
+		shape=record ];
+	nodeJobeetCategory [
+		label="{<table>JobeetCategory|<cols>name (string)\lcreated_at (timestamp)\lupdated_at (timestamp)}",
+		shape=record ];
+	nodeCity [
+		label="{<table>City|<cols>name (string)\lcreated_at (timestamp)\lupdated_at (timestamp)}",
+		shape=record ];
+
+	nodesfGuardGroupPermission [
+		label="{<table>sfGuardGroupPermission|<cols>created_at (timestamp)\lupdated_at (timestamp)}",
+		shape=Mrecord ];
+	nodesfGuardUserPermission [
+		label="{<table>sfGuardUserPermission|<cols>created_at (timestamp)\lupdated_at (timestamp)}",
+		shape=Mrecord ];
+	nodesfGuardUserGroup [
+		label="{<table>sfGuardUserGroup|<cols>created_at (timestamp)\lupdated_at (timestamp)}",
+		shape=Mrecord ];
+	nodesfGuardPermission [
+		label="{<table>sfGuardPermission|<cols>}",
+		shape=Mrecord ];
+	nodesfGuardUser [
+		label="{<table>sfGuardUser|<cols>}",
+		shape=Mrecord ];
+	nodesfGuardGroup [
+		label="{<table>sfGuardGroup|<cols>}",
+		shape=Mrecord ];
+	nodeStatus [
+		label="{<table>Status|<cols>}",
+		shape=Mrecord ];
+	nodeEducation [
+		label="{<table>Education|<cols>}",
+		shape=Mrecord ];
+	nodePassport [
+		label="{<table>Passport|<cols>}",
+		shape=Mrecord ];
+	nodeJobeetCategory [
+		label="{<table>JobeetCategory|<cols>}",
+		shape=Mrecord ];
+	nodeCity [
+		label="{<table>City|<cols>}",
+		shape=Mrecord ];
+
+	nodesfGuardGroupPermission -- nodesfGuardGroup [
+		headlabel="0,n",
+		label="(Group)",
+		labeldistance=3 ];
+	nodesfGuardGroupPermission -- nodesfGuardPermission [
+		headlabel="0,n",
+		label="(Permission)",
+		labeldistance=3 ];
+	nodesfGuardUserPermission -- nodesfGuardUser [
+		headlabel="0,n",
+		label="(User)",
+		labeldistance=3 ];
+	nodesfGuardUserPermission -- nodesfGuardPermission [
+		headlabel="0,n",
+		label="(Permission)",
+		labeldistance=3 ];
+	nodesfGuardUserGroup -- nodesfGuardUser [
+		headlabel="0,n",
+		label="(User)",
+		labeldistance=3 ];
+	nodesfGuardUserGroup -- nodesfGuardGroup [
+		headlabel="0,n",
+		label="(Group)",
+		labeldistance=3 ];
+	nodesfGuardPermission -- nodesfGuardGroupPermission [
+		headlabel="0,1",
+		label="",
+		labeldistance=3 ];
+	nodesfGuardPermission -- nodesfGuardUserPermission [
+		headlabel="0,1",
+		label="",
+		labeldistance=3 ];
+	nodesfGuardUser -- nodesfGuardUserPermission [
+		headlabel="0,1",
+		label="",
+		labeldistance=3 ];
+	nodesfGuardUser -- nodesfGuardUserGroup [
+		headlabel="0,1",
+		label="",
+		labeldistance=3 ];
+	nodesfGuardUser -- nodeJobeetJob [
+		headlabel="0,1",
+		label="(Users)",
+		labeldistance=3 ];
+	nodesfGuardGroup -- nodesfGuardGroupPermission [
+		headlabel="0,1",
+		label="",
+		labeldistance=3 ];
+	nodesfGuardGroup -- nodesfGuardUserGroup [
+		headlabel="0,1",
+		label="",
+		labeldistance=3 ];
+	nodeStatus -- nodeJobeetJob [
+		headlabel="0,1",
+		label="(Status)",
+		labeldistance=3 ];
+	nodeEducation -- nodeJobeetJob [
+		headlabel="0,1",
+		label="(Jobeet)",
+		labeldistance=3 ];
+	nodePassport -- nodeJobeetJob [
+		headlabel="0,1",
+		label="(Passport)",
+		labeldistance=3 ];
+	nodeJobeetCategory -- nodeJobeetJob [
+		headlabel="0,1",
+		label="(JobeetJobs)",
+		labeldistance=3 ];
+	nodeCity -- nodeJobeetJob [
+		headlabel="0,1",
+		label="(City)",
+		labeldistance=3 ];
+
+	nodesfGuardUser -- nodesfGuardRememberKey [
+		arrowhead=normal ];
+	nodesfGuardUser -- nodesfGuardForgotPassword [
+		arrowhead=normal ];
+	nodesfGuardForgotPassword -- nodeBasesfGuardForgotPassword [
+		arrowhead=normal ];
+	nodesfGuardPermission -- nodeBasesfGuardPermission [
+		arrowhead=normal ];
+	nodesfGuardUser -- nodeBasesfGuardUser [
+		arrowhead=normal ];
+	nodesfGuardGroup -- nodeBasesfGuardGroup [
+		arrowhead=normal ];
+	nodesfGuardRememberKey -- nodeBasesfGuardRememberKey [
+		arrowhead=normal ];
+
+}

@@ -35,7 +35,7 @@ class sfWidgetFormFilterInput extends sfWidgetForm
    */
   protected function configure($options = array(), $attributes = array())
   {
-    $this->addOption('with_empty', true);
+    $this->addOption('with_empty', false);
     $this->addOption('empty_label', 'оставить пустым');
     $this->addOption('template', '%input%<br />%empty_checkbox% %empty_label%');
   }

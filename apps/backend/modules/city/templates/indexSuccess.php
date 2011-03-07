@@ -1,6 +1,4 @@
 <?php use_helper('I18N', 'Date') ?>
-<?php include_partial('city/assets') ?>
-
 <div id="sf_admin_container">
   <h1><?php echo __('Города', array(), 'messages') ?></h1>
 

@@ -105,7 +105,11 @@ public function executeIndex(sfWebRequest $request)
 //        $objectparams = 'sf_guard_user_id';
 //        $objectparams['sf_guard_user_id'] = $this->getUser()->getUsername();
 //        $form->bind($objectparams, $request->getFiles($form->getName()));
-
+            $this->getResponse()->addStylesheet('style.css', 'last');
+            $this->getResponse()->addStylesheet('reset.css', 'last');
+            $this->getResponse()->addStylesheet('table_form.css', 'last');
+            $this->getResponse()->addStylesheet('form_general_back.css', 'last');
+            $this->getResponse()->addStylesheet('form_general.css', 'last');
 
         $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
         if ($form->isValid())

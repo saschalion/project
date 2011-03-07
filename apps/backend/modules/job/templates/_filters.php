@@ -7,7 +7,7 @@
   <?php endif; ?>
 
   <form action="<?php echo url_for('jobeet_job_collection', array('action' => 'filter')) ?>" method="post">
-      <ul>
+      <ul class="filter-ul">
        <li>
         <?php foreach ($configuration->getFormFilterFields($form) as $name => $field): ?>
         <?php if ((isset($form[$name]) && $form[$name]->isHidden()) || (!isset($form[$name]) && $field->isReal())) continue ?>
@@ -27,7 +27,7 @@
             <?php echo $form->renderHiddenFields() ?>
             <?php echo link_to(__('Обновить', array(), 'sf_admin'), 'jobeet_job_collection', array('action' => 'filter'), array('query_string' => '_reset', 'method' => 'post')) ?>
             <input type="submit" value="<?php echo __('Найти', array(), 'sf_admin') ?>" />
-      <li>
+      </li>
           </ul>
   </form>
 </div>

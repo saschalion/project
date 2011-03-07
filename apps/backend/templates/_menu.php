@@ -67,7 +67,7 @@
         <li>
             <?php echo $sf_user->getGuardUser(); ?>
         </li>
-        <li>
+        <li class="logout-li">
             <?php echo link_to(
                 'Выход',
                 'sf_guard_signout'
