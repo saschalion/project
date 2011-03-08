@@ -46,7 +46,7 @@
                     <?php echo $jobeet_job->getTypeWork() ?>
                 </td>
                 <td>
-                    <?php echo $jobeet_job->getPassport()->getPassportNumber() ?>
+                    <?php echo $jobeet_job->getType() ?>
                 </td>
 
             </tr>
@@ -68,12 +68,14 @@
 </li>
 <li>3.
 <span>Место рождения</span>
- г. <?php echo $jobeet_job->getCity() ?>
+ г.<?php echo $jobeet_job->getCity() ?>
 </li>
 <li>4.
 <span>Знание иностранного языка</span>
- <?php echo $jobeet_job->getNameForeignLanguage() ?>
+ <?php if ($jobeet_job->getNameForeignLanguage() > '0'): ?>
+ <?php echo $jobeet_job->getNameForeignLanguage() . ',' ?>
  <?php echo $jobeet_job->getDegreeKnowledgeForeignLanguages() ?>
+  <?php endif; ?>
  </li>
  <li>5.
 <span>Образование</span>
@@ -181,7 +183,20 @@
     <? endif; ?>
     <ul>
         <li>6. <span>Профессия</span> <?php echo $jobeet_job->getDiplomaQualification() ?></li>
-        <li>7. <span>Состояние в браке</span> <?php echo $jobeet_job->getMarriageStatus() ?></li>
+        <li>7. <span>Состояние в браке</span> 
+            <?php if ($jobeet_job->getType() == 'M' & $jobeet_job->getMarriageStatus() == 'Не замужем / Холост'): ?>
+                <?php echo 'Холост' ?>
+            <? endif; ?>
+            <?php if ($jobeet_job->getType() == 'Ж' & $jobeet_job->getMarriageStatus() == 'Не замужем / Холост'): ?>
+                <?php echo 'Не замужем' ?>
+            <? endif; ?>
+            <?php if ($jobeet_job->getType() == 'M' & $jobeet_job->getMarriageStatus() == 'Замужем / Женат'): ?>
+                <?php echo 'Женат' ?>
+            <? endif; ?>
+            <?php if ($jobeet_job->getType() == 'Ж' & $jobeet_job->getMarriageStatus() == 'Замужем / Женат'): ?>
+                <?php echo 'Замужем' ?>
+            <? endif; ?>
+        </li>
         <li>8. <span>Состав семьи</span></li>
     </ul>
     <?php if ($jobeet_job->getChildren() > '0'): ?>
@@ -203,7 +218,7 @@
         <tbody>
             <tr>
                 <td>
-                    
+                    <?php echo $jobeet_job->getRelationDegree() ?>
                 </td>
                 <td>
                     <?php echo $jobeet_job->getChildren() ?>

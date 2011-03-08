@@ -313,9 +313,9 @@ li.print a {
   border-bottom: 1px solid #ddd;
 }
 
-.errors .error_list {
+/*.errors .error_list {
     display: none;
-}
+}*/
 
 li .error_list {
     display: block !important;
@@ -360,7 +360,7 @@ fieldset#sf_fieldset____________________________ .error_list {
 }
 
 .content table th {
-  padding: 5px !important;
+  padding: 5px 13px 5px 0 !important;
   border-bottom: 1px solid #ddd !important
 }
 
@@ -406,4 +406,12 @@ fieldset#sf_fieldset____________________________ .error_list {
 
 .filter-ul input[type="text"] {
     margin-bottom: 10px;
+}
+
+tfoot th {
+    text-align: center !important;
+}
+
+.price {
+    color: #CC0000;
 }

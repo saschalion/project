@@ -77,7 +77,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
 
   public function getFormDisplay()
   {
-    return array(  'Начальные сведения' =>   array(    0 => 'sf_guard_user_id',    1 => 'tab_id',    2 => 'number_insurace',    3 => 'pension_sertificate',    4 => 'nature_work',    5 => 'type_work',    6 => 'category_id',    7 => 'status_id',  ),  'Общие сведения' =>   array(    0 => 'last_name',    1 => 'first_name',    2 => 'three_name',    3 => 'type',    4 => 'data_birth',    5 => 'phone',    6 => 'city_id',    7 => 'adress',    8 => 'email',    9 => 'logo',  ),  'Паспорт' =>   array(    0 => 'Passport',  ),  'Знание иностранных языков' =>   array(    0 => 'name_foreign_language',    1 => 'degree_knowledge_foreign_languages',  ),  'Образование' =>   array(    0 => 'education_id',    1 => 'name_educational_institution',    2 => 'diploma',    3 => 'year_graduation',    4 => 'diploma_qualification',    5 => 'speciality_diploma',  ),  'Послевузовое профессиональное образование' =>   array(    0 => 'name_educational_institution_extra',    1 => 'diploma_extra',    2 => 'year_graduation_extra',    3 => 'diploma_qualification_extra',    4 => 'speciality_diploma_extra',  ),  'Профессия' =>   array(    0 => 'main_profession',    1 => 'other_profession',    2 => 'total_length',    3 => 'continuous_service',    4 => 'last_job',    5 => 'termination_date',  ),  'Семейное положение' =>   array(    0 => 'marriage_status',    1 => 'children',    2 => 'date_birth_children',  ),  'Воинский учет' =>   array(    0 => 'group_accounting',    1 => 'category_accounting',    2 => 'composition',    3 => 'military_rank',    4 => 'military_discount_specialty',    5 => 'number_military_discount_specialty',    6 => 'name_district_military_office',    7 => 'number_special_accounting',  ),  'Отпуск' =>   array(    0 => 'kind_leave',    1 => 'getting_started',    2 => 'end_work',    3 => 'number_vacation_days',    4 => 'commencement',    5 => 'end_leave',    6 => 'base_release',  ),  'Дополнительные сведения' =>   array(    0 => 'more_information',  ),);
+    return array(  'Начальные сведения' =>   array(    0 => 'sf_guard_user_id',    1 => 'tab_id',    2 => 'number_insurace',    3 => 'pension_sertificate',    4 => 'nature_work',    5 => 'type_work',    6 => 'category_id',    7 => 'status_id',    8 => 'price',  ),  'Общие сведения' =>   array(    0 => 'last_name',    1 => 'first_name',    2 => 'three_name',    3 => 'type',    4 => 'data_birth',    5 => 'phone',    6 => 'mobile_phone',    7 => 'city_id',    8 => 'adress',    9 => 'email',    10 => 'logo',  ),  'Паспорт' =>   array(    0 => 'Passport',  ),  'Знание иностранных языков' =>   array(    0 => 'name_foreign_language',    1 => 'degree_knowledge_foreign_languages',  ),  'Образование' =>   array(    0 => 'education_id',    1 => 'name_educational_institution',    2 => 'diploma',    3 => 'year_graduation',    4 => 'diploma_qualification',    5 => 'speciality_diploma',  ),  'Послевузовое профессиональное образование' =>   array(    0 => 'name_educational_institution_extra',    1 => 'diploma_extra',    2 => 'year_graduation_extra',    3 => 'diploma_qualification_extra',    4 => 'speciality_diploma_extra',  ),  'Профессия' =>   array(    0 => 'main_profession',    1 => 'other_profession',    2 => 'total_length',    3 => 'continuous_service',    4 => 'last_job',    5 => 'termination_date',  ),  'Семейное положение' =>   array(    0 => 'relation_degree',    1 => 'marriage_status',    2 => 'children',    3 => 'date_birth_children',  ),  'Воинский учет' =>   array(    0 => 'group_accounting',    1 => 'category_accounting',    2 => 'composition',    3 => 'military_rank',    4 => 'military_discount_specialty',    5 => 'number_military_discount_specialty',    6 => 'name_district_military_office',    7 => 'number_special_accounting',  ),  'Отпуск' =>   array(    0 => 'kind_leave',    1 => 'getting_started',    2 => 'end_work',    3 => 'number_vacation_days',    4 => 'commencement',    5 => 'end_leave',    6 => 'base_release',  ),  'Дополнительные сведения' =>   array(    0 => 'more_information',  ),);
   }
 
   public function getEditDisplay()
@@ -99,7 +99,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
   {
     return array(
       'id' => array(  'is_link' => true,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'date_preparation' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'price' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'tab_id' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'number_insurace' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'pension_sertificate' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
@@ -115,6 +115,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'type' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'data_birth' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
       'phone' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
+      'mobile_phone' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'education_id' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'ForeignKey',),
       'city_id' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'ForeignKey',),
       'adress' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
@@ -139,6 +140,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'continuous_service' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'last_job' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'termination_date' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
+      'relation_degree' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'marriage_status' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'children' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'date_birth_children' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
@@ -169,7 +171,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
   {
     return array(
       'id' => array(),
-      'date_preparation' => array(),
+      'price' => array(),
       'tab_id' => array(),
       'number_insurace' => array(),
       'pension_sertificate' => array(),
@@ -185,6 +187,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'type' => array(),
       'data_birth' => array(),
       'phone' => array(),
+      'mobile_phone' => array(),
       'education_id' => array(),
       'city_id' => array(),
       'adress' => array(),
@@ -209,6 +212,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'continuous_service' => array(),
       'last_job' => array(),
       'termination_date' => array(),
+      'relation_degree' => array(),
       'marriage_status' => array(),
       'children' => array(),
       'date_birth_children' => array(),
@@ -239,7 +243,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
   {
     return array(
       'id' => array(),
-      'date_preparation' => array(),
+      'price' => array(),
       'tab_id' => array(),
       'number_insurace' => array(),
       'pension_sertificate' => array(),
@@ -255,6 +259,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'type' => array(),
       'data_birth' => array(),
       'phone' => array(),
+      'mobile_phone' => array(),
       'education_id' => array(),
       'city_id' => array(),
       'adress' => array(),
@@ -279,6 +284,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'continuous_service' => array(),
       'last_job' => array(),
       'termination_date' => array(),
+      'relation_degree' => array(),
       'marriage_status' => array(),
       'children' => array(),
       'date_birth_children' => array(),
@@ -309,7 +315,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
   {
     return array(
       'id' => array(),
-      'date_preparation' => array(),
+      'price' => array(),
       'tab_id' => array(),
       'number_insurace' => array(),
       'pension_sertificate' => array(),
@@ -325,6 +331,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'type' => array(),
       'data_birth' => array(),
       'phone' => array(),
+      'mobile_phone' => array(),
       'education_id' => array(),
       'city_id' => array(),
       'adress' => array(),
@@ -349,6 +356,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'continuous_service' => array(),
       'last_job' => array(),
       'termination_date' => array(),
+      'relation_degree' => array(),
       'marriage_status' => array(),
       'children' => array(),
       'date_birth_children' => array(),
@@ -379,7 +387,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
   {
     return array(
       'id' => array(),
-      'date_preparation' => array(),
+      'price' => array(),
       'tab_id' => array(),
       'number_insurace' => array(),
       'pension_sertificate' => array(),
@@ -395,6 +403,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'type' => array(),
       'data_birth' => array(),
       'phone' => array(),
+      'mobile_phone' => array(),
       'education_id' => array(),
       'city_id' => array(),
       'adress' => array(),
@@ -419,6 +428,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'continuous_service' => array(),
       'last_job' => array(),
       'termination_date' => array(),
+      'relation_degree' => array(),
       'marriage_status' => array(),
       'children' => array(),
       'date_birth_children' => array(),
@@ -449,7 +459,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
   {
     return array(
       'id' => array(),
-      'date_preparation' => array(),
+      'price' => array(),
       'tab_id' => array(),
       'number_insurace' => array(),
       'pension_sertificate' => array(),
@@ -465,6 +475,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'type' => array(),
       'data_birth' => array(),
       'phone' => array(),
+      'mobile_phone' => array(),
       'education_id' => array(),
       'city_id' => array(),
       'adress' => array(),
@@ -489,6 +500,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'continuous_service' => array(),
       'last_job' => array(),
       'termination_date' => array(),
+      'relation_degree' => array(),
       'marriage_status' => array(),
       'children' => array(),
       'date_birth_children' => array(),

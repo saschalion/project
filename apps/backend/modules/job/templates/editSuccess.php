@@ -2,16 +2,12 @@
 <div id="sf_admin_container">
   <h1><?php echo __('Личная карточка сотрудника:' .'&nbsp;'. $jobeet_job->getLastName() .'&nbsp;'. $jobeet_job->getFirstName() .'&nbsp;'. $jobeet_job->getThreeName(), array(), 'messages') ?></h1>
   <h1><?php echo __('Добавлено:' .'&nbsp;'. $jobeet_job->getCreatedAt(), array(), 'messages') ?></h1>  
-  <?php if ($jobeet_job->getType() == 'M'): ?>
-    <?php  echo link_to('Паспорт', 'passport/new?id='.$jobeet_job->getId());?>
-  <?php endif; ?>
-  
   <?php echo link_to(
-                            'Печать',
+                            'Просмотр',
                             'job/show?id='.$jobeet_job->getId(), array('target' => '_blank')
 
                             );
-                    ?>
+                    ?><br/><br/>
   <?php include_partial('job/flashes') ?>
   
   <div id="sf_admin_header">

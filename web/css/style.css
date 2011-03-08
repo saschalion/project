@@ -175,7 +175,7 @@ li.selected span {
     margin-bottom: -17px;
     position: absolute;
     bottom: 0;
-    width: 855px;
+    width: 830px;
 }
 
 .bg-r {
@@ -226,10 +226,10 @@ li.selected span {
 
 table td, table th {
     border-bottom: 1px solid #ccc;
-    padding: 10px !important;
+    padding: 10px 1px !important;
 }
 
-.sf_admin_list table tr:hover {
+table tr:hover {
     background: #fffaaa;
 }
 

@@ -36,6 +36,8 @@ JobeetCategory:
     name: Охранник
   head_it_department:
     name: Начальник ИТ отдела
+  test:
+    name: Тестировщик
 
 
 

@@ -53,8 +53,6 @@ JobeetJob:
     Timestampable: ~
   columns:
     # Начальные сведения
-    date_preparation:
-      type: date
     price:
       type: string(30)
     tab_id:
@@ -63,8 +61,10 @@ JobeetJob:
       notnull: true
     number_insurace:
       type: string(12)
+      notnull: true
     pension_sertificate:
-      type: string(11)
+      type: string(15)
+      notnull: true
     nature_work:
       type: string(30)
     type_work:
@@ -77,14 +77,17 @@ JobeetJob:
       notnull: true
     sf_guard_user_id:
       type: integer
+      notnull: true
     passport_id:
       type: integer
 
     # Общие сведения
     last_name:
       type: string(100)
+      notnull: true
     first_name:
       type: string(100)
+      notnull: true
     three_name:
       type: string(100)
       notnull: true
@@ -94,8 +97,10 @@ JobeetJob:
       type: date
       notnull: true
     phone:
-      type: string(12)
+      type: string(20)
       notnull: true
+    mobile_phone:
+      type: string(20)
     education_id:
       type: integer
       notnull: true
@@ -104,23 +109,12 @@ JobeetJob:
       notnull: true
     adress:
       type: string(150)
+      notnull: true
     email:     
       type: string(255)
       unique: true
     logo:
       type: string(255)
-
-#    # Паспорт
-#    passport_number:
-#      type: string(11)
-#      notnull: true
-#      unique: true
-#    issuance_passports:
-#      type: string(50)
-#    date_issue_passport:
-#     type: date
-#    code_division:
-#     type: string(7)
 
     # Знание иностранных языков
     name_foreign_language:
@@ -171,6 +165,8 @@ JobeetJob:
      type: date
 
     # Семейное положение
+    relation_degree:
+     type: string(40)
     marriage_status:
      type: string(40)
     children:

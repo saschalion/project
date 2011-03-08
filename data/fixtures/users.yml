@@ -1,11 +1,22 @@
 # data/fixtures/users.yml
 SfGuardUser:
   Admin:
+    id: 1
     first_name: Alex
     last_name: 
     email_address: saschalion@list.ru
     username: admin
     password: admin
+    is_active: true
+    is_super_admin: false
+
+  User:
+    id: 2
+    first_name: Alexander
+    last_name:
+    email_address: saschalion@mail.ru
+    username: user
+    password: user
     is_active: true
     is_super_admin: false
 

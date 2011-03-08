@@ -18,10 +18,10 @@ class PassportForm extends BasePassportForm
      );
 
       $this->widgetSchema->setLabels(array(
-      'passport_number' => '№, серия',
-      'issuance_passports' => 'Кем выдан',
-      'date_issue_passport' => 'Дата выдачи',
-      'code_division' => 'Код подразделения'
+       'passport_number' => '№, серия<span class="red">*</span>',
+      'issuance_passports' => 'Кем выдан<span class="red">*</span>',
+      'date_issue_passport' => 'Дата выдачи<span class="red">*</span>',
+      'code_division' => 'Код подразделения<span class="red">*</span>'
     ));
 
   }
