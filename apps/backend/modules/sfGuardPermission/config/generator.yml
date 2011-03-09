@@ -12,14 +12,16 @@ generator:
 
     config:
       list:
-        title: Permission list
+        title: Список прав
         display: [=name, description, created_at, updated_at]
 
       edit:
-        title: Editing Permission "%%name%%"
+        title: Редактирование права "%%name%%"
 
       new:
-        title: New Permission
+        title: Новое право
 
       form:
         display: [name, description, groups_list, users_list]
+      filter:
+        class: false

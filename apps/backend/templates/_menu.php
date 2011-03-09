@@ -16,7 +16,7 @@
                                 );
                                 ?>
                             </li>
-                            <?php if ($sf_user->getGuardUser()->getUsername() == 'admin'): ?>
+                            <?php if ($sf_user->hasCredential('ADMIN')): ?>
                             <li class="state-li<?php
                             echo ($module == 'city' ? ' selected' : ''); ?>">
                                 <?php echo link_to(
