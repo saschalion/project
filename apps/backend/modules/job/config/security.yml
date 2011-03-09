@@ -4,5 +4,8 @@
 index:
   is_secure: true
 
+delete:
+  credentials: [ ADMIN ]
+
 all:
   is_secure: true

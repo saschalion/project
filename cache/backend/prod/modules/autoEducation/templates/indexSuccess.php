@@ -10,9 +10,6 @@
     <?php include_partial('education/list_header', array('pager' => $pager)) ?>
   </div>
 
-  <div id="sf_admin_bar">
-    <?php include_partial('education/filters', array('form' => $filters, 'configuration' => $configuration)) ?>
-  </div>
 
   <div id="sf_admin_content">
     <form action="<?php echo url_for('education_collection', array('action' => 'batch')) ?>" method="post">

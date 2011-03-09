@@ -112,7 +112,7 @@ abstract class autoJobActions extends sfActions
 
     if ($this->getRoute()->getObject()->delete())
     {
-      $this->getUser()->setFlash('notice', 'The item was deleted successfully.');
+      $this->getUser()->setFlash('notice', 'Запись успешно удалена.');
     }
 
     $this->redirect('@jobeet_job');
@@ -177,7 +177,7 @@ abstract class autoJobActions extends sfActions
       $record->delete();
     }
 
-    $this->getUser()->setFlash('notice', 'The selected items have been deleted successfully.');
+    $this->getUser()->setFlash('notice', 'Запись успешно удалена.');
     $this->redirect('@jobeet_job');
   }
 
