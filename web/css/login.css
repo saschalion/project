@@ -118,6 +118,19 @@ body {
     margin: 0 auto;
 }
 
+h2 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px !important;
+}
 
+.url {
+    text-align: center;
+    font-style: italic;
+}
 
-
+h3 {
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 20px !important;
+}

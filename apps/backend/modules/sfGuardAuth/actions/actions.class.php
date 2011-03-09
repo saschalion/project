@@ -24,5 +24,6 @@ class sfGuardAuthActions extends BasesfGuardAuthActions
         parent::preExecute();
         $this->getResponse()->addStylesheet('login.css', 'last');
         $this->getResponse()->addStylesheet('reset.css', 'last');
+        $this->setLayout('layout_not');
     }
 }

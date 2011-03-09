@@ -1,9 +1,14 @@
 <?php use_helper('I18N') ?>
 
-<h2><?php echo __('Oops! The page you asked for is secure and you do not have proper credentials.', null, 'sf_guard') ?></h2>
+<h2><?php echo __('Извините, у Вас нет доступа к запрошенной странице', null, 'sf_guard') ?></h2>
 
-<p><?php echo sfContext::getInstance()->getRequest()->getUri() ?></p>
+<p class="url"><?php echo sfContext::getInstance()->getRequest()->getUri() ?></p>
 
-<h3><?php echo __('Login below to gain access', null, 'sf_guard') ?></h3>
+<h3><?php echo __('Пожалуйста, войдите снова', null, 'sf_guard') ?></h3>
 
-<?php echo get_component('sfGuardAuth', 'signin_form') ?>
+<div class="login-wrap">
+<h1><?php echo __('Авторизация', null, 'sf_guard') ?></h1>
+    <div class="login-form">
+        <?php echo get_component('sfGuardAuth', 'signin_form') ?>
+    </div>
+</div>
