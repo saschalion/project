@@ -31,13 +31,15 @@
   <?php endif; ?>
 </td>
 <td class="created">
-  <?php if ($jobeet_job->getUser() > '&nbsp;'): ?>
     <?php echo $jobeet_job->getUser()->getFirstName()?>
-  <?php endif; ?>
 </td>
 <td class="price">
-    <?php echo $jobeet_job->getPrice()?>
+    <?php if($jobeet_job->getPrice()): ?>
+        <?php echo $jobeet_job->getPrice()?> руб.
+        <?php else: ?>
+        Бесплатный
+    <? endif; ?>
 </td>
-<td class="created">
-    <?php echo $jobeet_job->getCreatedAt()?>
+<td class="created"> 
+    <?php echo format_date($jobeet_job->getCreatedAt(), 'dd-MM-yyyy') ?>
 </td>

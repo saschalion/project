@@ -190,6 +190,10 @@ class JobeetJobForm extends BaseJobeetJobForm
      'phone', 'Пример: +7(905)156-89-36'
          );
 
+    $this->widgetSchema['sf_guard_user_id'] = new sfWidgetFormInputHidden();
+    $this->validatorSchema['sf_guard_user_id'] = new sfValidatorPass();
+
+
 parent::configure();
 
     $this->widgetSchema['logo'] = new sfWidgetFormInputFileEditable(array(
