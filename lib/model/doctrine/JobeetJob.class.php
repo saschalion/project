@@ -14,8 +14,8 @@ class JobeetJob extends BaseJobeetJob
 {
     public function save(Doctrine_Connection $conn = null)
 {
-   $this->setSfGuardUserId(sfContext::getInstance()->getUser()->getGuardUser()->getId()); // Авто подстановка текущего пользователя авторизованного через sfGuardPlugin
-//  if ($this->isNew()) $this->setParams('Нужное значения поля');
+//   $this->setSfGuardUserId(sfContext::getInstance()->getUser()->getGuardUser()->getId()); // Авто подстановка текущего пользователя авторизованного через sfGuardPlugin
+////  if ($this->isNew()) $this->setParams('Нужное значения поля');
 
   if (!$this->getToken())
   {

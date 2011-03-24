@@ -23,3 +23,7 @@ SfGuardUserPermission:
   user:
     user_id: 2
     permission_id: 2
+
+  reader:
+    user_id: 3
+    permission_id: 3
