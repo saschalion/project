@@ -54,7 +54,7 @@ JobeetJob:
   columns:
     # Начальные сведения
     price:
-      type: string(30)
+      type: float
     tab_id:
       type: string(30)
       unique: true

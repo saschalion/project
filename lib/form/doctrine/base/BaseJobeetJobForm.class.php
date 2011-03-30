@@ -85,7 +85,7 @@ abstract class BaseJobeetJobForm extends BaseFormDoctrine
 
     $this->setValidators(array(
       'id'                                 => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
-      'price'                              => new sfValidatorString(array('max_length' => 30, 'required' => false)),
+      'price'                              => new sfValidatorNumber(array('required' => false)),
       'tab_id'                             => new sfValidatorString(array('max_length' => 30)),
       'number_insurace'                    => new sfValidatorString(array('max_length' => 12)),
       'pension_sertificate'                => new sfValidatorString(array('max_length' => 15)),
