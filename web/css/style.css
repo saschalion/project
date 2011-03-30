@@ -230,7 +230,7 @@ table td, table th {
 }
 
 table tr.even {
-    background: #ffffcc;
+    background: #eaeaea;
 }
 
 table tr.odd {
@@ -238,7 +238,7 @@ table tr.odd {
 }
 
 table tr:hover {
-    background: #fffaaa !important;
+    background: #fffaaa;
 }
 
 .table td img {
