@@ -44,7 +44,7 @@
   <?php echo __('Добавил', array(), 'messages') ?>
 </th>
 <th>
-  <?php echo __('Ставка', array(), 'messages') ?>
+  <?php echo __('Ставка<br/> (руб.)', array(), 'messages') ?>
 </th>
 <th>
   <?php echo __('Дата размещения', array(), 'messages') ?>

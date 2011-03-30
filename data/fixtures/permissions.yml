@@ -4,26 +4,22 @@ SfGuardPermission:
     id: 1
     name: ADMIN
     description: Permission for Admin (all module - CRUD)
-
   user:
     id: 2
     name: USER
     description: Permission for Users (module of Job - CRUD)
-
   reader:
     id: 3
     name: READER
     description: Read only
-
+    
 SfGuardUserPermission:
   admin:
     user_id: 1
     permission_id: 1
-
   user:
     user_id: 2
     permission_id: 2
-
   reader:
     user_id: 3
     permission_id: 3

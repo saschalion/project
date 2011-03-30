@@ -174,3 +174,17 @@ Passport:
     issuance_passports: ОВД Нагатинский Затон
     date_issue_passport: '1996-03-15'
     code_division: 770-036
+
+  pass_26:
+    id: 26
+    passport_number: 4502 230026
+    issuance_passports: ОВД Кировского района
+    date_issue_passport: '1999-03-15'
+    code_division: 770-037
+
+  pass_27:
+    id: 27
+    passport_number: 4502 230027
+    issuance_passports: ОВД Центрального района
+    date_issue_passport: '1999-03-15'
+    code_division: 770-037

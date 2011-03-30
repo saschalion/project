@@ -1,6 +1,9 @@
 # data/fixtures/jobs.yml
 JobeetJob:
+
+
   job_sensio_labs:
+    id: 1
     JobeetCategory: design
     Education: top
     passport_id: 1
@@ -34,9 +37,45 @@ JobeetJob:
     relation_degree: дочь
     children: Дружинина Мария Александровна
     date_birth_children: '2011-12-31'
-    degree_knowledge_foreign_languages: Читает и может объясняться
+
+  job_sensio_labs_2:
+    id: 2
+    JobeetCategory: design
+    Education: top
+    passport_id: 2
+    User: User
+    Status: probation
+    City: moscow
+    price: 25000
+    type:  M
+    tab_id: 344-102
+    logo:
+    first_name: Сергей
+    last_name: Артемьев
+    three_name: Сергеевич
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio2_labs
+    email:        job2@list.com
+    number_insurace: 772278018810
+    pension_sertificate: 5662-4545-45454
+    nature_work: Постоянная
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    type_work: По совместительству
+    name_foreign_language: Английский
+    degree_knowledge_foreign_languages: Владеет свободно
+    name_educational_institution: Институт экономики и культуры
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+    marriage_status: Не замужем / Холост
+    relation_degree: дочь
+    children: Дружинина Мария Александровна
+    date_birth_children: '2011-12-31'
 
   job_sensio_labs_3:
+    id: 3
     JobeetCategory: manager
     Education: top
     passport_id: 3
@@ -72,6 +111,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_4:
+    id: 4
     JobeetCategory: administrator
     Education: top
     passport_id: 4
@@ -107,6 +147,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_5:
+    id: 5
     JobeetCategory: voip_specialist
     Education: top
     passport_id: 5
@@ -142,6 +183,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_6:
+    id: 6
     JobeetCategory: technical_specialist
     Education: top
     passport_id: 6
@@ -177,6 +219,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_7:
+    id: 7
     JobeetCategory: director
     Education: top
     passport_id: 7
@@ -212,6 +255,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_8:
+    id: 8
     JobeetCategory: chief_accountant
     Education: top
     passport_id: 8
@@ -247,6 +291,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_9:
+    id: 9
     JobeetCategory: accountant
     Education: top
     passport_id: 9
@@ -282,6 +327,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_10:
+    id: 10
     JobeetCategory: head_economic_department
     Education: top
     passport_id: 10
@@ -317,6 +363,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_11:
+    id: 11
     JobeetCategory: secretary
     Education: top
     passport_id: 11
@@ -352,6 +399,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_12:
+    id: 12
     JobeetCategory: counsel
     Education: top
     passport_id: 12
@@ -387,6 +435,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_13:
+    id: 13
     JobeetCategory: programmer
     Education: top
     passport_id: 13
@@ -422,6 +471,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_14:
+    id: 14
     JobeetCategory: makeup_man
     Education: top
     passport_id: 14
@@ -457,6 +507,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_15:
+    id: 15
     JobeetCategory: copywriter
     Education: top
     passport_id: 15
@@ -492,6 +543,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_16:
+    id: 16
     JobeetCategory: call_specialist
     Education: top
     passport_id: 16
@@ -527,6 +579,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_17:
+    id: 17
     JobeetCategory: systems_analyst
     Education: top
     passport_id: 17
@@ -562,6 +615,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_18:
+    id: 18
     JobeetCategory: security
     Education: top
     passport_id: 18
@@ -597,6 +651,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_19:
+    id: 19
     JobeetCategory: head_it_department
     Education: top
     passport_id: 19
@@ -632,6 +687,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_20:
+    id: 20
     JobeetCategory: test
     Education: top
     passport_id: 20
@@ -667,6 +723,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_21:
+    id: 21
     JobeetCategory: test
     Education: top
     passport_id: 21
@@ -702,6 +759,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_22:
+    id: 22
     JobeetCategory: programmer
     Education: top
     passport_id: 22
@@ -737,6 +795,7 @@ JobeetJob:
     date_birth_children: '2011-12-31'
 
   job_sensio_labs_23:
+    id: 23
     JobeetCategory: programmer
     Education: top
     passport_id: 23
@@ -770,3 +829,75 @@ JobeetJob:
     relation_degree: дочь
     children: Дружинина Мария Александровна
     date_birth_children: '2011-12-31'
+
+  job_sensio_labs_24:
+    id: 24
+    JobeetCategory: programmer
+    Education: skot
+    passport_id: 24
+    User: User
+    Status: work
+    City: omsk
+    price: 24000
+    type:  M
+    tab_id: 334-124
+    logo:
+    first_name: Евгений
+    last_name: Грицаев
+    three_name: Игоревич
+    data_birth: '1985-01-01'
+    phone:  +7-913-357-47-24
+    token:        job_sensio_labs_24
+    email:        job@24list.com
+    number_insurace: 772578018824
+    pension_sertificate: 5623-4545-45424
+    nature_work: Постоянная
+    adress: ул. Дмитриева, д. 5 к.3 кв. 128
+    type_work: Основная
+    name_foreign_language: Английский
+    degree_knowledge_foreign_languages: Владеет свободно
+    name_educational_institution: ОМГТУ
+    diploma: 45099654
+    year_graduation: '1998-01-17'
+    diploma_qualification: инженер
+    speciality_diploma: инженер
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  job_sensio_labs_25:
+    id: 25
+    JobeetCategory: technical_specialist
+    Education: skot
+    passport_id: 25
+    User: User
+    Status: work
+    City: omsk
+    price: 18000
+    type:  Ж
+    tab_id: 334-125
+    logo:
+    first_name: Наталья
+    last_name: Бойко
+    three_name: Юрьевна
+    data_birth: '1986-06-17'
+    phone:  +7-913-257-47-24
+    token:        job_sensio_labs_27
+    email:        job@27list.com
+    number_insurace: 772578018827
+    pension_sertificate: 5623-4545-45427
+    nature_work: Постоянная
+    adress: ул. Ленина, д. 8 к. 2 кв. 123
+    type_work: Основная
+    name_foreign_language: Английский
+    degree_knowledge_foreign_languages: Владеет свободно
+    name_educational_institution: ОМГТУ
+    diploma: 45099656
+    year_graduation: '1998-01-17'
+    diploma_qualification: инженер по технической поддержке
+    speciality_diploma: инженер по технической поддержке
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:

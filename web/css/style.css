@@ -229,8 +229,16 @@ table td, table th {
     padding: 10px 1px !important;
 }
 
+table tr.even {
+    background: #ffffcc;
+}
+
+table tr.odd {
+    background: #fbfbfb;
+}
+
 table tr:hover {
-    background: #fffaaa;
+    background: #fffaaa !important;
 }
 
 .table td img {
@@ -282,5 +290,28 @@ table tr:hover {
     text-align: center !important;
     font-size: .8em;
     color: #3f3f3f;
+}
+
+.pager {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.pager li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.pager li:before {
+    content: '.';
+    color: #3f3f3f;
+    position: relative;
+    bottom: 3px;
+}
+
+.pager li:first-child:before {
+    content: '' !important;
 }
 

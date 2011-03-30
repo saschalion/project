@@ -6,15 +6,12 @@ index:
 
 delete:
   credentials: [ ADMIN ]
-  credentials: [ USER ]
 
 update:
   credentials: [ ADMIN ]
-  credentials: [ USER ]
 
 new:
   credentials: [ ADMIN ]
-  credentials: [ USER ]
 
 all:
   is_secure: true
