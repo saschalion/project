@@ -5,16 +5,13 @@ index:
   is_secure: true
 
 delete:
-  credentials: [ ADMIN ]
-  credentials: [ USER ]
+  credentials: [[ ADMIN, USER ]]
 
 update:
-  credentials: [ ADMIN ]
-  credentials: [ USER ]
+  credentials: [[ ADMIN, USER ]]
 
 new:
-  credentials: [ ADMIN ]
-  credentials: [ USER ]
+  credentials: [[ ADMIN, USER ]]
 
 all:
   is_secure: true

@@ -66,7 +66,6 @@ class JobeetJobForm extends BaseJobeetJobForm
 
     $this->validatorSchema['email'] = new sfValidatorAnd(array(
       $this->validatorSchema['email'],
-      new sfValidatorEmail(),
     ));
 
     $this->validatorSchema['logo'] = new sfValidatorFile(array(
