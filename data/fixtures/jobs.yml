@@ -23,54 +23,38 @@ JobeetJob:
     nature_work: Постоянная
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
     type_work: По совместительству
-    educational_institution_id: 1
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
     marriage_status: Не замужем / Холост
     relation_degree: дочь
     children: Дружинина Мария Александровна
     date_birth_children: '2011-12-31'
 
-#  job_sensio_labs_2:
-#    id: 2
-#    JobeetCategory: design
-#    Education: top
-#    passport_id: 2
-#    User: User
-#    Status: probation
-#    City: moscow
-#    price: 25000
-#    type:  M
-#    tab_id: 344-102
-#    logo:
-#    first_name: Сергей
-#    last_name: Артемьев
-#    three_name: Сергеевич
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio2_labs
-#    email:        job2@list.com
-#    number_insurace: 772278018810
-#    pension_sertificate: 5662-4545-45454
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Не замужем / Холост
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
+  job_sensio_labs_2:
+    id: 2
+    JobeetCategory: design
+    passport_id: 2
+    User: User
+    Status: probation
+    City: moscow
+    price: 25000
+    type:  M
+    tab_id: 344-102
+    logo:
+    first_name: Сергей
+    last_name: Артемьев
+    three_name: Сергеевич
+    data_birth: '2008-10-10'
+    phone:  +79033574730
+    token:        job_sensio2_labs
+    email:        job2@list.com
+    number_insurace: 772278018810
+    pension_sertificate: 5662-4545-45454
+    nature_work: Постоянная
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    type_work: По совместительству
+    marriage_status: Не замужем / Холост
+    relation_degree: дочь
+    children: Дружинина Мария Александровна
+    date_birth_children: '2011-12-31'
 #
 #  job_sensio_labs_3:
 #    id: 3

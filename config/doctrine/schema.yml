@@ -60,21 +60,25 @@ ForeignLanguage:
 
 # Образование
 EducationalInstitution:
-  actAs:
-    Timestampable: ~
   columns:
     name_educational_institution:
      type: string(150)
+     notnull: false
     diploma:
      type: string(20)
+     notnull: false
     year_graduation:
-      type: year
+      type: date
+      notnull: false
     education_id:
      type: integer
+     notnull: false
     diploma_qualification:
       type: string(100)
+      notnull: false
     speciality_diploma:
-     type: string(150) 
+     type: string(150)
+     notnull: false
 
   relations:
       Education:
@@ -119,6 +123,7 @@ JobeetJob:
       type: integer
     educational_institution_id:
       type: integer
+      notnull: false
 
     # Общие сведения
     last_name:

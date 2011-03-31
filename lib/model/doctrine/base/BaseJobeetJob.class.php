@@ -256,6 +256,7 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
              ));
         $this->hasColumn('educational_institution_id', 'integer', null, array(
              'type' => 'integer',
+             'notnull' => false,
              ));
         $this->hasColumn('last_name', 'string', 100, array(
              'type' => 'string',

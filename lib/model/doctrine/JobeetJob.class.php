@@ -20,7 +20,7 @@ class JobeetJob extends BaseJobeetJob
 
   }
 
-  if (!$this->getToken())
+   if (!$this->getToken())
   {
     $this->setToken(sha1($this->getEmail().rand(11111, 99999)));
   }

@@ -7,7 +7,7 @@
  * 
  * @property string $name_educational_institution
  * @property string $diploma
- * @property year $year_graduation
+ * @property date $year_graduation
  * @property integer $education_id
  * @property string $diploma_qualification
  * @property string $speciality_diploma
@@ -16,7 +16,7 @@
  * 
  * @method string                 getNameEducationalInstitution()   Returns the current record's "name_educational_institution" value
  * @method string                 getDiploma()                      Returns the current record's "diploma" value
- * @method year                   getYearGraduation()               Returns the current record's "year_graduation" value
+ * @method date                   getYearGraduation()               Returns the current record's "year_graduation" value
  * @method integer                getEducationId()                  Returns the current record's "education_id" value
  * @method string                 getDiplomaQualification()         Returns the current record's "diploma_qualification" value
  * @method string                 getSpecialityDiploma()            Returns the current record's "speciality_diploma" value
@@ -43,24 +43,30 @@ abstract class BaseEducationalInstitution extends sfDoctrineRecord
         $this->setTableName('educational_institution');
         $this->hasColumn('name_educational_institution', 'string', 150, array(
              'type' => 'string',
+             'notnull' => false,
              'length' => 150,
              ));
         $this->hasColumn('diploma', 'string', 20, array(
              'type' => 'string',
+             'notnull' => false,
              'length' => 20,
              ));
-        $this->hasColumn('year_graduation', 'year', null, array(
-             'type' => 'year',
+        $this->hasColumn('year_graduation', 'date', null, array(
+             'type' => 'date',
+             'notnull' => false,
              ));
         $this->hasColumn('education_id', 'integer', null, array(
              'type' => 'integer',
+             'notnull' => false,
              ));
         $this->hasColumn('diploma_qualification', 'string', 100, array(
              'type' => 'string',
+             'notnull' => false,
              'length' => 100,
              ));
         $this->hasColumn('speciality_diploma', 'string', 150, array(
              'type' => 'string',
+             'notnull' => false,
              'length' => 150,
              ));
 
@@ -79,8 +85,5 @@ abstract class BaseEducationalInstitution extends sfDoctrineRecord
         $this->hasMany('JobeetJob as EducationalInstitution', array(
              'local' => 'id',
              'foreign' => 'educational_institution_id'));
-
-        $timestampable0 = new Doctrine_Template_Timestampable();
-        $this->actAs($timestampable0);
     }
 }
