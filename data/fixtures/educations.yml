@@ -1,11 +1,15 @@
 # data/fixtures/educations.yml
 Education:
   top:
+    id: 1
     name: среднее (полное) общее
   bottom:
+    id: 2
     name: начальное профессиональное
   middle:
+    id: 3
     name: среднее профессиональное
   skot:
+    id: 4
     name: высшее профессиональное
 

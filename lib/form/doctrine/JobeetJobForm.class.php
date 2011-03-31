@@ -47,10 +47,6 @@ class JobeetJobForm extends BaseJobeetJobForm
     )
   ));
 
-
-
-
-
     $this->widgetSchema['logo'] = new sfWidgetFormInputFile(array(
     'label' => 'Фотография'
     ));
@@ -61,8 +57,8 @@ class JobeetJobForm extends BaseJobeetJobForm
 //
 //
 //
-//    $this->widgetSchema['sf_guard_user_id']->setDefault($this->getObject()->getUser()
-//);
+    $this->widgetSchema['education_id']->setDefault('1'
+);
 
     $this->validatorSchema['email'] = new sfValidatorAnd(array(
       $this->validatorSchema['email'],

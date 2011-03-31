@@ -106,9 +106,9 @@ label .red {
   color: #333333;
 }
 
-#sf_admin_container th a
-{
+#sf_admin_container th a {
   color: #000;
+  font-weight: normal;
 }
 
 #sf_admin_container th a:hover
@@ -249,10 +249,14 @@ li.print a {
 {
   margin: 4px 0;
   padding: 4px 4px 4px 30px;
-  background: url(../images/tick.png) no-repeat 10px 4px;
+  background: url(../images/tick.png) green no-repeat 10px 4px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: #ffc;
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  max-width: 400px;
 }
 
 #sf_admin_container .error
@@ -415,4 +419,5 @@ tfoot th {
 .price {
     color: #CC0000;
     font-size: .9em;
+    text-align: center;
 }

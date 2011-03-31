@@ -81,7 +81,7 @@ abstract class BaseJobeetJobFormFilter extends BaseFormFilterDoctrine
     ));
 
     $this->setValidators(array(
-      'price'                              => new sfValidatorPass(array('required' => false)),
+      'price'                              => new sfValidatorSchemaFilter('text', new sfValidatorNumber(array('required' => false))),
       'tab_id'                             => new sfValidatorPass(array('required' => false)),
       'number_insurace'                    => new sfValidatorPass(array('required' => false)),
       'pension_sertificate'                => new sfValidatorPass(array('required' => false)),
@@ -166,7 +166,7 @@ abstract class BaseJobeetJobFormFilter extends BaseFormFilterDoctrine
   {
     return array(
       'id'                                 => 'Number',
-      'price'                              => 'Text',
+      'price'                              => 'Number',
       'tab_id'                             => 'Text',
       'number_insurace'                    => 'Text',
       'pension_sertificate'                => 'Text',

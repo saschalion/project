@@ -14,30 +14,33 @@
   <?php echo $jobeet_job->getCity() ?> 
 </td>
 <td align="center">
-  <?php if ($jobeet_job->getStatus()== 'Работает'): ?>
-    <?php echo '<img src="/images/complete.jpg" alt="Работает" style="display: block;">' ?>
-  <?php endif; ?>
-  <?php if ($jobeet_job->getStatus()== 'Уволен'): ?>
-    <?php echo '<img src="/images/no_complete.jpg" alt="Уволен" style="display: block;">' ?>
-  <?php endif; ?>
-  <?php if ($jobeet_job->getStatus()== 'В командировке'): ?>
-    <?php echo '<img src="/images/users.png" alt="В командировке" style="display: block;">' ?>
-  <?php endif; ?>
-  <?php if ($jobeet_job->getStatus()== 'В отпуске'): ?>
-    <?php echo '<img src="/images/leave.jpg" alt="В отпуске" style="display: block;">' ?>
-  <?php endif; ?>
-  <?php if ($jobeet_job->getStatus()== 'Испытательный срок'): ?>
-    <?php echo '<img src="/images/faq.jpg" alt="Испытательный срок" style="display: block;">' ?>
-  <?php endif; ?>
+  <?php switch ($jobeet_job->getStatus()) {
+      case 'Работает':
+      echo '<img src="/images/complete.jpg" alt="Работает" style="display: block;">';
+          break;
+      case 'Уволен':
+      echo '<img src="/images/no_complete.jpg" alt="Уволен" style="display: block;">';
+          break;
+      case 'В командировке':
+      echo '<img src="/images/users.png" alt="В командировке" style="display: block;">';
+          break;
+      case 'В отпуске':
+      echo '<img src="/images/leave.jpg" alt="В отпуске" style="display: block;">';
+          break;
+      case 'Испытательный срок':
+      echo '<img src="/images/faq.jpg" alt="Испытательный срок" style="display: block;">';
+          break;
+    }
+  ?>
 </td>
 <td class="created">
-    <?php echo $jobeet_job->getUser()->getFirstName()?>
+    <?php echo $jobeet_job->getUser()?>
 </td>
 <td class="price">
     <?php if($jobeet_job->getPrice()): ?>
-        <?php echo $jobeet_job->getPrice()?> руб.
+        <?php echo $jobeet_job->getPrice()?>
         <?php else: ?>
-        Бесплатный
+        Нет ставки
     <? endif; ?>
 </td>
 <td class="created"> 

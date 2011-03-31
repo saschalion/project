@@ -86,7 +86,7 @@ abstract class autoSfGuardUserActions extends sfActions
 
     if ($this->getRoute()->getObject()->delete())
     {
-      $this->getUser()->setFlash('notice', 'The item was deleted successfully.');
+      $this->getUser()->setFlash('notice', 'Запись успешно удалена.');
     }
 
     $this->redirect('@sf_guard_user');
@@ -151,7 +151,7 @@ abstract class autoSfGuardUserActions extends sfActions
       $record->delete();
     }
 
-    $this->getUser()->setFlash('notice', 'The selected items have been deleted successfully.');
+    $this->getUser()->setFlash('notice', 'Запись успешно удалена.');
     $this->redirect('@sf_guard_user');
   }
 
