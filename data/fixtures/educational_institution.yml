@@ -1,0 +1,270 @@
+EducationalInstitution:
+  institution_1:
+    id: 1
+    Education: high
+    name_educational_institution: Институт международных экономических связей (ИМЭС)
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_2:
+    id: 2
+    Education: high
+    name_educational_institution: Московский социально-экономический институт (МСЭИ)
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_3:
+    id: 3
+    Education: high
+    name_educational_institution: Институт бизнеса и делового администрирования АНХ при Правительстве РФ
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_4:
+    id: 4
+    Education: high
+    name_educational_institution: Институт современного искусства (ИСИ)
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_5:
+    id: 5
+    Education: high
+    name_educational_institution: Высшая Школа Телевидения "Останкино"
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_6:
+    id: 6
+    Education: high
+    name_educational_institution: Академия сферы социальных отношений (АССО)
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_7:
+    id: 7
+    Education: high
+    name_educational_institution: Институт управления и информатики (ИУиИ)
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_8:
+    id: 8
+    Education: high
+    name_educational_institution: Московский энергетический институт (технический университет). Институт Лингвистики (факультет иностранных языков)
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_9:
+    id: 9
+    Education: high
+    name_educational_institution: Институт информационных технологий, экономики и менеджмента (ИИТЭМ)
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_10:
+    id: 10
+    Education: high
+    name_educational_institution: Московский гуманитарный институт им. Е.Р. Дашковой (МГИ им. Е.Р. Дашковой)
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_11:
+    id: 11
+    Education: high
+    name_educational_institution: Институт мировых цивилизаций
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_12:
+    id: 12
+    Education: high
+    name_educational_institution: Московский государственный открытый университет (МГОУ)
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_13:
+    id: 13
+    Education: high
+    name_educational_institution: Первый московский юридический институт (ПМЮИ)
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_14:
+    id: 14
+    Education: high
+    name_educational_institution: Институт бизнеса и права
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_15:
+    id: 15
+    Education: high
+    name_educational_institution: Институт экономики бизнеса (ИНЭКБИ)
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_16:
+    id: 16
+    Education: high
+    name_educational_institution: Московский институт экономики, менеджмента и права (МИЭМП)
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_17:
+    id: 17
+    Education: high
+    name_educational_institution: Государственный университет управления (ГУУ)
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_18:
+    id: 18
+    Education: high
+    name_educational_institution: Российский университет дружбы народов (РУДН)
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_19:
+    id: 19
+    Education: high
+    name_educational_institution: Институт экономики и культуры
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_20:
+    id: 20
+    Education: high
+    name_educational_institution: Омский государственный университет им. Ф.М. Достоевского
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_21:
+    id: 21
+    Education: high
+    name_educational_institution: Омский экономический институт
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_22:
+    id: 22
+    Education: high
+    name_educational_institution: Институт экономики и культуры
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_23:
+    id: 23
+    Education: high
+    name_educational_institution: Институт экономики и культуры
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_24:
+    id: 24
+    Education: high
+    name_educational_institution: Институт экономики и культуры
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_25:
+    id: 25
+    Education: high
+    name_educational_institution: Институт экономики и культуры
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_26:
+    id: 26
+    Education: high
+    name_educational_institution: Институт экономики и культуры
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_27:
+    id: 27
+    Education: high
+    name_educational_institution: Институт экономики и культуры
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_28:
+    id: 28
+    Education: high
+    name_educational_institution: Институт экономики и культуры
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_29:
+    id: 29
+    Education: high
+    name_educational_institution: Институт экономики и культуры
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике
+
+  institution_30:
+    id: 30
+    Education: high
+    name_educational_institution: Институт экономики и культуры
+    diploma: 45099654
+    year_graduation: '2011-01-17'
+    diploma_qualification: информатик-экономист
+    speciality_diploma: информатика в экономике

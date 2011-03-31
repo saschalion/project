@@ -47,6 +47,50 @@ class JobeetJobForm extends BaseJobeetJobForm
     )
   ));
 
+        $this->embedRelations(array(
+    'ForeignLanguage' => array(
+      'considerNewFormEmptyFields'    => array('passport_number'),
+      'noNewForm'                     => true,
+      'newFormLabel'                  => null,
+      'newFormClass'                  => 'ForeignLanguage',
+      'newFormClassArgs'              => array(array('sf_user' => $this->getOption('sf_user'))),
+      'displayEmptyRelations'         => true,
+      'formClass'                     => null,
+      'formClassArgs'                 => array(array('ah_add_delete_checkbox' => false)),
+      'newFormAfterExistingRelations' => true,
+      'formFormatter'                 => null,
+      'multipleNewForms'              => true,
+      'newFormsInitialCount'          => 2,
+      'newFormsContainerForm'         => 'ahNewRelationsContainerForm', // pass BaseForm object here or we will create ahNewRelationsContainerForm
+      'newRelationButtonLabel'        => '+',
+      'newRelationAddByCloning'       => true,
+      'newRelationUseJSFramework'     => 'jQuery',
+      'customEmbeddedFormLabelMethod' => 'getLabelTitle'
+    )
+  ));
+
+         $this->embedRelations(array(
+    'EducationalInstitution' => array(
+      'considerNewFormEmptyFields'    => array('passport_number'),
+      'noNewForm'                     => true,
+      'newFormLabel'                  => null,
+      'newFormClass'                  => 'EducationalInstitution',
+      'newFormClassArgs'              => array(array('sf_user' => $this->getOption('sf_user'))),
+      'displayEmptyRelations'         => true,
+      'formClass'                     => null,
+      'formClassArgs'                 => array(array('ah_add_delete_checkbox' => false)),
+      'newFormAfterExistingRelations' => true,
+      'formFormatter'                 => null,
+      'multipleNewForms'              => true,
+      'newFormsInitialCount'          => 2,
+      'newFormsContainerForm'         => 'ahNewRelationsContainerForm', // pass BaseForm object here or we will create ahNewRelationsContainerForm
+      'newRelationButtonLabel'        => '+',
+      'newRelationAddByCloning'       => true,
+      'newRelationUseJSFramework'     => 'jQuery',
+      'customEmbeddedFormLabelMethod' => 'getLabelTitle'
+    )
+  ));
+
     $this->widgetSchema['logo'] = new sfWidgetFormInputFile(array(
     'label' => 'Фотография'
     ));
@@ -57,10 +101,7 @@ class JobeetJobForm extends BaseJobeetJobForm
 //
 //
 //
-    $this->widgetSchema['education_id']->setDefault('1'
-);
-
-    $this->validatorSchema['email'] = new sfValidatorAnd(array(
+      $this->validatorSchema['email'] = new sfValidatorAnd(array(
       $this->validatorSchema['email'],
     ));
 
@@ -87,12 +128,7 @@ class JobeetJobForm extends BaseJobeetJobForm
       'expanded' => true,
       'default'  => 'Основная'
     ));
-
-    $this->widgetSchema['degree_knowledge_foreign_languages'] = new sfWidgetFormChoice(array(
-      'choices'  => Doctrine_Core::getTable('JobeetJob')->getForeignLanguages(),
-      'expanded' => false
-    ));
-
+  
     $this->widgetSchema['relation_degree'] = new sfWidgetFormChoice(array(
       'choices'  => Doctrine_Core::getTable('JobeetJob')->getRelationDegree(),
       'expanded' => false
@@ -110,8 +146,9 @@ class JobeetJobForm extends BaseJobeetJobForm
 
 
    $this->widgetSchema->setLabels(array(
-      'City'    => false,
       'Passport'    => false,
+      'ForeignLanguage'    => false,
+      'EducationalInstitution'    => false,
       'tab_id' => 'Табельный номер<span class="red">*</span>',
       'number_insurace' => 'ИНН<span class="red">*</span>',
       'nature_work' => 'Характер работ',
@@ -130,15 +167,7 @@ class JobeetJobForm extends BaseJobeetJobForm
       'city_id' => 'Город',
       'adress' => 'Адрес<span class="red">*</span>',
       'email' => '',
-      'logo' => 'Фото',
-      'name_foreign_language' => 'Наименование',
-      'degree_knowledge_foreign_languages' => 'Степень знания',
-      'name_educational_institution' => 'Наименование образовательного учреждения',
-      'diploma' => 'Диплом: серия, номер',
-      'year_graduation' => 'Год окончания',
-      'education_id' => 'Образование',
-      'diploma_qualification' => 'Квалификация по диплому',
-      'speciality_diploma' => 'Направление или специальность по диплому',
+      'logo' => 'Фото',   
       'name_educational_institution_extra' => 'Наименование образовательного учреждения',
       'diploma_extra' => 'Диплом: серия, номер',
       'year_graduation_extra' => 'Год окончания',
@@ -170,7 +199,7 @@ class JobeetJobForm extends BaseJobeetJobForm
       'base_release' => 'Основание',
       'more_information' => 'Сведения',
       'price' => 'Ставка, руб',
-       'relation_degree' => 'Степень родства'
+      'relation_degree' => 'Степень родства'
 ));
 
 //    $this->widgetSchema['sf_guard_user_id'] = new sfWidgetFormInputHidden();

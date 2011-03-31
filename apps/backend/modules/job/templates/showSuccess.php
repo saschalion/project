@@ -73,17 +73,17 @@
 </li>
 <li>4.
 <span>Знание иностранного языка</span>
- <?php if ($jobeet_job->getNameForeignLanguage()): ?>
-     <?php echo $jobeet_job->getNameForeignLanguage() . ',' ?>
-     <?php echo $jobeet_job->getDegreeKnowledgeForeignLanguages() ?>
+ <?php if ($jobeet_job->getForeignLanguage()->getNameForeignLanguage()): ?>
+     <?php echo $jobeet_job->getForeignLanguage()->getNameForeignLanguage() . ',' ?>
+     <?php echo $jobeet_job->getForeignLanguage()->getDegreeKnowledgeForeignLanguages() ?>
  <?php endif; ?>
  </li>
  <li>5.
 <span>Образование</span>
- <?php echo $jobeet_job->getEducation() ?>
+ <?php echo $jobeet_job->getEducationalInstitution()->getEducation() ?>
  </li>
     </ul>
-    <?php if ($jobeet_job->getNameEducationalInstitution()): ?>
+    <?php if ($jobeet_job->getEducationalInstitution()->getNameEducationalInstitution()): ?>
     <table>
         <thead>
             <tr>
@@ -102,13 +102,13 @@
         <tbody>
             <tr>
                 <td>
-                    <?php echo $jobeet_job->getNameEducationalInstitution() ?>
+                    <?php echo $jobeet_job->getEducationalInstitution()->getNameEducationalInstitution() ?>
                 </td>
                 <td>
-                    <?php echo $jobeet_job->getDiploma() ?>
+                    <?php echo $jobeet_job->getEducationalInstitution()->getDiploma() ?>
                 </td>
                 <td>
-                    <?php echo $jobeet_job->getYearGraduation() ?>
+                    <?php echo $jobeet_job->getEducationalInstitution()->getYearGraduation() ?>
                 </td>
             </tr>
             <tr>
@@ -122,10 +122,10 @@
             </tr>
             <tr>
                 <td>
-                    <?php echo $jobeet_job->getDiplomaQualification() ?>
+                    <?php echo $jobeet_job->getEducationalInstitution()->getDiplomaQualification() ?>
                 </td>
                 <td colspan="2">
-                    <?php echo $jobeet_job->getSpecialityDiploma() ?>
+                    <?php echo $jobeet_job->getEducationalInstitution()->getSpecialityDiploma() ?>
                 </td>
 
             </tr>
@@ -183,7 +183,7 @@
     </table>
     <? endif; ?>
     <ul>
-        <li>6. <span>Профессия</span> <?php echo $jobeet_job->getDiplomaQualification() ?></li>
+        <li>6. <span>Профессия</span> <?php echo $jobeet_job->getEducationalInstitution()->getDiplomaQualification() ?></li>
         <li>7. <span>Состояние в браке</span> 
             <?php if ($jobeet_job->getType() == 'M' & $jobeet_job->getMarriageStatus() == 'Не замужем / Холост'): ?>
                 <?php echo 'Холост' ?>

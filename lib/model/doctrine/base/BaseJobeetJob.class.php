@@ -15,6 +15,8 @@
  * @property integer $status_id
  * @property integer $sf_guard_user_id
  * @property integer $passport_id
+ * @property integer $foreign_language_id
+ * @property integer $educational_institution_id
  * @property string $last_name
  * @property string $first_name
  * @property string $three_name
@@ -22,18 +24,10 @@
  * @property date $data_birth
  * @property string $phone
  * @property string $mobile_phone
- * @property integer $education_id
  * @property integer $city_id
  * @property string $adress
  * @property string $email
  * @property string $logo
- * @property string $name_foreign_language
- * @property string $degree_knowledge_foreign_languages
- * @property string $name_educational_institution
- * @property string $diploma
- * @property year $year_graduation
- * @property string $diploma_qualification
- * @property string $speciality_diploma
  * @property string $name_educational_institution_extra
  * @property string $diploma_extra
  * @property date $year_graduation_extra
@@ -69,150 +63,141 @@
  * @property string $more_information
  * @property string $token
  * @property JobeetCategory $JobeetCategory
- * @property Education $Education
  * @property City $City
  * @property Status $Status
  * @property sfGuardUser $User
  * @property Passport $Passport
+ * @property ForeignLanguage $ForeignLanguage
+ * @property EducationalInstitution $EducationalInstitution
  * 
- * @method float          getPrice()                              Returns the current record's "price" value
- * @method string         getTabId()                              Returns the current record's "tab_id" value
- * @method string         getNumberInsurace()                     Returns the current record's "number_insurace" value
- * @method string         getPensionSertificate()                 Returns the current record's "pension_sertificate" value
- * @method string         getNatureWork()                         Returns the current record's "nature_work" value
- * @method string         getTypeWork()                           Returns the current record's "type_work" value
- * @method integer        getCategoryId()                         Returns the current record's "category_id" value
- * @method integer        getStatusId()                           Returns the current record's "status_id" value
- * @method integer        getSfGuardUserId()                      Returns the current record's "sf_guard_user_id" value
- * @method integer        getPassportId()                         Returns the current record's "passport_id" value
- * @method string         getLastName()                           Returns the current record's "last_name" value
- * @method string         getFirstName()                          Returns the current record's "first_name" value
- * @method string         getThreeName()                          Returns the current record's "three_name" value
- * @method string         getType()                               Returns the current record's "type" value
- * @method date           getDataBirth()                          Returns the current record's "data_birth" value
- * @method string         getPhone()                              Returns the current record's "phone" value
- * @method string         getMobilePhone()                        Returns the current record's "mobile_phone" value
- * @method integer        getEducationId()                        Returns the current record's "education_id" value
- * @method integer        getCityId()                             Returns the current record's "city_id" value
- * @method string         getAdress()                             Returns the current record's "adress" value
- * @method string         getEmail()                              Returns the current record's "email" value
- * @method string         getLogo()                               Returns the current record's "logo" value
- * @method string         getNameForeignLanguage()                Returns the current record's "name_foreign_language" value
- * @method string         getDegreeKnowledgeForeignLanguages()    Returns the current record's "degree_knowledge_foreign_languages" value
- * @method string         getNameEducationalInstitution()         Returns the current record's "name_educational_institution" value
- * @method string         getDiploma()                            Returns the current record's "diploma" value
- * @method year           getYearGraduation()                     Returns the current record's "year_graduation" value
- * @method string         getDiplomaQualification()               Returns the current record's "diploma_qualification" value
- * @method string         getSpecialityDiploma()                  Returns the current record's "speciality_diploma" value
- * @method string         getNameEducationalInstitutionExtra()    Returns the current record's "name_educational_institution_extra" value
- * @method string         getDiplomaExtra()                       Returns the current record's "diploma_extra" value
- * @method date           getYearGraduationExtra()                Returns the current record's "year_graduation_extra" value
- * @method string         getStudyExtra()                         Returns the current record's "study_extra" value
- * @method string         getDiplomaQualificationExtra()          Returns the current record's "diploma_qualification_extra" value
- * @method string         getSpecialityDiplomaExtra()             Returns the current record's "speciality_diploma_extra" value
- * @method string         getMainProfession()                     Returns the current record's "main_profession" value
- * @method string         getOtherProfession()                    Returns the current record's "other_profession" value
- * @method string         getTotalLength()                        Returns the current record's "total_length" value
- * @method string         getContinuousService()                  Returns the current record's "continuous_service" value
- * @method string         getLastJob()                            Returns the current record's "last_job" value
- * @method date           getTerminationDate()                    Returns the current record's "termination_date" value
- * @method string         getRelationDegree()                     Returns the current record's "relation_degree" value
- * @method string         getMarriageStatus()                     Returns the current record's "marriage_status" value
- * @method string         getChildren()                           Returns the current record's "children" value
- * @method year           getDateBirthChildren()                  Returns the current record's "date_birth_children" value
- * @method string         getGroupAccounting()                    Returns the current record's "group_accounting" value
- * @method string         getCategoryAccounting()                 Returns the current record's "category_accounting" value
- * @method string         getComposition()                        Returns the current record's "composition" value
- * @method string         getMilitaryRank()                       Returns the current record's "military_rank" value
- * @method string         getMilitaryDiscountSpecialty()          Returns the current record's "military_discount_specialty" value
- * @method string         getNumberMilitaryDiscountSpecialty()    Returns the current record's "number_military_discount_specialty" value
- * @method string         getFitness()                            Returns the current record's "fitness" value
- * @method string         getNameDistrictMilitaryOffice()         Returns the current record's "name_district_military_office" value
- * @method string         getNumberSpecialAccounting()            Returns the current record's "number_special_accounting" value
- * @method string         getKindLeave()                          Returns the current record's "kind_leave" value
- * @method date           getGettingStarted()                     Returns the current record's "getting_started" value
- * @method date           getEndWork()                            Returns the current record's "end_work" value
- * @method string         getNumberVacationDays()                 Returns the current record's "number_vacation_days" value
- * @method date           getCommencement()                       Returns the current record's "commencement" value
- * @method date           getEndLeave()                           Returns the current record's "end_leave" value
- * @method string         getBaseRelease()                        Returns the current record's "base_release" value
- * @method string         getMoreInformation()                    Returns the current record's "more_information" value
- * @method string         getToken()                              Returns the current record's "token" value
- * @method JobeetCategory getJobeetCategory()                     Returns the current record's "JobeetCategory" value
- * @method Education      getEducation()                          Returns the current record's "Education" value
- * @method City           getCity()                               Returns the current record's "City" value
- * @method Status         getStatus()                             Returns the current record's "Status" value
- * @method sfGuardUser    getUser()                               Returns the current record's "User" value
- * @method Passport       getPassport()                           Returns the current record's "Passport" value
- * @method JobeetJob      setPrice()                              Sets the current record's "price" value
- * @method JobeetJob      setTabId()                              Sets the current record's "tab_id" value
- * @method JobeetJob      setNumberInsurace()                     Sets the current record's "number_insurace" value
- * @method JobeetJob      setPensionSertificate()                 Sets the current record's "pension_sertificate" value
- * @method JobeetJob      setNatureWork()                         Sets the current record's "nature_work" value
- * @method JobeetJob      setTypeWork()                           Sets the current record's "type_work" value
- * @method JobeetJob      setCategoryId()                         Sets the current record's "category_id" value
- * @method JobeetJob      setStatusId()                           Sets the current record's "status_id" value
- * @method JobeetJob      setSfGuardUserId()                      Sets the current record's "sf_guard_user_id" value
- * @method JobeetJob      setPassportId()                         Sets the current record's "passport_id" value
- * @method JobeetJob      setLastName()                           Sets the current record's "last_name" value
- * @method JobeetJob      setFirstName()                          Sets the current record's "first_name" value
- * @method JobeetJob      setThreeName()                          Sets the current record's "three_name" value
- * @method JobeetJob      setType()                               Sets the current record's "type" value
- * @method JobeetJob      setDataBirth()                          Sets the current record's "data_birth" value
- * @method JobeetJob      setPhone()                              Sets the current record's "phone" value
- * @method JobeetJob      setMobilePhone()                        Sets the current record's "mobile_phone" value
- * @method JobeetJob      setEducationId()                        Sets the current record's "education_id" value
- * @method JobeetJob      setCityId()                             Sets the current record's "city_id" value
- * @method JobeetJob      setAdress()                             Sets the current record's "adress" value
- * @method JobeetJob      setEmail()                              Sets the current record's "email" value
- * @method JobeetJob      setLogo()                               Sets the current record's "logo" value
- * @method JobeetJob      setNameForeignLanguage()                Sets the current record's "name_foreign_language" value
- * @method JobeetJob      setDegreeKnowledgeForeignLanguages()    Sets the current record's "degree_knowledge_foreign_languages" value
- * @method JobeetJob      setNameEducationalInstitution()         Sets the current record's "name_educational_institution" value
- * @method JobeetJob      setDiploma()                            Sets the current record's "diploma" value
- * @method JobeetJob      setYearGraduation()                     Sets the current record's "year_graduation" value
- * @method JobeetJob      setDiplomaQualification()               Sets the current record's "diploma_qualification" value
- * @method JobeetJob      setSpecialityDiploma()                  Sets the current record's "speciality_diploma" value
- * @method JobeetJob      setNameEducationalInstitutionExtra()    Sets the current record's "name_educational_institution_extra" value
- * @method JobeetJob      setDiplomaExtra()                       Sets the current record's "diploma_extra" value
- * @method JobeetJob      setYearGraduationExtra()                Sets the current record's "year_graduation_extra" value
- * @method JobeetJob      setStudyExtra()                         Sets the current record's "study_extra" value
- * @method JobeetJob      setDiplomaQualificationExtra()          Sets the current record's "diploma_qualification_extra" value
- * @method JobeetJob      setSpecialityDiplomaExtra()             Sets the current record's "speciality_diploma_extra" value
- * @method JobeetJob      setMainProfession()                     Sets the current record's "main_profession" value
- * @method JobeetJob      setOtherProfession()                    Sets the current record's "other_profession" value
- * @method JobeetJob      setTotalLength()                        Sets the current record's "total_length" value
- * @method JobeetJob      setContinuousService()                  Sets the current record's "continuous_service" value
- * @method JobeetJob      setLastJob()                            Sets the current record's "last_job" value
- * @method JobeetJob      setTerminationDate()                    Sets the current record's "termination_date" value
- * @method JobeetJob      setRelationDegree()                     Sets the current record's "relation_degree" value
- * @method JobeetJob      setMarriageStatus()                     Sets the current record's "marriage_status" value
- * @method JobeetJob      setChildren()                           Sets the current record's "children" value
- * @method JobeetJob      setDateBirthChildren()                  Sets the current record's "date_birth_children" value
- * @method JobeetJob      setGroupAccounting()                    Sets the current record's "group_accounting" value
- * @method JobeetJob      setCategoryAccounting()                 Sets the current record's "category_accounting" value
- * @method JobeetJob      setComposition()                        Sets the current record's "composition" value
- * @method JobeetJob      setMilitaryRank()                       Sets the current record's "military_rank" value
- * @method JobeetJob      setMilitaryDiscountSpecialty()          Sets the current record's "military_discount_specialty" value
- * @method JobeetJob      setNumberMilitaryDiscountSpecialty()    Sets the current record's "number_military_discount_specialty" value
- * @method JobeetJob      setFitness()                            Sets the current record's "fitness" value
- * @method JobeetJob      setNameDistrictMilitaryOffice()         Sets the current record's "name_district_military_office" value
- * @method JobeetJob      setNumberSpecialAccounting()            Sets the current record's "number_special_accounting" value
- * @method JobeetJob      setKindLeave()                          Sets the current record's "kind_leave" value
- * @method JobeetJob      setGettingStarted()                     Sets the current record's "getting_started" value
- * @method JobeetJob      setEndWork()                            Sets the current record's "end_work" value
- * @method JobeetJob      setNumberVacationDays()                 Sets the current record's "number_vacation_days" value
- * @method JobeetJob      setCommencement()                       Sets the current record's "commencement" value
- * @method JobeetJob      setEndLeave()                           Sets the current record's "end_leave" value
- * @method JobeetJob      setBaseRelease()                        Sets the current record's "base_release" value
- * @method JobeetJob      setMoreInformation()                    Sets the current record's "more_information" value
- * @method JobeetJob      setToken()                              Sets the current record's "token" value
- * @method JobeetJob      setJobeetCategory()                     Sets the current record's "JobeetCategory" value
- * @method JobeetJob      setEducation()                          Sets the current record's "Education" value
- * @method JobeetJob      setCity()                               Sets the current record's "City" value
- * @method JobeetJob      setStatus()                             Sets the current record's "Status" value
- * @method JobeetJob      setUser()                               Sets the current record's "User" value
- * @method JobeetJob      setPassport()                           Sets the current record's "Passport" value
+ * @method float                  getPrice()                              Returns the current record's "price" value
+ * @method string                 getTabId()                              Returns the current record's "tab_id" value
+ * @method string                 getNumberInsurace()                     Returns the current record's "number_insurace" value
+ * @method string                 getPensionSertificate()                 Returns the current record's "pension_sertificate" value
+ * @method string                 getNatureWork()                         Returns the current record's "nature_work" value
+ * @method string                 getTypeWork()                           Returns the current record's "type_work" value
+ * @method integer                getCategoryId()                         Returns the current record's "category_id" value
+ * @method integer                getStatusId()                           Returns the current record's "status_id" value
+ * @method integer                getSfGuardUserId()                      Returns the current record's "sf_guard_user_id" value
+ * @method integer                getPassportId()                         Returns the current record's "passport_id" value
+ * @method integer                getForeignLanguageId()                  Returns the current record's "foreign_language_id" value
+ * @method integer                getEducationalInstitutionId()           Returns the current record's "educational_institution_id" value
+ * @method string                 getLastName()                           Returns the current record's "last_name" value
+ * @method string                 getFirstName()                          Returns the current record's "first_name" value
+ * @method string                 getThreeName()                          Returns the current record's "three_name" value
+ * @method string                 getType()                               Returns the current record's "type" value
+ * @method date                   getDataBirth()                          Returns the current record's "data_birth" value
+ * @method string                 getPhone()                              Returns the current record's "phone" value
+ * @method string                 getMobilePhone()                        Returns the current record's "mobile_phone" value
+ * @method integer                getCityId()                             Returns the current record's "city_id" value
+ * @method string                 getAdress()                             Returns the current record's "adress" value
+ * @method string                 getEmail()                              Returns the current record's "email" value
+ * @method string                 getLogo()                               Returns the current record's "logo" value
+ * @method string                 getNameEducationalInstitutionExtra()    Returns the current record's "name_educational_institution_extra" value
+ * @method string                 getDiplomaExtra()                       Returns the current record's "diploma_extra" value
+ * @method date                   getYearGraduationExtra()                Returns the current record's "year_graduation_extra" value
+ * @method string                 getStudyExtra()                         Returns the current record's "study_extra" value
+ * @method string                 getDiplomaQualificationExtra()          Returns the current record's "diploma_qualification_extra" value
+ * @method string                 getSpecialityDiplomaExtra()             Returns the current record's "speciality_diploma_extra" value
+ * @method string                 getMainProfession()                     Returns the current record's "main_profession" value
+ * @method string                 getOtherProfession()                    Returns the current record's "other_profession" value
+ * @method string                 getTotalLength()                        Returns the current record's "total_length" value
+ * @method string                 getContinuousService()                  Returns the current record's "continuous_service" value
+ * @method string                 getLastJob()                            Returns the current record's "last_job" value
+ * @method date                   getTerminationDate()                    Returns the current record's "termination_date" value
+ * @method string                 getRelationDegree()                     Returns the current record's "relation_degree" value
+ * @method string                 getMarriageStatus()                     Returns the current record's "marriage_status" value
+ * @method string                 getChildren()                           Returns the current record's "children" value
+ * @method year                   getDateBirthChildren()                  Returns the current record's "date_birth_children" value
+ * @method string                 getGroupAccounting()                    Returns the current record's "group_accounting" value
+ * @method string                 getCategoryAccounting()                 Returns the current record's "category_accounting" value
+ * @method string                 getComposition()                        Returns the current record's "composition" value
+ * @method string                 getMilitaryRank()                       Returns the current record's "military_rank" value
+ * @method string                 getMilitaryDiscountSpecialty()          Returns the current record's "military_discount_specialty" value
+ * @method string                 getNumberMilitaryDiscountSpecialty()    Returns the current record's "number_military_discount_specialty" value
+ * @method string                 getFitness()                            Returns the current record's "fitness" value
+ * @method string                 getNameDistrictMilitaryOffice()         Returns the current record's "name_district_military_office" value
+ * @method string                 getNumberSpecialAccounting()            Returns the current record's "number_special_accounting" value
+ * @method string                 getKindLeave()                          Returns the current record's "kind_leave" value
+ * @method date                   getGettingStarted()                     Returns the current record's "getting_started" value
+ * @method date                   getEndWork()                            Returns the current record's "end_work" value
+ * @method string                 getNumberVacationDays()                 Returns the current record's "number_vacation_days" value
+ * @method date                   getCommencement()                       Returns the current record's "commencement" value
+ * @method date                   getEndLeave()                           Returns the current record's "end_leave" value
+ * @method string                 getBaseRelease()                        Returns the current record's "base_release" value
+ * @method string                 getMoreInformation()                    Returns the current record's "more_information" value
+ * @method string                 getToken()                              Returns the current record's "token" value
+ * @method JobeetCategory         getJobeetCategory()                     Returns the current record's "JobeetCategory" value
+ * @method City                   getCity()                               Returns the current record's "City" value
+ * @method Status                 getStatus()                             Returns the current record's "Status" value
+ * @method sfGuardUser            getUser()                               Returns the current record's "User" value
+ * @method Passport               getPassport()                           Returns the current record's "Passport" value
+ * @method ForeignLanguage        getForeignLanguage()                    Returns the current record's "ForeignLanguage" value
+ * @method EducationalInstitution getEducationalInstitution()             Returns the current record's "EducationalInstitution" value
+ * @method JobeetJob              setPrice()                              Sets the current record's "price" value
+ * @method JobeetJob              setTabId()                              Sets the current record's "tab_id" value
+ * @method JobeetJob              setNumberInsurace()                     Sets the current record's "number_insurace" value
+ * @method JobeetJob              setPensionSertificate()                 Sets the current record's "pension_sertificate" value
+ * @method JobeetJob              setNatureWork()                         Sets the current record's "nature_work" value
+ * @method JobeetJob              setTypeWork()                           Sets the current record's "type_work" value
+ * @method JobeetJob              setCategoryId()                         Sets the current record's "category_id" value
+ * @method JobeetJob              setStatusId()                           Sets the current record's "status_id" value
+ * @method JobeetJob              setSfGuardUserId()                      Sets the current record's "sf_guard_user_id" value
+ * @method JobeetJob              setPassportId()                         Sets the current record's "passport_id" value
+ * @method JobeetJob              setForeignLanguageId()                  Sets the current record's "foreign_language_id" value
+ * @method JobeetJob              setEducationalInstitutionId()           Sets the current record's "educational_institution_id" value
+ * @method JobeetJob              setLastName()                           Sets the current record's "last_name" value
+ * @method JobeetJob              setFirstName()                          Sets the current record's "first_name" value
+ * @method JobeetJob              setThreeName()                          Sets the current record's "three_name" value
+ * @method JobeetJob              setType()                               Sets the current record's "type" value
+ * @method JobeetJob              setDataBirth()                          Sets the current record's "data_birth" value
+ * @method JobeetJob              setPhone()                              Sets the current record's "phone" value
+ * @method JobeetJob              setMobilePhone()                        Sets the current record's "mobile_phone" value
+ * @method JobeetJob              setCityId()                             Sets the current record's "city_id" value
+ * @method JobeetJob              setAdress()                             Sets the current record's "adress" value
+ * @method JobeetJob              setEmail()                              Sets the current record's "email" value
+ * @method JobeetJob              setLogo()                               Sets the current record's "logo" value
+ * @method JobeetJob              setNameEducationalInstitutionExtra()    Sets the current record's "name_educational_institution_extra" value
+ * @method JobeetJob              setDiplomaExtra()                       Sets the current record's "diploma_extra" value
+ * @method JobeetJob              setYearGraduationExtra()                Sets the current record's "year_graduation_extra" value
+ * @method JobeetJob              setStudyExtra()                         Sets the current record's "study_extra" value
+ * @method JobeetJob              setDiplomaQualificationExtra()          Sets the current record's "diploma_qualification_extra" value
+ * @method JobeetJob              setSpecialityDiplomaExtra()             Sets the current record's "speciality_diploma_extra" value
+ * @method JobeetJob              setMainProfession()                     Sets the current record's "main_profession" value
+ * @method JobeetJob              setOtherProfession()                    Sets the current record's "other_profession" value
+ * @method JobeetJob              setTotalLength()                        Sets the current record's "total_length" value
+ * @method JobeetJob              setContinuousService()                  Sets the current record's "continuous_service" value
+ * @method JobeetJob              setLastJob()                            Sets the current record's "last_job" value
+ * @method JobeetJob              setTerminationDate()                    Sets the current record's "termination_date" value
+ * @method JobeetJob              setRelationDegree()                     Sets the current record's "relation_degree" value
+ * @method JobeetJob              setMarriageStatus()                     Sets the current record's "marriage_status" value
+ * @method JobeetJob              setChildren()                           Sets the current record's "children" value
+ * @method JobeetJob              setDateBirthChildren()                  Sets the current record's "date_birth_children" value
+ * @method JobeetJob              setGroupAccounting()                    Sets the current record's "group_accounting" value
+ * @method JobeetJob              setCategoryAccounting()                 Sets the current record's "category_accounting" value
+ * @method JobeetJob              setComposition()                        Sets the current record's "composition" value
+ * @method JobeetJob              setMilitaryRank()                       Sets the current record's "military_rank" value
+ * @method JobeetJob              setMilitaryDiscountSpecialty()          Sets the current record's "military_discount_specialty" value
+ * @method JobeetJob              setNumberMilitaryDiscountSpecialty()    Sets the current record's "number_military_discount_specialty" value
+ * @method JobeetJob              setFitness()                            Sets the current record's "fitness" value
+ * @method JobeetJob              setNameDistrictMilitaryOffice()         Sets the current record's "name_district_military_office" value
+ * @method JobeetJob              setNumberSpecialAccounting()            Sets the current record's "number_special_accounting" value
+ * @method JobeetJob              setKindLeave()                          Sets the current record's "kind_leave" value
+ * @method JobeetJob              setGettingStarted()                     Sets the current record's "getting_started" value
+ * @method JobeetJob              setEndWork()                            Sets the current record's "end_work" value
+ * @method JobeetJob              setNumberVacationDays()                 Sets the current record's "number_vacation_days" value
+ * @method JobeetJob              setCommencement()                       Sets the current record's "commencement" value
+ * @method JobeetJob              setEndLeave()                           Sets the current record's "end_leave" value
+ * @method JobeetJob              setBaseRelease()                        Sets the current record's "base_release" value
+ * @method JobeetJob              setMoreInformation()                    Sets the current record's "more_information" value
+ * @method JobeetJob              setToken()                              Sets the current record's "token" value
+ * @method JobeetJob              setJobeetCategory()                     Sets the current record's "JobeetCategory" value
+ * @method JobeetJob              setCity()                               Sets the current record's "City" value
+ * @method JobeetJob              setStatus()                             Sets the current record's "Status" value
+ * @method JobeetJob              setUser()                               Sets the current record's "User" value
+ * @method JobeetJob              setPassport()                           Sets the current record's "Passport" value
+ * @method JobeetJob              setForeignLanguage()                    Sets the current record's "ForeignLanguage" value
+ * @method JobeetJob              setEducationalInstitution()             Sets the current record's "EducationalInstitution" value
  * 
  * @package    jobeet
  * @subpackage model
@@ -266,6 +251,12 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
         $this->hasColumn('passport_id', 'integer', null, array(
              'type' => 'integer',
              ));
+        $this->hasColumn('foreign_language_id', 'integer', null, array(
+             'type' => 'integer',
+             ));
+        $this->hasColumn('educational_institution_id', 'integer', null, array(
+             'type' => 'integer',
+             ));
         $this->hasColumn('last_name', 'string', 100, array(
              'type' => 'string',
              'notnull' => true,
@@ -298,9 +289,6 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
              'type' => 'string',
              'length' => 20,
              ));
-        $this->hasColumn('education_id', 'integer', null, array(
-             'type' => 'integer',
-             ));
         $this->hasColumn('city_id', 'integer', null, array(
              'type' => 'integer',
              'notnull' => true,
@@ -318,33 +306,6 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
         $this->hasColumn('logo', 'string', 255, array(
              'type' => 'string',
              'length' => 255,
-             ));
-        $this->hasColumn('name_foreign_language', 'string', 100, array(
-             'type' => 'string',
-             'length' => 100,
-             ));
-        $this->hasColumn('degree_knowledge_foreign_languages', 'string', 100, array(
-             'type' => 'string',
-             'length' => 100,
-             ));
-        $this->hasColumn('name_educational_institution', 'string', 150, array(
-             'type' => 'string',
-             'length' => 150,
-             ));
-        $this->hasColumn('diploma', 'string', 20, array(
-             'type' => 'string',
-             'length' => 20,
-             ));
-        $this->hasColumn('year_graduation', 'year', null, array(
-             'type' => 'year',
-             ));
-        $this->hasColumn('diploma_qualification', 'string', 100, array(
-             'type' => 'string',
-             'length' => 100,
-             ));
-        $this->hasColumn('speciality_diploma', 'string', 150, array(
-             'type' => 'string',
-             'length' => 150,
              ));
         $this->hasColumn('name_educational_institution_extra', 'string', 150, array(
              'type' => 'string',
@@ -490,11 +451,6 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
              'foreign' => 'id',
              'onDelete' => 'CASCADE'));
 
-        $this->hasOne('Education', array(
-             'local' => 'education_id',
-             'foreign' => 'id',
-             'onDelete' => 'RESTRICT'));
-
         $this->hasOne('City', array(
              'local' => 'city_id',
              'foreign' => 'id',
@@ -512,6 +468,16 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
 
         $this->hasOne('Passport', array(
              'local' => 'passport_id',
+             'foreign' => 'id',
+             'onDelete' => 'cascade'));
+
+        $this->hasOne('ForeignLanguage', array(
+             'local' => 'foreign_language_id',
+             'foreign' => 'id',
+             'onDelete' => 'cascade'));
+
+        $this->hasOne('EducationalInstitution', array(
+             'local' => 'educational_institution_id',
              'foreign' => 'id',
              'onDelete' => 'cascade'));
 

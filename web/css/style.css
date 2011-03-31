@@ -307,6 +307,7 @@ table tr:hover {
 .pager li:before {
     content: '.';
     color: #3f3f3f;
+    font-size: 1.3em;
     position: relative;
     bottom: 3px;
 }

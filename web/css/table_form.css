@@ -339,7 +339,8 @@ fieldset#sf_fieldset____________________________ .error_list {
   padding: 0 !important;
 }
 
-.sf_admin_form_field_Passport div {
+.sf_admin_form_field_Passport div,
+.sf_admin_form_field_ForeignLanguage div {
     padding: 0 !important;
 }
 
@@ -348,7 +349,7 @@ fieldset#sf_fieldset____________________________ .error_list {
 }
 
 .sf_admin_form_field_Passport .content,
-.sf_admin_form_field_Language .content,
+.sf_admin_form_field_ForeignLanguage .content,
 .sf_admin_form_field_EducationalInstitution .content,
 .sf_admin_form_field_EducationalInstitutionOther .content,
 .sf_admin_form_field_Profession .content,

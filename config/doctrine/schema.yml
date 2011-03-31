@@ -48,6 +48,41 @@ Passport:
     code_division:
      type: string(7)
 
+# Знание иностранных языков
+ForeignLanguage:
+  actAs:
+    Timestampable: ~
+  columns:    
+    name_foreign_language:
+     type: string(100)
+    degree_knowledge_foreign_languages:
+     type: string(100)
+
+# Образование
+EducationalInstitution:
+  actAs:
+    Timestampable: ~
+  columns:
+    name_educational_institution:
+     type: string(150)
+    diploma:
+     type: string(20)
+    year_graduation:
+      type: year
+    education_id:
+     type: integer
+    diploma_qualification:
+      type: string(100)
+    speciality_diploma:
+     type: string(150) 
+
+  relations:
+      Education:
+        onDelete: CASCADE
+        local: education_id
+        foreign: id
+        foreignAlias: Education
+
 JobeetJob:
   actAs:
     Timestampable: ~
@@ -80,6 +115,10 @@ JobeetJob:
       notnull: true
     passport_id:
       type: integer
+    foreign_language_id:
+      type: integer
+    educational_institution_id:
+      type: integer
 
     # Общие сведения
     last_name:
@@ -101,9 +140,6 @@ JobeetJob:
       notnull: true
     mobile_phone:
       type: string(20)
-    education_id:
-      type: integer
-      notnull: true
     city_id:
       type: integer
       notnull: true
@@ -115,26 +151,6 @@ JobeetJob:
       unique: true
     logo:
       type: string(255)
-
-    # Знание иностранных языков
-    name_foreign_language:
-     type: string(100)
-    degree_knowledge_foreign_languages:
-     type: string(100)
-
-    # Образование
-    name_educational_institution:
-     type: string(150)
-    diploma:
-     type: string(20)
-    year_graduation:
-      type: year
-    education_id:
-     type: integer
-    diploma_qualification:
-      type: string(100)
-    speciality_diploma:
-     type: string(150)
 
     # Послевузовое профессиональное образование
     name_educational_institution_extra:
@@ -224,13 +240,11 @@ JobeetJob:
     #how_to_apply: { type: string(4000)}    
     
   relations:
-    JobeetCategory: { onDelete: CASCADE, local: category_id, foreign: id, foreignAlias: JobeetJobs }
-
-    Education:
-      onDelete: RESTRICT
-      local: education_id
+    JobeetCategory:
+      onDelete: CASCADE
+      local: category_id
       foreign: id
-      foreignAlias: Jobeet
+      foreignAlias: JobeetCategory
 
     City:
       onDelete: CASCADE
@@ -243,17 +257,31 @@ JobeetJob:
       local: status_id
       foreign: id
       foreignAlias: Status
+
     User:
       class: sfGuardUser
       foreign: id
       onDelete: cascade
       local: sf_guard_user_id
       foreignAlias: Users
+
     Passport:
       foreign: id
       onDelete: cascade
       local: passport_id
       foreignAlias: Passport
+
+    ForeignLanguage:
+      foreign: id
+      onDelete: cascade
+      local: foreign_language_id
+      foreignAlias: ForeignLanguage
+
+    EducationalInstitution:
+      foreign: id
+      onDelete: cascade
+      local: educational_institution_id
+      foreignAlias: EducationalInstitution
 
 options:
     collate: utf8_general_ci
