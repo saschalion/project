@@ -1,0 +1,59 @@
+form  {
+  display: table;
+  margin-bottom: 15px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #353535;
+  background: #fbfbfb;
+}
+
+form a:hover {
+  color:#ff0000;
+}
+
+form input.button {
+  background: #262626;
+  font-size:1em;
+  color: #fff;
+  padding: 2px 5px;
+  border: 1px solid #262626;
+  cursor: pointer;
+  -moz-border-radius:4px;
+}
+
+/* Flash message */
+
+.flash .message {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-align:center;
+  margin: 0 auto 15px;
+
+}
+
+.flash .message p {
+  margin:8px;
+}
+.flash .error {
+  border: 1px solid #fbb;
+  background-color: #fdd;
+}
+.flash .warning {
+  border: 1px solid #fffaaa;
+  background-color: #ffffcc;
+}
+.flash .notice {
+  border: 1px solid #1FDF00;
+  background-color: #BBFFB6;
+}
+
+.error {
+ width:94%;
+ text-align:center;
+ background:#fff0f0;
+ padding:.8em;
+ margin:1em 1em 0 0;
+ border:2px solid #ddd;
+ }

@@ -1,0 +1,9 @@
+# data/fixtures/professions.yml
+Profession:
+  profession_1:
+    id: 1
+    main_profession: Инженер
+
+  profession_2:
+    id: 2
+    main_profession: Профессор

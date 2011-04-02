@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.9.0" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfDoctrineGraphvizPlugin</name>
+ <channel>plugins.symfony-project.org</channel>
+ <summary>Doctrine database schema visualisation.</summary>
+ <description>Adds a doctrine task that output database MCD and MLD schema using graphviz.</description>
+ <lead>
+  <name>David PHAM-VAN</name>
+  <user>Dav'</user>
+  <email>david@ab2r.com</email>
+  <active>yes</active>
+ </lead>
+ <developer>
+  <name>Dejan Spasic</name>
+  <user>Dejan.Spasic</user>
+  <email>spasic.dejan@yahoo.de</email>
+  <active>yes</active>
+ </developer>
+ <developer>
+  <name>Tomasz Ducin</name>
+  <user>tkoomzaaskz</user>
+  <email>tomasz.ducin@gmail.com</email>
+  <active>yes</active>
+ </developer>
+ <developer>
+  <name>Bartlomiej Budzynski</name>
+  <user>budzynski</user>
+  <email>b.budzynski@b2.com.pl</email>
+  <active>yes</active>
+ </developer>
+ <date>2010-06-24</date>
+ <time>00:53:59</time>
+ <version>
+  <release>0.2.3</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.symfony-project.com/license">MIT</license>
+ <notes>
+-
+ </notes>
+ <contents>
+  <dir name="/">
+   <file md5sum="c9580ccb9ca607092aae41179375e75b" name="lib/task/doctrineGraphvizTask.class.php" role="data"/>
+   <file md5sum="2a305293b6c633f853aae2295db07872" name="lib/generator/doctrineGraphvizMcdGenerator.class.php" role="data"/>
+   <file md5sum="1312c946ab1993ba3b5cba91fb0f47d0" name="lib/generator/doctrineGraphvizMldGenerator.class.php" role="data"/>
+   <file md5sum="a73445603928e36bf5e916b15d648acc" name="lib/generator/doctrineGraphvizGeneratorBase.class.php" role="data"/>
+   <file md5sum="98ef12e1984f1f89ff034fc99e38a162" name="test/_files/expected/mcd.schema.dot" role="data"/>
+   <file md5sum="d83d694f0bb1cd21a762191a1354951b" name="test/_files/expected/mld.schema.dot" role="data"/>
+   <file md5sum="699c4ff7ddf0ed5edef9f3958e76403c" name="test/_files/schema.yml" role="data"/>
+   <file md5sum="1309c76deb3e89b9f3caf2565eac802e" name="test/unit/lib/task/doctrineGraphvizTaskTest.php" role="data"/>
+   <file md5sum="491ef8525abf8794c21e75db948784eb" name="test/unit/lib/generator/doctrineGraphvizMldGeneratorTest.php" role="data"/>
+   <file md5sum="453a12b9d0a589aec821570c0c23163c" name="test/unit/lib/generator/doctrineGraphvizMcdGeneratorTest.php" role="data"/>
+   <file md5sum="0adb6fe3c8bb74d9f958d30367d0c562" name="test/bootstrap.php" role="data"/>
+   <file md5sum="e7cbbe294751a4f12d04c03aa1cf135a" name="test/prove.php" role="data"/>
+   <file md5sum="d9f9f9e01d4c0190196d42fa447ee63e" name="LICENSE" role="data"/>
+   <file md5sum="5aee35485237b5832bd3f1b5cae50c23" name="README" role="data"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   
+  </required>
+ </dependencies>
+ <phprelease/>
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.3</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.org/license">MIT license</license>
+   <license>MIT</license>
+   <date>2010-06-24</date>
+   <notes>
+* whitespace directory names bug fixed (thanks to Enrico Stahn)
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.2.2</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.org/license">MIT license</license>
+   <license>MIT</license>
+   <date>2009-12-24</date>
+   <notes>
+* fixed readme markdown syntax (Tomasz Ducin)
+* fixed package configuration (Tomasz Ducin)
+* added support for inheritance (Bartlomiej Budzynski)
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.2.1</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.org/license">MIT license</license>
+   <license>MIT</license>
+   <date>2009-12-24</date>
+   <notes>
+* entire release by: Bartlomiej Budzynski
+* added support for inheritance
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.org/license">MIT license</license>
+   <license>MIT</license>
+   <date>2009-12-22</date>
+   <notes>
+* entire release by: Tomasz Ducin
+* created new branch for symfony version 1.4
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.org/license">MIT license</license>
+   <license>MIT</license>
+   <date>2009-12-08</date>
+   <notes>
+* entire release by: Tomasz Ducin
+* fixed plugin directory path
+* fixed command executed to generate png files
+* added command line tool alias
+* more readable dot code generated for graphviz
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.org/license">MIT license</license>
+   <license>MIT</license>
+   <date>2009-12-08</date>
+   <notes>
+* entire release by: Tomasz Ducin
+* fixed plugin directory path
+* fixed command executed to generate png files
+* added command line tool alias
+* more readable dot code generated for graphviz
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.org/license">MIT license</license>
+   <license>MIT</license>
+   <date>2009-01-09</date>
+   <notes>
+* initial import
+   </notes>
+  </release>
+ </changelog>
+</package>

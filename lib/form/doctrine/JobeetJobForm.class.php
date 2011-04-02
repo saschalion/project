@@ -1,0 +1,262 @@
+<?php
+
+/**
+ * JobeetJob form.
+ *
+ * @package    jobeet
+ * @subpackage form
+ * @author     Your name here
+ * @version    SVN: $Id: sfDoctrineFormTemplate.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
+ */
+// lib/form/doctrine/JobeetJobForm.class.php
+// lib/form/doctrine/JobeetJobForm.class.php
+// lib/form/doctrine/JobeetJobForm.class.php
+
+
+
+class JobeetJobForm extends BaseJobeetJobForm
+{
+  public function configure()
+  {
+    unset(
+      $this['created_at'], $this['updated_at'],
+      $this['expires_at'], $this['is_activated'],
+      $this['token'], $this['name']
+     );
+ 
+
+          $this->embedRelations(array(
+    'Passport' => array(
+      'considerNewFormEmptyFields'    => array('passport_number'),
+      'noNewForm'                     => true,
+      'newFormLabel'                  => null,
+      'newFormClass'                  => 'Passport',
+      'newFormClassArgs'              => array(array('sf_user' => $this->getOption('sf_user'))),
+      'displayEmptyRelations'         => true,
+      'formClass'                     => null,
+      'formClassArgs'                 => array(array('ah_add_delete_checkbox' => false)),
+      'newFormAfterExistingRelations' => true,
+      'formFormatter'                 => null,
+      'multipleNewForms'              => true,
+      'newFormsInitialCount'          => 2,
+      'newFormsContainerForm'         => 'ahNewRelationsContainerForm', // pass BaseForm object here or we will create ahNewRelationsContainerForm
+      'newRelationButtonLabel'        => '+',
+      'newRelationAddByCloning'       => true,
+      'newRelationUseJSFramework'     => 'jQuery',
+      'customEmbeddedFormLabelMethod' => 'getLabelTitle'
+    )
+  ));
+
+        $this->embedRelations(array(
+    'ForeignLanguage' => array(
+      'considerNewFormEmptyFields'    => array('passport_number'),
+      'noNewForm'                     => true,
+      'newFormLabel'                  => null,
+      'newFormClass'                  => 'ForeignLanguage',
+      'newFormClassArgs'              => array(array('sf_user' => $this->getOption('sf_user'))),
+      'displayEmptyRelations'         => true,
+      'formClass'                     => null,
+      'formClassArgs'                 => array(array('ah_add_delete_checkbox' => false)),
+      'newFormAfterExistingRelations' => true,
+      'formFormatter'                 => null,
+      'multipleNewForms'              => true,
+      'newFormsInitialCount'          => 2,
+      'newFormsContainerForm'         => 'ahNewRelationsContainerForm', // pass BaseForm object here or we will create ahNewRelationsContainerForm
+      'newRelationButtonLabel'        => '+',
+      'newRelationAddByCloning'       => true,
+      'newRelationUseJSFramework'     => 'jQuery',
+      'customEmbeddedFormLabelMethod' => 'getLabelTitle'
+    )
+  ));
+
+         $this->embedRelations(array(
+    'EducationalInstitution' => array(
+      'considerNewFormEmptyFields'    => array('passport_number'),
+      'noNewForm'                     => true,
+      'newFormLabel'                  => null,
+      'newFormClass'                  => 'EducationalInstitution',
+      'newFormClassArgs'              => array(array('sf_user' => $this->getOption('sf_user'))),
+      'displayEmptyRelations'         => true,
+      'formClass'                     => null,
+      'formClassArgs'                 => array(array('ah_add_delete_checkbox' => false)),
+      'newFormAfterExistingRelations' => true,
+      'formFormatter'                 => null,
+      'multipleNewForms'              => true,
+      'newFormsInitialCount'          => 2,
+      'newFormsContainerForm'         => 'ahNewRelationsContainerForm', // pass BaseForm object here or we will create ahNewRelationsContainerForm
+      'newRelationButtonLabel'        => '+',
+      'newRelationAddByCloning'       => true,
+      'newRelationUseJSFramework'     => 'jQuery',
+      'customEmbeddedFormLabelMethod' => 'getLabelTitle'
+    )
+  ));
+
+       $this->embedRelations(array(
+    'EducationalInstitutionExtra' => array(
+      'considerNewFormEmptyFields'    => array('passport_number'),
+      'noNewForm'                     => true,
+      'newFormLabel'                  => null,
+      'newFormClass'                  => 'EducationalInstitutionExtra',
+      'newFormClassArgs'              => array(array('sf_user' => $this->getOption('sf_user'))),
+      'displayEmptyRelations'         => true,
+      'formClass'                     => null,
+      'formClassArgs'                 => array(array('ah_add_delete_checkbox' => false)),
+      'newFormAfterExistingRelations' => true,
+      'formFormatter'                 => null,
+      'multipleNewForms'              => true,
+      'newFormsInitialCount'          => 2,
+      'newFormsContainerForm'         => 'ahNewRelationsContainerForm', // pass BaseForm object here or we will create ahNewRelationsContainerForm
+      'newRelationButtonLabel'        => '+',
+      'newRelationAddByCloning'       => true,
+      'newRelationUseJSFramework'     => 'jQuery',
+      'customEmbeddedFormLabelMethod' => 'getLabelTitle'
+    )
+  ));
+
+        $this->embedRelations(array(
+    'Profession' => array(
+      'considerNewFormEmptyFields'    => array('passport_number'),
+      'noNewForm'                     => true,
+      'newFormLabel'                  => null,
+      'newFormClass'                  => 'Profession',
+      'newFormClassArgs'              => array(array('sf_user' => $this->getOption('sf_user'))),
+      'displayEmptyRelations'         => true,
+      'formClass'                     => null,
+      'formClassArgs'                 => array(array('ah_add_delete_checkbox' => false)),
+      'newFormAfterExistingRelations' => true,
+      'formFormatter'                 => null,
+      'multipleNewForms'              => true,
+      'newFormsInitialCount'          => 2,
+      'newFormsContainerForm'         => 'ahNewRelationsContainerForm', // pass BaseForm object here or we will create ahNewRelationsContainerForm
+      'newRelationButtonLabel'        => '+',
+      'newRelationAddByCloning'       => true,
+      'newRelationUseJSFramework'     => 'jQuery',
+      'customEmbeddedFormLabelMethod' => 'getLabelTitle'
+    )
+  ));
+
+    $this->widgetSchema['logo'] = new sfWidgetFormInputFile(array(
+    'label' => 'Фотография'
+    ));
+
+      $this->validatorSchema['email'] = new sfValidatorAnd(array(
+      $this->validatorSchema['email'],
+    ));
+
+    $this->validatorSchema['logo'] = new sfValidatorFile(array(
+      'required'   => false,
+      'path'       => sfConfig::get('sf_upload_dir').'/jobs',
+      'mime_types' => 'web_images',
+    ));
+
+     $this->widgetSchema['type'] = new sfWidgetFormChoice(array(
+      'choices'  => Doctrine_Core::getTable('JobeetJob')->getTypesType(),
+      'expanded' => true,
+      'default'  => 'M'
+     ));  
+
+  
+    $this->widgetSchema['relation_degree'] = new sfWidgetFormChoice(array(
+      'choices'  => Doctrine_Core::getTable('JobeetJob')->getRelationDegree(),
+      'expanded' => false
+    ));
+
+    $this->widgetSchema['marriage_status'] = new sfWidgetFormChoice(array(
+      'choices'  => array(
+          'Не замужем / Холост' => 'Не замужем / Холост',
+          'Замужем / Женат'     => 'Замужем / Женат'
+          
+      ),
+      'expanded' => false
+    ));
+
+    $this->widgetSchema['type_work'] = new sfWidgetFormChoice(array(
+      'choices'  => Doctrine_Core::getTable('JobeetJob')->getTypesTypeWork(),
+      'expanded' => true,
+      'default'  => 'Основная'
+    ));
+
+    $this->widgetSchema['nature_work'] = new sfWidgetFormChoice(array(
+      'choices'  => Doctrine_Core::getTable('JobeetJob')->getNatureWork(),
+      'expanded' => true
+    ));
+
+   $this->widgetSchema->setLabels(array(
+      'Passport'    => false,
+      'ForeignLanguage'    => false,
+      'EducationalInstitution'    => false,
+      'EducationalInstitutionExtra'    => false,
+      'Profession'    => false,
+      'tab_id' => 'Табельный номер<span class="red">*</span>',
+      'number_insurace' => 'ИНН<span class="red">*</span>',
+      'nature_work' => 'Характер работ',
+      'pension_sertificate' => 'Номер свидетельства ОПС<span class="red">*</span>',
+      'type_work' => 'Вид работы',
+      'sf_guard_user_id' => 'Пользователь<span class="red">*</span>',
+      'category_id' => 'Должность',
+      'last_name' => 'Фамилия<span class="red">*</span>',
+      'first_name' => 'Имя<span class="red">*</span>',
+      'three_name' => 'Отчество<span class="red">*</span>',
+      'type' => 'Пол',
+       'mobile_phone' => 'Мобильный телефон',
+      'status_id' => 'Статус',
+      'data_birth' => 'Дата рождения<span class="red">*</span>',
+      'phone' => 'Телефон<span class="red">*</span>',
+      'city_id' => 'Город',
+      'adress' => 'Адрес<span class="red">*</span>',
+      'email' => '',
+      'logo' => 'Фото',        
+      'main_profession' => 'Основная',
+      'other_profession' => 'Другая',
+      'total_length' => 'Общий стаж',
+      'continuous_service' => 'Непрерывный стаж',
+      'last_job' => 'Последнее место работы',
+      'termination_date' => 'Дата увольнения',
+      'marriage_status' => 'Состояние в браке',
+      'children' => 'Дети, ФИО',
+      'date_birth_children' => 'Дата рождения',
+      'group_accounting' => 'Группа учета',
+      'category_accounting' => 'Категория учета',
+      'composition' => 'Состав',
+      'military_rank' => 'Воинское звание',
+      'military_discount_specialty' => 'Воен. учетн. спец.',
+      'number_military_discount_specialty' => '№',
+      'name_district_military_office' => 'Годность',
+      'number_special_accounting' => 'Название районного военкомата',
+      'kind_leave' => 'Вид отпуска',
+      'getting_started' => 'Период работы с',
+      'end_work' => 'по',
+      'number_vacation_days' => 'Количество календарных дней отпуска',
+      'commencement' => 'Дата начала',
+      'end_leave' => 'Дата окончания',
+      'base_release' => 'Основание',
+      'more_information' => 'Сведения',
+      'price' => 'Ставка, руб',
+      'relation_degree' => 'Степень родства'
+));
+
+    $this->widgetSchema->setHelp(
+     'passport_number', 'Пример: 4502 605593'
+         );
+
+    $this->widgetSchema->setHelp(
+     'phone', 'Пример: +7(905)156-89-36'
+         );
+
+    $this->widgetSchema['sf_guard_user_id'] = new sfWidgetFormInputHidden();
+    $this->validatorSchema['sf_guard_user_id'] = new sfValidatorPass();
+
+
+parent::configure();
+
+    $this->widgetSchema['logo'] = new sfWidgetFormInputFileEditable(array(
+      'label'     => 'Фотография',
+      'file_src'  => '/uploads/jobs/'.$this->getObject()->getLogo(),
+      'is_image'  => true,
+      'edit_mode' => !$this->isNew(),
+      'template'  => '<div>%file%<br />%input%<br />%delete% %delete_label%</div>',
+    ));
+
+    $this->validatorSchema['logo_delete'] = new sfValidatorPass();
+  }
+}

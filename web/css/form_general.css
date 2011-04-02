@@ -1,0 +1,108 @@
+.form  {
+  width: 350px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  -moz-border-radius: 4px;
+}
+
+ .form  a:hover {
+  color:#ff0000;
+}
+
+label {
+  font-weight: bold;
+  color: #353535;
+}
+
+.form .fieldset {
+    margin-bottom: .5em;
+    padding: 0;
+    border: none;
+  }
+
+.form input.button {
+  background: #262626;
+  font-size:1em;
+  color: #fff;
+  padding: 2px 5px;
+  border: 1px solid #262626;
+  cursor: pointer;
+  -moz-border-radius:4px;
+}
+
+.form .input
+{
+margin-bottom:15px;
+}
+
+.form .input.text input, .form .input textarea, .form .input.password input, .form .input.select select
+{
+width:100%;
+margin-top:1px;
+margin:0;
+padding:3px;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.form  .checkbox
+{
+margin-bottom:15px;
+}
+
+.form  .checkbox input
+{
+margin-top:4px;
+margin-left:10px;
+}
+
+.form  .checkbox label
+{
+float:left;
+}
+
+.form .input label {
+  float: left;
+  margin-top:5px;
+}
+
+.form .group label {
+  margin-right:10px;
+  margin-top:5px;
+}
+
+.form .group {
+ margin-top:5px;
+}
+
+.form .datetime
+{
+margin-top:10px;
+}
+
+.datetime label
+{
+display:block;
+}
+
+
+.form-ul label, .form-ul input[type='text'], .form-ul select, .form-ul .radio_list {
+    display: inline-block !important;
+}
+
+.form-ul .radio_list li {
+    border-bottom: none;
+}
+
+.form-ul input[type='text'] {
+    width: 550px;
+}
+
+.form-ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 7px 0 7px 5px;
+}
+
+.form-ul label {
+    width: 12em !important;
+}

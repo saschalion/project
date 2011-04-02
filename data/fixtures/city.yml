@@ -1,0 +1,40 @@
+# data/fixtures/city.yml
+City:
+  moscow:
+    name: Москва
+  omsk:
+    name: Омск
+  vologda:
+    name: Вологда
+  novosibirsk:
+    name: Новосибирск
+  yakutsk:
+    name: Якутск
+  astrahan:
+    name: Астрахань
+  adler:
+    name: Адлер
+  yaroslavl:
+    name: Ярославль
+  sankt_peterburg:
+    name: Санкт-Петербург
+  tomsk:
+    name: Томск
+  chelyabinsk:
+    name: Челябинск
+  ryazan:
+    name: Рязань
+  tula:
+    name: Тула
+  orel:
+    name: Орел
+  belgorod:
+    name: Белгород
+
+
+
+
+
+
+
+

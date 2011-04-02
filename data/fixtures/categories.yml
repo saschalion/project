@@ -1,0 +1,45 @@
+# data/fixtures/categories.yml
+JobeetCategory:
+  manager:
+    name: Менеджер проектов
+  administrator:
+    name: Администратор
+  voip_specialist:
+    name: VoIP специалист
+  technical_specialist:
+    name: Технический специалист
+  director:
+    name: Директор
+  chief_accountant:
+    name: Главный бухгалтер
+  accountant:
+    name: Бухгалтер
+  head_economic_department:
+    name: Начальник АХО
+  secretary:
+    name: Секретарь
+  counsel:
+    name: Юрисконсульт
+  programmer:
+    name: Программист
+  makeup_man:
+    name: Веб-вестальщик
+  design:
+    name: Веб-дизайнер
+  copywriter:
+    name: Копирайтер
+  call_specialist:
+    name: Сотрудник технической поддержки
+  systems_analyst:
+    name: Системный аналитик
+  security:
+    name: Охранник
+  head_it_department:
+    name: Начальник ИТ отдела
+  test:
+    name: Тестировщик
+
+
+
+
+

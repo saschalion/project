@@ -1,0 +1,346 @@
+  job_extreme_sensio:
+    JobeetCategory: design
+    Education: middle
+    City: moscow
+    type:         part-time
+    tab_id:      644-108
+    company:      Extreme Sensio
+    logo:         /uploads/jobs/extreme_sensio.png
+    position:     Web Designer
+    first_name:   Александр
+    last_name:   Федоров
+    three_name:   Хлобыстович
+    passport_number:  45032302782
+    data_id: 2000-12-01
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio
+    email:        job@mail.com
+    expires_at:   '2008-10-10'
+
+  job@example.com:
+    JobeetCategory: programming
+    Education: bottom
+    City: moscow
+    type:         part-time
+    tab_id:      345-108
+    company:      Fairdevteam
+    logo:         /uploads/jobs/extreme_sensio.png
+    position:     Web Designer
+    first_name:   Александр
+    last_name:   Ярославский
+    three_name:   Хлобыстович
+    passport_number:  45042302783
+    data_id: 2000-12-01
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job@example.com
+    email:        job@example.com
+    expires_at:   '2008-10-10'
+
+  job@example2.com:
+    JobeetCategory: programming
+    Education: bottom
+    City: moscow
+    type:         part-time
+    tab_id:      346-108
+    company:      Fairdevteam
+    logo:         /uploads/jobs/extreme_sensio.png
+    position:     Web Designer
+    first_name:   Александр
+    last_name:   Ярославский
+    three_name:   Хлобыстович
+    passport_number:  45042302784
+    data_id: 2000-12-01
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job@example2.com
+    email:        job@example2.com
+    expires_at:   '2008-10-10'
+
+  job_sensio_labs3:
+    JobeetCategory: design
+    Education: top
+    City: moscow
+    type:         full-time
+    tab_id:      344-148
+    company:      Sensio Labs
+    logo:         /uploads/jobs/sensio_labs.png
+    position:     Web Developer
+    first_name:   Александр
+    last_name:   Федоров
+    three_name:   Хлобыстович
+    passport_number:  43022302781
+    data_id: 2000-12-01
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_sensio_labs3
+    email:        job@list2.com
+    expires_at:   '2008-10-10'
+
+  job_extreme_sensio2:
+    JobeetCategory: design
+    Education: middle
+    City: moscow
+    type:         part-time
+    tab_id:      644-138
+    company:      Extreme Sensio
+    logo:         /uploads/jobs/extreme_sensio.png
+    position:     Web Designer
+    first_name:   Александр
+    last_name:   Федоров
+    three_name:   Хлобыстович
+    passport_number:  45031302782
+    data_id: 2000-12-01
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio2
+    email:        job@mail3.com
+    expires_at:   '2008-10-10'
+
+  job@example.com5:
+    JobeetCategory: programming
+    Education: bottom
+    City: moscow
+    type:         part-time
+    tab_id:      345-128
+    company:      Fairdevteam
+    logo:         /uploads/jobs/extreme_sensio.png
+    position:     Web Designer
+    first_name:   Александр
+    last_name:   Ярославский
+    three_name:   Хлобыстович
+    passport_number:  45044302783
+    data_id: 2000-12-01
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job@example.com5
+    email:        job@example4.com
+    expires_at:   '2008-10-10'
+
+  job@example2.com5:
+    JobeetCategory: programming
+    Education: bottom
+    City: moscow
+    type:         part-time
+    tab_id:      346-118
+    company:      Fairdevteam
+    logo:         /uploads/jobs/extreme_sensio.png
+    position:     Web Designer
+    first_name:   Александр
+    last_name:   Ярославский
+    three_name:   Хлобыстович
+    passport_number:  45046302784
+    data_id: 2000-12-01
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job@example2.com5
+    email:        job@example5.com
+    expires_at:   '2008-10-10'
+
+  job_sensio_labs55:
+    JobeetCategory: design
+    Education: top
+    City: moscow
+    type:         full-time
+    tab_id:      344-155
+    company:      Sensio Labs
+    logo:         /uploads/jobs/sensio_labs.png
+    position:     Web Developer
+    first_name:   Александр
+    last_name:   Федоров
+    three_name:   Хлобыстович
+    passport_number:  45025502781
+    data_id: 2000-12-01
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_sensio_labs55
+    email:        job@list55.com
+    expires_at:   '2008-10-10'
+
+  job_extreme_sensio66:
+    JobeetCategory: design
+    Education: middle
+    City: moscow
+    type:         part-time
+    tab_id:      644-166
+    company:      Extreme Sensio
+    logo:         /uploads/jobs/extreme_sensio.png
+    position:     Web Designer
+    first_name:   Александр
+    last_name:   Федоров
+    three_name:   Хлобыстович
+    passport_number:  45036602782
+    data_id: 2000-12-01
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio66
+    email:        job@mail66.com
+    expires_at:   '2008-10-10'
+
+  job@example.com77:
+    JobeetCategory: programming
+    Education: bottom
+    City: moscow
+    type:         part-time
+    tab_id:      345-177
+    company:      Fairdevteam
+    logo:         /uploads/jobs/extreme_sensio.png
+    position:     Web Designer
+    first_name:   Александр
+    last_name:   Ярославский
+    three_name:   Хлобыстович
+    passport_number:  45042302777
+    data_id: 2000-12-01
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job@example.com77
+    email:        job@example77.com
+    expires_at:   '2008-10-10'
+
+  job@example2.com88:
+    JobeetCategory: programming
+    Education: bottom
+    City: moscow
+    type:         part-time
+    tab_id:      346-188
+    company:      Fairdevteam
+    logo:         /uploads/jobs/extreme_sensio.png
+    position:     Web Designer
+    first_name:   Александр
+    last_name:   Ярославский
+    three_name:   Хлобыстович
+    passport_number:  45042882784
+    data_id: 2000-12-01
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job@example2.com88
+    email:        job@example88.com
+    expires_at:   '2008-10-10'
+
+  job_sensio_labs99:
+    JobeetCategory: design
+    Education: top
+    City: moscow
+    type:         full-time
+    tab_id:      344-199
+    company:      Sensio Labs
+    logo:         /uploads/jobs/sensio_labs.png
+    position:     Web Developer
+    first_name:   Александр
+    last_name:   Федоров
+    three_name:   Хлобыстович
+    passport_number:  43022302721
+    data_id: 2000-12-01
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_sensio_labs99
+    email:        job@list99.com
+    expires_at:   '2008-10-10'
+
+  job_extreme_sensio12:
+    JobeetCategory: design
+    Education: middle
+    City: moscow
+    type:         part-time
+    tab_id:      644-112
+    company:      Extreme Sensio
+    logo:         /uploads/jobs/extreme_sensio.png
+    position:     Web Designer
+    first_name:   Александр
+    last_name:   Федоров
+    three_name:   Хлобыстович
+    passport_number:  45031122782
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio12
+    email:        job@mail12.com
+    expires_at:   '2008-10-10'
+
+  job@example.com15:
+    JobeetCategory: programming
+    Education: bottom
+    City: moscow
+    type:         part-time
+    tab_id:      345-113
+    company:      Fairdevteam
+    logo:         /uploads/jobs/extreme_sensio.png
+    position:     Web Designer
+    first_name:   Александр
+    last_name:   Ярославский
+    three_name:   Хлобыстович
+    passport_number:  45044302713
+    data_id: 2000-12-01
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job@example.com15
+    email:        job@example14.com
+    expires_at:   '2008-10-10'
+
+  job@example2.com25:
+    JobeetCategory: programming
+    Education: bottom
+    City: moscow
+    type:         part-time
+    tab_id:      346-123
+    company:      Fairdevteam
+    logo:         /uploads/jobs/extreme_sensio.png
+    position:     Web Designer
+    first_name:   Александр
+    last_name:   Ярославский
+    three_name:   Хлобыстович
+    passport_number:  45046302484
+    data_id: 2000-12-01
+    phone:  +79033574730
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job@example2.com25
+    email:        job@example25.com
+    expires_at:   '2008-10-10'
+
+## YAML Template.
+---

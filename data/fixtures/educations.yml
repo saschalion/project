@@ -1,0 +1,15 @@
+# data/fixtures/educations.yml
+Education:
+  average:
+    id: 1
+    name: среднее (полное) общее
+  primary:
+    id: 2
+    name: начальное профессиональное
+  middle:
+    id: 3
+    name: среднее профессиональное
+  high:
+    id: 4
+    name: высшее профессиональное
+
