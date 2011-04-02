@@ -346,6 +346,10 @@ fieldset#sf_fieldset____________________________ .error_list {
     padding: 0 !important;
 }
 
+.sf_admin_form_field_Passport > .error_list {
+    display: none;
+}
+
 #jobeet_job_filters_tab_id {
     margin-bottom: 10px;
 }

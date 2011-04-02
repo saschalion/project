@@ -77,7 +77,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
 
   public function getFormDisplay()
   {
-    return array(  'Начальные сведения' =>   array(    0 => 'sf_guard_user_id',    1 => 'tab_id',    2 => 'number_insurace',    3 => 'pension_sertificate',    4 => 'nature_work',    5 => 'type_work',    6 => 'category_id',    7 => 'status_id',    8 => 'price',  ),  'Общие сведения' =>   array(    0 => 'last_name',    1 => 'first_name',    2 => 'three_name',    3 => 'type',    4 => 'data_birth',    5 => 'phone',    6 => 'mobile_phone',    7 => 'city_id',    8 => 'adress',    9 => 'email',    10 => 'logo',  ),  'Паспорт' =>   array(    0 => 'Passport',  ),  'Знание иностранных языков' =>   array(    0 => 'ForeignLanguage',  ),  'Образование' =>   array(    0 => 'EducationalInstitution',  ),  'Послевузовое профессиональное образование' =>   array(    0 => 'EducationalInstitutionExtra',  ),  'Профессия' =>   array(    0 => 'Profession',  ),  'Семейное положение' =>   array(    0 => 'relation_degree',    1 => 'marriage_status',    2 => 'children',    3 => 'date_birth_children',  ),  'Воинский учет' =>   array(    0 => 'group_accounting',    1 => 'category_accounting',    2 => 'composition',    3 => 'military_rank',    4 => 'military_discount_specialty',    5 => 'number_military_discount_specialty',    6 => 'name_district_military_office',    7 => 'number_special_accounting',  ),  'Отпуск' =>   array(    0 => 'kind_leave',    1 => 'getting_started',    2 => 'end_work',    3 => 'number_vacation_days',    4 => 'commencement',    5 => 'end_leave',    6 => 'base_release',  ),  'Дополнительные сведения' =>   array(    0 => 'more_information',  ),);
+    return array(  'Начальные сведения' =>   array(    0 => 'sf_guard_user_id',    1 => 'tab_id',    2 => 'number_insurace',    3 => 'pension_sertificate',    4 => 'nature_work',    5 => 'type_work',    6 => 'category_id',    7 => 'status_id',    8 => 'price',  ),  'Общие сведения' =>   array(    0 => 'last_name',    1 => 'first_name',    2 => 'three_name',    3 => 'type',    4 => 'data_birth',    5 => 'phone',    6 => 'mobile_phone',    7 => 'city_id',    8 => 'adress',    9 => 'email',    10 => 'logo',  ),  'Паспорт' =>   array(    0 => 'Passport',  ),  'Знание иностранных языков' =>   array(    0 => 'ForeignLanguage',  ),  'Образование' =>   array(    0 => 'EducationalInstitution',  ),  'Послевузовое профессиональное образование' =>   array(    0 => 'EducationalInstitutionExtra',  ),  'Профессия' =>   array(    0 => 'Profession',  ),  'Семейное положение' =>   array(    0 => 'Family',  ),  'Воинский учет' =>   array(    0 => 'group_accounting',    1 => 'category_accounting',    2 => 'composition',    3 => 'military_rank',    4 => 'military_discount_specialty',    5 => 'number_military_discount_specialty',    6 => 'name_district_military_office',    7 => 'number_special_accounting',  ),  'Отпуск' =>   array(    0 => 'kind_leave',    1 => 'getting_started',    2 => 'end_work',    3 => 'number_vacation_days',    4 => 'commencement',    5 => 'end_leave',    6 => 'base_release',  ),  'Дополнительные сведения' =>   array(    0 => 'more_information',  ),);
   }
 
   public function getEditDisplay()
@@ -124,10 +124,6 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'adress' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'email' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'logo' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'relation_degree' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'marriage_status' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'children' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'date_birth_children' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'group_accounting' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'category_accounting' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'composition' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
@@ -180,10 +176,6 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'adress' => array(),
       'email' => array(),
       'logo' => array(),
-      'relation_degree' => array(),
-      'marriage_status' => array(),
-      'children' => array(),
-      'date_birth_children' => array(),
       'group_accounting' => array(),
       'category_accounting' => array(),
       'composition' => array(),
@@ -236,10 +228,6 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'adress' => array(),
       'email' => array(),
       'logo' => array(),
-      'relation_degree' => array(),
-      'marriage_status' => array(),
-      'children' => array(),
-      'date_birth_children' => array(),
       'group_accounting' => array(),
       'category_accounting' => array(),
       'composition' => array(),
@@ -292,10 +280,6 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'adress' => array(),
       'email' => array(),
       'logo' => array(),
-      'relation_degree' => array(),
-      'marriage_status' => array(),
-      'children' => array(),
-      'date_birth_children' => array(),
       'group_accounting' => array(),
       'category_accounting' => array(),
       'composition' => array(),
@@ -348,10 +332,6 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'adress' => array(),
       'email' => array(),
       'logo' => array(),
-      'relation_degree' => array(),
-      'marriage_status' => array(),
-      'children' => array(),
-      'date_birth_children' => array(),
       'group_accounting' => array(),
       'category_accounting' => array(),
       'composition' => array(),
@@ -404,10 +384,6 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'adress' => array(),
       'email' => array(),
       'logo' => array(),
-      'relation_degree' => array(),
-      'marriage_status' => array(),
-      'children' => array(),
-      'date_birth_children' => array(),
       'group_accounting' => array(),
       'category_accounting' => array(),
       'composition' => array(),

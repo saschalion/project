@@ -19,6 +19,7 @@
  * @property integer $educational_institution_id
  * @property integer $educational_institution_extra_id
  * @property integer $profession_id
+ * @property integer $family_id
  * @property string $last_name
  * @property string $first_name
  * @property string $three_name
@@ -30,10 +31,6 @@
  * @property string $adress
  * @property string $email
  * @property string $logo
- * @property string $relation_degree
- * @property string $marriage_status
- * @property string $children
- * @property year $date_birth_children
  * @property string $group_accounting
  * @property string $category_accounting
  * @property string $composition
@@ -61,6 +58,7 @@
  * @property EducationalInstitution $EducationalInstitution
  * @property EducationalInstitutionExtra $EducationalInstitutionExtra
  * @property Profession $Profession
+ * @property Family $Family
  * 
  * @method float                       getPrice()                              Returns the current record's "price" value
  * @method string                      getTabId()                              Returns the current record's "tab_id" value
@@ -76,6 +74,7 @@
  * @method integer                     getEducationalInstitutionId()           Returns the current record's "educational_institution_id" value
  * @method integer                     getEducationalInstitutionExtraId()      Returns the current record's "educational_institution_extra_id" value
  * @method integer                     getProfessionId()                       Returns the current record's "profession_id" value
+ * @method integer                     getFamilyId()                           Returns the current record's "family_id" value
  * @method string                      getLastName()                           Returns the current record's "last_name" value
  * @method string                      getFirstName()                          Returns the current record's "first_name" value
  * @method string                      getThreeName()                          Returns the current record's "three_name" value
@@ -87,10 +86,6 @@
  * @method string                      getAdress()                             Returns the current record's "adress" value
  * @method string                      getEmail()                              Returns the current record's "email" value
  * @method string                      getLogo()                               Returns the current record's "logo" value
- * @method string                      getRelationDegree()                     Returns the current record's "relation_degree" value
- * @method string                      getMarriageStatus()                     Returns the current record's "marriage_status" value
- * @method string                      getChildren()                           Returns the current record's "children" value
- * @method year                        getDateBirthChildren()                  Returns the current record's "date_birth_children" value
  * @method string                      getGroupAccounting()                    Returns the current record's "group_accounting" value
  * @method string                      getCategoryAccounting()                 Returns the current record's "category_accounting" value
  * @method string                      getComposition()                        Returns the current record's "composition" value
@@ -118,6 +113,7 @@
  * @method EducationalInstitution      getEducationalInstitution()             Returns the current record's "EducationalInstitution" value
  * @method EducationalInstitutionExtra getEducationalInstitutionExtra()        Returns the current record's "EducationalInstitutionExtra" value
  * @method Profession                  getProfession()                         Returns the current record's "Profession" value
+ * @method Family                      getFamily()                             Returns the current record's "Family" value
  * @method JobeetJob                   setPrice()                              Sets the current record's "price" value
  * @method JobeetJob                   setTabId()                              Sets the current record's "tab_id" value
  * @method JobeetJob                   setNumberInsurace()                     Sets the current record's "number_insurace" value
@@ -132,6 +128,7 @@
  * @method JobeetJob                   setEducationalInstitutionId()           Sets the current record's "educational_institution_id" value
  * @method JobeetJob                   setEducationalInstitutionExtraId()      Sets the current record's "educational_institution_extra_id" value
  * @method JobeetJob                   setProfessionId()                       Sets the current record's "profession_id" value
+ * @method JobeetJob                   setFamilyId()                           Sets the current record's "family_id" value
  * @method JobeetJob                   setLastName()                           Sets the current record's "last_name" value
  * @method JobeetJob                   setFirstName()                          Sets the current record's "first_name" value
  * @method JobeetJob                   setThreeName()                          Sets the current record's "three_name" value
@@ -143,10 +140,6 @@
  * @method JobeetJob                   setAdress()                             Sets the current record's "adress" value
  * @method JobeetJob                   setEmail()                              Sets the current record's "email" value
  * @method JobeetJob                   setLogo()                               Sets the current record's "logo" value
- * @method JobeetJob                   setRelationDegree()                     Sets the current record's "relation_degree" value
- * @method JobeetJob                   setMarriageStatus()                     Sets the current record's "marriage_status" value
- * @method JobeetJob                   setChildren()                           Sets the current record's "children" value
- * @method JobeetJob                   setDateBirthChildren()                  Sets the current record's "date_birth_children" value
  * @method JobeetJob                   setGroupAccounting()                    Sets the current record's "group_accounting" value
  * @method JobeetJob                   setCategoryAccounting()                 Sets the current record's "category_accounting" value
  * @method JobeetJob                   setComposition()                        Sets the current record's "composition" value
@@ -174,6 +167,7 @@
  * @method JobeetJob                   setEducationalInstitution()             Sets the current record's "EducationalInstitution" value
  * @method JobeetJob                   setEducationalInstitutionExtra()        Sets the current record's "EducationalInstitutionExtra" value
  * @method JobeetJob                   setProfession()                         Sets the current record's "Profession" value
+ * @method JobeetJob                   setFamily()                             Sets the current record's "Family" value
  * 
  * @package    jobeet
  * @subpackage model
@@ -239,6 +233,9 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
         $this->hasColumn('profession_id', 'integer', null, array(
              'type' => 'integer',
              ));
+        $this->hasColumn('family_id', 'integer', null, array(
+             'type' => 'integer',
+             ));
         $this->hasColumn('last_name', 'string', 100, array(
              'type' => 'string',
              'notnull' => true,
@@ -273,7 +270,6 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
              ));
         $this->hasColumn('city_id', 'integer', null, array(
              'type' => 'integer',
-             'notnull' => true,
              ));
         $this->hasColumn('adress', 'string', 150, array(
              'type' => 'string',
@@ -288,21 +284,6 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
         $this->hasColumn('logo', 'string', 255, array(
              'type' => 'string',
              'length' => 255,
-             ));
-        $this->hasColumn('relation_degree', 'string', 40, array(
-             'type' => 'string',
-             'length' => 40,
-             ));
-        $this->hasColumn('marriage_status', 'string', 40, array(
-             'type' => 'string',
-             'length' => 40,
-             ));
-        $this->hasColumn('children', 'string', 40, array(
-             'type' => 'string',
-             'length' => 40,
-             ));
-        $this->hasColumn('date_birth_children', 'year', null, array(
-             'type' => 'year',
              ));
         $this->hasColumn('group_accounting', 'string', 255, array(
              'type' => 'string',
@@ -424,6 +405,11 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
 
         $this->hasOne('Profession', array(
              'local' => 'profession_id',
+             'foreign' => 'id',
+             'onDelete' => 'CASCADE'));
+
+        $this->hasOne('Family', array(
+             'local' => 'family_id',
              'foreign' => 'id',
              'onDelete' => 'CASCADE'));
 

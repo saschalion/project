@@ -40,13 +40,16 @@ abstract class BasePassport extends sfDoctrineRecord
              ));
         $this->hasColumn('issuance_passports', 'string', 50, array(
              'type' => 'string',
+             'notnull' => true,
              'length' => 50,
              ));
         $this->hasColumn('date_issue_passport', 'date', null, array(
              'type' => 'date',
+             'notnull' => true,
              ));
         $this->hasColumn('code_division', 'string', 7, array(
              'type' => 'string',
+             'notnull' => true,
              'length' => 7,
              ));
 

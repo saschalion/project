@@ -1,3 +1,4 @@
+# Занимаемая должность
 JobeetCategory:
   actAs:
     Timestampable: ~
@@ -47,10 +48,13 @@ Passport:
       unique: true
     issuance_passports:
       type: string(50)
+      notnull: true
     date_issue_passport:
      type: date
+     notnull: true
     code_division:
      type: string(7)
+     notnull: true
 
 # Знание иностранных языков
 ForeignLanguage:
@@ -70,7 +74,7 @@ EducationalInstitution:
     diploma:
      type: string(20)
     year_graduation:
-     type: date
+     type: year
     education_id:
      type: integer
     diploma_qualification:
@@ -90,16 +94,22 @@ EducationalInstitutionExtra:
   columns:
     name_educational_institution_extra:
       type: string(150)
+      notnull: false
     diploma_extra:
-     type: string(20)
+      type: string(20)
+      notnull: false
     year_graduation_extra:
-      type: date
+      type: year
+      notnull: false
     study_extra:
-     type: string(30)
+      type: string(30)
+      notnull: false
     diploma_qualification_extra:
       type: string(100)
+      notnull: false
     speciality_diploma_extra:
       type: string(150)
+      notnull: false
 
 # Профессия
 Profession:
@@ -116,6 +126,18 @@ Profession:
      type: string(100)
     termination_date:
      type: date
+
+# Семейное положение
+Family:
+  columns:
+    relation_degree:
+     type: string(40)
+    marriage_status:
+     type: string(40)
+    children:
+     type: string(40)
+    date_birth_children:
+      type: date
 
 JobeetJob:
   actAs:
@@ -157,6 +179,8 @@ JobeetJob:
       type: integer
     profession_id:
       type: integer
+    family_id:
+      type: integer
 
     # Общие сведения
     last_name:
@@ -180,7 +204,6 @@ JobeetJob:
       type: string(20)
     city_id:
       type: integer
-      notnull: true
     adress:
       type: string(150)
       notnull: true
@@ -190,16 +213,6 @@ JobeetJob:
     logo:
       type: string(255)
 
-    # Семейное положение
-    relation_degree:
-     type: string(40)
-    marriage_status:
-     type: string(40)
-    children:
-     type: string(40)
-    date_birth_children:  
-      type: year
-    
     # Воинский учет
     group_accounting:
       type: string(255)
@@ -299,6 +312,12 @@ JobeetJob:
       onDelete: CASCADE
       local: profession_id
       foreignAlias: Profession
+
+    Family:
+      foreign: id
+      onDelete: CASCADE
+      local: family_id
+      foreignAlias: Family
 
 options:
     collate: utf8_general_ci

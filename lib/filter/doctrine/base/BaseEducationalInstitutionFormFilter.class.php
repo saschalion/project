@@ -15,7 +15,7 @@ abstract class BaseEducationalInstitutionFormFilter extends BaseFormFilterDoctri
     $this->setWidgets(array(
       'name_educational_institution' => new sfWidgetFormFilterInput(),
       'diploma'                      => new sfWidgetFormFilterInput(),
-      'year_graduation'              => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
+      'year_graduation'              => new sfWidgetFormFilterInput(),
       'education_id'                 => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Education'), 'add_empty' => true)),
       'diploma_qualification'        => new sfWidgetFormFilterInput(),
       'speciality_diploma'           => new sfWidgetFormFilterInput(),
@@ -24,7 +24,7 @@ abstract class BaseEducationalInstitutionFormFilter extends BaseFormFilterDoctri
     $this->setValidators(array(
       'name_educational_institution' => new sfValidatorPass(array('required' => false)),
       'diploma'                      => new sfValidatorPass(array('required' => false)),
-      'year_graduation'              => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
+      'year_graduation'              => new sfValidatorPass(array('required' => false)),
       'education_id'                 => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Education'), 'column' => 'id')),
       'diploma_qualification'        => new sfValidatorPass(array('required' => false)),
       'speciality_diploma'           => new sfValidatorPass(array('required' => false)),
@@ -50,7 +50,7 @@ abstract class BaseEducationalInstitutionFormFilter extends BaseFormFilterDoctri
       'id'                           => 'Number',
       'name_educational_institution' => 'Text',
       'diploma'                      => 'Text',
-      'year_graduation'              => 'Date',
+      'year_graduation'              => 'Text',
       'education_id'                 => 'ForeignKey',
       'diploma_qualification'        => 'Text',
       'speciality_diploma'           => 'Text',

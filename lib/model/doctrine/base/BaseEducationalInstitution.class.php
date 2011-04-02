@@ -7,7 +7,7 @@
  * 
  * @property string $name_educational_institution
  * @property string $diploma
- * @property date $year_graduation
+ * @property year $year_graduation
  * @property integer $education_id
  * @property string $diploma_qualification
  * @property string $speciality_diploma
@@ -16,7 +16,7 @@
  * 
  * @method string                 getNameEducationalInstitution()   Returns the current record's "name_educational_institution" value
  * @method string                 getDiploma()                      Returns the current record's "diploma" value
- * @method date                   getYearGraduation()               Returns the current record's "year_graduation" value
+ * @method year                   getYearGraduation()               Returns the current record's "year_graduation" value
  * @method integer                getEducationId()                  Returns the current record's "education_id" value
  * @method string                 getDiplomaQualification()         Returns the current record's "diploma_qualification" value
  * @method string                 getSpecialityDiploma()            Returns the current record's "speciality_diploma" value
@@ -49,8 +49,8 @@ abstract class BaseEducationalInstitution extends sfDoctrineRecord
              'type' => 'string',
              'length' => 20,
              ));
-        $this->hasColumn('year_graduation', 'date', null, array(
-             'type' => 'date',
+        $this->hasColumn('year_graduation', 'year', null, array(
+             'type' => 'year',
              ));
         $this->hasColumn('education_id', 'integer', null, array(
              'type' => 'integer',

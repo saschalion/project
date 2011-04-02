@@ -27,9 +27,9 @@ abstract class BasePassportForm extends BaseFormDoctrine
     $this->setValidators(array(
       'id'                  => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'passport_number'     => new sfValidatorString(array('max_length' => 11)),
-      'issuance_passports'  => new sfValidatorString(array('max_length' => 50, 'required' => false)),
-      'date_issue_passport' => new sfValidatorDate(array('required' => false)),
-      'code_division'       => new sfValidatorString(array('max_length' => 7, 'required' => false)),
+      'issuance_passports'  => new sfValidatorString(array('max_length' => 50)),
+      'date_issue_passport' => new sfValidatorDate(),
+      'code_division'       => new sfValidatorString(array('max_length' => 7)),
       'created_at'          => new sfValidatorDateTime(),
       'updated_at'          => new sfValidatorDateTime(),
     ));

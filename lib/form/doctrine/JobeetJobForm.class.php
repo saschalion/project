@@ -135,6 +135,28 @@ class JobeetJobForm extends BaseJobeetJobForm
     )
   ));
 
+        $this->embedRelations(array(
+    'Family' => array(
+      'considerNewFormEmptyFields'    => array('passport_number'),
+      'noNewForm'                     => true,
+      'newFormLabel'                  => null,
+      'newFormClass'                  => 'Family',
+      'newFormClassArgs'              => array(array('sf_user' => $this->getOption('sf_user'))),
+      'displayEmptyRelations'         => true,
+      'formClass'                     => null,
+      'formClassArgs'                 => array(array('ah_add_delete_checkbox' => false)),
+      'newFormAfterExistingRelations' => true,
+      'formFormatter'                 => null,
+      'multipleNewForms'              => true,
+      'newFormsInitialCount'          => 2,
+      'newFormsContainerForm'         => 'ahNewRelationsContainerForm', // pass BaseForm object here or we will create ahNewRelationsContainerForm
+      'newRelationButtonLabel'        => '+',
+      'newRelationAddByCloning'       => true,
+      'newRelationUseJSFramework'     => 'jQuery',
+      'customEmbeddedFormLabelMethod' => 'getLabelTitle'
+    )
+  ));
+
     $this->widgetSchema['logo'] = new sfWidgetFormInputFile(array(
     'label' => 'Фотография'
     ));
@@ -153,22 +175,7 @@ class JobeetJobForm extends BaseJobeetJobForm
       'choices'  => Doctrine_Core::getTable('JobeetJob')->getTypesType(),
       'expanded' => true,
       'default'  => 'M'
-     ));  
-
-  
-    $this->widgetSchema['relation_degree'] = new sfWidgetFormChoice(array(
-      'choices'  => Doctrine_Core::getTable('JobeetJob')->getRelationDegree(),
-      'expanded' => false
-    ));
-
-    $this->widgetSchema['marriage_status'] = new sfWidgetFormChoice(array(
-      'choices'  => array(
-          'Не замужем / Холост' => 'Не замужем / Холост',
-          'Замужем / Женат'     => 'Замужем / Женат'
-          
-      ),
-      'expanded' => false
-    ));
+     )); 
 
     $this->widgetSchema['type_work'] = new sfWidgetFormChoice(array(
       'choices'  => Doctrine_Core::getTable('JobeetJob')->getTypesTypeWork(),
@@ -187,6 +194,7 @@ class JobeetJobForm extends BaseJobeetJobForm
       'EducationalInstitution'    => false,
       'EducationalInstitutionExtra'    => false,
       'Profession'    => false,
+      'Family'    => false,
       'tab_id' => 'Табельный номер<span class="red">*</span>',
       'number_insurace' => 'ИНН<span class="red">*</span>',
       'nature_work' => 'Характер работ',
@@ -198,23 +206,14 @@ class JobeetJobForm extends BaseJobeetJobForm
       'first_name' => 'Имя<span class="red">*</span>',
       'three_name' => 'Отчество<span class="red">*</span>',
       'type' => 'Пол',
-       'mobile_phone' => 'Мобильный телефон',
+      'mobile_phone' => 'Мобильный телефон',
       'status_id' => 'Статус',
       'data_birth' => 'Дата рождения<span class="red">*</span>',
       'phone' => 'Телефон<span class="red">*</span>',
       'city_id' => 'Город',
       'adress' => 'Адрес<span class="red">*</span>',
       'email' => '',
-      'logo' => 'Фото',        
-      'main_profession' => 'Основная',
-      'other_profession' => 'Другая',
-      'total_length' => 'Общий стаж',
-      'continuous_service' => 'Непрерывный стаж',
-      'last_job' => 'Последнее место работы',
-      'termination_date' => 'Дата увольнения',
-      'marriage_status' => 'Состояние в браке',
-      'children' => 'Дети, ФИО',
-      'date_birth_children' => 'Дата рождения',
+      'logo' => 'Фото',   
       'group_accounting' => 'Группа учета',
       'category_accounting' => 'Категория учета',
       'composition' => 'Состав',
@@ -231,8 +230,7 @@ class JobeetJobForm extends BaseJobeetJobForm
       'end_leave' => 'Дата окончания',
       'base_release' => 'Основание',
       'more_information' => 'Сведения',
-      'price' => 'Ставка, руб',
-      'relation_degree' => 'Степень родства'
+      'price' => 'Ставка, руб'
 ));
 
     $this->widgetSchema->setHelp(
@@ -246,6 +244,9 @@ class JobeetJobForm extends BaseJobeetJobForm
     $this->widgetSchema['sf_guard_user_id'] = new sfWidgetFormInputHidden();
     $this->validatorSchema['sf_guard_user_id'] = new sfValidatorPass();
 
+    $this->validatorSchema['city_id'] = new sfValidatorPass();
+    $this->validatorSchema['category_id'] = new sfValidatorPass();
+    $this->validatorSchema['status_id'] = new sfValidatorPass();
 
 parent::configure();
 

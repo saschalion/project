@@ -14,9 +14,9 @@ abstract class BasePassportFormFilter extends BaseFormFilterDoctrine
   {
     $this->setWidgets(array(
       'passport_number'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'issuance_passports'  => new sfWidgetFormFilterInput(),
-      'date_issue_passport' => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
-      'code_division'       => new sfWidgetFormFilterInput(),
+      'issuance_passports'  => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'date_issue_passport' => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'code_division'       => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'created_at'          => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
       'updated_at'          => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
     ));

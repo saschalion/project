@@ -185,22 +185,22 @@
     <ul>
         <li>6. <span>Профессия</span> <?php echo $jobeet_job->getEducationalInstitution()->getDiplomaQualification() ?></li>
         <li>7. <span>Состояние в браке</span> 
-            <?php if ($jobeet_job->getType() == 'M' & $jobeet_job->getMarriageStatus() == 'Не замужем / Холост'): ?>
+            <?php if ($jobeet_job->getType() == 'M' & $jobeet_job->getFamily()->getMarriageStatus() == 'Не замужем / Холост'): ?>
                 <?php echo 'Холост' ?>
             <? endif; ?>
-            <?php if ($jobeet_job->getType() == 'Ж' & $jobeet_job->getMarriageStatus() == 'Не замужем / Холост'): ?>
+            <?php if ($jobeet_job->getType() == 'Ж' & $jobeet_job->getFamily()->getMarriageStatus() == 'Не замужем / Холост'): ?>
                 <?php echo 'Не замужем' ?>
             <? endif; ?>
-            <?php if ($jobeet_job->getType() == 'M' & $jobeet_job->getMarriageStatus() == 'Замужем / Женат'): ?>
+            <?php if ($jobeet_job->getType() == 'M' & $jobeet_job->getFamily()->getMarriageStatus() == 'Замужем / Женат'): ?>
                 <?php echo 'Женат' ?>
             <? endif; ?>
-            <?php if ($jobeet_job->getType() == 'Ж' & $jobeet_job->getMarriageStatus() == 'Замужем / Женат'): ?>
+            <?php if ($jobeet_job->getType() == 'Ж' & $jobeet_job->getFamily()->getMarriageStatus() == 'Замужем / Женат'): ?>
                 <?php echo 'Замужем' ?>
             <? endif; ?>
         </li>
         <li>8. <span>Состав семьи</span></li>
     </ul>
-    <?php if ($jobeet_job->getChildren()): ?>
+    <?php if ($jobeet_job->getFamily()->getChildren()): ?>
     <table>
         <thead>
             <tr>
@@ -219,13 +219,13 @@
         <tbody>
             <tr>
                 <td>
-                    <?php echo $jobeet_job->getRelationDegree() ?>
+                    <?php echo $jobeet_job->getFamily()->getRelationDegree() ?>
                 </td>
                 <td>
-                    <?php echo $jobeet_job->getChildren() ?>
+                    <?php echo $jobeet_job->getFamily()->getChildren() ?>
                 </td>
                 <td>
-                    <?php echo $jobeet_job->getDateBirthChildren() ?>
+                    <?php echo $jobeet_job->getFamily()->getDateBirthChildren() ?>
                 </td>
             </tr>
         </tbody>
