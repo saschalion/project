@@ -22,16 +22,14 @@ generator:
       form:
         display:
          Начальные сведения: [ sf_guard_user_id, tab_id, number_insurace, pension_sertificate, nature_work, type_work, category_id, status_id, price ]
-         Воинский учет: [ MilitaryRecords ]
-         Общие сведения: [ last_name, first_name, three_name, type, data_birth, phone, mobile_phone, city_id, adress, email, logo ]
-         
+         Общие сведения: [ last_name, first_name, three_name, type, data_birth, phone, mobile_phone, city_id, citizenship, adress, email, logo ]
          Паспорт: [ Passport ]
          Знание иностранных языков: [ ForeignLanguage ]
          Образование: [ EducationalInstitution ]
          Послевузовое профессиональное образование: [ EducationalInstitutionExtra ]
          Профессия: [ Profession ]
          Семейное положение: [ Family ]
-         
+         Воинский учет: [ MilitaryRecords ]
          Отпуск: [ LeavingTable ]
          Дополнительные сведения: [ more_information ]
 

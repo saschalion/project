@@ -242,6 +242,7 @@ class JobeetJobForm extends BaseJobeetJobForm
       'Family'    => false,
       'MilitaryRecords' => false,
       'LeavingTable' => false,
+      'citizenship' => 'Гражданство',
       'tab_id' => 'Табельный номер<span class="red">*</span>',
       'number_insurace' => 'ИНН<span class="red">*</span>',
       'nature_work' => 'Характер работ',
@@ -256,7 +257,7 @@ class JobeetJobForm extends BaseJobeetJobForm
       'status_id' => 'Статус',
       'data_birth' => 'Дата рождения<span class="red">*</span>',
       'phone' => 'Телефон<span class="red">*</span>',
-      'city_id' => 'Город',
+      'city_id' => 'Место рождения',
       'adress' => 'Адрес<span class="red">*</span>',
       'email' => '',
       'logo' => 'Фото',  
@@ -267,11 +268,15 @@ class JobeetJobForm extends BaseJobeetJobForm
 
     $this->widgetSchema->setHelp(
      'passport_number', 'Пример: 4502 605593'
-         );
+    );
 
     $this->widgetSchema->setHelp(
-     'phone', 'Пример: +7(905)156-89-36'
-    ); 
+     'phone', 'Пример: +7(495)156-89-36'
+    );
+
+    $this->widgetSchema->setHelp(
+     'mobile_phone', 'Пример: +7(913)156-89-36'
+    );
 
     $this->widgetSchema['sf_guard_user_id'] = new sfWidgetFormInputHidden();
     $this->validatorSchema['sf_guard_user_id'] = new sfValidatorPass();

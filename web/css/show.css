@@ -51,15 +51,18 @@ table caption {
     padding: 10px 0;
 }
 
-ul {
-    margin-left: 0 !important;
-    padding-left: 0;
+ol {
+    padding-left: 25px;
 }
 
-ul li {
+ol li {
     padding: 0;
     margin-bottom: 20px;
     margin-left: 0;
-    list-style: none;
+}
+
+ol table {
+    margin-left: -25px;
+    width: 103%;
 }
 

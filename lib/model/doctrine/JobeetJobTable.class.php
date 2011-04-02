@@ -9,7 +9,7 @@ class JobeetJobTable extends Doctrine_Table
 {
 
     static public $typestype = array(
-    'M'   => 'М',
+    'M' => 'М',
     'Ж' => 'Ж'
         );
 
@@ -19,10 +19,10 @@ class JobeetJobTable extends Doctrine_Table
         );
 
      static public $foreignlanguages = array(
-    'Не владеет'     => 'Не владеет',
-    'Читает и переводит со словарем'     => 'Читает и переводит со словарем',
-    'Читает и может объясняться'         => 'Читает и может объясняться',
-     'Владеет свободно'                  => 'Владеет свободно'
+    'Не владеет'                     => 'Не владеет',
+    'Читает и переводит со словарем' => 'Читает и переводит со словарем',
+    'Читает и может объясняться'     => 'Читает и может объясняться',
+     'Владеет свободно'              => 'Владеет свободно'
         );
 
      static public $naturework = array(
@@ -35,6 +35,13 @@ class JobeetJobTable extends Doctrine_Table
      'дочь' => 'дочь',
      'сын'  => 'сын',
      'жена' => 'жена'
+        );
+
+     static public $kindlearning = array(
+     ''             => '',
+     'дневное'      => 'дневное',
+     'вечернее'     => 'вечернее',
+     'очно-заочное' => 'очно-заочное'
         );
 
 
@@ -61,6 +68,11 @@ class JobeetJobTable extends Doctrine_Table
      public function getRelationDegree()
       {
         return self::$relationdegree;
+      }
+
+     public function getKindLearning()
+      {
+        return self::$kindlearning;
       }
 
 

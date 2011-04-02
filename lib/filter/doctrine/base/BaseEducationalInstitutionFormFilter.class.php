@@ -13,6 +13,7 @@ abstract class BaseEducationalInstitutionFormFilter extends BaseFormFilterDoctri
   public function setup()
   {
     $this->setWidgets(array(
+      'kind_learning'                => new sfWidgetFormFilterInput(),
       'name_educational_institution' => new sfWidgetFormFilterInput(),
       'diploma'                      => new sfWidgetFormFilterInput(),
       'year_graduation'              => new sfWidgetFormFilterInput(),
@@ -22,6 +23,7 @@ abstract class BaseEducationalInstitutionFormFilter extends BaseFormFilterDoctri
     ));
 
     $this->setValidators(array(
+      'kind_learning'                => new sfValidatorPass(array('required' => false)),
       'name_educational_institution' => new sfValidatorPass(array('required' => false)),
       'diploma'                      => new sfValidatorPass(array('required' => false)),
       'year_graduation'              => new sfValidatorPass(array('required' => false)),
@@ -48,6 +50,7 @@ abstract class BaseEducationalInstitutionFormFilter extends BaseFormFilterDoctri
   {
     return array(
       'id'                           => 'Number',
+      'kind_learning'                => 'Text',
       'name_educational_institution' => 'Text',
       'diploma'                      => 'Text',
       'year_graduation'              => 'Text',

@@ -77,7 +77,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
 
   public function getFormDisplay()
   {
-    return array(  'Начальные сведения' =>   array(    0 => 'sf_guard_user_id',    1 => 'tab_id',    2 => 'number_insurace',    3 => 'pension_sertificate',    4 => 'nature_work',    5 => 'type_work',    6 => 'category_id',    7 => 'status_id',    8 => 'price',  ),  'Воинский учет' =>   array(    0 => 'MilitaryRecords',  ),  'Общие сведения' =>   array(    0 => 'last_name',    1 => 'first_name',    2 => 'three_name',    3 => 'type',    4 => 'data_birth',    5 => 'phone',    6 => 'mobile_phone',    7 => 'city_id',    8 => 'adress',    9 => 'email',    10 => 'logo',  ),  'Паспорт' =>   array(    0 => 'Passport',  ),  'Знание иностранных языков' =>   array(    0 => 'ForeignLanguage',  ),  'Образование' =>   array(    0 => 'EducationalInstitution',  ),  'Послевузовое профессиональное образование' =>   array(    0 => 'EducationalInstitutionExtra',  ),  'Профессия' =>   array(    0 => 'Profession',  ),  'Семейное положение' =>   array(    0 => 'Family',  ),  'Отпуск' =>   array(    0 => 'LeavingTable',  ),  'Дополнительные сведения' =>   array(    0 => 'more_information',  ),);
+    return array(  'Начальные сведения' =>   array(    0 => 'sf_guard_user_id',    1 => 'tab_id',    2 => 'number_insurace',    3 => 'pension_sertificate',    4 => 'nature_work',    5 => 'type_work',    6 => 'category_id',    7 => 'status_id',    8 => 'price',  ),  'Общие сведения' =>   array(    0 => 'last_name',    1 => 'first_name',    2 => 'three_name',    3 => 'type',    4 => 'data_birth',    5 => 'phone',    6 => 'mobile_phone',    7 => 'city_id',    8 => 'citizenship',    9 => 'adress',    10 => 'email',    11 => 'logo',  ),  'Паспорт' =>   array(    0 => 'Passport',  ),  'Знание иностранных языков' =>   array(    0 => 'ForeignLanguage',  ),  'Образование' =>   array(    0 => 'EducationalInstitution',  ),  'Послевузовое профессиональное образование' =>   array(    0 => 'EducationalInstitutionExtra',  ),  'Профессия' =>   array(    0 => 'Profession',  ),  'Семейное положение' =>   array(    0 => 'Family',  ),  'Воинский учет' =>   array(    0 => 'MilitaryRecords',  ),  'Отпуск' =>   array(    0 => 'LeavingTable',  ),  'Дополнительные сведения' =>   array(    0 => 'more_information',  ),);
   }
 
   public function getEditDisplay()
@@ -116,6 +116,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'family_id' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'ForeignKey',),
       'military_records_id' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'ForeignKey',),
       'leaving_table_id' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'ForeignKey',),
+      'citizenship' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'last_name' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'first_name' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'three_name' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
@@ -155,6 +156,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'family_id' => array(),
       'military_records_id' => array(),
       'leaving_table_id' => array(),
+      'citizenship' => array(),
       'last_name' => array(),
       'first_name' => array(),
       'three_name' => array(),
@@ -194,6 +196,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'family_id' => array(),
       'military_records_id' => array(),
       'leaving_table_id' => array(),
+      'citizenship' => array(),
       'last_name' => array(),
       'first_name' => array(),
       'three_name' => array(),
@@ -233,6 +236,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'family_id' => array(),
       'military_records_id' => array(),
       'leaving_table_id' => array(),
+      'citizenship' => array(),
       'last_name' => array(),
       'first_name' => array(),
       'three_name' => array(),
@@ -272,6 +276,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'family_id' => array(),
       'military_records_id' => array(),
       'leaving_table_id' => array(),
+      'citizenship' => array(),
       'last_name' => array(),
       'first_name' => array(),
       'three_name' => array(),
@@ -311,6 +316,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'family_id' => array(),
       'military_records_id' => array(),
       'leaving_table_id' => array(),
+      'citizenship' => array(),
       'last_name' => array(),
       'first_name' => array(),
       'three_name' => array(),

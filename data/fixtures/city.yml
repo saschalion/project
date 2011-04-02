@@ -1,40 +1,225 @@
 # data/fixtures/city.yml
 City:
-  moscow:
+  Moscow:
     name: Москва
-  omsk:
-    name: Омск
-  vologda:
-    name: Вологда
-  novosibirsk:
-    name: Новосибирск
-  yakutsk:
-    name: Якутск
-  astrahan:
-    name: Астрахань
-  adler:
-    name: Адлер
-  yaroslavl:
-    name: Ярославль
-  sankt_peterburg:
+  St. Petersburg:
     name: Санкт-Петербург
-  tomsk:
-    name: Томск
-  chelyabinsk:
-    name: Челябинск
-  ryazan:
-    name: Рязань
-  tula:
-    name: Тула
-  orel:
+  Alexandrov:
+    name: Александров
+  Anapa:
+    name: Анапа
+  Arzamas:
+    name: Арзамас
+  Arkhangelsk:
+    name: Архангельск
+  Arhipo-Osipovka:
+    name: Архипо-Осиповка
+  Astrakhan:
+    name: Астрахань
+  Borovsk:
+    name: Боровск
+  Bryansk:
+    name: Брянск
+  Valdai:
+    name: Валдай
+  Veliky Novgorod:
+    name: Великий Новгород
+  Great Ustyug:
+    name: Великий Устюг
+  Vladivostok:
+    name: Владивосток
+  Vladimir:
+    name: Владимир
+  Volgograd:
+    name: Волгоград
+  Vologda:
+    name: Вологда
+
+  Voronezh:
+    name: Воронеж
+  Vyborg:
+    name: Выборг
+  Vyshny Volochok:
+    name: Вышний Волочек
+  Vyazma:
+    name: Вязьма
+  Gatchina:
+    name: Гатчина
+  Gelendzhik:
+    name: Геленджик
+  Gorodets:
+    name: Городец
+  Gorokhovets:
+    name: Гороховец
+  Dmitrov:
+    name: Дмитров
+  Egorievsk:
+    name: Егорьевск
+  Yeisk:
+    name: Ейск
+  Yekaterinburg:
+    name: Екатеринбург
+  Yelabuga:
+    name: Елабуга
+  Dace:
+    name: Елец
+  Zheleznovodsk:
+    name: Железноводскск
+  Zaraysk:
+    name: Зарайск
+  Zvenigorod:
+    name: Звенигород
+  Ivanovo:
+    name: Иваново
+  Izhevsk:
+    name: Ижевск
+  Izborsk:
+    name: Изборск
+  Yoshkar-Ola:
+    name: Йошкар-Ола
+  Kabardinka:
+    name: Кабардинка
+  Kazan:
+    name: Казань
+  Kaliningrad:
+    name: Калининград
+  Kaluga:
+    name: Калуга
+  Kemerovo:
+    name: Кемерово
+  Kirillov:
+    name: Кириллов
+  Kirov:
+    name: Киров
+  Kislovodsk:
+    name: Кисловодск
+  Kolomna:
+    name: Коломна
+  Kostroma:
+    name: Кострома
+  Krasnaya Polyana:
+    name: Красная поляна
+  Krasnodar:
+    name: Краснодар
+  Krasnoyarsk:
+    name: Красноярск
+  Kungur:
+    name: Кунгур
+  Kursk:
+    name: Курск
+  Lazarevskoye:
+    name: Лазаревское
+  Lipetsk:
+    name: Липецк
+  Murmansk:
+    name: Мурманск
+  Murom:
+    name: Муром
+  Myshkin:
+    name: Мышкин
+  Nizhny Novgorod:
+    name: Нижний Новгород
+  Nizhny Tagil:
+    name: Нижний Тагил
+  Novorossiysk:
+    name: Новороссийск
+  Novosibirsk:
+    name: Новосибирск
+  Omsk:
+    name: Омск
+  Orel:
     name: Орел
-  belgorod:
-    name: Белгород
-
-
-
-
-
-
-
-
+  Ostashkov:
+    name: Осташков
+  Penza:
+    name: Пенза
+  Pereslavl-Zaleski:
+    name: Переславль-Залесский
+  Perm:
+    name: Пермь
+  Petrozavodsk:
+    name: Петрозаводск
+  Ples:
+    name: Плес
+  Cover:
+    name: Покров
+  Priozersk:
+    name: Приозерск
+  Pskov:
+    name: Псков
+  Pushkin:
+    name: Пушкин
+  Pushkin Hills:
+    name: Пушкинские горы
+  Pyatigorsk:
+    name: Пятигорск
+  Rostov the Great:
+    name: Ростов Великий
+  Rostov-on-Don:
+    name: Ростов-на-Дону
+  Rybinsk:
+    name: Рыбинск
+  Ryazan:
+    name: Рязань
+  Samara:
+    name: Самара
+  Saratov:
+    name: Саратов
+  Sergiev Posad:
+    name: Сергиев-Посад
+  Serpukhov:
+    name: Серпухов
+  Smolensk:
+    name: Смоленск
+  Solovki:
+    name: Соловки
+  Sortavala:
+    name: Сортавала
+  Sochi:
+    name: Сочи
+  Suzdal:
+    name: Суздаль
+  Taganrog:
+    name: Таганрог
+  Tambov:
+    name: Тамбов
+  Tarusa:
+    name: Таруса
+  Tver:
+    name: Тверь
+  Tobolsk:
+    name: Тобольск
+  Tolyatti:
+    name: Тольятти
+  Tomsk:
+    name: Томск
+  Torzhok:
+    name: Торжок
+  Toropets:
+    name: Торопец
+  Tot'ma:
+    name: Тотьма
+  Tula:
+    name: Тула
+  Tyumen:
+    name: Тюмень
+  Uglich:
+    name: Углич
+  Ulyanovsk:
+    name: Ульяновск
+  Ufa:
+    name: Уфа
+  Host:
+    name: Хоста
+  Cheboksary:
+    name: Чебоксары
+  Chelyabinsk:
+    name: Челябинск
+  Cherepovets:
+    name: Череповец
+  Elista:
+    name: Элиста
+  Yuriev Polish:
+    name: Юрьев-Польский
+  Yaroslavl:
+    name: Ярославль

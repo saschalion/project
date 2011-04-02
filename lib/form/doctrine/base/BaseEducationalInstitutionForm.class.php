@@ -16,6 +16,7 @@ abstract class BaseEducationalInstitutionForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id'                           => new sfWidgetFormInputHidden(),
+      'kind_learning'                => new sfWidgetFormInputText(),
       'name_educational_institution' => new sfWidgetFormInputText(),
       'diploma'                      => new sfWidgetFormInputText(),
       'year_graduation'              => new sfWidgetFormInputText(),
@@ -26,6 +27,7 @@ abstract class BaseEducationalInstitutionForm extends BaseFormDoctrine
 
     $this->setValidators(array(
       'id'                           => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
+      'kind_learning'                => new sfValidatorString(array('max_length' => 50, 'required' => false)),
       'name_educational_institution' => new sfValidatorString(array('max_length' => 150, 'required' => false)),
       'diploma'                      => new sfValidatorString(array('max_length' => 20, 'required' => false)),
       'year_graduation'              => new sfValidatorPass(array('required' => false)),

@@ -6,7 +6,8 @@ JobeetJob:
     passport_id: 1
     User: Admin
     Status: probation
-    City: moscow
+    City: St. Petersburg
+    citizenship: Российская Федерация
     profession_id: 1
     family_id: 1
     educational_institution_id: 1

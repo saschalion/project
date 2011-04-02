@@ -55,34 +55,38 @@
     </table>
     <h1>Личная карточка работника</h1>
     <h1>I. Общие сведения</h1>
-    <ul>
-        <li>1.
+    <ol>
+        <li>
 <span>ФИО</span>
  <?php echo $jobeet_job->getLastName() ?>
  <?php echo $jobeet_job->getFirstName() ?>
  <?php echo $jobeet_job->getThreeName() ?> 
         </li>
-        <li>2.
+        <li>
  <span>Дата рождения</span>
  <?php echo $jobeet_job->getDataBirth() ?>
 
 </li>
-<li>3.
+<li>
 <span>Место рождения</span>
  г.<?php echo $jobeet_job->getCity() ?>
 </li>
-<li>4.
+<li>
+<span>Гражданство</span>
+    <?php echo $jobeet_job->getCitizenship() ?>
+</li>
+<li>
 <span>Знание иностранного языка</span>
  <?php if ($jobeet_job->getForeignLanguage()->getNameForeignLanguage()): ?>
      <?php echo $jobeet_job->getForeignLanguage()->getNameForeignLanguage() . ',' ?>
      <?php echo $jobeet_job->getForeignLanguage()->getDegreeKnowledgeForeignLanguages() ?>
  <?php endif; ?>
  </li>
- <li>5.
+ <li>
 <span>Образование</span>
  <?php echo $jobeet_job->getEducationalInstitution()->getEducation() ?>
  </li>
-    </ul>
+    
     <?php if ($jobeet_job->getEducationalInstitution()->getNameEducationalInstitution()): ?>
     <table>
         <thead>
@@ -182,9 +186,9 @@
         </tbody>
     </table>
     <? endif; ?>
-    <ul>
-        <li>6. <span>Профессия</span> <?php echo $jobeet_job->getEducationalInstitution()->getDiplomaQualification() ?></li>
-        <li>7. <span>Состояние в браке</span> 
+  
+        <li><span>Профессия</span> <?php echo $jobeet_job->getEducationalInstitution()->getDiplomaQualification() ?></li>
+        <li><span>Состояние в браке</span> 
             <?php if ($jobeet_job->getType() == 'M' & $jobeet_job->getFamily()->getMarriageStatus() == 'Не замужем / Холост'): ?>
                 <?php echo 'Холост' ?>
             <? endif; ?>
@@ -198,8 +202,8 @@
                 <?php echo 'Замужем' ?>
             <? endif; ?>
         </li>
-        <li>8. <span>Состав семьи</span></li>
-    </ul>
+        <li><span>Состав семьи</span></li>
+    </ol>
     <?php if ($jobeet_job->getFamily()->getChildren()): ?>
     <table>
         <thead>

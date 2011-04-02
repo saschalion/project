@@ -16,7 +16,14 @@ class EducationalInstitutionExtraForm extends BaseEducationalInstitutionExtraFor
       $this['study_extra']
     );
 
+        $this->widgetSchema['kind_learning'] = new sfWidgetFormChoice(array(
+          'choices'  => Doctrine_Core::getTable('JobeetJob')->getKindLearning(),
+          'expanded' => false,
+          'default' => ''
+        ));
+
        $this->widgetSchema->setLabels(array(
+          'kind_learning' => 'Вид обучения', 
           'name_educational_institution_extra' => 'Наименование образовательного учреждения',
           'diploma_extra' => 'Диплом: серия, номер',
           'year_graduation_extra' => 'Год окончания',

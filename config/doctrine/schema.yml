@@ -69,18 +69,20 @@ ForeignLanguage:
 # Образование
 EducationalInstitution:
   columns:
+    kind_learning:
+      type: string(50)
     name_educational_institution:
-     type: string(150)
+      type: string(150)
     diploma:
-     type: string(20)
+      type: string(20)
     year_graduation:
-     type: year
+      type: year
     education_id:
-     type: integer
+      type: integer
     diploma_qualification:
-     type: string(100)
+      type: string(100)
     speciality_diploma:
-     type: string(150)
+      type: string(150)
 
   relations:
       Education:
@@ -92,6 +94,8 @@ EducationalInstitution:
 # Послевузовое профессиональное образование
 EducationalInstitutionExtra:
   columns:
+    kind_learning:
+      type: string(50)
     name_educational_institution_extra:
       type: string(150)
       notnull: false
@@ -225,6 +229,8 @@ JobeetJob:
       type: integer
     leaving_table_id:
       type: integer
+    citizenship:
+      type: string(150)
 
     # Общие сведения
     last_name:

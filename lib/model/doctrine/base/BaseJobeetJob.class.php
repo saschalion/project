@@ -22,6 +22,7 @@
  * @property integer $family_id
  * @property integer $military_records_id
  * @property integer $leaving_table_id
+ * @property string $citizenship
  * @property string $last_name
  * @property string $first_name
  * @property string $three_name
@@ -65,6 +66,7 @@
  * @method integer                     getFamilyId()                         Returns the current record's "family_id" value
  * @method integer                     getMilitaryRecordsId()                Returns the current record's "military_records_id" value
  * @method integer                     getLeavingTableId()                   Returns the current record's "leaving_table_id" value
+ * @method string                      getCitizenship()                      Returns the current record's "citizenship" value
  * @method string                      getLastName()                         Returns the current record's "last_name" value
  * @method string                      getFirstName()                        Returns the current record's "first_name" value
  * @method string                      getThreeName()                        Returns the current record's "three_name" value
@@ -107,6 +109,7 @@
  * @method JobeetJob                   setFamilyId()                         Sets the current record's "family_id" value
  * @method JobeetJob                   setMilitaryRecordsId()                Sets the current record's "military_records_id" value
  * @method JobeetJob                   setLeavingTableId()                   Sets the current record's "leaving_table_id" value
+ * @method JobeetJob                   setCitizenship()                      Sets the current record's "citizenship" value
  * @method JobeetJob                   setLastName()                         Sets the current record's "last_name" value
  * @method JobeetJob                   setFirstName()                        Sets the current record's "first_name" value
  * @method JobeetJob                   setThreeName()                        Sets the current record's "three_name" value
@@ -205,6 +208,10 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
              ));
         $this->hasColumn('leaving_table_id', 'integer', null, array(
              'type' => 'integer',
+             ));
+        $this->hasColumn('citizenship', 'string', 150, array(
+             'type' => 'string',
+             'length' => 150,
              ));
         $this->hasColumn('last_name', 'string', 100, array(
              'type' => 'string',
