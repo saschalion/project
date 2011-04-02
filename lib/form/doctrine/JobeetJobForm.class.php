@@ -51,7 +51,7 @@ class JobeetJobForm extends BaseJobeetJobForm
     'ForeignLanguage' => array(
       'considerNewFormEmptyFields'    => array('passport_number'),
       'noNewForm'                     => true,
-      'newFormLabel'                  => null,
+      'newFormLabel'                  => 'Add',
       'newFormClass'                  => 'ForeignLanguage',
       'newFormClassArgs'              => array(array('sf_user' => $this->getOption('sf_user'))),
       'displayEmptyRelations'         => true,
@@ -135,7 +135,7 @@ class JobeetJobForm extends BaseJobeetJobForm
     )
   ));
 
-        $this->embedRelations(array(
+     $this->embedRelations(array(
     'Family' => array(
       'considerNewFormEmptyFields'    => array('passport_number'),
       'noNewForm'                     => true,
@@ -156,6 +156,51 @@ class JobeetJobForm extends BaseJobeetJobForm
       'customEmbeddedFormLabelMethod' => 'getLabelTitle'
     )
   ));
+
+     $this->embedRelations(array(
+    'MilitaryRecords' => array(
+      'considerNewFormEmptyFields'    => array('passport_number'),
+      'noNewForm'                     => true,
+      'newFormLabel'                  => null,
+      'newFormClass'                  => 'MilitaryRecords',
+      'newFormClassArgs'              => array(array('sf_user' => $this->getOption('sf_user'))),
+      'displayEmptyRelations'         => true,
+      'formClass'                     => null,
+      'formClassArgs'                 => array(array('ah_add_delete_checkbox' => false)),
+      'newFormAfterExistingRelations' => true,
+      'formFormatter'                 => null,
+      'multipleNewForms'              => true,
+      'newFormsInitialCount'          => 2,
+      'newFormsContainerForm'         => 'ahNewRelationsContainerForm', // pass BaseForm object here or we will create ahNewRelationsContainerForm
+      'newRelationButtonLabel'        => '+',
+      'newRelationAddByCloning'       => true,
+      'newRelationUseJSFramework'     => 'jQuery',
+      'customEmbeddedFormLabelMethod' => 'getLabelTitle'
+    )
+  ));
+
+     $this->embedRelations(array(
+    'LeavingTable' => array(
+      'considerNewFormEmptyFields'    => array('passport_number'),
+      'noNewForm'                     => true,
+      'newFormLabel'                  => null,
+      'newFormClass'                  => 'LeavingTable',
+      'newFormClassArgs'              => array(array('sf_user' => $this->getOption('sf_user'))),
+      'displayEmptyRelations'         => true,
+      'formClass'                     => null,
+      'formClassArgs'                 => array(array('ah_add_delete_checkbox' => false)),
+      'newFormAfterExistingRelations' => true,
+      'formFormatter'                 => null,
+      'multipleNewForms'              => true,
+      'newFormsInitialCount'          => 2,
+      'newFormsContainerForm'         => 'ahNewRelationsContainerForm', // pass BaseForm object here or we will create ahNewRelationsContainerForm
+      'newRelationButtonLabel'        => '+',
+      'newRelationAddByCloning'       => true,
+      'newRelationUseJSFramework'     => 'jQuery',
+      'customEmbeddedFormLabelMethod' => 'getLabelTitle'
+    )
+  ));
+
 
     $this->widgetSchema['logo'] = new sfWidgetFormInputFile(array(
     'label' => 'Фотография'
@@ -195,12 +240,13 @@ class JobeetJobForm extends BaseJobeetJobForm
       'EducationalInstitutionExtra'    => false,
       'Profession'    => false,
       'Family'    => false,
+      'MilitaryRecords' => false,
+      'LeavingTable' => false,
       'tab_id' => 'Табельный номер<span class="red">*</span>',
       'number_insurace' => 'ИНН<span class="red">*</span>',
       'nature_work' => 'Характер работ',
       'pension_sertificate' => 'Номер свидетельства ОПС<span class="red">*</span>',
-      'type_work' => 'Вид работы',
-      'sf_guard_user_id' => 'Пользователь<span class="red">*</span>',
+      'type_work' => 'Вид работы',   
       'category_id' => 'Должность',
       'last_name' => 'Фамилия<span class="red">*</span>',
       'first_name' => 'Имя<span class="red">*</span>',
@@ -213,25 +259,11 @@ class JobeetJobForm extends BaseJobeetJobForm
       'city_id' => 'Город',
       'adress' => 'Адрес<span class="red">*</span>',
       'email' => '',
-      'logo' => 'Фото',   
-      'group_accounting' => 'Группа учета',
-      'category_accounting' => 'Категория учета',
-      'composition' => 'Состав',
-      'military_rank' => 'Воинское звание',
-      'military_discount_specialty' => 'Воен. учетн. спец.',
-      'number_military_discount_specialty' => '№',
-      'name_district_military_office' => 'Годность',
-      'number_special_accounting' => 'Название районного военкомата',
-      'kind_leave' => 'Вид отпуска',
-      'getting_started' => 'Период работы с',
-      'end_work' => 'по',
-      'number_vacation_days' => 'Количество календарных дней отпуска',
-      'commencement' => 'Дата начала',
-      'end_leave' => 'Дата окончания',
-      'base_release' => 'Основание',
+      'logo' => 'Фото',  
       'more_information' => 'Сведения',
       'price' => 'Ставка, руб'
 ));
+   
 
     $this->widgetSchema->setHelp(
      'passport_number', 'Пример: 4502 605593'
@@ -239,7 +271,7 @@ class JobeetJobForm extends BaseJobeetJobForm
 
     $this->widgetSchema->setHelp(
      'phone', 'Пример: +7(905)156-89-36'
-         );
+    ); 
 
     $this->widgetSchema['sf_guard_user_id'] = new sfWidgetFormInputHidden();
     $this->validatorSchema['sf_guard_user_id'] = new sfValidatorPass();

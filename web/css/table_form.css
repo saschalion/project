@@ -5,6 +5,10 @@
     -moz-border-radius: 4px;
 }
 
+/*#sf_fieldset__________________________ {
+    width: 500px;
+}*/
+
 .table-form th, .table-form td {
     padding-bottom: 10px;
 }

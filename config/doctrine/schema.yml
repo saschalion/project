@@ -139,6 +139,46 @@ Family:
     date_birth_children:
       type: date
 
+# Воинский учет
+MilitaryRecords: 
+  columns:
+    group_accounting:
+      type: string(255)
+    category_accounting:
+      type: string(255)
+    composition:
+      type: string(255)
+    military_rank:
+      type: string(255)
+    military_discount_specialty:
+      type: string(255)
+    number_military_discount_specialty:
+      type: string(255)
+    fitness:
+     type: string(255)
+    name_district_military_office:
+     type: string(255)
+    number_special_accounting:
+      type: string(255)
+
+# Отпуск
+LeavingTable:
+  columns:
+    kind_leave:
+      type: string(80)
+    getting_started:
+      type: date
+    end_work:
+      type: date
+    number_vacation_days:
+      type: string(2)
+    commencement:
+     type: date
+    end_leave:
+      type: date
+    base_release:
+      type: string(60)
+
 JobeetJob:
   actAs:
     Timestampable: ~
@@ -181,6 +221,10 @@ JobeetJob:
       type: integer
     family_id:
       type: integer
+    military_records_id:
+      type: integer
+    leaving_table_id:
+      type: integer
 
     # Общие сведения
     last_name:
@@ -212,42 +256,6 @@ JobeetJob:
       unique: true
     logo:
       type: string(255)
-
-    # Воинский учет
-    group_accounting:
-      type: string(255)
-    category_accounting:
-      type: string(255)
-    composition:
-      type: string(255)
-    military_rank:
-      type: string(255)
-    military_discount_specialty:
-      type: string(255)
-    number_military_discount_specialty:
-      type: string(255)
-    fitness:
-     type: string(255)
-    name_district_military_office:
-     type: string(255)
-    number_special_accounting:     
-      type: string(255)
-
-    # Отпуск
-    kind_leave:
-      type: string(80)
-    getting_started:
-      type: date
-    end_work:
-      type: date
-    number_vacation_days:
-      type: string(2)
-    commencement:
-     type: date
-    end_leave:
-      type: date
-    base_release:
-      type: string(60)
 
     # Дополнительные сведения
     more_information:
@@ -318,6 +326,18 @@ JobeetJob:
       onDelete: CASCADE
       local: family_id
       foreignAlias: Family
+
+    MilitaryRecords:
+      foreign: id
+      onDelete: CASCADE
+      local: military_records_id
+      foreignAlias: MilitaryRecords
+
+    LeavingTable:
+      foreign: id
+      onDelete: CASCADE
+      local: leaving_table_id
+      foreignAlias: LeavingTable
 
 options:
     collate: utf8_general_ci

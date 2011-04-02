@@ -21,6 +21,10 @@ class ForeignLanguageForm extends BaseForeignLanguageForm
       'expanded' => false
     ));
 
+//      $this->widgetSchema->setHelp(
+//     'degree_knowledge_foreign_languages', '<input type="button" class="ahAddRelation">Добавить</button>'
+//         );
+
       $this->widgetSchema->setLabels(array(      
       'name_foreign_language' => 'Наименование',
       'degree_knowledge_foreign_languages' => 'Степень знания'
