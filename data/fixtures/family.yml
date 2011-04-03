@@ -13,3 +13,199 @@ Family:
     relation_degree: дочь
     children: Дружинина Мария Александровна
     date_birth_children: '2011-12-31'
+
+  family_3:
+    id: 3
+    marriage_status: Замужем / Женат
+    relation_degree: жена
+    children: Кутузова Мария Александровна
+    date_birth_children: '1981-12-31'
+
+  family_4:
+    id: 4
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_5:
+    id: 5
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_6:
+    id: 6
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_7:
+    id: 7
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_8:
+    id: 8
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_9:
+    id: 9
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_10:
+    id: 10
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_11:
+    id: 11
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_12:
+    id: 12
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_13:
+    id: 13
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_14:
+    id: 14
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_15:
+    id: 15
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_16:
+    id: 16
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_17:
+    id: 17
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_18:
+    id: 18
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_19:
+    id: 19
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_20:
+    id: 20
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_21:
+    id: 21
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_22:
+    id: 22
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_23:
+    id: 23
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_24:
+    id: 24
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_25:
+    id: 25
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_26:
+    id: 26
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_27:
+    id: 27
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_28:
+    id: 28
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_29:
+    id: 29
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:
+
+  family_30:
+    id: 30
+    marriage_status: Не замужем / Холост
+    relation_degree:
+    children:
+    date_birth_children:

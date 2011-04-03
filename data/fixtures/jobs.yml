@@ -1,7 +1,8 @@
 # data/fixtures/jobs.yml
 JobeetJob:
   job_1:
-    id: 1  
+    id: 1
+    JobeetCategory: manager
     passport_id: 1
     User: Admin
     citizenship: Российская Федерация
@@ -15,881 +16,395 @@ JobeetJob:
     first_name: Сергей
     last_name: Артемьев
     three_name: Сергеевич
-    data_birth: '2008-10-10'
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
 
   job_2:
     id: 2
+    JobeetCategory: administrator
     passport_id: 2
     User: Admin
     citizenship: Российская Федерация
     profession_id: 2
     family_id: 2
     educational_institution_id: 2
-    educational_institution_extra_id: 1
     type:  M 
     nature_work: Постоянная
     type_work: По совместительству
-    first_name: Сергей
-    last_name: Артемьев
-    three_name: Сергеевич
-    data_birth: '2008-10-10'
+    first_name: Игнатий
+    last_name: Сергеев
+    three_name: Ипполитович
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
     
+  job_3:
+    id: 3
+    JobeetCategory: voip_specialist
+    passport_id: 3
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 3
+    family_id: 3
+    educational_institution_id: 3
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Константин
+    last_name: Федоров
+    three_name: Сергеевич
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
 
-#  job_sensio_labs_2:
-#    id: 2
-#    JobeetCategory: design
-#    passport_id: 2
-#    User: User
-#    Status: probation
-#    City: moscow
-#    profession_id: 2
-#    price: 25000
-#    type:  M
-#    tab_id: 344-102
-#    logo:
-#    first_name: Сергей
-#    last_name: Артемьев
-#    three_name: Сергеевич
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio2_labs
-#    email:        job2@list.com
-#    number_insurace: 772278018810
-#    pension_sertificate: 5662-4545-45454
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    marriage_status: Не замужем / Холост
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_3:
-#    id: 3
-#    JobeetCategory: manager
-#    Education: top
-#    passport_id: 3
-#    User: User
-#    Status: work
-#    City: moscow
-#    price: 25000
-#    type:  M
-#    tab_id: 344-103
-#    logo:
-#    first_name: Людвиг
-#    last_name: Розентропов
-#    three_name: Ананьевич
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_3
-#    email:        job@3list.com
-#    number_insurace: 772578018813
-#    pension_sertificate: 5665-4545-45453
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Не замужем / Холост
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_4:
-#    id: 4
-#    JobeetCategory: administrator
-#    Education: top
-#    passport_id: 4
-#    User: User
-#    Status: work
-#    City: moscow
-#    price: 25000
-#    type:  M
-#    tab_id: 344-141
-#    logo:
-#    first_name: Иван
-#    last_name: Федоров
-#    three_name: Борисович
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_4
-#    email:        job@4list.com
-#    number_insurace: 772548018811
-#    pension_sertificate: 5664-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Не замужем / Холост
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_5:
-#    id: 5
-#    JobeetCategory: voip_specialist
-#    Education: top
-#    passport_id: 5
-#    User: Admin
-#    Status: leave
-#    City: moscow
-#    price: 25000
-#    type:  M
-#    tab_id: 345-101
-#    logo:
-#    first_name: Игнатий
-#    last_name: Сергеев
-#    three_name: Ипполитович
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs5
-#    email:        job@5list.com
-#    number_insurace: 772578018815
-#    pension_sertificate: 5655-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Не замужем / Холост
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_6:
-#    id: 6
-#    JobeetCategory: technical_specialist
-#    Education: top
-#    passport_id: 6
-#    User: User
-#    Status: command
-#    City: moscow
-#    price: 25000
-#    type:  M
-#    tab_id: 346-101
-#    logo:
-#    first_name: Константин
-#    last_name: Федоров
-#    three_name: Сергеевич
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_6
-#    email:        job@6list.com
-#    number_insurace: 772568018811
-#    pension_sertificate: 5666-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Не замужем / Холост
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_7:
-#    id: 7
-#    JobeetCategory: director
-#    Education: top
-#    passport_id: 7
-#    User: User
-#    Status: command
-#    City: moscow
-#    price: 85000
-#    type:  M
-#    tab_id: 344-107
-#    logo:
-#    first_name: Алексей
-#    last_name: Федоров
-#    three_name: Александрович
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_7
-#    email:        job@7list.com
-#    number_insurace: 772778018811
-#    pension_sertificate: 5667-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Не замужем / Холост
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_8:
-#    id: 8
-#    JobeetCategory: chief_accountant
-#    Education: top
-#    passport_id: 8
-#    User: Admin
-#    Status: work
-#    City: vologda
-#    price: 35000
-#    type:  Ж
-#    tab_id: 344-125
-#    logo:
-#    first_name: Анастасия
-#    last_name: Семенова
-#    three_name: Кирилловна
-#    data_birth: '1988-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_8
-#    email:        job@1list.com
-#    number_insurace: 772578018818
-#    pension_sertificate: 5665-4548-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Не замужем / Холост
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_9:
-#    id: 9
-#    JobeetCategory: accountant
-#    Education: top
-#    passport_id: 9
-#    User: User
-#    Status: work
-#    City: moscow
-#    price: 28000
-#    type:  M
-#    tab_id: 344-109
-#    logo:
-#    first_name: Татьяна
-#    last_name: Жулина
-#    three_name: Сергеевная
-#    data_birth: '1978-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_9
-#    email:        job@9list.com
-#    number_insurace: 772578018819
-#    pension_sertificate: 5665-4545-49452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Не замужем / Холост
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_10:
-#    id: 10
-#    JobeetCategory: head_economic_department
-#    Education: top
-#    passport_id: 10
-#    User: User
-#    Status: leave
-#    City: moscow
-#    price: 36000
-#    type:  M
-#    tab_id: 344-110
-#    logo:
-#    first_name: Семен
-#    last_name: Небылица
-#    three_name: Семенович
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_10
-#    email:        job@10list.com
-#    number_insurace: 772578018811
-#    pension_sertificate: 5610-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Замужем / Женат
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_11:
-#    id: 11
-#    JobeetCategory: secretary
-#    Education: top
-#    passport_id: 11
-#    User: Admin
-#    Status: probation
-#    City: omsk
-#    price: 45000
-#    type:  M
-#    tab_id: 344-111
-#    logo:
-#    first_name: Любовь
-#    last_name: Акрилова
-#    three_name: Филлиповна
-#    data_birth: '1978-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_11
-#    email:        job@11list.com
-#    number_insurace: 772578018811
-#    pension_sertificate: 5665-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Замужем / Женат
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_12:
-#    id: 12
-#    JobeetCategory: counsel
-#    Education: top
-#    passport_id: 12
-#    User: Admin
-#    Status: leave
-#    City: moscow
-#    price: 35000
-#    type:  M
-#    tab_id: 344-129
-#    logo:
-#    first_name: Георгий
-#    last_name: Бурдаков
-#    three_name: Александрович
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_12
-#    email:        job@12list.com
-#    number_insurace: 772578018811
-#    pension_sertificate: 5665-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Замужем / Женат
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_13:
-#    id: 13
-#    JobeetCategory: programmer
-#    Education: top
-#    passport_id: 13
-#    User: User
-#    Status: work
-#    City: moscow
-#    price: 15000
-#    type:  M
-#    tab_id: 344-101
-#    logo:
-#    first_name: Владимир
-#    last_name: Курпатов
-#    three_name: Владимирович
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_13
-#    email:        job@13list.com
-#    number_insurace: 772578018811
-#    pension_sertificate: 5665-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Замужем / Женат
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_14:
-#    id: 14
-#    JobeetCategory: makeup_man
-#    Education: top
-#    passport_id: 14
-#    User: User
-#    Status: work
-#    City: moscow
-#    price: 20000
-#    type:  M
-#    tab_id: 314-101
-#    logo:
-#    first_name: Дмитрий
-#    last_name: Зарубин
-#    three_name: Алексеевич
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_14
-#    email:        job@14list.com
-#    number_insurace: 772578018811
-#    pension_sertificate: 5665-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Замужем / Женат
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_15:
-#    id: 15
-#    JobeetCategory: copywriter
-#    Education: top
-#    passport_id: 15
-#    User: User
-#    Status: work
-#    City: moscow
-#    price: 25000
-#    type:  M
-#    tab_id: 315-101
-#    logo:
-#    first_name: Иван
-#    last_name: Иванов
-#    three_name: Сергеевич
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_15
-#    email:        job@15list.com
-#    number_insurace: 772578018811
-#    pension_sertificate: 5155-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Замужем / Женат
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_16:
-#    id: 16
-#    JobeetCategory: call_specialist
-#    Education: top
-#    passport_id: 16
-#    User: User
-#    Status: work
-#    City: moscow
-#    price: 26000
-#    type:  M
-#    tab_id: 316-101
-#    logo:
-#    first_name: Алексей
-#    last_name: Забудько
-#    three_name: Борисович
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_16
-#    email:        job@16list.com
-#    number_insurace: 772578018811
-#    pension_sertificate: 5616-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Замужем / Женат
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_17:
-#    id: 17
-#    JobeetCategory: systems_analyst
-#    Education: top
-#    passport_id: 17
-#    User: User
-#    Status: probation
-#    City: moscow
-#    price: 25000
-#    type:  M
-#    tab_id: 317-101
-#    logo:
-#    first_name: Борис
-#    last_name: Иванов
-#    three_name: Юзикович
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_17
-#    email:        job@17list.com
-#    number_insurace: 772578018811
-#    pension_sertificate: 5665-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Замужем / Женат
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_18:
-#    id: 18
-#    JobeetCategory: security
-#    Education: top
-#    passport_id: 18
-#    User: User
-#    Status: work
-#    City: moscow
-#    price: 15000
-#    type:  M
-#    tab_id: 318-101
-#    logo:
-#    first_name: Борис
-#    last_name: Федоров
-#    three_name: Николаевич
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_18
-#    email:        job@18list.com
-#    number_insurace: 772578018811
-#    pension_sertificate: 5618-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Замужем / Женат
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_19:
-#    id: 19
-#    JobeetCategory: head_it_department
-#    Education: top
-#    passport_id: 19
-#    User: User
-#    Status: work
-#    City: moscow
-#    price: 19000
-#    type:  M
-#    tab_id: 319-101
-#    logo:
-#    first_name: Игорь
-#    last_name: Сергеев
-#    three_name: Николаевич
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_19
-#    email:        job@19list.com
-#    number_insurace: 772578018811
-#    pension_sertificate: 5195-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Замужем / Женат
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_20:
-#    id: 20
-#    JobeetCategory: test
-#    Education: top
-#    passport_id: 20
-#    User: Admin
-#    Status: work
-#    City: moscow
-#    price: 25000
-#    type:  M
-#    tab_id: 320-101
-#    logo:
-#    first_name: Николай
-#    last_name: Игнатов
-#    three_name: Валерьевич
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_20
-#    email:        job@20list.com
-#    number_insurace: 772578018811
-#    pension_sertificate: 5620-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Замужем / Женат
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_21:
-#    id: 21
-#    JobeetCategory: test
-#    Education: top
-#    passport_id: 21
-#    User: Admin
-#    Status: work
-#    City: moscow
-#    price: 21000
-#    type:  M
-#    tab_id: 321-101
-#    logo:
-#    first_name: Андрей
-#    last_name: Костромин
-#    three_name: Петрович
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_21
-#    email:        job@21list.com
-#    number_insurace: 772578018811
-#    pension_sertificate: 5665-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Замужем / Женат
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_22:
-#    id: 22
-#    JobeetCategory: programmer
-#    Education: top
-#    passport_id: 22
-#    User: User
-#    Status: work
-#    City: moscow
-#    price: 25000
-#    type:  M
-#    tab_id: 322-101
-#    logo:
-#    first_name: Михал
-#    last_name: Добролюбов
-#    three_name: Викторович
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_22
-#    email:        job@22list.com
-#    number_insurace: 772578018811
-#    pension_sertificate: 5622-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Замужем / Женат
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_23:
-#    id: 23
-#    JobeetCategory: programmer
-#    Education: top
-#    passport_id: 23
-#    User: Admin
-#    Status: work
-#    City: moscow
-#    price: 23000
-#    type:  M
-#    tab_id: 334-101
-#    logo:
-#    first_name: Андрей
-#    last_name: Маслов
-#    three_name: Петрович
-#    data_birth: '2008-10-10'
-#    phone:  +79033574730
-#    token:        job_sensio_labs_23
-#    email:        job@23list.com
-#    number_insurace: 772578018811
-#    pension_sertificate: 5623-4545-45452
-#    nature_work: Постоянная
-#    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
-#    type_work: По совместительству
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: Институт экономики и культуры
-#    diploma: 45099654
-#    year_graduation: '2011-01-17'
-#    diploma_qualification: информатик-экономист
-#    speciality_diploma: информатика в экономике
-#    marriage_status: Замужем / Женат
-#    relation_degree: дочь
-#    children: Дружинина Мария Александровна
-#    date_birth_children: '2011-12-31'
-#
-#  job_sensio_labs_24:
-#    id: 24
-#    JobeetCategory: programmer
-#    Education: skot
-#    passport_id: 24
-#    User: User
-#    Status: work
-#    City: omsk
-#    price: 24000
-#    type:  M
-#    tab_id: 334-124
-#    logo:
-#    first_name: Евгений
-#    last_name: Грицаев
-#    three_name: Игоревич
-#    data_birth: '1985-01-01'
-#    phone:  +7-913-357-47-24
-#    token:        job_sensio_labs_24
-#    email:        job@24list.com
-#    number_insurace: 772578018824
-#    pension_sertificate: 5623-4545-45424
-#    nature_work: Постоянная
-#    adress: ул. Дмитриева, д. 5 к.3 кв. 128
-#    type_work: Основная
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: ОМГТУ
-#    diploma: 45099654
-#    year_graduation: '1998-01-17'
-#    diploma_qualification: инженер
-#    speciality_diploma: инженер
-#    marriage_status: Не замужем / Холост
-#    relation_degree:
-#    children:
-#    date_birth_children:
-#
-#  job_sensio_labs_25:
-#    id: 25
-#    JobeetCategory: technical_specialist
-#    Education: skot
-#    passport_id: 25
-#    User: User
-#    Status: work
-#    City: omsk
-#    price: 18000
-#    type:  Ж
-#    tab_id: 334-125
-#    logo:
-#    first_name: Наталья
-#    last_name: Бойко
-#    three_name: Юрьевна
-#    data_birth: '1986-06-17'
-#    phone:  +7-913-257-47-24
-#    token:        job_sensio_labs_27
-#    email:        job@27list.com
-#    number_insurace: 772578018827
-#    pension_sertificate: 5623-4545-45427
-#    nature_work: Постоянная
-#    adress: ул. Ленина, д. 8 к. 2 кв. 123
-#    type_work: Основная
-#    name_foreign_language: Английский
-#    degree_knowledge_foreign_languages: Владеет свободно
-#    name_educational_institution: ОМГТУ
-#    diploma: 45099656
-#    year_graduation: '1998-01-17'
-#    diploma_qualification: инженер по технической поддержке
-#    speciality_diploma: инженер по технической поддержке
-#    marriage_status: Не замужем / Холост
-#    relation_degree:
-#    children:
-#    date_birth_children:
+  job_4:
+    id: 4
+    JobeetCategory: technical_specialist
+    passport_id: 4
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 4
+    family_id: 4
+    educational_institution_id: 4
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Алексей
+    last_name: Федоров
+    three_name: Александрович
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_5:
+    id: 5
+    JobeetCategory: director
+    passport_id: 5
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 5
+    family_id: 5
+    educational_institution_id: 5
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Анастасия
+    last_name: Семенова
+    three_name: Кирилловна
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_6:
+    id: 6
+    JobeetCategory: chief_accountant
+    passport_id: 6
+    User: Admin
+    citizenship: Российская Федерация
+    profession_id: 6
+    family_id: 6
+    educational_institution_id: 6
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Татьяна
+    last_name: Жулина
+    three_name: Сергеевная
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_7:
+    id: 7
+    JobeetCategory: accountant
+    passport_id: 7
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 7
+    family_id: 7
+    educational_institution_id: 7
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Семен
+    last_name: Небылица
+    three_name: Семенович
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_8:
+    id: 8
+    JobeetCategory: counsel
+    passport_id: 8
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 8
+    family_id: 8
+    educational_institution_id: 8
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Любовь
+    last_name: Акрилова
+    three_name: Филлиповна
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_9:
+    id: 9
+    JobeetCategory: voip_specialist
+    passport_id: 9
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 9
+    family_id: 9
+    educational_institution_id: 9
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Георгий
+    last_name: Бурдаков
+    three_name: Александрович
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_10:
+    id: 10
+    JobeetCategory: programmer
+    passport_id: 10
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 10
+    family_id: 10
+    educational_institution_id: 10
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Владимир
+    last_name: Курпатов
+    three_name: Владимирович
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_11:
+    id: 11
+    JobeetCategory: makeup_man
+    passport_id: 11
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 11
+    family_id: 11
+    educational_institution_id: 11
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Дмитрий
+    last_name: Зарубин
+    three_name: Алексеевич
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_12:
+    id: 12
+    JobeetCategory: design
+    passport_id: 12
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 12
+    family_id: 12
+    educational_institution_id: 12
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Иван
+    last_name: Иванов
+    three_name: Сергеевич
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_13:
+    id: 13
+    JobeetCategory: copywriter
+    passport_id: 13
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 13
+    family_id: 13
+    educational_institution_id: 13
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Алексей
+    last_name: Забудько
+    three_name: Борисович
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_14:
+    id: 14
+    JobeetCategory: call_specialist
+    passport_id: 14
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 14
+    family_id: 14
+    educational_institution_id: 14
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Борис
+    last_name: Иванов
+    three_name: Юзикович
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_15:
+    id: 15
+    JobeetCategory: systems_analyst
+    passport_id: 15
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 15
+    family_id: 15
+    educational_institution_id: 15
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Борис
+    last_name: Федоров
+    three_name: Николаевич
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_16:
+    id: 16
+    JobeetCategory: security
+    passport_id: 16
+    User: Admin
+    citizenship: Российская Федерация
+    profession_id: 16
+    family_id: 16
+    educational_institution_id: 16
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Борис
+    last_name: Федоров
+    three_name: Николаевич
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_17:
+    id: 17
+    JobeetCategory: head_it_department
+    passport_id: 17
+    User: Admin
+    citizenship: Российская Федерация
+    profession_id: 7
+    family_id: 17
+    educational_institution_id: 17
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Николай
+    last_name: Игнатов
+    three_name: Валерьевич
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_18:
+    id: 18
+    JobeetCategory: test
+    passport_id: 18
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 18
+    family_id: 18
+    educational_institution_id: 18
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Андрей
+    last_name: Костромин
+    three_name: Петрович
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_19:
+    id: 19
+    JobeetCategory: voip_specialist
+    passport_id: 19
+    User: Admin
+    citizenship: Российская Федерация
+    profession_id: 19
+    family_id: 19
+    educational_institution_id: 19
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Михал
+    last_name: Добролюбов
+    three_name: Викторович
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_20:
+    id: 20
+    JobeetCategory: programmer
+    passport_id: 20
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 20
+    family_id: 20
+    educational_institution_id: 20
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Андрей
+    last_name: Маслов
+    three_name: Петрович
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_21:
+    id: 21
+    JobeetCategory: programmer
+    passport_id: 21
+    User: Admin
+    citizenship: Российская Федерация
+    profession_id: 21
+    family_id: 21
+    educational_institution_id: 21
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Евгений
+    last_name: Грицаев
+    three_name: Игоревич
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_22:
+    id: 22
+    JobeetCategory: secretary
+    passport_id: 22
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 22
+    family_id: 22
+    educational_institution_id: 22
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Наталья
+    last_name: Бойко
+    three_name: Юрьевна
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_23:
+    id: 23
+    JobeetCategory: programmer
+    passport_id: 23
+    User: User
+    citizenship: Российская Федерация
+    profession_id: 23
+    family_id: 23
+    educational_institution_id: 23
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Людвиг
+    last_name: Розентропов
+    three_name: Ананьевич
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_24:
+    id: 24
+    JobeetCategory: administrator
+    passport_id: 24
+    User: Admin
+    citizenship: Российская Федерация
+    profession_id: 24
+    family_id: 24
+    educational_institution_id: 24
+    type:  M
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Иван
+    last_name: Федоров
+    three_name: Борисович
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123

@@ -7,3 +7,115 @@ Profession:
   profession_2:
     id: 2
     main_profession: Профессор
+
+  profession_3:
+    id: 3
+    main_profession: Программист
+
+  profession_4:
+    id: 4
+    main_profession: Веб-дизайнер
+
+  profession_5:
+    id: 5
+    main_profession: Бухгалтер
+
+  profession_6:
+    id: 6
+    main_profession: Главный бухгалтер
+
+  profession_7:
+    id: 7
+    main_profession: Экономист
+
+  profession_8:
+    id: 8
+    main_profession: Технический специалист
+
+  profession_9:
+    id: 9
+    main_profession: Системный аналитик
+
+  profession_10:
+    id: 10
+    main_profession: Технический писатель
+
+  profession_11:
+    id: 11
+    main_profession: Специалист по IP телефонии
+
+  profession_12:
+    id: 12
+    main_profession: Веб-дизайнер
+
+  profession_13:
+    id: 13
+    main_profession: Журналист
+
+  profession_14:
+    id: 14
+    main_profession: Дизайнер
+
+  profession_15:
+    id: 15
+    main_profession: Юрисконсульт
+
+  profession_16:
+    id: 16
+    main_profession: Менеджер
+
+  profession_17:
+    id: 17
+    main_profession: Программный писатель
+
+  profession_18:
+    id: 18
+    main_profession: Лингвист
+
+  profession_19:
+    id: 19
+    main_profession: Математик
+
+  profession_20:
+    id: 20
+    main_profession: Системный аналитик
+
+  profession_21:
+    id: 21
+    main_profession: Экономист
+
+  profession_22:
+    id: 22
+    main_profession: Менеджер
+
+  profession_23:
+    id: 23
+    main_profession: Программист
+
+  profession_24:
+    id: 24
+    main_profession: Специалист по информационной безопасности
+
+  profession_25:
+    id: 25
+    main_profession: Физик-ядерщик
+
+  profession_26:
+    id: 26
+    main_profession: Веб-дизайнер
+
+  profession_27:
+    id: 27
+    main_profession: Журналист
+
+  profession_28:
+    id: 28
+    main_profession: Дизайнер
+
+  profession_29:
+    id: 29
+    main_profession: Технический специалист
+
+  profession_30:
+    id: 30
+    main_profession: Менеджер

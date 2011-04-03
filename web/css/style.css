@@ -225,8 +225,12 @@ li.selected span {
 }
 
 table td, table th {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 1px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+table td {
+    padding-right: 3px;
 }
 
 table tr.even {

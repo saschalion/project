@@ -3,15 +3,16 @@ Status:
   work:
     id: 1
     name: Работает
-  probation:
-    id: 2
-    name: Испытательный срок
-  not:
-    id: 3
-    name: Уволен
+
   command:
-    id: 4
+    id: 2
     name: В командировке
   leave:
-    id: 5
+    id: 3
     name: В отпуске
+  probation:
+    id: 4
+    name: Испытательный срок
+  not:
+    id: 5
+    name: Уволен

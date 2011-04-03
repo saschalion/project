@@ -28,7 +28,7 @@ class JobeetJob extends BaseJobeetJob
 //  автоматическая подстановка электронной почты (job - xx .gmail.com)
   if (!$this->getEmail())
   {
-    $this->setEmail('job-' . rand(1, 9) . rand(1, 9) . '@gmail.com');
+    $this->setEmail('job-' . rand(11, 99) . rand(1, 9) . '@gmail.com');
   }
 //  автоматическая подстановка табельного номера (xxx-xxx)
   if (!$this->getTabId())
@@ -70,14 +70,14 @@ class JobeetJob extends BaseJobeetJob
 //  автоматическая подстановка id статуса
   if (!$this->getStatusId())
   {
-    $this->setStatusId(rand(1, 5));
+    $this->setStatusId(rand(1, 3));
   }
 
-//  автоматическая подстановка id должности
-  if (!$this->getCategoryId())
+//  автоматическая подстановка даты рождения (ГГГГ-мм-дд)
+  if (!$this->getDataBirth())
   {
-    $this->setCategoryId(rand(1, 19));
-  }
+    $this->setDataBirth(rand(1970, 1985) .'-'. rand(01, 12) .'-'. rand(01, 28));
+  }  
 
   return parent::save($conn);
   $this->widgetSchema['type'] = new sfWidgetFormChoice(array(

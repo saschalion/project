@@ -64,8 +64,7 @@
         </li>
         <li>
  <span>Дата рождения</span>
- <?php echo $jobeet_job->getDataBirth() ?>
-
+ <?php echo format_date($jobeet_job->getDataBirth(), 'dd.MM.yyyy') ?>
 </li>
 <li>
 <span>Место рождения</span>
@@ -216,7 +215,7 @@
                     Фамилия, имя, отчество
                 </th>
                 <th>
-                    Год рождения
+                    Дата рождения
                 </th>
             </tr>
         </thead>
@@ -229,7 +228,7 @@
                     <?php echo $jobeet_job->getFamily()->getChildren() ?>
                 </td>
                 <td>
-                    <?php echo $jobeet_job->getFamily()->getDateBirthChildren() ?>
+                    <?php echo format_date($jobeet_job->getFamily()->getDateBirthChildren(), 'dd.MM.yyyy') ?>
                 </td>
             </tr>
         </tbody>
