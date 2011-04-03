@@ -11,10 +11,12 @@ JobeetJob:
     profession_id: 1
     family_id: 1
     educational_institution_id: 1
+    educational_institution_extra_id: 1
     price: 15000
     type:  M
     tab_id: 344-108
-    logo:         
+    nature_work: Постоянная
+    type_work: По совместительству
     first_name: Сергей
     last_name: Артемьев
     three_name: Сергеевич

@@ -1,0 +1,9 @@
+EducationalInstitutionExtra:
+  institution__extra_1:
+    id: 1
+    study_extra: аспирантура
+    name_educational_institution_extra: Московский социально-экономический институт (МСЭИ)
+    diploma_extra: 45099654
+    year_graduation_extra: '2014-01-17'
+    diploma_qualification_extra: информатик-экономист
+    speciality_diploma_extra: информатика в экономике

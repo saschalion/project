@@ -13,21 +13,19 @@ abstract class BaseEducationalInstitutionExtraFormFilter extends BaseFormFilterD
   public function setup()
   {
     $this->setWidgets(array(
-      'kind_learning'                      => new sfWidgetFormFilterInput(),
+      'study_extra'                        => new sfWidgetFormFilterInput(),
       'name_educational_institution_extra' => new sfWidgetFormFilterInput(),
       'diploma_extra'                      => new sfWidgetFormFilterInput(),
       'year_graduation_extra'              => new sfWidgetFormFilterInput(),
-      'study_extra'                        => new sfWidgetFormFilterInput(),
       'diploma_qualification_extra'        => new sfWidgetFormFilterInput(),
       'speciality_diploma_extra'           => new sfWidgetFormFilterInput(),
     ));
 
     $this->setValidators(array(
-      'kind_learning'                      => new sfValidatorPass(array('required' => false)),
+      'study_extra'                        => new sfValidatorPass(array('required' => false)),
       'name_educational_institution_extra' => new sfValidatorPass(array('required' => false)),
       'diploma_extra'                      => new sfValidatorPass(array('required' => false)),
       'year_graduation_extra'              => new sfValidatorPass(array('required' => false)),
-      'study_extra'                        => new sfValidatorPass(array('required' => false)),
       'diploma_qualification_extra'        => new sfValidatorPass(array('required' => false)),
       'speciality_diploma_extra'           => new sfValidatorPass(array('required' => false)),
     ));
@@ -50,11 +48,10 @@ abstract class BaseEducationalInstitutionExtraFormFilter extends BaseFormFilterD
   {
     return array(
       'id'                                 => 'Number',
-      'kind_learning'                      => 'Text',
+      'study_extra'                        => 'Text',
       'name_educational_institution_extra' => 'Text',
       'diploma_extra'                      => 'Text',
       'year_graduation_extra'              => 'Text',
-      'study_extra'                        => 'Text',
       'diploma_qualification_extra'        => 'Text',
       'speciality_diploma_extra'           => 'Text',
     );

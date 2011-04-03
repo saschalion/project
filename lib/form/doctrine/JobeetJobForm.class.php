@@ -230,7 +230,8 @@ class JobeetJobForm extends BaseJobeetJobForm
 
     $this->widgetSchema['nature_work'] = new sfWidgetFormChoice(array(
       'choices'  => Doctrine_Core::getTable('JobeetJob')->getNatureWork(),
-      'expanded' => true
+      'expanded' => true,
+      'default'  => 'Постоянная'
     ));
 
    $this->widgetSchema->setLabels(array(

@@ -16,22 +16,20 @@ abstract class BaseEducationalInstitutionExtraForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id'                                 => new sfWidgetFormInputHidden(),
-      'kind_learning'                      => new sfWidgetFormInputText(),
+      'study_extra'                        => new sfWidgetFormInputText(),
       'name_educational_institution_extra' => new sfWidgetFormInputText(),
       'diploma_extra'                      => new sfWidgetFormInputText(),
       'year_graduation_extra'              => new sfWidgetFormInputText(),
-      'study_extra'                        => new sfWidgetFormInputText(),
       'diploma_qualification_extra'        => new sfWidgetFormInputText(),
       'speciality_diploma_extra'           => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
       'id'                                 => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
-      'kind_learning'                      => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'study_extra'                        => new sfValidatorString(array('max_length' => 30, 'required' => false)),
       'name_educational_institution_extra' => new sfValidatorString(array('max_length' => 150, 'required' => false)),
       'diploma_extra'                      => new sfValidatorString(array('max_length' => 20, 'required' => false)),
       'year_graduation_extra'              => new sfValidatorPass(array('required' => false)),
-      'study_extra'                        => new sfValidatorString(array('max_length' => 30, 'required' => false)),
       'diploma_qualification_extra'        => new sfValidatorString(array('max_length' => 100, 'required' => false)),
       'speciality_diploma_extra'           => new sfValidatorString(array('max_length' => 150, 'required' => false)),
     ));

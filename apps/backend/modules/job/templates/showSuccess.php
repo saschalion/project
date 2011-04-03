@@ -29,7 +29,7 @@
         <tbody>
             <tr>
                 <td>
-                    <?php echo format_date($jobeet_job->getCreatedAt(), 'dd-MM-yyyy') ?>
+                    <?php echo format_date($jobeet_job->getCreatedAt(), 'dd.MM.yyyy') ?>
                 </td>
                 <td>
                     <?php echo $jobeet_job->getTabId() ?>
@@ -75,13 +75,13 @@
 <span>Гражданство</span>
     <?php echo $jobeet_job->getCitizenship() ?>
 </li>
-<li>
-<span>Знание иностранного языка</span>
- <?php if ($jobeet_job->getForeignLanguage()->getNameForeignLanguage()): ?>
-     <?php echo $jobeet_job->getForeignLanguage()->getNameForeignLanguage() . ',' ?>
-     <?php echo $jobeet_job->getForeignLanguage()->getDegreeKnowledgeForeignLanguages() ?>
+<?php if ($jobeet_job->getForeignLanguage()->getNameForeignLanguage()): ?>
+    <li>
+        <span>Знание иностранного языка</span>
+        <?php echo $jobeet_job->getForeignLanguage()->getNameForeignLanguage() . ',' ?>
+        <?php echo $jobeet_job->getForeignLanguage()->getDegreeKnowledgeForeignLanguages() ?>
+     </li>
  <?php endif; ?>
- </li>
  <li>
 <span>Образование</span>
  <?php echo $jobeet_job->getEducationalInstitution()->getEducation() ?>
@@ -138,7 +138,7 @@
     <? endif; ?>
     <?php if ($jobeet_job->getEducationalInstitutionExtra()->getNameEducationalInstitutionExtra()): ?>
     <table>
-        <caption>Послевузовое профессиональное образование</caption>
+        <caption><strong>Послевузовое профессиональное образование</strong> <?php echo $jobeet_job->getEducationalInstitutionExtra()->getStudyExtra() ?></caption>
         <thead>
             <tr>
                 <th>

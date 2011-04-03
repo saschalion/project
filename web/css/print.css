@@ -46,6 +46,7 @@ table td {
 
 table caption {
     padding: 10px 0;
+    text-align: left;
 }
 
 ol {

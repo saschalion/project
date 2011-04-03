@@ -37,11 +37,19 @@ class JobeetJobTable extends Doctrine_Table
      'жена' => 'жена'
         );
 
-     static public $kindlearning = array(
+     static public $studyextra = array(
      ''             => '',
-     'дневное'      => 'дневное',
-     'вечернее'     => 'вечернее',
-     'очно-заочное' => 'очно-заочное'
+     'аспирантура'      => 'аспирантура',
+     'адъюнктура'     => 'адъюнктура',
+     'докторантура' => 'докторантура'
+        );
+
+     static public $kindleave = array(
+     '' => '',
+     'ежегодный' => 'ежегодный',
+     'учебный'   => 'учебный',
+     'без сохранения заработной платы' => 'без сохранения заработной платы',
+     'другой'    => 'другой'
         );
 
 
@@ -70,11 +78,13 @@ class JobeetJobTable extends Doctrine_Table
         return self::$relationdegree;
       }
 
-     public function getKindLearning()
+     public function getStudyExtra()
       {
-        return self::$kindlearning;
+        return self::$studyextra;
       }
 
-
-  // ...
+     public function getKindLeave()
+      {
+        return self::$kindleave;
+      }
 }

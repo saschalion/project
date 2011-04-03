@@ -69,16 +69,14 @@ ForeignLanguage:
 # Образование
 EducationalInstitution:
   columns:
-    kind_learning:
-      type: string(50)
+    education_id:
+      type: integer
     name_educational_institution:
       type: string(150)
     diploma:
       type: string(20)
     year_graduation:
       type: year
-    education_id:
-      type: integer
     diploma_qualification:
       type: string(100)
     speciality_diploma:
@@ -94,8 +92,9 @@ EducationalInstitution:
 # Послевузовое профессиональное образование
 EducationalInstitutionExtra:
   columns:
-    kind_learning:
-      type: string(50)
+    study_extra:
+      type: string(30)
+      notnull: false
     name_educational_institution_extra:
       type: string(150)
       notnull: false
@@ -105,9 +104,7 @@ EducationalInstitutionExtra:
     year_graduation_extra:
       type: year
       notnull: false
-    study_extra:
-      type: string(30)
-      notnull: false
+
     diploma_qualification_extra:
       type: string(100)
       notnull: false

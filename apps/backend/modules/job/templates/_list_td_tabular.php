@@ -44,5 +44,5 @@
     <? endif; ?>
 </td>
 <td class="created"> 
-    <?php echo format_date($jobeet_job->getCreatedAt(), 'dd-MM-yyyy') ?>
+    <?php echo format_date($jobeet_job->getCreatedAt(), 'dd.MM.yyyy') ?>
 </td>

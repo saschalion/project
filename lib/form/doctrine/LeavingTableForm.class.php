@@ -12,14 +12,19 @@ class LeavingTableForm extends BaseLeavingTableForm
 {
   public function configure()
   {
-      $this->widgetSchema->setLabels(array(     
-          'kind_leave' => 'Вид отпуска',
-          'getting_started' => 'Период работы с',
-          'end_work' => 'по',
+    $this->widgetSchema['kind_leave'] = new sfWidgetFormChoice(array(
+      'choices'  => Doctrine_Core::getTable('JobeetJob')->getKindLeave(),
+      'expanded' => false
+    ));
+
+    $this->widgetSchema->setLabels(array(
+          'kind_leave'           => 'Вид отпуска',
+          'getting_started'      => 'Период работы с',
+          'end_work'             => 'по',
           'number_vacation_days' => 'Количество календарных дней отпуска',
-          'commencement' => 'Дата начала',
-          'end_leave' => 'Дата окончания',
-          'base_release' => 'Основание' 
+          'commencement'         => 'Дата начала',
+          'end_leave'            => 'Дата окончания',
+          'base_release'         => 'Основание'
         )
       );
   }
