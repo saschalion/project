@@ -304,8 +304,8 @@ parent::configure();
       'file_src'  => '/uploads/jobs/'.$this->getObject()->getLogo(),
       'is_image'  => true,
       'edit_mode' => !$this->isNew(),
-      'template'  => '<div class="img-block"><a href="#">%file%</a>
-          <br />%input%<br />%delete% %delete_label%</div>',
+      'template'  => '<div class="img-block">%file%
+          <br />%input%<br />%delete% %delete_label%</div>'
     ));
 
     $this->validatorSchema['logo_delete'] = new sfValidatorPass();
