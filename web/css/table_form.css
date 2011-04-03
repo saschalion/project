@@ -3,11 +3,25 @@
     width: 100%;
     max-width: 500px;
     -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
 }
 
-/*#sf_fieldset__________________________ {
-    width: 500px;
-}*/
+#sf_fieldset_______________,
+#sf_fieldset_________________________________________________,
+#sf_fieldset_______________________,
+#sf_fieldset_________________________________________________________________________________,
+#sf_fieldset___________________,
+#sf_fieldset__________________________,
+#sf_fieldset_____________ {
+    display: none;
+}
+
+.show-button {
+    margin-left: 147px;
+    margin-top: 10px;
+    display: block;
+}
 
 .table-form th, .table-form td {
     padding-bottom: 10px;

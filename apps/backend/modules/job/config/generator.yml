@@ -28,8 +28,8 @@ generator:
          Образование: [ EducationalInstitution ]
          Послевузовое профессиональное образование: [ EducationalInstitutionExtra ]
          Профессия: [ Profession ]
-         Семейное положение: [ Family ]
          Воинский учет: [ MilitaryRecords ]
+         Семейное положение: [ Family ]         
          Отпуск: [ LeavingTable ]
          Дополнительные сведения: [ more_information ]
 

@@ -24,6 +24,10 @@ class PassportForm extends BasePassportForm
       'code_division' => 'Код подразделения<span class="red">*</span>'
     ));
 
+      $this->widgetSchema->setHelp(
+     'code_division', "<input type='button' id='show-language' class='show-button' value='Показать/Скрыть Иностранные языки' onclick='hideShowLanguage();'>"
+    );
+
   }
 
 }

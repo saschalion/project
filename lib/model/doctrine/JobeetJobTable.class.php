@@ -9,7 +9,7 @@ class JobeetJobTable extends Doctrine_Table
 {
 
     static public $typestype = array(
-    'M' => 'М',
+    'M' => 'М', 
     'Ж' => 'Ж'
         );
 

@@ -278,6 +278,17 @@ class JobeetJobForm extends BaseJobeetJobForm
      'mobile_phone', 'Пример: +7(913)156-89-36'
     );
 
+    $this->widgetSchema->setHelp(
+     'logo', "<input type='button' id='show-passport' 
+         value='Показать/Скрыть Паспорт' onclick='hideShowPassport();'>
+
+         <input type='button' id='show-educational' 
+         value='Показать/Скрыть Образование' onclick='hideShowEducational();'>
+
+         <input type='button' id='show-profession' 
+         value='Показать/Скрыть Профессию' onclick='hideShowProfession();'>"
+    );
+
     $this->widgetSchema['sf_guard_user_id'] = new sfWidgetFormInputHidden();
     $this->validatorSchema['sf_guard_user_id'] = new sfValidatorPass();
 

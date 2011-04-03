@@ -20,5 +20,11 @@ class ProfessionForm extends BaseProfessionForm
       'last_job' => 'Последнее место работы',
       'termination_date' => 'Дата увольнения'
     ));
+
+        $this->widgetSchema->setHelp(
+     'termination_date', "<input type='button' id='show-military' 
+         class='show-button' value='Показать/Скрыть Воинский учет'
+         onclick='hideShowMilitary();'>"
+    );
   }
 }

@@ -35,6 +35,9 @@ class EducationalInstitutionForm extends BaseEducationalInstitutionForm
           'diploma_qualification' => 'Квалификация по диплому',
           'speciality_diploma' => 'Направление или специальность по диплому'
         ));
+        $this->widgetSchema->setHelp(
+     'speciality_diploma', "<input type='button' id='show-educational' class='show-button' value='Показать/Скрыть Доп. образование' onclick='hideShowEducationalExtra();'>"
+    );
 
         
   }

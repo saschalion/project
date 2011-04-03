@@ -30,6 +30,11 @@ class FamilyForm extends BaseFamilyForm
       'children' => 'Дети, ФИО',
       'date_birth_children' => 'Дата рождения',
       'relation_degree' => 'Степень родства'
-));
+    ));
+
+    $this->widgetSchema->setHelp(
+     'date_birth_children', "<input type='button' id='show-leaving' class='show-button'
+         value='Показать/Скрыть Отпуск' onclick='hideShowLeaving();'>"
+    );
   }
 }

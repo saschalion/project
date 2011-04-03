@@ -1,19 +1,41 @@
 $(document).ready(function() {
-    showBlockForm();
+    hideShowPassport();
+    hideShowLanguage();
+    hideShowEducational();
+    hideShowEducationalExtra();
+    hideShowProfession();
+    hideShowMilitary();
+    hideShowLeaving();
 });
 
-function showBlockForm() {
-        $('.block-form').live('click', function() {
-            //$('.block.size-3').css('width','907px');
-            if($('#sf_fieldset__________________________').css('width') == '500px'){
-                $('#sf_fieldset__________________________').animate({
-                width: "300px"
-                }, 500 )
-            } else {
-                $('#sf_fieldset__________________________').animate({
-                display: "none"
-                }, 500 )
-            }
-            return false;
-        });
+function hideShowPassport(){ 
+    $('#sf_fieldset_______________').toggle();
 }
+
+function hideShowLanguage(){ 
+    $('#sf_fieldset_________________________________________________').toggle();
+}
+
+function hideShowEducational(){
+    $('#sf_fieldset_______________________').toggle();
+}
+
+function hideShowEducationalExtra(){
+    $('#sf_fieldset_________________________________________________________________________________').toggle();
+}
+
+function hideShowProfession(){
+    $('#sf_fieldset___________________').toggle();
+}
+
+function hideShowMilitary(){
+    $('#sf_fieldset__________________________').toggle();
+}
+
+function hideShowLeaving(){
+    $('#sf_fieldset_____________').toggle();
+}
+
+
+
+
