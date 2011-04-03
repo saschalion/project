@@ -299,15 +299,13 @@ table tr:hover {
 
 .pager li {
     display: inline-block;
-    list-style: none;
     margin-right: 3px;
     vertical-align: middle;
 }
 
 .pager li:before {
     content: '.';
-    color: #3f3f3f;
-    font-size: 1.3em;
+    color: #3f3f3f; 
     position: relative;
     bottom: 3px;
 }
