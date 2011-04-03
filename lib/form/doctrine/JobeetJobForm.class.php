@@ -263,7 +263,7 @@ class JobeetJobForm extends BaseJobeetJobForm
       'email' => '',
       'logo' => 'Фото',  
       'more_information' => 'Сведения',
-      'price' => 'Ставка, руб'
+      'price' => 'Оклад, руб'
 ));
    
 
@@ -281,7 +281,7 @@ class JobeetJobForm extends BaseJobeetJobForm
 
     $this->widgetSchema->setHelp(
      'logo', "<input type='button' id='show-passport' 
-         value='Показать/Скрыть Паспорт' onclick='hideShowPassport();'>
+         value='Показать/Скрыть Паспорт'  onclick='hideShowPassport();'>
 
          <input type='button' id='show-educational' 
          value='Показать/Скрыть Образование' onclick='hideShowEducational();'>
@@ -304,7 +304,8 @@ parent::configure();
       'file_src'  => '/uploads/jobs/'.$this->getObject()->getLogo(),
       'is_image'  => true,
       'edit_mode' => !$this->isNew(),
-      'template'  => '<div>%file%<br />%input%<br />%delete% %delete_label%</div>',
+      'template'  => '<div class="img-block"><a href="#">%file%</a>
+          <br />%input%<br />%delete% %delete_label%</div>',
     ));
 
     $this->validatorSchema['logo_delete'] = new sfValidatorPass();

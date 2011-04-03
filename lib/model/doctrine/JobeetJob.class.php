@@ -14,15 +14,69 @@ class JobeetJob extends BaseJobeetJob
 {
     public function save(Doctrine_Connection $conn = null)
 {
+//  автоматическая подстановка авторизованного пользователя
   if (!$this->getSfGuardUserId())
           {
       $this->setSfGuardUserId(sfContext::getInstance()->getUser()->getGuardUser()->getId());
 
   }
-
+//  автоматическая подстановка токена
     if (!$this->getToken())
   {
     $this->setToken(sha1($this->getEmail().rand(11111, 99999)));
+  }
+//  автоматическая подстановка электронной почты (job - xx .gmail.com)
+  if (!$this->getEmail())
+  {
+    $this->setEmail('job-' . rand(1, 9) . rand(1, 9) . '@gmail.com');
+  }
+//  автоматическая подстановка табельного номера (xxx-xxx)
+  if (!$this->getTabId())
+  {
+    $this->setTabId(rand(111, 999) . '-' . rand(111, 999));
+  }
+//  автоматическая подстановка ИНН (772578018 - xxx)
+  if (!$this->getNumberInsurace())
+  {
+    $this->setNumberInsurace('772578018' . rand(111, 999));
+  }
+
+//  автоматическая подстановка номера пенсионного страхования (xxxx-xxxx-xxxx-xxxx)
+  if (!$this->getPensionSertificate())
+  {
+    $this->setPensionSertificate(rand(1111, 9999) .'-'. rand(1111, 9999) .'-'.
+            rand(1111, 9999) .'-'. rand(1111, 9999)
+     );
+  }
+
+//  автоматическая подстановка телефона (+7(495) xxx-xx-xx)
+  if (!$this->getPhone())
+  {
+    $this->setPhone('+7(495)' . rand(450, 999) .'-'. rand(11, 99) .'-'. rand(11, 99));
+  }
+
+//  автоматическая подстановка id города
+  if (!$this->getCityId())
+  {
+    $this->setCityId(rand(1, 111));
+  }
+
+//  автоматическая подстановка заработной платы
+  if (!$this->getPrice())
+  {
+    $this->setPrice(rand(2, 4) . rand(0, 9) .'000');
+  }
+
+//  автоматическая подстановка id статуса
+  if (!$this->getStatusId())
+  {
+    $this->setStatusId(rand(1, 5));
+  }
+
+//  автоматическая подстановка id должности
+  if (!$this->getCategoryId())
+  {
+    $this->setCategoryId(rand(1, 19));
   }
 
   return parent::save($conn);

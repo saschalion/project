@@ -160,10 +160,10 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
              'notnull' => true,
              'length' => 12,
              ));
-        $this->hasColumn('pension_sertificate', 'string', 15, array(
+        $this->hasColumn('pension_sertificate', 'string', 20, array(
              'type' => 'string',
              'notnull' => true,
-             'length' => 15,
+             'length' => 20,
              ));
         $this->hasColumn('nature_work', 'string', 30, array(
              'type' => 'string',

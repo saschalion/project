@@ -6,3 +6,10 @@ Family:
     relation_degree: дочь
     children: Дружинина Мария Александровна
     date_birth_children: '2011-12-31'
+
+  family_2:
+    id: 2
+    marriage_status: Не замужем / Холост
+    relation_degree: дочь
+    children: Дружинина Мария Александровна
+    date_birth_children: '2011-12-31'

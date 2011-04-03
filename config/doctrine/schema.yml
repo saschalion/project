@@ -195,7 +195,7 @@ JobeetJob:
       type: string(12)
       notnull: true
     pension_sertificate:
-      type: string(15)
+      type: string(20)
       notnull: true
     nature_work:
       type: string(30)

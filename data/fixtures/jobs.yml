@@ -1,32 +1,40 @@
 # data/fixtures/jobs.yml
 JobeetJob:
-  job_sensio_labs:
-    id: 1
-    JobeetCategory: design    
+  job_1:
+    id: 1  
     passport_id: 1
     User: Admin
-    Status: probation
-    City: St. Petersburg
     citizenship: Российская Федерация
     profession_id: 1
     family_id: 1
     educational_institution_id: 1
     educational_institution_extra_id: 1
-    price: 15000
     type:  M
-    tab_id: 344-108
     nature_work: Постоянная
     type_work: По совместительству
     first_name: Сергей
     last_name: Артемьев
     three_name: Сергеевич
     data_birth: '2008-10-10'
-    phone:  +79033574730
-    token:        job_sensio_labs
-    email:        job@list.com
-    number_insurace: 772578018810
-    pension_sertificate: 5665-4545-45454
-    adress: Нагатинская набережная, д. 34 к. 4 кв. 123    
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+
+  job_2:
+    id: 2
+    passport_id: 2
+    User: Admin
+    citizenship: Российская Федерация
+    profession_id: 2
+    family_id: 2
+    educational_institution_id: 2
+    educational_institution_extra_id: 1
+    type:  M 
+    nature_work: Постоянная
+    type_work: По совместительству
+    first_name: Сергей
+    last_name: Артемьев
+    three_name: Сергеевич
+    data_birth: '2008-10-10'
+    adress: Нагатинская набережная, д. 34 к. 4 кв. 123
     
 
 #  job_sensio_labs_2:

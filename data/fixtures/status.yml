@@ -1,12 +1,17 @@
 # data/fixtures/status.yml
 Status:
   work:
+    id: 1
     name: Работает
   probation:
+    id: 2
     name: Испытательный срок
   not:
+    id: 3
     name: Уволен
   command:
+    id: 4
     name: В командировке
   leave:
+    id: 5
     name: В отпуске
