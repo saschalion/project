@@ -11,20 +11,19 @@
     <?php use_stylesheet('style.css', 'last'); ?>
   </head>
   <body>
-  <div class="wrap">
-
-        <div class="wrap-l">
-            <div class="wrap-r">
-                <div class="wrapper">                
-                <?php if ($sf_user->isAuthenticated()): ?>
-                    <?php include_partial('global/menu', array()); ?>
-                <?php endif ?>
-                <div class="content">
-                     <?php echo $sf_content ?>
+      <div class="wrap">
+            <div class="wrap-l">
+                <div class="wrap-r">
+                    <div class="wrapper">
+                    <?php if ($sf_user->isAuthenticated()): ?>
+                        <?php include_partial('global/menu', array()); ?>
+                    <?php endif ?>
+                    <div class="content">
+                         <?php echo $sf_content ?>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+      </div>
   </body>
 </html>

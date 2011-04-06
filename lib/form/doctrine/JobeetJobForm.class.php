@@ -281,13 +281,13 @@ class JobeetJobForm extends BaseJobeetJobForm
 
     $this->widgetSchema->setHelp(
      'logo', "<input type='button' id='show-passport' 
-         value='Показать/Скрыть Паспорт'  onclick='hideShowPassport();'>
+         value='Показать/Скрыть Паспорт' />
 
          <input type='button' id='show-educational' 
-         value='Показать/Скрыть Образование' onclick='hideShowEducational();'>
+         value='Показать/Скрыть Образование' />
 
          <input type='button' id='show-profession' 
-         value='Показать/Скрыть Профессию' onclick='hideShowProfession();'>"
+         value='Показать/Скрыть Профессию' />"
     );
 
     $this->widgetSchema['sf_guard_user_id'] = new sfWidgetFormInputHidden();

@@ -30,7 +30,7 @@ class EducationalInstitutionForm extends BaseEducationalInstitutionForm
         ));
         
         $this->widgetSchema->setHelp(
-     'speciality_diploma', "<input type='button' id='show-educational' class='show-button' value='Показать/Скрыть Доп. образование' onclick='hideShowEducationalExtra();'>"
+     'speciality_diploma', "<input type='button' id='show-educational-extra' class='show-button' value='Показать/Скрыть Доп. образование' />"
     );
 
         
