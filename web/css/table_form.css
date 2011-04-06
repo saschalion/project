@@ -314,6 +314,8 @@ li.print a {
   border: 1px solid #ddd;
   border-bottom: 0px;
   background-color: #fff;
+  z-index: 1;
+  position: relative;
 }
 
 #sf_admin_container fieldset.collapsed * { display:none; }

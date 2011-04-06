@@ -17,7 +17,7 @@ class jobActions extends autoJobActions
         {
             parent::preExecute();
             $this->getResponse()->addJavascript('/js/form.js', 'last');
-            $this->getResponse()->addJavascript('/js/jquery-1.4.4.min.js', 'last');
+            $this->getResponse()->addJavascript('/js/jquery-1.4.4.min.js', 'first');
         }
 
 
