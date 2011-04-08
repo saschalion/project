@@ -2,18 +2,26 @@ $(function() {
 
     $('#show-passport').click(function(){
         var obj = $('#sf_fieldset_______________');
+        var objEducational = $('#sf_fieldset_______________________');
+        var objProfession = $('#sf_fieldset___________________');
         if( obj.css('display')=='none' )
-            obj.slideDown(400);
+            obj.slideDown(400),
+            objEducational.slideUp(400),
+            objProfession.slideUp(400);
         else
             obj.slideUp(400);
     });
 
     $('#show-educational').click(function(){
         var obj = $('#sf_fieldset_______________________');
+        var objPassport = $('#sf_fieldset_______________');
+        var objProfession = $('#sf_fieldset___________________');
         if( obj.css('display')=='none' )
-            obj.slideDown(400);
+            obj.slideDown(400),
+            objPassport.slideUp(400),
+            objProfession.slideUp(400);
         else
-            obj.slideUp(400);
+            obj.slideUp(400);            
     });
     
 //    $('#jobeet_job_type_M').change(function(){
@@ -49,8 +57,12 @@ $(function() {
 
     $('#show-profession').click(function(){
         var obj = $('#sf_fieldset___________________');
+        var objEducational = $('#sf_fieldset_______________________');
+        var objPassport = $('#sf_fieldset_______________');
         if( obj.css('display')=='none' )
-            obj.slideDown(400);
+            obj.slideDown(400),
+            objEducational.slideUp(400),
+            objPassport.slideUp(400);
         else
             obj.slideUp(400);
     });

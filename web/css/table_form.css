@@ -458,7 +458,9 @@ tfoot th {
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    background: -moz-linear-gradient(-90deg, #FFFFFF, #E1E1E1) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(-90deg, #FFF, #d3ecf6);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#d3ecf6));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#d3ecf6');
     border: 1px solid #EBEBEB;
     color: #333333;
     cursor: pointer;
