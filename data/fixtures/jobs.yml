@@ -207,7 +207,7 @@ JobeetJob:
 
   job_13:
     id: 13
-    JobeetCategory: copywriter
+    JobeetCategory: counsel
     passport_id: 13
     User: User
     citizenship: Российская Федерация
@@ -360,7 +360,7 @@ JobeetJob:
 
   job_22:
     id: 22
-    JobeetCategory: secretary
+    JobeetCategory: administrator
     passport_id: 22
     User: User
     citizenship: Российская Федерация

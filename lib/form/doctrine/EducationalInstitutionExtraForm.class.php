@@ -26,5 +26,10 @@ class EducationalInstitutionExtraForm extends BaseEducationalInstitutionExtraFor
           'diploma_qualification_extra' => 'Квалификация по диплому',
           'speciality_diploma_extra' => 'Направление или специальность по диплому'
         ));
+
+
+       $this->widgetSchema->setHelp(
+     'diploma_extra', '<input type="button" class="ahAddRelation" value="Добавить" />'
+    );
   }
 }

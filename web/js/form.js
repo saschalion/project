@@ -8,8 +8,8 @@ $(document).ready(function() {
     hideShowLeaving();
 });
 
-function hideShowPassport(){ 
-    $('#sf_fieldset_______________').toggle();
+function hideShowPassport(){
+    $('#sf_fieldset_______________').show();
 }
 
 function hideShowLanguage(){ 
