@@ -1,3 +1,9 @@
+body,
+html {
+    height: 100%;
+    display: block;
+}
+
 body {
     background: url(/images/bg.png);
     font-size: 75%;
@@ -36,6 +42,7 @@ h1 {
 .wrapper {
     padding-bottom: 1000em;
     margin-bottom: -1000em;
+    height: 100%;
     background: #e1e6e9;
 }
 

@@ -34,7 +34,7 @@ class FamilyForm extends BaseFamilyForm
 
     $this->widgetSchema->setHelp(
      'date_birth_children', "<input type='button' id='show-leaving' class='show-button'
-         value='Показать/Скрыть Отпуск' onclick='hideShowLeaving();'>"
+         value='Показать/Скрыть Отпуск' />"
     );
   }
 }
