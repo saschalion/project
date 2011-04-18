@@ -25,10 +25,10 @@ class JobeetJob extends BaseJobeetJob
   {
     $this->setToken(sha1($this->getEmail().rand(11111, 99999)));
   }
-//  автоматическая подстановка электронной почты (job - xx .gmail.com)
+//  автоматическая подстановка электронной почты (job - xxxx .gmail.com)
   if (!$this->getEmail())
   {
-    $this->setEmail('job-' . rand(11, 99) . rand(1, 9) . '@gmail.com');
+    $this->setEmail('job-' . rand(0001, 9999) . '@gmail.com');
   }
 //  автоматическая подстановка табельного номера (xxx-xxx)
   if (!$this->getTabId())
@@ -76,8 +76,20 @@ class JobeetJob extends BaseJobeetJob
 //  автоматическая подстановка даты рождения (ГГГГ-мм-дд)
   if (!$this->getDataBirth())
   {
-    $this->setDataBirth(rand(1970, 1985) .'-'. rand(01, 12) .'-'. rand(01, 28));
-  }  
+    $this->setDataBirth(rand(1970, 1985) . '-' . rand(01, 12) . '-' . rand(01, 28));
+  }
+
+//  автоматическая подстановка номера трудового договора (0000xxx)
+  if (!$this->getLaborContract())
+  {
+    $this->setLaborContract('0000' . rand(000, 999));
+  }
+
+//  автоматическая подстановка даты трудового договора (0000xxx)
+  if (!$this->getLaborContractDate())
+  {
+    $this->setLaborContractDate(rand(1999, 2011) . '-' . rand(01, 12) . '-' . rand(01, 28));
+  }
 
   return parent::save($conn);
   $this->widgetSchema['type'] = new sfWidgetFormChoice(array(

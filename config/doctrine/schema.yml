@@ -201,6 +201,10 @@ JobeetJob:
       type: string(30)
     type_work:
       type: string(30)
+    labor_contract:
+      type: string(10)
+    labor_contract_date:
+      type: date
     category_id:
       type: integer
       notnull: true

@@ -11,6 +11,8 @@
  * @property string $pension_sertificate
  * @property string $nature_work
  * @property string $type_work
+ * @property string $labor_contract
+ * @property date $labor_contract_date
  * @property integer $category_id
  * @property integer $status_id
  * @property integer $sf_guard_user_id
@@ -55,6 +57,8 @@
  * @method string                      getPensionSertificate()               Returns the current record's "pension_sertificate" value
  * @method string                      getNatureWork()                       Returns the current record's "nature_work" value
  * @method string                      getTypeWork()                         Returns the current record's "type_work" value
+ * @method string                      getLaborContract()                    Returns the current record's "labor_contract" value
+ * @method date                        getLaborContractDate()                Returns the current record's "labor_contract_date" value
  * @method integer                     getCategoryId()                       Returns the current record's "category_id" value
  * @method integer                     getStatusId()                         Returns the current record's "status_id" value
  * @method integer                     getSfGuardUserId()                    Returns the current record's "sf_guard_user_id" value
@@ -98,6 +102,8 @@
  * @method JobeetJob                   setPensionSertificate()               Sets the current record's "pension_sertificate" value
  * @method JobeetJob                   setNatureWork()                       Sets the current record's "nature_work" value
  * @method JobeetJob                   setTypeWork()                         Sets the current record's "type_work" value
+ * @method JobeetJob                   setLaborContract()                    Sets the current record's "labor_contract" value
+ * @method JobeetJob                   setLaborContractDate()                Sets the current record's "labor_contract_date" value
  * @method JobeetJob                   setCategoryId()                       Sets the current record's "category_id" value
  * @method JobeetJob                   setStatusId()                         Sets the current record's "status_id" value
  * @method JobeetJob                   setSfGuardUserId()                    Sets the current record's "sf_guard_user_id" value
@@ -172,6 +178,13 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
         $this->hasColumn('type_work', 'string', 30, array(
              'type' => 'string',
              'length' => 30,
+             ));
+        $this->hasColumn('labor_contract', 'string', 10, array(
+             'type' => 'string',
+             'length' => 10,
+             ));
+        $this->hasColumn('labor_contract_date', 'date', null, array(
+             'type' => 'date',
              ));
         $this->hasColumn('category_id', 'integer', null, array(
              'type' => 'integer',

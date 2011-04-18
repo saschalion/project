@@ -64,3 +64,12 @@ ol table {
     width: 103%;
 }
 
+.labor-contract-table {
+    float: right;
+    width: 30%;
+}
+
+.labor-contract-table caption {
+    text-align: center;
+    font-weight: bold;
+}

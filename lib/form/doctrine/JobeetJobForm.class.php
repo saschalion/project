@@ -243,6 +243,8 @@ class JobeetJobForm extends BaseJobeetJobForm
       'Family'    => false,
       'MilitaryRecords' => false,
       'LeavingTable' => false,
+      'labor_contract' => 'Трудовой договор',
+      'labor_contract_date' => 'Дата',
       'citizenship' => 'Гражданство',
       'tab_id' => 'Табельный номер<span class="red">*</span>',
       'number_insurace' => 'ИНН<span class="red">*</span>',
