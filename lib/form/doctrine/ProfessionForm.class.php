@@ -21,10 +21,10 @@ class ProfessionForm extends BaseProfessionForm
       'termination_date' => 'Дата увольнения'
     ));
 
-        $this->widgetSchema->setHelp(
-     'termination_date', "<input type='button' id='show-military' 
-         class='show-button' value='Показать/Скрыть Воинский учет'
-         onclick='hideShowMilitary();'>"
-    );
+//        $this->widgetSchema->setHelp(
+//     'termination_date', "<input type='button' id='show-military'
+//         class='show-button' value='Показать/Скрыть Воинский учет'
+//         onclick='hideShowMilitary();'>"
+//    );
   }
 }
