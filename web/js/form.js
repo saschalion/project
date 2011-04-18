@@ -4,7 +4,7 @@ $(function() {
         var obj = $('#sf_fieldset_______________');
         var objEducational = $('#sf_fieldset_______________________');
         var objProfession = $('#sf_fieldset___________________');
-        if( obj.css('display')=='none' )
+        if( obj.css('display')=='none' || objEducational.css('display')=='block' || objProfession.css('display')=='block')
             obj.slideDown(400),
             objEducational.slideUp(400),
             objProfession.slideUp(400);
@@ -16,7 +16,7 @@ $(function() {
         var obj = $('#sf_fieldset_______________________');
         var objPassport = $('#sf_fieldset_______________');
         var objProfession = $('#sf_fieldset___________________');
-        if( obj.css('display')=='none' )
+        if( obj.css('display')=='none' || objPassport.css('display')=='block' || objProfession.css('display')=='block')
             obj.slideDown(400),
             objPassport.slideUp(400),
             objProfession.slideUp(400);
@@ -28,6 +28,17 @@ $(function() {
 //        var obj = $('#sf_fieldset_______________');
 //        if( $(this).attr('checked')=='checked' )
 //            obj.slideUp(400);
+//    });
+
+//   $('#jobeet_job_type___').change(function(){
+//       if($('#jobeet_job_type___').is(':checked'))
+//        $('#sf_fieldset__________________________').hide();
+//    });
+//
+//
+//        $('#jobeet_job_type_M').change(function(){
+//       if($('#jobeet_job_type_M').is(':checked'))
+//        $('#sf_fieldset__________________________').show();
 //    });
 
   
@@ -59,7 +70,7 @@ $(function() {
         var obj = $('#sf_fieldset___________________');
         var objEducational = $('#sf_fieldset_______________________');
         var objPassport = $('#sf_fieldset_______________');
-        if( obj.css('display')=='none' )
+        if( obj.css('display')=='none' || objEducational.css('display')=='block' || objPassport.css('display')=='block' )
             obj.slideDown(400),
             objEducational.slideUp(400),
             objPassport.slideUp(400);
