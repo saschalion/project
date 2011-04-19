@@ -212,16 +212,16 @@
   
         <li><span>Профессия</span> <?php echo $jobeet_job->getEducationalInstitution()->getDiplomaQualification() ?></li>
         <li><span>Состояние в браке</span> 
-            <?php if ($jobeet_job->getType() == 'M' & $jobeet_job->getFamily()->getMarriageStatus() == 'Не замужем / Холост'): ?>
+            <?php if ($jobeet_job->getType() == 'M' && $jobeet_job->getFamily()->getMarriageStatus() == 'Не замужем / Холост'): ?>
                 <?php echo 'Холост' ?>
             <? endif; ?>
-            <?php if ($jobeet_job->getType() == 'Ж' & $jobeet_job->getFamily()->getMarriageStatus() == 'Не замужем / Холост'): ?>
+            <?php if ($jobeet_job->getType() == 'Ж' && $jobeet_job->getFamily()->getMarriageStatus() == 'Не замужем / Холост'): ?>
                 <?php echo 'Не замужем' ?>
             <? endif; ?>
-            <?php if ($jobeet_job->getType() == 'M' & $jobeet_job->getFamily()->getMarriageStatus() == 'Замужем / Женат'): ?>
+            <?php if ($jobeet_job->getType() == 'M' && $jobeet_job->getFamily()->getMarriageStatus() == 'Замужем / Женат'): ?>
                 <?php echo 'Женат' ?>
             <? endif; ?>
-            <?php if ($jobeet_job->getType() == 'Ж' & $jobeet_job->getFamily()->getMarriageStatus() == 'Замужем / Женат'): ?>
+            <?php if ($jobeet_job->getType() == 'Ж' && $jobeet_job->getFamily()->getMarriageStatus() == 'Замужем / Женат'): ?>
                 <?php echo 'Замужем' ?>
             <? endif; ?>
         </li>
