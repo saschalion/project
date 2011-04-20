@@ -118,10 +118,18 @@ label .red {
 
 #sf_admin_container th
 {
-  background-color: #e7eef6;
+  background: -moz-linear-gradient(center top, #EFF9FD, #B7E1F5);
+  background: -webkit-gradient(linear, left top, left bottom, from(#EFF9FD), to(#B7E1F5));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EFF9FD', endColorstr='#B7E1F5');
   white-space: nowrap;
   text-align: left;
   color: #333333;
+}
+
+tfoot th {
+  background: -moz-linear-gradient(center top, #B7E1F5, #EFF9FD) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#B7E1F5), to(#EFF9FD)) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B7E1F5', endColorstr='#EFF9FD') !important;
 }
 
 #sf_admin_container th a {
