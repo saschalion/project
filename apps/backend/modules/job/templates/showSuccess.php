@@ -80,7 +80,7 @@
         </tbody>
     </table>
 
-    <ol>
+    <ol class="one-ol">
         <li>
             <span>ФИО</span>
             <?php echo $jobeet_job->getLastName() ?>
@@ -209,7 +209,8 @@
                 </tbody>
             </table>
             <? endif; ?>
-  
+    </ol>
+    <ol>
         <li><span>Профессия</span> <?php echo $jobeet_job->getEducationalInstitution()->getDiplomaQualification() ?></li>
         <li><span>Состояние в браке</span> 
             <?php if ($jobeet_job->getType() == 'M' && $jobeet_job->getFamily()->getMarriageStatus() == 'Не замужем / Холост'): ?>

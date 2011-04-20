@@ -57,6 +57,7 @@ ol li {
     padding: 0;
     margin-bottom: 20px;
     margin-left: 0;
+    list-style: none;
 }
 
 ol table {
@@ -72,4 +73,14 @@ ol table {
 .labor-contract-table caption {
     text-align: center;
     font-weight: bold;
+}
+
+.one-ol {
+    counter-reset: show-list;
+}
+
+li:before {
+    counter-increment: show-list;
+    content: counter(show-list) ". ";
+    margin-left: -25px;
 }
