@@ -1,4 +1,4 @@
-<td>
+<td class="center-col">
   <ul class="sf_admin_td_actions">
     <li class="print"><?php  echo link_to('&nbsp;', 'job/show?id='.$jobeet_job->getId());?></li>
    <?php echo $helper->linkToEdit($jobeet_job, 
