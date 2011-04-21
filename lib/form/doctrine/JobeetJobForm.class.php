@@ -234,18 +234,18 @@ class JobeetJobForm extends BaseJobeetJobForm
       'default'  => 'Постоянная'
     ));
 
-    $this->widgetSchema['data_birth'] = new sfWidgetFormDate(array(
-      'format' => ' %day% - %month% - %year%'
-    ));
-
-    $this->validatorSchema['data_birth'] = new sfValidatorDate(array(
-        ));
-
+    $yearContract = range(date('Y')-0, date('Y')-15);
+    $yearContract = array_combine($yearContract, $yearContract);
     $this->widgetSchema['labor_contract_date'] = new sfWidgetFormDate(array(
-      'format' => ' %day% - %month% - %year%'
+      'format' => ' %day% - %month% - %year%',
+      'years'  => $yearContract
     ));
 
-    $this->validatorSchema['labor_contract_date'] = new sfValidatorDate(array(
+    $yearDate = range(date('Y')-21, date('Y')-30);
+    $yearDate = array_combine($yearDate, $yearDate);
+       $this->widgetSchema['data_birth'] = new sfWidgetFormDate(array(
+            'format' => ' %day% - %month% - %year%',
+            'years'  => $yearDate
         ));
 
    $this->widgetSchema->setLabels(array(
