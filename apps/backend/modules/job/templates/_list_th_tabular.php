@@ -37,16 +37,16 @@
 <th>
   <?php echo __('Город', array(), 'messages') ?>
 </th>
-<th>
+<th class="center-col">
   <?php echo __('Статус', array(), 'messages') ?>
 </th>
 <th>
   <?php echo __('Добавил', array(), 'messages') ?>
 </th>
-<th>
+<th class="center-col">
   <?php echo __('Оклад<br/> (руб.)', array(), 'messages') ?>
 </th>
-<th>
+<th class="center-col">
   <?php echo __('Дата размещения', array(), 'messages') ?>
 </th>
 <?php end_slot(); ?>

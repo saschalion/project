@@ -7,6 +7,7 @@ html {
 body {
     background: url(/images/bg.png);
     font-size: 75%;
+    min-width: 1350px;
 }
 
 a {
@@ -62,14 +63,19 @@ h1 {
     position: relative;
 }
 
-.header h1 {
+.header h1 a {
     margin: 0;
-    text-shadow: 0 1px 0 #FFFFFF, 2px 3px 4px #999696;
+    text-shadow: 0 1px 0 #fff, 2px 3px 4px #999696;
     position: absolute;
     top: 30px;
+    text-decoration: none;
     left: 36px;
     color: #000;
-    font-size: 2em;
+    font-size: 1.3em;
+}
+
+.header h1 a:hover {
+    color: #7e061a;
 }
 
 .menu {
@@ -294,12 +300,11 @@ table tr:hover {
 }
 
 .center-col {
-    text-align: center;
+    text-align: center !important;
     width: 100px;
 }
 
 .created {
-    text-align: center !important;
     font-size: .8em;
     color: #3f3f3f;
 }

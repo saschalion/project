@@ -50,7 +50,7 @@
 .sf_admin_form input[type="password"],
 .sf_admin_form select[multiple="multiple"] {
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #a9a9a9;
     padding: 5px;
     color: #686161;
     -moz-box-sizing: border-box;
@@ -95,7 +95,7 @@ label .red {
 }
 
 #sf_admin_content form {
-    width: 750px;
+    width: 100%;
 }
 
 #sf_admin_list_th_actions {
@@ -109,6 +109,7 @@ label .red {
 
 #sf_admin_content table {
     width: 100%;
+    border: 1px solid #c2d1d5;
 }
 
 #sf_admin_container h1
@@ -408,7 +409,6 @@ fieldset#sf_fieldset____________________________ .error_list {
 
 .content table th {
   padding: 5px 13px 5px 0 !important;
-  border-bottom: 1px solid #ddd !important
 }
 
 #sf_admin_container .sf_admin_form_row .content
@@ -493,4 +493,31 @@ tfoot th {
 .img-block img {
     width: 300px;
     height: 300px;
+}
+
+.sf_admin_batch_actions_choice select,
+.sf_admin_batch_actions_choice input {
+    background: -moz-linear-gradient(center top , #fff, #D7D5D5);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#D7D5D5));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#D7D5D5');
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #9c9c9c;
+    padding: 5px;
+    -moz-box-shadow: 0 2px 7px #ccc;
+    -webkit-box-shadow: 0 2px 7px #ccc;
+    box-shadow: 0 2px 7px #ccc;
+}
+
+.sf_admin_batch_actions_choice input {
+    cursor: pointer;
+}
+
+#sf_admin_content {
+    padding-right: 250px;
+}
+
+.sf_admin_form form {
+    width: 725px !important;
 }

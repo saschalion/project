@@ -3,12 +3,12 @@
   <head>
     <?php include_http_metas() ?>
     <?php include_metas() ?>
-    <?php include_title() ?>
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <?php include_title() ?>    
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
     <?php use_stylesheet('reset.css', 'last'); ?>
     <?php use_stylesheet('style.css', 'last'); ?>
+    <link rel="shortcut icon" href="/favicon.ico" />
   </head>
   <body>
       <div class="wrap">

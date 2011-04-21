@@ -43,6 +43,6 @@
         Нет ставки
     <? endif; ?>
 </td>
-<td class="created"> 
+<td class="created center-col">
     <?php echo format_date($jobeet_job->getCreatedAt(), 'dd.MM.yyyy') ?>
 </td>

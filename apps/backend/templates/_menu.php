@@ -1,7 +1,6 @@
 <?php $module = sfContext::getInstance()->getModuleName(); ?>
 <div class="header">
-    <h1>АРМ "Отдел кадров"</h1>
-
+    <h1><?php echo link_to('АРМ "Отдел кадров', 'job/index'); ?></h1>
     <div class="menu">
         <div class="menu-l">
             <div class="menu-r">
