@@ -10,19 +10,26 @@
  */
 class EducationalInstitutionExtraForm extends BaseEducationalInstitutionExtraForm
 {
-  public function configure()
+     function doBind(array $values)
   {
+    $values['year_graduation_extra']['day']='1';
+    $values['year_graduation_extra']['month']='1';
+    parent::doBind($values);
+  }
+
+  public function configure()  {
+       
        $this->widgetSchema['study_extra'] = new sfWidgetFormChoice(array(
           'choices'  => Doctrine_Core::getTable('JobeetJob')->getStudyExtra(),
           'expanded' => false,
           'default' => ''
         ));
-
-//       $this->widgetSchema['year_graduation_extra'] = new sfWidgetFormDate(array(
-//            'format' => '%year%'
-//    ));
-//
-//       $this->validatorSchema['year_graduation_extra'] = new sfValidatorDate();
+       $years = range(date('Y')-40, date('Y')-26);
+       $this->widgetSchema['year_graduation_extra'] = new sfWidgetFormDate(array(
+            'format' => '%year%',
+            'years' => $years
+        ));
+   
 
        $this->widgetSchema->setLabels(array(
           'study_extra' => 'Вид обучения',

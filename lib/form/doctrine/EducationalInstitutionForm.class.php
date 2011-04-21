@@ -10,17 +10,24 @@
  */
 class EducationalInstitutionForm extends BaseEducationalInstitutionForm
 {
+     function doBind(array $values)
+  {
+    $values['year_graduation']['day']='1';
+    $values['year_graduation']['month']='1';
+    parent::doBind($values);
+  }
+
   public function configure()
   {
 
         unset(
         $this['created_at'], $this['updated_at']
         );
-
-//        $this->widgetSchema['year_graduation'] = new sfWidgetFormDate(array(
-//          'format' => '%year%'
-//        ));
-    
+        $years = range(date('Y')-30, date('Y')-18);
+        $this->widgetSchema['year_graduation'] = new sfWidgetFormDate(array(
+          'format' => '%year%',
+          'years' => $years
+        ));    
         
         $this->widgetSchema['education_id']->setDefault('1'
         );
@@ -38,4 +45,5 @@ class EducationalInstitutionForm extends BaseEducationalInstitutionForm
      'speciality_diploma', "<input type='button' id='show-educational-extra' class='show-button' value='Показать/Скрыть Доп. образование' />"
     );
   }
+
 }

@@ -135,7 +135,7 @@
                             <?php echo $jobeet_job->getEducationalInstitution()->getDiploma() ?>
                         </td>
                         <td>
-                            <?php echo $jobeet_job->getEducationalInstitution()->getYearGraduation() ?>
+                            <?php echo format_date($jobeet_job->getEducationalInstitution()->getYearGraduation(), 'yyyy') ?>
                         </td>
                     </tr>
                     <tr>
