@@ -18,6 +18,12 @@ class EducationalInstitutionExtraForm extends BaseEducationalInstitutionExtraFor
           'default' => ''
         ));
 
+//       $this->widgetSchema['year_graduation_extra'] = new sfWidgetFormDate(array(
+//            'format' => '%year%'
+//    ));
+//
+//       $this->validatorSchema['year_graduation_extra'] = new sfValidatorDate();
+
        $this->widgetSchema->setLabels(array(
           'study_extra' => 'Вид обучения',
           'name_educational_institution_extra' => 'Наименование образовательного учреждения',
@@ -27,9 +33,5 @@ class EducationalInstitutionExtraForm extends BaseEducationalInstitutionExtraFor
           'speciality_diploma_extra' => 'Направление или специальность по диплому'
         ));
 
-
-       $this->widgetSchema->setHelp(
-     'diploma_extra', '<input type="button" class="ahAddRelation" value="Добавить" />'
-    );
   }
 }

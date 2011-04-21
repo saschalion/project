@@ -234,6 +234,20 @@ class JobeetJobForm extends BaseJobeetJobForm
       'default'  => 'Постоянная'
     ));
 
+    $this->widgetSchema['data_birth'] = new sfWidgetFormDate(array(
+      'format' => ' %day% - %month% - %year%'
+    ));
+
+    $this->validatorSchema['data_birth'] = new sfValidatorDate(array(
+        ));
+
+    $this->widgetSchema['labor_contract_date'] = new sfWidgetFormDate(array(
+      'format' => ' %day% - %month% - %year%'
+    ));
+
+    $this->validatorSchema['labor_contract_date'] = new sfValidatorDate(array(
+        ));
+
    $this->widgetSchema->setLabels(array(
       'Passport'    => false,
       'ForeignLanguage'    => false,
@@ -275,6 +289,14 @@ class JobeetJobForm extends BaseJobeetJobForm
 
     $this->widgetSchema->setHelp(
      'phone', 'Пример: +7(495)156-89-36'
+    );
+
+    $this->widgetSchema->setHelp(
+     'data_birth', 'день/месяц/год'
+    );
+
+    $this->widgetSchema->setHelp(
+     'labor_contract_date', 'день/месяц/год'
     );
 
     $this->widgetSchema->setHelp(

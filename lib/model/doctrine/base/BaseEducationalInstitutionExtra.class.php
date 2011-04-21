@@ -8,7 +8,7 @@
  * @property string $study_extra
  * @property string $name_educational_institution_extra
  * @property string $diploma_extra
- * @property year $year_graduation_extra
+ * @property date $year_graduation_extra
  * @property string $diploma_qualification_extra
  * @property string $speciality_diploma_extra
  * @property Doctrine_Collection $EducationalInstitutionExtra
@@ -16,7 +16,7 @@
  * @method string                      getStudyExtra()                         Returns the current record's "study_extra" value
  * @method string                      getNameEducationalInstitutionExtra()    Returns the current record's "name_educational_institution_extra" value
  * @method string                      getDiplomaExtra()                       Returns the current record's "diploma_extra" value
- * @method year                        getYearGraduationExtra()                Returns the current record's "year_graduation_extra" value
+ * @method date                        getYearGraduationExtra()                Returns the current record's "year_graduation_extra" value
  * @method string                      getDiplomaQualificationExtra()          Returns the current record's "diploma_qualification_extra" value
  * @method string                      getSpecialityDiplomaExtra()             Returns the current record's "speciality_diploma_extra" value
  * @method Doctrine_Collection         getEducationalInstitutionExtra()        Returns the current record's "EducationalInstitutionExtra" collection
@@ -53,8 +53,8 @@ abstract class BaseEducationalInstitutionExtra extends sfDoctrineRecord
              'notnull' => false,
              'length' => 20,
              ));
-        $this->hasColumn('year_graduation_extra', 'year', null, array(
-             'type' => 'year',
+        $this->hasColumn('year_graduation_extra', 'date', null, array(
+             'type' => 'date',
              'notnull' => false,
              ));
         $this->hasColumn('diploma_qualification_extra', 'string', 100, array(

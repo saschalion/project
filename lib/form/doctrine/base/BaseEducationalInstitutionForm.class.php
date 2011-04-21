@@ -19,7 +19,7 @@ abstract class BaseEducationalInstitutionForm extends BaseFormDoctrine
       'education_id'                 => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Education'), 'add_empty' => true)),
       'name_educational_institution' => new sfWidgetFormInputText(),
       'diploma'                      => new sfWidgetFormInputText(),
-      'year_graduation'              => new sfWidgetFormInputText(),
+      'year_graduation'              => new sfWidgetFormDate(),
       'diploma_qualification'        => new sfWidgetFormInputText(),
       'speciality_diploma'           => new sfWidgetFormInputText(),
     ));
@@ -29,7 +29,7 @@ abstract class BaseEducationalInstitutionForm extends BaseFormDoctrine
       'education_id'                 => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Education'), 'required' => false)),
       'name_educational_institution' => new sfValidatorString(array('max_length' => 150, 'required' => false)),
       'diploma'                      => new sfValidatorString(array('max_length' => 20, 'required' => false)),
-      'year_graduation'              => new sfValidatorPass(array('required' => false)),
+      'year_graduation'              => new sfValidatorDate(array('required' => false)),
       'diploma_qualification'        => new sfValidatorString(array('max_length' => 100, 'required' => false)),
       'speciality_diploma'           => new sfValidatorString(array('max_length' => 150, 'required' => false)),
     ));

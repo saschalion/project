@@ -12,7 +12,7 @@ class JobeetJobTable extends Doctrine_Table
     'M' => 'М', 
     'Ж' => 'Ж'
         );
-
+ 
      static public $typestypework = array(
     'Основная'            => 'Основная',
     'По совместительству' => 'По совместительству'

@@ -76,7 +76,7 @@ EducationalInstitution:
     diploma:
       type: string(20)
     year_graduation:
-      type: year
+      type: date
     diploma_qualification:
       type: string(100)
     speciality_diploma:
@@ -102,7 +102,7 @@ EducationalInstitutionExtra:
       type: string(20)
       notnull: false
     year_graduation_extra:
-      type: year
+      type: date
       notnull: false
 
     diploma_qualification_extra:

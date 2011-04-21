@@ -16,6 +16,11 @@ class EducationalInstitutionForm extends BaseEducationalInstitutionForm
         unset(
         $this['created_at'], $this['updated_at']
         );
+
+//        $this->widgetSchema['year_graduation'] = new sfWidgetFormDate(array(
+//          'format' => '%year%'
+//        ));
+    
         
         $this->widgetSchema['education_id']->setDefault('1'
         );
@@ -32,7 +37,5 @@ class EducationalInstitutionForm extends BaseEducationalInstitutionForm
         $this->widgetSchema->setHelp(
      'speciality_diploma', "<input type='button' id='show-educational-extra' class='show-button' value='Показать/Скрыть Доп. образование' />"
     );
-
-        
   }
 }

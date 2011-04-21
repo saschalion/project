@@ -16,7 +16,7 @@ abstract class BaseEducationalInstitutionExtraFormFilter extends BaseFormFilterD
       'study_extra'                        => new sfWidgetFormFilterInput(),
       'name_educational_institution_extra' => new sfWidgetFormFilterInput(),
       'diploma_extra'                      => new sfWidgetFormFilterInput(),
-      'year_graduation_extra'              => new sfWidgetFormFilterInput(),
+      'year_graduation_extra'              => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
       'diploma_qualification_extra'        => new sfWidgetFormFilterInput(),
       'speciality_diploma_extra'           => new sfWidgetFormFilterInput(),
     ));
@@ -25,7 +25,7 @@ abstract class BaseEducationalInstitutionExtraFormFilter extends BaseFormFilterD
       'study_extra'                        => new sfValidatorPass(array('required' => false)),
       'name_educational_institution_extra' => new sfValidatorPass(array('required' => false)),
       'diploma_extra'                      => new sfValidatorPass(array('required' => false)),
-      'year_graduation_extra'              => new sfValidatorPass(array('required' => false)),
+      'year_graduation_extra'              => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
       'diploma_qualification_extra'        => new sfValidatorPass(array('required' => false)),
       'speciality_diploma_extra'           => new sfValidatorPass(array('required' => false)),
     ));
@@ -51,7 +51,7 @@ abstract class BaseEducationalInstitutionExtraFormFilter extends BaseFormFilterD
       'study_extra'                        => 'Text',
       'name_educational_institution_extra' => 'Text',
       'diploma_extra'                      => 'Text',
-      'year_graduation_extra'              => 'Text',
+      'year_graduation_extra'              => 'Date',
       'diploma_qualification_extra'        => 'Text',
       'speciality_diploma_extra'           => 'Text',
     );
