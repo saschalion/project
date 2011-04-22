@@ -13,8 +13,9 @@ class EducationalInstitutionForm extends BaseEducationalInstitutionForm
 
   function doBind(array $values)
   {
-    $values['year_graduation']['day']= '1';
+    
     $values['year_graduation']['month']= '1';
+    $values['year_graduation']['day']= '1';
     parent::doBind($values);
   }
 
@@ -25,10 +26,10 @@ class EducationalInstitutionForm extends BaseEducationalInstitutionForm
         $this['created_at'], $this['updated_at']
         );
 
-        $years = range(date('Y'), date('Y')-30);
-        $years = array_combine($years, $years);
+        $range = range(date('Y'), date('Y')-30);
+        $years = array_combine($range, $range);
         $this->widgetSchema['year_graduation'] = new sfWidgetFormDate(array(
-          'format' => '%day% - %month% - %year%',
+          'format' => '%year%',
           'years'  => $years
         ));
         
