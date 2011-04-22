@@ -12,9 +12,4 @@
  */
 class EducationalInstitution extends BaseEducationalInstitution
 {
-    public function save(Doctrine_Connection $conn = null)
-{
-  return parent::save($conn);
-
-}
 }

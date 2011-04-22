@@ -76,7 +76,7 @@ class JobeetJob extends BaseJobeetJob
 //  автоматическая подстановка даты рождения (ГГГГ-мм-дд)
   if (!$this->getDataBirth())
   {
-    $this->setDataBirth(rand(1970, 1985) . '-' . rand(01, 12) . '-' . rand(01, 28));
+    $this->setDataBirth(rand(1981, 1990) . '-' . rand(01, 12) . '-' . rand(01, 28));
   }
 
 //  автоматическая подстановка номера трудового договора (0000xxx)
@@ -88,7 +88,7 @@ class JobeetJob extends BaseJobeetJob
 //  автоматическая подстановка даты трудового договора (0000xxx)
   if (!$this->getLaborContractDate())
   {
-    $this->setLaborContractDate(rand(1999, 2011) . '-' . rand(01, 12) . '-' . rand(01, 28));
+    $this->setLaborContractDate(rand(1996, 2011) . '-' . rand(01, 12) . '-' . rand(01, 28));
   }
 
   return parent::save($conn);

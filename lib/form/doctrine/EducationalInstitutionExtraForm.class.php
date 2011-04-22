@@ -25,10 +25,9 @@ class EducationalInstitutionExtraForm extends BaseEducationalInstitutionExtraFor
           'default' => ''
         ));
 
-       $years = range(date('Y'), date('Y')-20);
-       $years = array_combine($years, $years);
+       $years = range(date('Y'), date('Y')-20);       
        $this->widgetSchema['year_graduation_extra'] = new sfWidgetFormDate(array(
-            'format' => '%year%',
+            'format' => '%day% - %month% - %year%',
             'years' => $years
         ));
    
