@@ -43,6 +43,13 @@
         Нет ставки
     <? endif; ?>
 </td>
+<td class="center-col">
+    <?php if($jobeet_job->getLogo()): ?>
+        <?php echo '<a href="'. 'uploads/jobs/' . $jobeet_job->getLogo() . '"><img src="/uploads/jobs/' . $jobeet_job->getLogo() . '" alt="" /></a>'?>
+        <?php else: ?>
+        Нет фото
+    <? endif; ?>
+</td>
 <td class="created center-col">
     <?php echo format_date($jobeet_job->getCreatedAt(), 'dd.MM.yyyy') ?>
 </td>

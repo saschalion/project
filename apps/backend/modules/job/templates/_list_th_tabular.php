@@ -47,6 +47,9 @@
   <?php echo __('Оклад<br/> (руб.)', array(), 'messages') ?>
 </th>
 <th class="center-col">
+  <?php echo __('Фото', array(), 'messages') ?>
+</th>
+<th class="center-col">
   <?php echo __('Дата размещения', array(), 'messages') ?>
 </th>
 <?php end_slot(); ?>

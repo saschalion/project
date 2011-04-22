@@ -544,7 +544,7 @@ tfoot th {
 
 .img-block img {
     width: 300px;
-    height: 300px;
+    margin-bottom: 10px;
 }
 
 .sf_admin_batch_actions_choice select,

@@ -304,6 +304,10 @@ table tr:hover {
     width: 100px;
 }
 
+.center-col img {
+    width: 50px;
+}
+
 .created {
     font-size: .8em;
     color: #3f3f3f;
