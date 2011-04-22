@@ -24,14 +24,15 @@ class EducationalInstitutionForm extends BaseEducationalInstitutionForm
         unset(
         $this['created_at'], $this['updated_at']
         );
-
+ 
         $years = range(date('Y'), date('Y')-30);
-        $years = array_combine($years, $years);
         $this->widgetSchema['year_graduation'] = new sfWidgetFormDate(array(
           'format' => '%day% - %month% - %year%',
-          'years'  => $years
+          'years'  => array_combine($years, $years)
         ));
-        
+
+ 
+
         $this->widgetSchema['education_id']->setDefault('1'
         );
 

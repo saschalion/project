@@ -17,32 +17,28 @@ class LeavingTableForm extends BaseLeavingTableForm
       'expanded' => false
     ));
 
-    $years = range(date('Y'), date('Y')-15);
-    $years = array_combine($years, $years);
+    $years = range(date('Y'), date('Y')-15);  
     $this->widgetSchema['getting_started'] = new sfWidgetFormDate(array(
       'format' => '%day% - %month% - %year%',
-      'years'  => $years
+      'years'  => array_combine($years, $years)
     ));
 
     $yearsEndWork = range(date('Y'), date('Y')-15);
-    $yearsEndWork = array_combine($yearsEndWork, $yearsEndWork);
     $this->widgetSchema['end_work'] = new sfWidgetFormDate(array(
       'format' => '%day% - %month% - %year%',
-      'years'  => $yearsEndWork
+      'years'  => array_combine($yearsEndWork, $yearsEndWork)
     ));
 
-    $yearsCommencement = range(date('Y'), date('Y')-1);
-    $yearsCommencement = array_combine($yearsCommencement, $yearsCommencement);
+    $yearsCommencement = range(date('Y'), date('Y')-1); 
     $this->widgetSchema['commencement'] = new sfWidgetFormDate(array(
       'format' => '%day% - %month% - %year%',
-      'years'  => $yearsCommencement
+      'years'  => array_combine($yearsCommencement, $yearsCommencement)
     ));
 
-    $yearsEndLeave = range(date('Y'), date('Y')+1);
-    $yearsEndLeave = array_combine($yearsEndLeave, $yearsEndLeave);
+    $yearsEndLeave = range(date('Y'), date('Y')+1);  
     $this->widgetSchema['end_leave'] = new sfWidgetFormDate(array(
       'format' => '%day% - %month% - %year%',
-      'years'  => $yearsEndLeave
+      'years'  => array_combine($yearsEndLeave, $yearsEndLeave)
     ));
 
     $this->widgetSchema->setLabels(array(

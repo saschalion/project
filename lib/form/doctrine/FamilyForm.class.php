@@ -25,6 +25,12 @@ class FamilyForm extends BaseFamilyForm
       'expanded' => false
     ));
 
+    $yearDate = range(date('Y'), date('Y')-40);
+       $this->widgetSchema['date_birth_children'] = new sfWidgetFormDate(array(
+            'format' => ' %day% - %month% - %year%',
+            'years'  => array_combine($yearDate, $yearDate)
+    ));
+
     $this->widgetSchema->setLabels(array(
       'marriage_status' => 'Состояние в браке',
       'children' => 'Дети, ФИО',

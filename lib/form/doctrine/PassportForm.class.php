@@ -17,6 +17,12 @@ class PassportForm extends BasePassportForm
       $this['created_at'], $this['updated_at']
      );
 
+      $years = range(date('Y'), date('Y')-20);
+    $this->widgetSchema['date_issue_passport'] = new sfWidgetFormDate(array(
+      'format' => '%day% - %month% - %year%',
+      'years'  => array_combine($years, $years)
+    ));
+
       $this->widgetSchema->setLabels(array(
        'passport_number' => '№, серия<span class="red">*</span>',
       'issuance_passports' => 'Кем выдан<span class="red">*</span>',

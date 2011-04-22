@@ -128,7 +128,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>
+                        <td>                       
                             <?php echo $jobeet_job->getEducationalInstitution()->getNameEducationalInstitution() ?>
                         </td>
                         <td>
