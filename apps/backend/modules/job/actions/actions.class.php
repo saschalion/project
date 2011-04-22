@@ -15,9 +15,7 @@ class jobActions extends autoJobActions
 {
     public function preExecute()
         {
-            parent::preExecute();
-            $this->getResponse()->addJavascript('/js/jquery-1.4.4.min.js', 'first');
-            $this->getResponse()->addJavascript('/js/form.js', 'last');            
+            parent::preExecute();                                
         }
 
 
@@ -37,30 +35,39 @@ public function executeIndex(sfWebRequest $request)
 
     $this->pager = $this->getPager();
     $this->sort = $this->getSort();
+    $this->getResponse()->addJavascript('/js/jquery-1.2.6.js', 'first');
+    $this->getResponse()->addJavascript('/js/jquery.fancybox.js', 'last');
+    $this->getResponse()->addJavascript('/js/gallery.js', 'last');
 
     $this->getResponse()->addStylesheet('style.css', 'last');
     $this->getResponse()->addStylesheet('reset.css', 'last');
     $this->getResponse()->addStylesheet('table_form.css', 'last');
     $this->getResponse()->addStylesheet('form_general_back.css', 'last');
     $this->getResponse()->addStylesheet('form_general.css', 'last');
+    $this->getResponse()->addStylesheet('fancy.css', 'last');
   }
 
   public function executeNew(sfWebRequest $request)
   {
     $this->form = $this->configuration->getForm();
     $this->jobeet_job = $this->form->getObject();
+    $this->getResponse()->addJavascript('/js/jquery-1.4.4.min.js', 'first');
+
     $this->getResponse()->addStylesheet('style.css', 'last');
     $this->getResponse()->addStylesheet('reset.css', 'last');
     $this->getResponse()->addStylesheet('table_form.css', 'last');
     $this->getResponse()->addStylesheet('form_general_back.css', 'last');
     $this->getResponse()->addStylesheet('form_general.css', 'last');
+    $this->getResponse()->addJavascript('/js/form.js', 'last');
   }
 
   public function executeCreate(sfWebRequest $request)
   {
+    $this->getResponse()->addJavascript('/js/jquery-1.4.4.min.js', 'first');
+
     $this->form = $this->configuration->getForm();
     $this->jobeet_job = $this->form->getObject();
-
+    $this->getResponse()->addJavascript('/js/form.js', 'last');
     $this->processForm($request, $this->form);
 
     $this->setTemplate('new');
@@ -68,6 +75,9 @@ public function executeIndex(sfWebRequest $request)
 
   public function executeEdit(sfWebRequest $request)
   {
+    $this->getResponse()->addJavascript('/js/jquery-1.4.4.min.js', 'first');   
+
+    $this->getResponse()->addJavascript('/js/form.js', 'last');
     $this->jobeet_job = $this->getRoute()->getObject();
     $this->form = $this->configuration->getForm($this->jobeet_job);
     $this->getResponse()->addStylesheet('style.css', 'last');
@@ -99,8 +109,7 @@ public function executeIndex(sfWebRequest $request)
     $this->getResponse()->addStylesheet('print.css', 'last', array('media' => 'print'));
     $this->getResponse()->addStylesheet('show.css', 'last');
   }
-
-
+  
     protected function processForm(sfWebRequest $request, sfForm $form)
         {
 //        $objectparams = 'sf_guard_user_id';

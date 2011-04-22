@@ -7,7 +7,7 @@ html {
 body {
     background: url(/images/bg.png);
     font-size: 75%;
-    min-width: 1350px;
+    min-width: 1400px;
 }
 
 a {
@@ -255,7 +255,7 @@ table tr.odd {
     background: #fbfbfb;
 }
 
-table tr:hover {
+* > table tr:hover {
     background: #fffaaa;
 }
 
@@ -302,6 +302,10 @@ table tr:hover {
 .center-col {
     text-align: center !important;
     width: 100px;
+}
+
+.center-col img {
+    width: 50px;
 }
 
 .created {

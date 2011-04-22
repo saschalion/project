@@ -16,7 +16,10 @@ class JobeetJobFormFilter extends BaseJobeetJobFormFilter
               array(
                   'tab_id'     => 'Таб. номер',
                   'last_name'  => 'Фамилия',
-                  'first_name' => 'Имя'
+                  'first_name' => 'Имя',
+                  'price'      => 'Оклад',
+                  'sf_guard_user_id' => 'Добавил',
+                  'city_id' => 'Город'
               )
       );
 

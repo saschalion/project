@@ -10,7 +10,7 @@
 <?php end_slot(); ?>
 <?php include_slot('sf_admin.current_header') ?><?php slot('sf_admin.current_header') ?>
 <th>
-  <?php echo __('Специальность', array(), 'messages') ?>
+  <?php echo __('Должность', array(), 'messages') ?>
 </th>
 <?php end_slot(); ?>
 <?php include_slot('sf_admin.current_header') ?><?php slot('sf_admin.current_header') ?>
@@ -45,6 +45,9 @@
 </th>
 <th class="center-col">
   <?php echo __('Оклад<br/> (руб.)', array(), 'messages') ?>
+</th>
+<th class="center-col">
+  <?php echo __('Фото', array(), 'messages') ?>
 </th>
 <th class="center-col">
   <?php echo __('Дата размещения', array(), 'messages') ?>

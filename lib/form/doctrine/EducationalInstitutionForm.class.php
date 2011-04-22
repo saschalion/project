@@ -26,13 +26,15 @@ class EducationalInstitutionForm extends BaseEducationalInstitutionForm
         $this['created_at'], $this['updated_at']
         );
 
-        $range = range(date('Y'), date('Y')-30);
-        $years = array_combine($range, $range);
+ 
+        $years = range(date('Y'), date('Y')-30);
         $this->widgetSchema['year_graduation'] = new sfWidgetFormDate(array(
-          'format' => '%year%',
-          'years'  => $years
+          'format' => '%day% - %month% - %year%',
+          'years'  => array_combine($years, $years)
         ));
-        
+
+ 
+
         $this->widgetSchema['education_id']->setDefault('1'
         );
 

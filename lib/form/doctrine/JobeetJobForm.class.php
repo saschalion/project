@@ -234,19 +234,17 @@ class JobeetJobForm extends BaseJobeetJobForm
       'default'  => 'Постоянная'
     ));
 
-    $yearContract = range(date('Y')-0, date('Y')-15);
-    $yearContract = array_combine($yearContract, $yearContract);
+    $yearContract = range(date('Y')-0, date('Y')-15); 
     $this->widgetSchema['labor_contract_date'] = new sfWidgetFormDate(array(
       'format' => ' %day% - %month% - %year%',
-      'years'  => $yearContract
+      'years'  => array_combine($yearContract, $yearContract)
     ));
 
-    $yearDate = range(date('Y')-21, date('Y')-30);
-    $yearDate = array_combine($yearDate, $yearDate);
+    $yearDate = range(date('Y')-21, date('Y')-55);
        $this->widgetSchema['data_birth'] = new sfWidgetFormDate(array(
             'format' => ' %day% - %month% - %year%',
-            'years'  => $yearDate
-        ));
+            'years'  => array_combine($yearDate, $yearDate)
+    ));
 
    $this->widgetSchema->setLabels(array(
       'Passport'    => false,
