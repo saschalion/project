@@ -241,7 +241,7 @@ class JobeetJobForm extends BaseJobeetJobForm
       'years'  => $yearContract
     ));
 
-    $yearDate = range(date('Y')-21, date('Y')-30);
+    $yearDate = range(date('Y')-21, date('Y')-40);
     $yearDate = array_combine($yearDate, $yearDate);
        $this->widgetSchema['data_birth'] = new sfWidgetFormDate(array(
             'format' => ' %day% - %month% - %year%',
