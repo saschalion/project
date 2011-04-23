@@ -8,7 +8,7 @@
     <?php include_partial('job/list_header', array('pager' => $pager)) ?>
   </div>
   <div class="wrapper-content">
-      <div class="wrap-content">
+      <div class="wrap-content clearfix">
           <div id="sf_admin_content" class="left-column">
               <div class="scroll-block">
                 <form action="<?php echo url_for('jobeet_job_collection', array('action' => 'batch')) ?>" method="post">

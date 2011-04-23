@@ -7,7 +7,7 @@
     <?php include_partial('category/list_header', array('pager' => $pager)) ?>
     </div>
     <div class="wrapper-content">
-        <div class="wrap-content">
+        <div class="wrap-content clearfix">
             <div id="sf_admin_content" class="left-column">
                 <form action="<?php echo url_for('jobeet_category_collection', array(
                     'action' => 'batch')) ?>" method="post">

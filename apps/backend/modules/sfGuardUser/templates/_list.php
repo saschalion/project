@@ -7,7 +7,7 @@
         <tr>
           <th id="sf_admin_list_batch_actions"><input id="sf_admin_list_batch_checkbox" type="checkbox" onclick="checkAll();" /></th>
           <?php include_partial('sfGuardUser/list_th_tabular', array('sort' => $sort)) ?>
-          <th id="sf_admin_list_th_actions"><?php echo __('Опции', array(), 'sf_admin') ?></th>
+          <th id="sf_admin_list_th_actions" class="center-col"><?php echo __('Опции', array(), 'sf_admin') ?></th>
         </tr>
       </thead>
       <tfoot>

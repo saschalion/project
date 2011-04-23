@@ -40,9 +40,6 @@ h1 {
 }
 
 .wrapper {
-    padding-bottom: 1000em;
-    margin-bottom: -1000em;
-    height: 100%;
     background: #e1e6e9;
 }
 
@@ -308,7 +305,7 @@ table tr.odd {
 }
 
 .created {
-    font-size: .8em;
+    font-size: .9em;
     color: #3f3f3f;
 }
 
@@ -321,6 +318,14 @@ table tr.odd {
     display: inline-block;
     margin-right: 3px;
     vertical-align: middle;
+}
+
+.pager li a {
+    text-decoration: underline !important;
+}
+
+.pager li a:hover {
+    text-decoration: none !important;
 }
 
 .pager li:before {
