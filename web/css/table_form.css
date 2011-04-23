@@ -146,10 +146,6 @@ label .red {
     color: #333;
 }
 
-#sf_admin_content form {
-    width: 100%;
-}
-
 #sf_admin_list_th_actions {
     width: 140px;
 }
@@ -210,12 +206,6 @@ tfoot th {
   background: url(/images/icons/error.png) no-repeat 4px 4px;
 }
 
-#sf_admin_container input
-{
-  vertical-align: middle;
-}
-
-
 #sf_admin_container .radio_list, #sf_admin_container .checkbox_list
 {
   margin: 0;
@@ -251,12 +241,6 @@ tfoot th {
 #sf_admin_container thead img, #sf_admin_container tfoot img
 {
   vertical-align: middle;
-}
-
-#sf_admin_bar
-{
-   float: right;
-   width: 215px;
 }
 
 .sf_admin_pagination
@@ -384,6 +368,10 @@ li.print a {
 #sf_admin_container fieldset.collapsed .collapse-toggle { display: inline !important; }
 #sf_admin_container fieldset.collapse h2 a.collapse-toggle { color:#ffc; }
 #sf_admin_container fieldset.collapse h2 a.collapse-toggle:hover { text-decoration:underline; }
+
+.sf_admin_form form {
+    width: 745px;
+}
 
 .sf_admin_form label
 {
@@ -589,6 +577,28 @@ border: none;
     padding-right: 250px;
 }
 
-.sf_admin_form form {
-    width: 750px !important;
+.wrapper-content {
+    width: 100%;
+}
+
+.wrap-content {
+    padding-right: 250px;
+}
+
+.left-column,
+.right-column {
+    float: left;
+}
+
+.left-column {
+    width: 100%;
+}
+
+.right-column {
+    width: 215px;
+    margin-left: -215px;
+}
+
+.scroll-block {
+    overflow: auto;
 }

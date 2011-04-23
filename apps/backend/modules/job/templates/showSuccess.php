@@ -179,13 +179,17 @@
                 <tbody>
                     <tr>
                         <td>
-                            <?php echo $jobeet_job->getEducationalInstitutionExtra()->getNameEducationalInstitutionExtra() ?>
+                            <?php echo 
+                            $jobeet_job->getEducationalInstitutionExtra()->
+                                    getNameEducationalInstitutionExtra() ?>
                         </td>
                         <td>
-                            <?php echo $jobeet_job->getEducationalInstitutionExtra()->getDiplomaExtra() ?>
+                            <?php echo
+                            $jobeet_job->getEducationalInstitutionExtra()->getDiplomaExtra() ?>
                         </td>
                         <td>
-                            <?php echo $jobeet_job->getEducationalInstitutionExtra()->getYearGraduationExtra() ?>
+                            <?php echo format_date($jobeet_job->getEducationalInstitutionExtra()->
+                                    getYearGraduationExtra(), 'yyyy') ?>
                         </td>
                     </tr>
                     <tr>
@@ -199,10 +203,12 @@
                     </tr>
                     <tr>
                         <td>
-                            <?php echo $jobeet_job->getEducationalInstitutionExtra()->getDiplomaQualificationExtra() ?>
+                            <?php echo $jobeet_job->getEducationalInstitutionExtra()->
+                                    getDiplomaQualificationExtra() ?>
                         </td>
                         <td colspan="2">
-                            <?php echo $jobeet_job->getEducationalInstitutionExtra()->getSpecialityDiplomaExtra() ?>
+                            <?php echo $jobeet_job->getEducationalInstitutionExtra()->
+                                    getSpecialityDiplomaExtra() ?>
                         </td>
 
                     </tr>
@@ -211,7 +217,8 @@
             <? endif; ?>
     </ol>
     <ol>
-        <li><span>Профессия</span> <?php echo $jobeet_job->getEducationalInstitution()->getDiplomaQualification() ?></li>
+        <li><span>Профессия</span> <?php echo
+        $jobeet_job->getEducationalInstitution()->getDiplomaQualification() ?></li>
         <li><span>Состояние в браке</span> 
             <?php if ($jobeet_job->getType() == 'M' && $jobeet_job->getFamily()->getMarriageStatus() == 'Не замужем / Холост'): ?>
                 <?php echo 'Холост' ?>

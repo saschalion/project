@@ -7,7 +7,6 @@ html {
 body {
     background: url(/images/bg.png);
     font-size: 75%;
-    min-width: 1400px;
 }
 
 a {
@@ -35,7 +34,7 @@ h1 {
 }
 
 .wrap {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }

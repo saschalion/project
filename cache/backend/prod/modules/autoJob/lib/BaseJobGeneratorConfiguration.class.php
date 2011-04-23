@@ -72,7 +72,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
 
   public function getFilterDisplay()
   {
-    return array(  0 => 'tab_id',  1 => 'last_name',  2 => 'first_name',  3 => 'price',  4 => 'sf_guard_user_id',  5 => 'city_id',);
+    return array(  0 => 'tab_id',  1 => 'last_name',  2 => 'first_name',  3 => 'price',  4 => 'status_id',  5 => 'sf_guard_user_id',  6 => 'city_id',);
   }
 
   public function getFormDisplay()
