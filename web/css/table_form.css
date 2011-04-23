@@ -178,6 +178,13 @@ label .red {
     color: #333333;
 }
 
+@media all and (-webkit-min-device-pixel-ratio:10000),
+not all and (-webkit-min-device-pixel-ratio:0) {
+  #sf_admin_container th {
+    background: #B7E1F5;
+}
+}
+
 tfoot th {
     background: -moz-linear-gradient(center top, #B7E1F5, #EFF9FD) !important;
     background: -webkit-gradient(linear, left top, left bottom, from(#B7E1F5), to(#EFF9FD)) !important;
@@ -598,9 +605,7 @@ tfoot th {
 
 .right-column {
     width: 215px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    margin-left: -215px;
 }
 
 .right-column form {

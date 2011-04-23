@@ -22,6 +22,8 @@ body {
 
 .login-wrap h1 {
     -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
     background: -moz-linear-gradient(center top , #829AA8, #405A6A);
     background: -webkit-gradient(linear, left top, left bottom, from(#829AA8), to(#405A6A));
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#829AA8', endColorstr='#405A6A');
@@ -36,6 +38,15 @@ body {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.698);
 }
 
+@media all and (-webkit-min-device-pixel-ratio:10000),
+not all and (-webkit-min-device-pixel-ratio:0) {
+  .login-wrap h1 {
+        background: #405A6A;
+}
+}
+
+
+
 .login-wrap input[type="text"], .login-form input[type="password"] {
     border: 1px solid #595858;
     padding: 5px;
@@ -45,11 +56,14 @@ body {
     width: 250px;
 }
 
-.login-wrap input[type="text"]:focus, .login-form input[type="password"]:focus {
+.login-wrap input[type="text"]:focus,
+.login-form input[type="password"]:focus {
     border-color: #000;
 }
 
-.login-wrap input[type="text"], .login-form input[type="password"], label {
+.login-wrap input[type="text"],
+.login-form input[type="password"],
+label {
     display: inline-block;
 }
 
@@ -81,7 +95,8 @@ body {
     display: table;
 }
 
-.login-form .signin-ul li:last-child label, .login-form .signin-ul li:last-child input[type="checkbox"] {
+.login-form .signin-ul li:last-child label,
+.login-form .signin-ul li:last-child input[type="checkbox"] {
     width: auto;
     display: inline-block;
     font-size: .8em;
@@ -113,6 +128,12 @@ body {
     text-shadow: 1px 1px 0 #FFFFFF;
     top: 1px;
     white-space: nowrap;
+}
+
+.login-form input[type="submit"]:active {
+    background: -moz-linear-gradient(-90deg, #FFFFFF, #ccc);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#ccc));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#cccccc');
 }
 
 .error_list {

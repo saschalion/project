@@ -120,7 +120,8 @@ public function executeIndex(sfWebRequest $request)
             $this->getResponse()->addStylesheet('table_form.css', 'last');
             $this->getResponse()->addStylesheet('form_general_back.css', 'last');
             $this->getResponse()->addStylesheet('form_general.css', 'last');
-
+            $this->getResponse()->addJavascript('/js/jquery-1.4.4.min.js', 'first');
+            $this->getResponse()->addJavascript('/js/form.js', 'last');
         $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
         if ($form->isValid())
         {

@@ -23,6 +23,13 @@ a:hover {
     padding: 10px;
 }
 
+#sf_admin_container,
+.wrap-l,
+.wrap-r,
+.wrapper {
+    height: 100%;
+}
+
 .clear {
     clear: both;
     padding: 0 !important;
@@ -36,7 +43,6 @@ h1 {
 .wrap {
     width: 100%;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .wrapper {
@@ -98,6 +104,7 @@ h1 {
     position: absolute;
     bottom: 25px;
     left: 13px;
+    white-space: nowrap;
 }
 
 .menu-ul, .menu-ul li {
@@ -185,7 +192,7 @@ li.selected span {
     margin-bottom: -17px;
     position: absolute;
     bottom: 0;
-    width: 830px;
+    width: 100%;
 }
 
 .bg-r {
