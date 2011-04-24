@@ -95,8 +95,8 @@ label {
     display: table;
 }
 
-.login-form .signin-ul li:last-child label,
-.login-form .signin-ul li:last-child input[type="checkbox"] {
+.login-form .signin-ul label[for="signin_remember"],
+.login-form .signin-ul input[type="checkbox"] {
     width: auto;
     display: inline-block;
     font-size: .8em;
