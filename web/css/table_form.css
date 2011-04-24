@@ -570,6 +570,7 @@ tfoot th {
     -webkit-box-shadow: 0 2px 7px #ccc;
     box-shadow: 0 2px 7px #ccc;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 .sf_admin_batch_actions_choice input:active,
