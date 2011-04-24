@@ -13,7 +13,7 @@ generator:
 
     config:
       actions: ~
-      fields:  ~
+      fields: [last_name]
       list:
          display: [tab_id, =jobeet_category, first_name, last_name, data_id, education]
          title: Сотрудники
@@ -38,6 +38,3 @@ generator:
         title: Редактировать
       new:
         title: Новый сотрудник
-
-
-
