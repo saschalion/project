@@ -109,113 +109,113 @@
          <li>
             <span>Образование</span>
             <?php echo $jobeet_job->getEducationalInstitution()->getEducation() ?>
-         </li>
-            <?php if ($jobeet_job->getEducationalInstitution()->getNameEducationalInstitution()): ?>
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            Наименование учебного учреждения
-
-                        </th>
-                        <th>
-                            Диплом, серия, номер
-                        </th>
-                        <th>
-                            Год окончания
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>                       
-                            <?php echo $jobeet_job->getEducationalInstitution()->getNameEducationalInstitution() ?>
-                        </td>
-                        <td>
-                            <?php echo $jobeet_job->getEducationalInstitution()->getDiploma() ?>
-                        </td>
-                        <td>
-                            <?php echo format_date($jobeet_job->getEducationalInstitution()->getYearGraduation(), 'yyyy') ?>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Квалификация по диплому, свидетельству
-                        </th>
-                        <th colspan="2">
-                           Направление или специальность по диплому (свидетельству)
-                        </th>
-
-                    </tr>
-                    <tr>
-                        <td>
-                            <?php echo $jobeet_job->getEducationalInstitution()->getDiplomaQualification() ?>
-                        </td>
-                        <td colspan="2">
-                            <?php echo $jobeet_job->getEducationalInstitution()->getSpecialityDiploma() ?>
-                        </td>
-
-                    </tr>
-                </tbody>
-            </table>
-            <? endif; ?>
-            <?php if ($jobeet_job->getEducationalInstitutionExtra()->getNameEducationalInstitutionExtra()): ?>
-            <table>
-                <caption><strong>Послевузовое профессиональное образование</strong> <?php echo $jobeet_job->getEducationalInstitutionExtra()->getStudyExtra() ?></caption>
-                <thead>
-                    <tr>
-                        <th>
-                            Наименование учебного учреждения
-
-                        </th>
-                        <th>
-                            Диплом, серия, номер
-                        </th>
-                        <th>
-                            Год окончания
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <?php echo 
-                            $jobeet_job->getEducationalInstitutionExtra()->
-                                    getNameEducationalInstitutionExtra() ?>
-                        </td>
-                        <td>
-                            <?php echo
-                            $jobeet_job->getEducationalInstitutionExtra()->getDiplomaExtra() ?>
-                        </td>
-                        <td>
-                            <?php echo format_date($jobeet_job->getEducationalInstitutionExtra()->
-                                    getYearGraduationExtra(), 'yyyy') ?>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Квалификация по диплому, свидетельству
-                        </th>
-                        <th colspan="2">
-                           Направление или специальность по диплому (свидетельству)
-                        </th>
-
-                    </tr>
-                    <tr>
-                        <td>
-                            <?php echo $jobeet_job->getEducationalInstitutionExtra()->
-                                    getDiplomaQualificationExtra() ?>
-                        </td>
-                        <td colspan="2">
-                            <?php echo $jobeet_job->getEducationalInstitutionExtra()->
-                                    getSpecialityDiplomaExtra() ?>
-                        </td>
-
-                    </tr>
-                </tbody>
-            </table>
-            <? endif; ?>
+         </li>            
     </ol>
+	<?php if ($jobeet_job->getEducationalInstitution()->getNameEducationalInstitution()): ?>
+		<table>
+			<thead>
+				<tr>
+					<th>
+						Наименование учебного учреждения
+
+					</th>
+					<th>
+						Диплом, серия, номер
+					</th>
+					<th>
+						Год окончания
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>                       
+						<?php echo $jobeet_job->getEducationalInstitution()->getNameEducationalInstitution() ?>
+					</td>
+					<td>
+						<?php echo $jobeet_job->getEducationalInstitution()->getDiploma() ?>
+					</td>
+					<td>
+						<?php echo format_date($jobeet_job->getEducationalInstitution()->getYearGraduation(), 'yyyy') ?>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Квалификация по диплому, свидетельству
+					</th>
+					<th colspan="2">
+					   Направление или специальность по диплому (свидетельству)
+					</th>
+
+				</tr>
+				<tr>
+					<td>
+						<?php echo $jobeet_job->getEducationalInstitution()->getDiplomaQualification() ?>
+					</td>
+					<td colspan="2">
+						<?php echo $jobeet_job->getEducationalInstitution()->getSpecialityDiploma() ?>
+					</td>
+
+				</tr>
+			</tbody>
+		</table>
+	<? endif; ?>
+	<?php if ($jobeet_job->getEducationalInstitutionExtra()->getNameEducationalInstitutionExtra()): ?>
+		<table>
+			<caption><strong>Послевузовое профессиональное образование</strong> <?php echo $jobeet_job->getEducationalInstitutionExtra()->getStudyExtra() ?></caption>
+			<thead>
+				<tr>
+					<th>
+						Наименование учебного учреждения
+
+					</th>
+					<th>
+						Диплом, серия, номер
+					</th>
+					<th>
+						Год окончания
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<?php echo 
+						$jobeet_job->getEducationalInstitutionExtra()->
+								getNameEducationalInstitutionExtra() ?>
+					</td>
+					<td>
+						<?php echo
+						$jobeet_job->getEducationalInstitutionExtra()->getDiplomaExtra() ?>
+					</td>
+					<td>
+						<?php echo format_date($jobeet_job->getEducationalInstitutionExtra()->
+								getYearGraduationExtra(), 'yyyy') ?>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Квалификация по диплому, свидетельству
+					</th>
+					<th colspan="2">
+					   Направление или специальность по диплому (свидетельству)
+					</th>
+
+				</tr>
+				<tr>
+					<td>
+						<?php echo $jobeet_job->getEducationalInstitutionExtra()->
+								getDiplomaQualificationExtra() ?>
+					</td>
+					<td colspan="2">
+						<?php echo $jobeet_job->getEducationalInstitutionExtra()->
+								getSpecialityDiplomaExtra() ?>
+					</td>
+
+				</tr>
+			</tbody>
+		</table>
+	<? endif; ?>
     <ol>
         <li><span>Профессия</span> <?php echo
         $jobeet_job->getEducationalInstitution()->getDiplomaQualification() ?></li>
@@ -266,5 +266,36 @@
         </tbody>
     </table>
     <? endif; ?>
-</div>
+	<ol>
+        <li><span>Контактная информация</span></li>	
+	</ol>	
+	<table>
+		<thead>
+			<tr>
+				<th>
+					Адрес
 
+				</th>
+				<th>
+					Телефон
+				</th>
+				<th>
+					Мобильный телефон
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<?php echo $jobeet_job->getAdress() ?>
+				</td>
+				<td>
+					<?php echo $jobeet_job->getPhone() ?>
+				</td>
+				<td>
+					<?php echo $jobeet_job->getMobilePhone() ?>
+				</td>
+			</tr>
+		</tbody>
+	</table>   
+</div>
