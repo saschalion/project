@@ -70,7 +70,7 @@
 .sf_admin_filter select {
     background: -moz-linear-gradient(center top , #fff, #D7D5D5);
     background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#D7D5D5));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#D7D5D5');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#D7D5D5');
     width: 550px;
     color: #3f3f3f;
 }
@@ -557,7 +557,7 @@ tfoot th {
 .sf_admin_action_save input {
     background: -moz-linear-gradient(center top , #fff, #D7D5D5);
     background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#D7D5D5));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#D7D5D5');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#D7D5D5');
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -573,7 +573,7 @@ tfoot th {
 .sf_admin_action_save input:active {
     background: -moz-linear-gradient(center top , #fff, #a9a9a9);
     background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#a9a9a9));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#a9a9a9');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#a9a9a9');
     border-color: #716e6e;
 }
 
