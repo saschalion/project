@@ -46,7 +46,9 @@
     color: #3e3636;
 }
 
-.sf_admin_form textarea, .sf_admin_form input[type=text], .sf_admin_filter input[type=text],
+.sf_admin_form textarea,
+.sf_admin_form input[type=text],
+.sf_admin_filter input[type=text],
 .sf_admin_form input[type="password"],
 .sf_admin_form select[multiple="multiple"],
 #addMemberForm select,
@@ -57,13 +59,18 @@
     color: #686161;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+.sf_admin_form textarea:focus,
+.sf_admin_form input[type=text]:focus,
+.sf_admin_filter input[type=text]:focus,
+.sf_admin_form input[type="password"]:focus {
+    border-color: #686161;
+    color: #000;
     -moz-box-shadow: 2px 1px 2px 0 #CCC;
     -webkit-box-shadow: 2px 1px 2px 0 #CCC;
     box-shadow: 2px 1px 2px 0 #CCC;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
 }
 
 #addMemberForm select,
@@ -114,11 +121,6 @@
 #jobeet_job_Passport_date_issue_passport_month,
 #jobeet_job_Passport_date_issue_passport_year {
     width: auto !important;
-}
-
-form textarea:focus, input[type=text]:focus {
-    border-color: #686161;
-    color: #000;
 }
 
 .table-form input[type=submit] {
@@ -430,7 +432,8 @@ fieldset#sf_fieldset____________________________ .error_list {
 .sf_admin_form_field_EducationalInstitution div,
 .sf_admin_form_field_EducationalInstitutionExtra div,
 .sf_admin_form_field_Family div,
-.sf_admin_form_field_Profession div {
+.sf_admin_form_field_Profession div,
+.sf_admin_form_field_LeavingTable div {
     padding: 0 !important;
 }
 
