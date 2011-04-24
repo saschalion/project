@@ -233,7 +233,9 @@
                 <?php echo 'Замужем' ?>
             <? endif; ?>
         </li>
-        <li><span>Состав семьи</span></li>
+		<?php if($jobeet_job->getFamily()->getChildren()): ?>
+			<li><span>Состав семьи</span></li>
+		<?php endif; ?>
     </ol>
     <?php if ($jobeet_job->getFamily()->getChildren()): ?>
     <table>
