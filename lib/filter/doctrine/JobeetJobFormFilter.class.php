@@ -18,6 +18,7 @@ class JobeetJobFormFilter extends BaseJobeetJobFormFilter
                   'last_name'  => 'Фамилия',
                   'first_name' => 'Имя',
                   'price'      => 'Оклад',
+				  'category_id' => 'Должность',
                   'status_id' => 'Статус',
                   'sf_guard_user_id' => 'Добавил',
                   'city_id' => 'Город'
