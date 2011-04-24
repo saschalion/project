@@ -12,6 +12,12 @@ class ProfessionForm extends BaseProfessionForm
 {
   public function configure()
   {  
+	$yearDate = range(date('Y'), date('Y')-30);
+       $this->widgetSchema['termination_date'] = new sfWidgetFormDate(array(
+            'format' => ' %day% - %month% - %year%',
+            'years'  => array_combine($yearDate, $yearDate)
+    ));
+	
     $this->widgetSchema->setLabels(array(
       'main_profession' => 'Основная',
       'other_profession' => 'Другая',
@@ -21,10 +27,6 @@ class ProfessionForm extends BaseProfessionForm
       'termination_date' => 'Дата увольнения'
     ));
 
-//        $this->widgetSchema->setHelp(
-//     'termination_date', "<input type='button' id='show-military'
-//         class='show-button' value='Показать/Скрыть Воинский учет'
-//         onclick='hideShowMilitary();'>"
-//    );
+    
   }
 }
