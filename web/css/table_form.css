@@ -12,7 +12,6 @@
 #sf_fieldset_______________________,
 #sf_fieldset_________________________________________________________________________________,
 #sf_fieldset___________________,
-#sf_fieldset__________________________,
 #sf_fieldset_____________ {
     display: none;
 }
@@ -191,6 +190,10 @@ tfoot th {
     background: -moz-linear-gradient(center top, #B7E1F5, #EFF9FD) !important;
     background: -webkit-gradient(linear, left top, left bottom, from(#B7E1F5), to(#EFF9FD)) !important;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B7E1F5', endColorstr='#EFF9FD') !important;
+}
+
+table thead th a {
+    text-decoration: underline !important;
 }
 
 #sf_admin_container th a {
@@ -433,7 +436,8 @@ fieldset#sf_fieldset____________________________ .error_list {
 .sf_admin_form_field_EducationalInstitutionExtra div,
 .sf_admin_form_field_Family div,
 .sf_admin_form_field_Profession div,
-.sf_admin_form_field_LeavingTable div {
+.sf_admin_form_field_LeavingTable div, 
+.sf_admin_form_field_MilitaryRecords div {
     padding: 0 !important;
 }
 
