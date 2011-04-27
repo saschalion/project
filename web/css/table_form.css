@@ -589,10 +589,6 @@ tfoot th {
     cursor: pointer;
 }
 
-#sf_admin_content {
-    padding-right: 250px;
-}
-
 .wrapper-content {
     width: 100%;
 }
@@ -613,7 +609,7 @@ tfoot th {
 
 .right-column {
     width: 215px;
-    margin-left: -215px;
+    margin-right: -215px;
 }
 
 .right-column form {
