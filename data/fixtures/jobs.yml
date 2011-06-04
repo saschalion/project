@@ -17,6 +17,7 @@ JobeetJob:
     last_name: Артемьев
     three_name: Сергеевич
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: 76339455839763fe0cdd1b4ea87a63fcf6c82027.jpg
 
   job_2:
     id: 2
@@ -34,6 +35,7 @@ JobeetJob:
     last_name: Сергеев
     three_name: Ипполитович
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: f0b099401c9a7b139705f1d60c14a1d57763175e.jpg
     
   job_3:
     id: 3
@@ -51,6 +53,7 @@ JobeetJob:
     last_name: Федоров
     three_name: Сергеевич
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: 9f5b6f11503f30d9d7ce078c29eb0a8a4381c466.jpg
 
   job_4:
     id: 4
@@ -68,6 +71,7 @@ JobeetJob:
     last_name: Федоров
     three_name: Александрович
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: 4690aacf2e7be3ef05d980ee8c4c05d6aad37462.jpg
 
   job_5:
     id: 5
@@ -85,6 +89,7 @@ JobeetJob:
     last_name: Семенова
     three_name: Кирилловна
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: 3598a38a23590f71b0b742073f9f636b01c09e70.jpg
 
   job_6:
     id: 6
@@ -102,6 +107,7 @@ JobeetJob:
     last_name: Жулина
     three_name: Сергеевная
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: bfaba39cffd19de763b04765f454018c26a09441.jpg
 
   job_7:
     id: 7
@@ -119,6 +125,7 @@ JobeetJob:
     last_name: Небылица
     three_name: Семенович
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: eea5deb9ce0508fbaff642bfde6d615d573ea517.jpg
 
   job_8:
     id: 8
@@ -136,6 +143,7 @@ JobeetJob:
     last_name: Акрилова
     three_name: Филлиповна
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: 5ef21cd7ad71b36da48c35ef7cfe5695bd87a18b.jpg
 
   job_9:
     id: 9
@@ -153,6 +161,7 @@ JobeetJob:
     last_name: Бурдаков
     three_name: Александрович
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: e3c16fc0a2d156df5205c97fa59f61630791aecf.jpg
 
   job_10:
     id: 10
@@ -170,6 +179,7 @@ JobeetJob:
     last_name: Курпатов
     three_name: Владимирович
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: ced033d0e2ecb65f4557c684caadee1cadc1e318.jpg
 
   job_11:
     id: 11
@@ -187,6 +197,7 @@ JobeetJob:
     last_name: Зарубин
     three_name: Алексеевич
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: 477ba6606229426996953a3b3c2c300430fa3fa2.jpg
 
   job_12:
     id: 12
@@ -204,6 +215,7 @@ JobeetJob:
     last_name: Иванов
     three_name: Сергеевич
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: 38fd3ba716dbf1819445d00810e6a679da6a4fe8.jpg
 
   job_13:
     id: 13
@@ -221,6 +233,7 @@ JobeetJob:
     last_name: Забудько
     three_name: Борисович
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: 76b853574fbef66157646aa779101bd1b915f1ca.jpg
 
   job_14:
     id: 14
@@ -374,6 +387,7 @@ JobeetJob:
     last_name: Бойко
     three_name: Юрьевна
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: fc6eab0badfb64df3627cd8b4f13f302255c6082.jpg
 
   job_23:
     id: 23
@@ -391,6 +405,7 @@ JobeetJob:
     last_name: Розентропов
     three_name: Ананьевич
     adress: Нагатинская набережная, д. 34 к. 4 кв. 123
+    logo: 44bf6fb50f0b8c49aa18fcf5da3b1caa08f01ea2.jpg
 
   job_24:
     id: 24
